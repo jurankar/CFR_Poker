@@ -508,11 +508,19 @@ Ta verzija bo brez dreves, da bom nato videl razliko glede časa z drevesi. Prav
 """
 
 """
-TODO:
+TODO: 
+-PRIORITETA: implementacija dreves da vidm razliko v času učenja !!
 - dodj vse karte notr od 2 do A
     --> pol dodeli funkcijo self.betterCards (dodj lestvice)
 - preber navodila kako je s kickerjom 
-- včasih checka full house kar mi je mal čudno, mogoče treba kej popraut funkcijo
+    - dodj split pr payoffu
+- neki ni ok s payoff funkcijo:
+    Dobili ste  2.5  vra.
+    Na mizi:  K,9,K,J,K      Player:  A,10     Bot:  9,9    --> mogu bi zmagat bot.....error če mat 2 trisa ne vid da mas isto par TO DO
+    Vaše novo stanje je  37.0
+    
 - trash handi --> handi k jih iz prve foldaš ker so trash (uzemi bolj "tight" tehniko kjer velik foldaš in velik raisaš ker to bl zmede beginner playerje)
+- dopoln igro da enkrat začne player enkat bot
+
 
 """
