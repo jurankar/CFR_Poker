@@ -7,12 +7,28 @@ import time
 class node:
     NUM_ACTIONS = 2
 
-    def __init__(self):
-        self.infoSet = ""
+    def __init__(self, infoSet):
+
+        # Algoritem
+        self.infoSet = infoSet
         self.regretSum = [0, 0]
         self.strategy = [0, 0]   # verjetnost da zberemo PASS ali BET
         self.strategySum = [0, 0]
         self.avgStrat = []              # --> to be optimized !
+
+        # Nadaljne veje iz drevesa
+        self.drevo_bet = None
+        self.drevo_pass = None
+
+        # Ostalo
+        self.terminal = isTerminalState(infoSet)
+        self.gameStage = self.infoSet.count("|") + 1
+        current_stage = self.infoSet.split("|")[0]
+        self.player = (current_stage.count("b") + current_stage.count("p"))%2   # --> optimized
+        self.pot_size = current_stage.count("b")
+        self.newStage = isNewStage(infoSet)
+        if self.newStage == True:
+            self.new_cards = {}  #list nodov za vsako kombinacijo novih kart ki padejo na flopu, turnu in riverju
 
     #strategy[] je ubistvu sam normaliziran regretSum[] --> skor copy paste iz RM rock paper scissors
     def getStrat(self, realizationWeight):
@@ -65,39 +81,6 @@ class Poker_Learner:
     BET = 1
     NUM_ACTIONS = 2
     nodeMap = {}    # ta dictionary povezuje infoSete z nodi
-
-
-    def isTerminalState(self, infoSet):
-        # pregledamo mozne bete in passe
-        splitHistory = infoSet.split("|")
-        stage_num = len(splitHistory) - 1
-        if len((splitHistory[stage_num]).split(",")) == 1:   # pr payoffu pr flopu in turnu ne zazna
-            stage_num -= 1
-
-        current_stage = splitHistory[stage_num].split(",")
-        stg_len = len(current_stage)
-
-        if(stg_len > 1 and current_stage[1] == "P0p"):
-            if(stg_len > 2 and current_stage[2] == "P1p"):
-                return True
-            elif(stg_len > 2 and current_stage[2] == "P1b"):
-                if(stg_len > 3 and  current_stage[3] == "P0p"):
-                    return True
-                elif(stg_len > 3 and  current_stage[3] == "P0b"):
-                    return True
-                else:
-                    return False
-            else:
-                return False
-        elif(stg_len > 1 and current_stage[1] == "P0b"):
-            if(stg_len > 2 and current_stage[2] == "P1p"):
-                return True
-            elif stg_len > 2 and current_stage[2] == "P1b":
-                return True
-            else:
-                return False
-        else:
-            return False
 
     def betterCards(self, playerCards, opponentCards):  # --> return TRUE ce ma players bolse karte in FALSE ce ma slabse
         # tuki bomo gledal sam poker, full house, tris, dva para, par, pa High Card
@@ -212,14 +195,21 @@ class Poker_Learner:
 
 
     # payoff for terminal states --> preveri če je konc runde in če je izplačaj zmagovalnega igralca
-    def payoff(self, player_infoset, cards, player):
+    def payoff(self, curr_node, cards):
 
-        if self.isTerminalState(player_infoset):
-            splitHistory = player_infoset.split("|")
-            gameStage = len(splitHistory)   # --> a smo preflop/flop/river/turn
+        pot_size = curr_node.pot_size
+        player = curr_node.player
+        terminal_node = curr_node.terminal
 
-            if len((splitHistory[gameStage - 1]).split(",")) == 1:  # pr payoffu pr flopu in turnu ne zazna
-                gameStage -= 1
+        if terminal_node != False:
+            # če kdo prej folda kot obicajno, pol nasprotnik dobi 1/2 pota + zadnjo stavo, ki je player ni callou
+            # torej dobi pot/2 + 1
+            ante = 0.5  # vsota ki jo vsak player da na mizo se preden dobi karte --> kasneje lahko zamenjas za small pa big blind
+            winnings = pot_size/2 + ante/2
+            if terminal_node == "p0_win":
+                return winnings+1 if player == 0 else -(winnings + 1)
+            elif terminal_node == "p1_win":
+                return winnings+1 if player == 1 else -(winnings + 1)
 
             #kakšne karte mamo  --> če smo na riverju da primerjamo karte z nasprotnikom
             cards_on_table = str(cards[4]) + str(cards[5]) + str(cards[6]) + str(cards[7]) + str(cards[8])
@@ -230,61 +220,28 @@ class Poker_Learner:
                 player_cards = str(cards[2]) + str(cards[3]) + cards_on_table
                 opponent_cards = str(cards[0]) + str(cards[1]) + cards_on_table
 
-            # pregledamo mozne bete in passe --> continue / to do
-            current_round = splitHistory[gameStage - 1].split(",")  # --> da smo v končnem stanju pogleda self.isTerminalState
-
-
-            začetna_stava = 0.5 # --> untested
-            if player == 0:
-                reward = player_infoset.count("P1b") + začetna_stava
-                penalty = -player_infoset.count("P0b") - začetna_stava
-            elif player == 1:
-                reward = player_infoset.count("P0b") + začetna_stava
-                penalty = -player_infoset.count("P1b") - začetna_stava
-            else:
-                return "error"
-
-            if(current_round[1] == "P0p"):
-                if(current_round[2] == "P1p" and gameStage == 4):
-                    if self.betterCards(player_cards, opponent_cards):
-                        return reward
-                    else:
-                        return penalty
-                elif(current_round[2] == "P1b"):
-                    if(current_round[3] == "P0p"):
-                        return penalty if player == 0 else reward
-                    elif(current_round[3] == "P0b"  and gameStage == 4):
-                        if self.betterCards(player_cards, opponent_cards):
-                            return reward
-                        else:
-                            return penalty
-                    else:
-                        return "continue"
+            if terminal_node == "call_betterCards":
+                # Vsak dobi sam pol pota ker tut v resnici staviš pol ti pol opponent in dejansko si na +/- sam za polovico pota
+                # Gre ravno cez pol ker sta
+                if self.betterCards(player_cards, opponent_cards):
+                    return winnings # winnings = pot/2
                 else:
-                    return "continue"
-            elif(current_round[1] == "P0b"):
-                if(current_round[2] == "P1p"):
-                    return reward if player == 0 else penalty
-                elif current_round[2] == "P1b" and gameStage == 4:
-                    if self.betterCards(player_cards, opponent_cards):
-                        return reward
-                    else:
-                        return penalty
-                else:
-                    return "continue"
-            else:
-                return "error"
+                    return -winnings
+
+            return "error1"
+
         else:
             return "continue"
 
+
+
     # dobimo node aka. stanje v katerem smo
     def nodeInformation(self, infoSet):
-
+        # v nodemapu je drevo za vsak mozni zacetni hand
         if infoSet in self.nodeMap:
             newNode = self.nodeMap[infoSet]
         else:
-            newNode = node()   # --> ko se node kreira se ze skopirajo ostale vrednosti iz drugih nodov...ne gre iz nule
-            newNode.infoSet = infoSet
+            newNode = node("")   # --> ko se node kreira se ze skopirajo ostale vrednosti iz drugih nodov...ne gre iz nule
             self.nodeMap[infoSet] = newNode
 
         return newNode
@@ -298,55 +255,59 @@ class Poker_Learner:
         return cards_string
 
     # player_infoset in opp_infoset se skupi cez prenasa in se oba hkrati posodabla
-    def cfr(self, cards, p0, p1, infoSet):
+    def cfr(self, cards, p0, p1, curr_node):
 
         # priprava
-        splitHistory = infoSet.split("|")
-        gameStage = len(splitHistory)
-        currentHis = splitHistory[gameStage-1]
-        plays = currentHis.count(",")
+        #infoSet = curr_node.infoSet # --> tuki notr so napisani sam passi pa beti brez kart da vemo ce je stanje terminalno ali ne
         # imamo player1 in player2 aka player in opponent
-        player = plays % 2      # --> to test
-        if player == 0:
-            player_infoset = self.poVrsti([cards[0], cards[1]]) + infoSet
-        elif player == 1:
-            player_infoset = self.poVrsti([cards[2], cards[3]]) + infoSet
-        else:
-            return "error"
+        player = curr_node.player
+
+        if curr_node.infoSet.count("|||") != 0:
+            debug = True
 
         # dobimo payoff ce je končno stanje
-        payoff = self.payoff(player_infoset, cards, player)
+        payoff = self.payoff(curr_node, cards)
         if payoff != "continue":
             return payoff
 
-        # dobimo v katerem stanju/nodu/situaciji trenutno smo
-        newNode1 = self.nodeInformation(player_infoset)
 
         # rekurzivno kličemo self.cfr za opcijo bet in opcijo pass
-        strategy = newNode1.getStrat(p0 if player == 0 else p1)
+        strategy = curr_node.getStrat(p0 if player == 0 else p1)
         util = [0, 0]   # kolk utila mamo za bet pa kolk za pass
         nodeUtil = 0
 
+        # posodobimo in po potrebi ustvarimo nove sinove če še niso ustvarjeni
+        # --> !! TODO optimiziraj da ta informacija ze v nodih ne da vedno sprot računas --> trenutno je curr_node.newStage neki sfukan in ne kaze vedno prou
+        #  --> probably neki tuki k spremenim node ko pride do flopa
+        if isNewStage(curr_node.infoSet):
+            curr_node.infoSet += "|"
+            #zdj preeidemo v nov node, ki je vezan na to kakšne karte padejo
+            if curr_node.gameStage == 1:
+                new_cards_ = self.poVrsti([cards[4],cards[5],cards[6]])
+            elif curr_node.gameStage == 2:
+                new_cards_ = str(cards[7])
+            elif curr_node.gameStage == 3:
+                new_cards_ = str(cards[8])
+
+            curr_node.new_cards[new_cards_] = node(curr_node.infoSet)
+            curr_node = curr_node.new_cards[new_cards_]
+
+
+        # TODO nared neki da vid ce je zadna runda aka. nekdo pobere denar. ker sedaj naredi en nivo v drevesu preveč
+        if curr_node.drevo_pass == None:
+            new_infoset = curr_node.infoSet + "p"
+            curr_node.drevo_pass = node(new_infoset)
+        if curr_node.drevo_bet == None:
+            new_infoset = curr_node.infoSet + "b"
+            curr_node.drevo_bet = node(new_infoset)
+
         for i in range(self.NUM_ACTIONS):
-            # --> tuki prevermo ce je terminal state in če je pol na konc dodamo še '|', drugač pa sam dodaš in greš spet
-            new_infoset = str(infoSet) + "," + "P" + str(player) + ("p" if i == 0 else "b")  # infoset + 0p, --> 0 pove da je odigral player 0
-
-            # pogledamo če je terminal state in gremo v novo rundo
-            if self.isTerminalState(new_infoset):
-                if gameStage <= 3:
-                    new_infoset += "|"
-                if gameStage == 1:  #flop
-                    new_infoset += self.poVrsti([cards[4], cards[5], cards[6]])
-                elif gameStage == 2:    #turn
-                    new_infoset += str(cards[7])
-                elif gameStage == 3:    #river
-                    new_infoset += str(cards[8])
-
 
             if (player == 0):
-                util[i] = - self.cfr(cards, p0 * strategy[i], p1, new_infoset)  # --> player pa opp infoset obrnemo ko je drug na vrsti
+                #if payoff(curr_node.drevo_bet != "continue") return payoff
+                util[i] = - self.cfr(cards, p0 * strategy[i], p1, curr_node.drevo_pass)  if i == 0 else - self.cfr(cards, p0 * strategy[i], p1, curr_node.drevo_bet)
             else:
-                util[i] = - self.cfr(cards, p0, p1 * strategy[i], new_infoset)
+                util[i] = - self.cfr(cards, p0, p1 * strategy[i], curr_node.drevo_pass) if i == 0 else - self.cfr(cards, p0 * strategy[i], p1, curr_node.drevo_bet)
 
             nodeUtil += strategy[i] * util[i]
 
@@ -354,9 +315,9 @@ class Poker_Learner:
         for i in range(self.NUM_ACTIONS):
             regret = util[i] - nodeUtil
             if (player == 0):
-                newNode1.regretSum[i] += p1 * regret
+                curr_node.regretSum[i] += p1 * regret
             else:
-                newNode1.regretSum[i] += p0 * regret
+                curr_node.regretSum[i] += p0 * regret
 
         return nodeUtil
 
@@ -377,7 +338,8 @@ class Poker_Learner:
             player_cards = self.poVrsti([cards[0], cards[1]])
             # vecina projev na zacetku ze raisa, ce nima nekega trash handa
             if player_cards not in trash_hands:
-                util += self.cfr(cards, 1, 1, "")
+                node = self.nodeInformation(str(player_cards))
+                util += self.cfr(cards, 1, 1, node)
 
 
         print("Average game return: ", util / stIteracij)
@@ -489,7 +451,74 @@ def igrajIgro(learner): # --> TO DO ne dela ok
             print("\n\n\nŽal ste izgubili")
             break
 
+##GLOBAL FUNCTIONS
+def isNewStage(infoSet):  # da vemo ce je nasledna flop, turn, river
+    # pregledamo mozne bete in passe
+    splitHistory = infoSet.split("|")
+    gameStage = len(splitHistory)
+    current_stage = (splitHistory[gameStage - 1])
+    stg_len = len(current_stage)
 
+    if(stg_len >= 1 and current_stage[0] == "p"):
+        if(stg_len >= 2 and current_stage[1] == "p"):
+            return True
+        elif(stg_len >= 2 and current_stage[1] == "b"):
+            # v 3jem stagu sta bet in pass new stage
+            if(stg_len >= 3):
+                return True
+            else:
+                return False
+        else:
+            return False
+    elif(stg_len >= 1 and current_stage[0] == "b"):
+        #v 2gem stagu sta bet in pass new stage
+        if(stg_len >= 2 and current_stage[1] == "b"):
+            return True
+        else:
+            return False
+    else:
+        return False    #prazen infoSet
+
+
+def isTerminalState(infoSet):
+    # pregledamo mozne bete in passe
+    splitHistory = infoSet.split("|")
+    gameStage = len(splitHistory)
+    if gameStage == 4:  #DEBUG --> pobirs pol
+        debug = True
+    current_stage = (splitHistory[gameStage - 1])
+    stg_len = len(current_stage)
+
+    # ce igrata do konca da odpreta karte
+    if gameStage == 4 and isNewStage(infoSet):
+        return "call_betterCards"   #--> sta igrala do konca kazeta karte
+    # ce nekdo nekje folda
+    else:
+        if stg_len >=1 and current_stage[0] == "p":
+            if stg_len >=2 and current_stage[1] == "p":
+                return False
+            elif stg_len >=2 and current_stage[1] == "b":
+                if stg_len >=3 and current_stage[2] == "p":
+                    return "p1_win"
+                elif stg_len >=3 and current_stage[2] == "b":
+                    return False
+                else:
+                    return False
+            else:
+                return False
+        elif stg_len >=1 and current_stage[0] == "b":
+            if stg_len >=2 and current_stage[1] == "p":
+                return "p0_win"
+            elif stg_len >=2 and current_stage[1] == "b":
+                return False
+            else:
+                return False
+        else:
+            return False    #prazen infoSet
+
+
+
+## MAIN
 if __name__ == "__main__":
     start_time = time.time()
     learner = Poker_Learner()
@@ -497,7 +526,7 @@ if __name__ == "__main__":
     print("Čas izvajanja prigrama: ", (time.time() - start_time))
 
     # igranje igre
-    igrajIgro(learner)
+    #igrajIgro(learner)
 
 """
 Zdaj razvijam osnovno obliko pokra s kartami 9-A, kjer bomo gledali samo High card, par, dva para, tris, full house,
@@ -509,7 +538,31 @@ Ta verzija bo brez dreves, da bom nato videl razliko glede časa z drevesi. Prav
 
 """
 TODO: 
--PRIORITETA: implementacija dreves da vidm razliko v času učenja !!
+- !! Program dela za p0 uredu, ampak za p1 prav tako racuna glede na to kaksne karte ma p1 
+    --> treba je nastimat da ko je na vrsti p1, on gleda svoje karte, ker se pol bot uci se enkrat hitrej + 
+    vsako drugo stanje v drevesu je useless(ker govori kako bi igral p1 ce bi imel karte od p0)+
+     nastimi da al nj se hkrati dva ucita, al pa ob vsaki iteraciji nastaneta 2 drevesa--> TO DO TUKAJ NADALJUJ
+-mplementacija dreves da vidm razliko v času učenja !!
+    -incializiraj vsa stanja v nodih za flop, turn, river --> lahko jih das v slovar v nodu
+    - Nodi morjo bit passani prek reference
+
+
+
+
+
+
+
+
+
+
+
+
+
+Other:
+- optimizacija: 
+    -ce je drevo v zadnjem nodu, ne rabis it se v en node samo za payoff --> optimiziraj da ne bo treba it do zadnjega nivoja(ki je tudi največji)
+    -probi se znebit infoseta --> zavzema velik časa in rama
+- dodj zacetne stave oz ante
 - dodj vse karte notr od 2 do A
     --> pol dodeli funkcijo self.betterCards (dodj lestvice)
 - preber navodila kako je s kickerjom 
