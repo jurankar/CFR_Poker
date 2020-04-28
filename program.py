@@ -2,7 +2,82 @@ from random import random as randDec
 import random
 import time
 
+##GLOBAL VARIABLES
 
+
+##GLOBAL FUNCTIONS
+def isNewStage(infoSet):  # da vemo ce je nasledna flop, turn, river
+    # pregledamo mozne bete in passe
+    splitHistory = infoSet.split("|")
+    gameStage = len(splitHistory)
+    current_stage = (splitHistory[gameStage - 1])
+    stg_len = len(current_stage)
+
+    if(stg_len >= 1 and current_stage[0] == "p"):
+        if(stg_len >= 2 and current_stage[1] == "p"):
+            return True
+        elif(stg_len >= 2 and current_stage[1] == "b"):
+            # v 3jem stagu sta bet in pass new stage
+            if(stg_len >= 3):
+                return True
+            else:
+                return False
+        else:
+            return False
+    elif(stg_len >= 1 and current_stage[0] == "b"):
+        #v 2gem stagu sta bet in pass new stage
+        if(stg_len >= 2 and current_stage[1] == "b"):
+            return True
+        else:
+            return False
+    else:
+        return False    #prazen infoSet
+
+
+def isTerminalState(infoSet):
+    # pregledamo mozne bete in passe
+    splitHistory = infoSet.split("|")
+    gameStage = len(splitHistory)
+    if gameStage == 4:  #DEBUG --> pobirs pol
+        debug = True
+    current_stage = (splitHistory[gameStage - 1])
+    stg_len = len(current_stage)
+
+    # ce igrata do konca da odpreta karte
+    if gameStage == 4 and isNewStage(infoSet):
+        return "call_betterCards"   #--> sta igrala do konca kazeta karte
+    # ce nekdo nekje folda
+    else:
+        if stg_len >=1 and current_stage[0] == "p":
+            if stg_len >=2 and current_stage[1] == "p":
+                return False
+            elif stg_len >=2 and current_stage[1] == "b":
+                if stg_len >=3 and current_stage[2] == "p":
+                    return "p1_win"
+                elif stg_len >=3 and current_stage[2] == "b":
+                    return False
+                else:
+                    return False
+            else:
+                return False
+        elif stg_len >=1 and current_stage[0] == "b":
+            if stg_len >=2 and current_stage[1] == "p":
+                return "p0_win"
+            elif stg_len >=2 and current_stage[1] == "b":
+                return False
+            else:
+                return False
+        else:
+            return False    #prazen infoSet
+
+
+
+
+###NODES
+class node_init_p1:
+    def __init__(self):
+
+        self.betting_map = {}
 
 class node:
     NUM_ACTIONS = 2
@@ -17,16 +92,15 @@ class node:
         self.avgStrat = []              # --> to be optimized !
 
         # Nadaljne veje iz drevesa
-        self.drevo_bet = None
-        self.drevo_pass = None
+        self.betting_map = {}  # pri vsaki iteraciji imaš 4 nova stanja pp, pb, bp, bb --> razen ko p0 prvic igra, takrat samo 2 stanja p in b
 
         # Ostalo
         self.terminal = isTerminalState(infoSet)
         self.gameStage = self.infoSet.count("|") + 1
-        current_stage = self.infoSet.split("|")[0]
+        current_stage = self.infoSet.split("|")[self.gameStage - 1]
         self.player = (current_stage.count("b") + current_stage.count("p"))%2   # --> optimized
         self.pot_size = current_stage.count("b")
-        self.newStage = isNewStage(infoSet)
+        self.newStage = isNewStage(infoSet) or isNewStage(infoSet[:-2])   # --> -2 je za p1 po tem ko je p0 že šel v novo rundo
         if self.newStage == True:
             self.new_cards = {}  #list nodov za vsako kombinacijo novih kart ki padejo na flopu, turnu in riverju
 
@@ -73,14 +147,15 @@ class node:
         return ((self.infoSet),":   ",self.getAvgStrat())
 
 # --------------------------------------------------------------------------------------------------
-
+###POKER_LEARNER_CFR
 
 
 class Poker_Learner:
     PASS = 0
     BET = 1
     NUM_ACTIONS = 2
-    nodeMap = {}    # ta dictionary povezuje infoSete z nodi
+    nodeMap_p0 = {}    # ta dictionary povezuje infoSete z nodi
+    nodeMap_p1 = {}
 
     def betterCards(self, playerCards, opponentCards):  # --> return TRUE ce ma players bolse karte in FALSE ce ma slabse
         # tuki bomo gledal sam poker, full house, tris, dva para, par, pa High Card
@@ -205,7 +280,7 @@ class Poker_Learner:
             # če kdo prej folda kot obicajno, pol nasprotnik dobi 1/2 pota + zadnjo stavo, ki je player ni callou
             # torej dobi pot/2 + 1
             ante = 0.5  # vsota ki jo vsak player da na mizo se preden dobi karte --> kasneje lahko zamenjas za small pa big blind
-            winnings = pot_size/2 + ante/2
+            winnings = pot_size/2 + ante
             if terminal_node == "p0_win":
                 return winnings+1 if player == 0 else -(winnings + 1)
             elif terminal_node == "p1_win":
@@ -224,7 +299,7 @@ class Poker_Learner:
                 # Vsak dobi sam pol pota ker tut v resnici staviš pol ti pol opponent in dejansko si na +/- sam za polovico pota
                 # Gre ravno cez pol ker sta
                 if self.betterCards(player_cards, opponent_cards):
-                    return winnings # winnings = pot/2
+                    return winnings # winnings = pot/2 + ante
                 else:
                     return -winnings
 
@@ -236,13 +311,22 @@ class Poker_Learner:
 
 
     # dobimo node aka. stanje v katerem smo
-    def nodeInformation(self, infoSet):
+    def nodeInformation(self, infoSet, player):
         # v nodemapu je drevo za vsak mozni zacetni hand
-        if infoSet in self.nodeMap:
-            newNode = self.nodeMap[infoSet]
+        if player == 0:
+            if infoSet in self.nodeMap_p0:
+                newNode = self.nodeMap_p0[infoSet]
+            else:
+                newNode = node("")   # --> ko se node kreira se ze skopirajo ostale vrednosti iz drugih nodov...ne gre iz nule
+                self.nodeMap_p0[infoSet] = newNode
+        elif player == 1:
+            if infoSet in self.nodeMap_p1:
+                newNode = self.nodeMap_p1[infoSet]
+            else:
+                newNode = node_init_p1()   # --> tuki ne rabmbo noda ker p1 na prvi potezi ne igra --> sprejmemo samo akcijo ob p0 in nato sele igra
+                self.nodeMap_p1[infoSet] = newNode
         else:
-            newNode = node("")   # --> ko se node kreira se ze skopirajo ostale vrednosti iz drugih nodov...ne gre iz nule
-            self.nodeMap[infoSet] = newNode
+            return "error"
 
         return newNode
 
@@ -255,15 +339,21 @@ class Poker_Learner:
         return cards_string
 
     # player_infoset in opp_infoset se skupi cez prenasa in se oba hkrati posodabla
-    def cfr(self, cards, p0, p1, curr_node):
+    def cfr(self, cards, p0, p1, node_player0, node_player1, p0_turn):
+        """
+            node_player0 --> list nodov za vse mozne akcije playerja 0
+            node_player1 --> list nodov za vse mozne akcije playerja 1
+                --> v določeni iteraciji uporabljamo samo enega izmed njih, odvisno od tega ali je na vrsti p0 ali p1
+            p0_turn nam pove ali je p0 na vrsti
+        """
 
-        # priprava
-        #infoSet = curr_node.infoSet # --> tuki notr so napisani sam passi pa beti brez kart da vemo ce je stanje terminalno ali ne
-        # imamo player1 in player2 aka player in opponent
-        player = curr_node.player
-
-        if curr_node.infoSet.count("|||") != 0:
-            debug = True
+        player = 0 if p0_turn else 1
+        if player == 0:
+            p0_nextTurn = False
+        else:
+            p0_nextTurn = True
+        curr_node = node_player0 if player == 0 else node_player1
+        non_curr_node = node_player0 if player == 1 else node_player1
 
         # dobimo payoff ce je končno stanje
         payoff = self.payoff(curr_node, cards)
@@ -272,42 +362,59 @@ class Poker_Learner:
 
 
         # rekurzivno kličemo self.cfr za opcijo bet in opcijo pass
-        strategy = curr_node.getStrat(p0 if player == 0 else p1)
+        strategy = curr_node.getStrat(p0) if player == 0 else curr_node.getStrat(p1)
         util = [0, 0]   # kolk utila mamo za bet pa kolk za pass
         nodeUtil = 0
 
         # posodobimo in po potrebi ustvarimo nove sinove če še niso ustvarjeni
-        # --> !! TODO optimiziraj da ta informacija ze v nodih ne da vedno sprot računas --> trenutno je curr_node.newStage neki sfukan in ne kaze vedno prou
-        #  --> probably neki tuki k spremenim node ko pride do flopa
-        if isNewStage(curr_node.infoSet):
+        # --> !! TO DO optimiziraj da ta informacija ze v nodih ne da vedno sprot računas --> trenutno je curr_node.newStage neki sfukan in ne kaze vedno prou
+        new_stage_bool = isNewStage(curr_node.infoSet) #or isNewStage(curr_node.infoSet[:-2])   # --> ce je player1, potem zadnja dva znaka zbrisemo, ker jih je eno iteracijo prej dodal p0
+        if new_stage_bool:
             curr_node.infoSet += "|"
+            curr_game_stage = curr_node.gameStage
+
             #zdj preeidemo v nov node, ki je vezan na to kakšne karte padejo
-            if curr_node.gameStage == 1:
-                new_cards_ = self.poVrsti([cards[4],cards[5],cards[6]])
-            elif curr_node.gameStage == 2:
-                new_cards_ = str(cards[7])
-            elif curr_node.gameStage == 3:
-                new_cards_ = str(cards[8])
+            if curr_game_stage == 1:
+                new_cards_ = "f" + self.poVrsti([cards[4],cards[5],cards[6]])   #flop
+            elif curr_game_stage == 2:
+                new_cards_ = "t" + str(cards[7])    #turn
+            elif curr_game_stage == 3:
+                new_cards_ = "r" +str(cards[8])     #river
 
-            curr_node.new_cards[new_cards_] = node(curr_node.infoSet)
+            # TODO trenutno gleda sam za en node....more pa karte upostevat v obeh nodih --> NADALJUJ
+            # TODO tut infosete posodob v obeh
+            if new_cards_ not in curr_node.new_cards:
+                curr_node.new_cards[new_cards_] = node(curr_node.infoSet)
             curr_node = curr_node.new_cards[new_cards_]
+            #p0 začne na začetku vsake runde
+            p0_nextTurn = True
 
+        # TO DO nared neki da vid ce je zadna runda aka. nekdo pobere denar. ker sedaj naredi en nivo v drevesu preveč
+        # Kreacija sinov v drevesu --> posebi node ce je player sedaj passou al pa ce je bettou
+        if new_stage_bool:
+            # na zacetku vsazga staga more zacet player0
+            if "p" not in node_player0.betting_map:
+                new_infoset = curr_node.infoSet + "p"
+                node_player0.betting_map["p"] = node(new_infoset)
+            if "b" not in node_player0.betting_map:
+                new_infoset = curr_node.infoSet + "b"
+                node_player0.betting_map["b"] = node(new_infoset)
+            player = 1
+        else:
+            if "p" not in non_curr_node.betting_map:
+                new_infoset = curr_node.infoSet + "p"
+                non_curr_node.betting_map["p"] = node(new_infoset)
+            if "b" not in non_curr_node.betting_map:
+                new_infoset = curr_node.infoSet + "b"
+                non_curr_node.betting_map["b"] = node(new_infoset)
 
-        # TODO nared neki da vid ce je zadna runda aka. nekdo pobere denar. ker sedaj naredi en nivo v drevesu preveč
-        if curr_node.drevo_pass == None:
-            new_infoset = curr_node.infoSet + "p"
-            curr_node.drevo_pass = node(new_infoset)
-        if curr_node.drevo_bet == None:
-            new_infoset = curr_node.infoSet + "b"
-            curr_node.drevo_bet = node(new_infoset)
 
         for i in range(self.NUM_ACTIONS):
-
             if (player == 0):
-                #if payoff(curr_node.drevo_bet != "continue") return payoff
-                util[i] = - self.cfr(cards, p0 * strategy[i], p1, curr_node.drevo_pass)  if i == 0 else - self.cfr(cards, p0 * strategy[i], p1, curr_node.drevo_bet)
+                # if payoff(curr_node.drevo_bet != "continue") return payoff
+                util[i] = - self.cfr(cards, p0 * strategy[i], p1, node_player0, node_player1.betting_map["p"], p0_nextTurn)  if i == 0 else - self.cfr(cards, p0 * strategy[i], p1, node_player0, node_player1.betting_map["b"], p0_nextTurn)
             else:
-                util[i] = - self.cfr(cards, p0, p1 * strategy[i], curr_node.drevo_pass) if i == 0 else - self.cfr(cards, p0 * strategy[i], p1, curr_node.drevo_bet)
+                util[i] = - self.cfr(cards, p0, p1 * strategy[i], node_player0.betting_map["p"], node_player1, p0_nextTurn) if i == 0 else - self.cfr(cards, p0 * strategy[i], p1, node_player0.betting_map["b"], node_player1, p0_nextTurn)
 
             nodeUtil += strategy[i] * util[i]
 
@@ -335,18 +442,22 @@ class Poker_Learner:
                 print(i / (stIteracij/100), " %")
 
             random.shuffle(cards)
-            player_cards = self.poVrsti([cards[0], cards[1]])
+            player0_info = self.poVrsti([cards[0], cards[1]])
+            player1_info = self.poVrsti([cards[2], cards[3]])
             # vecina projev na zacetku ze raisa, ce nima nekega trash handa
-            if player_cards not in trash_hands:
-                node = self.nodeInformation(str(player_cards))
-                util += self.cfr(cards, 1, 1, node)
+            if player0_info not in trash_hands:
+                node_player0 = self.nodeInformation(str(player0_info), 0)
+                #  v temu nodu ni vazn kaj je, ker itak bomo sli ali v bet ali pass node v temu nodeu
+                # lahko damo dejansko samo slovar
+                node_player1 = self.nodeInformation(str(player1_info), 1)
+                util += self.cfr(cards, 1, 1, node_player0, node_player1, True)
 
 
         print("Average game return: ", util / stIteracij)
 
 
 # --------------------------------------------------------------------------------------------------
-
+# PLAYING POKER GAME
 
 
 def stevilkaVKarto(st):
@@ -451,79 +562,17 @@ def igrajIgro(learner): # --> TO DO ne dela ok
             print("\n\n\nŽal ste izgubili")
             break
 
-##GLOBAL FUNCTIONS
-def isNewStage(infoSet):  # da vemo ce je nasledna flop, turn, river
-    # pregledamo mozne bete in passe
-    splitHistory = infoSet.split("|")
-    gameStage = len(splitHistory)
-    current_stage = (splitHistory[gameStage - 1])
-    stg_len = len(current_stage)
-
-    if(stg_len >= 1 and current_stage[0] == "p"):
-        if(stg_len >= 2 and current_stage[1] == "p"):
-            return True
-        elif(stg_len >= 2 and current_stage[1] == "b"):
-            # v 3jem stagu sta bet in pass new stage
-            if(stg_len >= 3):
-                return True
-            else:
-                return False
-        else:
-            return False
-    elif(stg_len >= 1 and current_stage[0] == "b"):
-        #v 2gem stagu sta bet in pass new stage
-        if(stg_len >= 2 and current_stage[1] == "b"):
-            return True
-        else:
-            return False
-    else:
-        return False    #prazen infoSet
-
-
-def isTerminalState(infoSet):
-    # pregledamo mozne bete in passe
-    splitHistory = infoSet.split("|")
-    gameStage = len(splitHistory)
-    if gameStage == 4:  #DEBUG --> pobirs pol
-        debug = True
-    current_stage = (splitHistory[gameStage - 1])
-    stg_len = len(current_stage)
-
-    # ce igrata do konca da odpreta karte
-    if gameStage == 4 and isNewStage(infoSet):
-        return "call_betterCards"   #--> sta igrala do konca kazeta karte
-    # ce nekdo nekje folda
-    else:
-        if stg_len >=1 and current_stage[0] == "p":
-            if stg_len >=2 and current_stage[1] == "p":
-                return False
-            elif stg_len >=2 and current_stage[1] == "b":
-                if stg_len >=3 and current_stage[2] == "p":
-                    return "p1_win"
-                elif stg_len >=3 and current_stage[2] == "b":
-                    return False
-                else:
-                    return False
-            else:
-                return False
-        elif stg_len >=1 and current_stage[0] == "b":
-            if stg_len >=2 and current_stage[1] == "p":
-                return "p0_win"
-            elif stg_len >=2 and current_stage[1] == "b":
-                return False
-            else:
-                return False
-        else:
-            return False    #prazen infoSet
 
 
 
 ## MAIN
 if __name__ == "__main__":
+    global total_isNewStage_fun_time
+    total_isNewStage_fun_time = 0
     start_time = time.time()
     learner = Poker_Learner()
-    learner.train(1000000)
-    print("Čas izvajanja prigrama: ", (time.time() - start_time))
+    learner.train(100)
+    print("Čas izvajanja prigrama: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
 
     # igranje igre
     #igrajIgro(learner)
@@ -537,14 +586,11 @@ Ta verzija bo brez dreves, da bom nato videl razliko glede časa z drevesi. Prav
 """
 
 """
-TODO: 
-- !! Program dela za p0 uredu, ampak za p1 prav tako racuna glede na to kaksne karte ma p1 
-    --> treba je nastimat da ko je na vrsti p1, on gleda svoje karte, ker se pol bot uci se enkrat hitrej + 
-    vsako drugo stanje v drevesu je useless(ker govori kako bi igral p1 ce bi imel karte od p0)+
-     nastimi da al nj se hkrati dva ucita, al pa ob vsaki iteraciji nastaneta 2 drevesa--> TO DO TUKAJ NADALJUJ
--mplementacija dreves da vidm razliko v času učenja !!
-    -incializiraj vsa stanja v nodih za flop, turn, river --> lahko jih das v slovar v nodu
-    - Nodi morjo bit passani prek reference
+TODO:
+- Če smo v newStagu pol ne rabmo cekerat "pyouta" pa dobivat strategije (prvih cca. 20 vrstic v cfrju)
+- funkcijo betterCards zračuni na začetku ker jo zdj brez veze 20x racunas
+- Na začetku vsazga staga more začet p0     TO DO --> TUKI NADALJUJ
+-Dopiš komentarje za profesorja
 
 
 
@@ -567,10 +613,7 @@ Other:
     --> pol dodeli funkcijo self.betterCards (dodj lestvice)
 - preber navodila kako je s kickerjom 
     - dodj split pr payoffu
-- neki ni ok s payoff funkcijo:
-    Dobili ste  2.5  vra.
-    Na mizi:  K,9,K,J,K      Player:  A,10     Bot:  9,9    --> mogu bi zmagat bot.....error če mat 2 trisa ne vid da mas isto par TO DO
-    Vaše novo stanje je  37.0
+
     
 - trash handi --> handi k jih iz prve foldaš ker so trash (uzemi bolj "tight" tehniko kjer velik foldaš in velik raisaš ker to bl zmede beginner playerje)
 - dopoln igro da enkrat začne player enkat bot
