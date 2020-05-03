@@ -1,8 +1,18 @@
 ###NODES
-class node_init_p1:
-    def __init__(self):
-
+class node_betting_map:
+    def __init__(self, infoSet):
+        self.infoSet = infoSet  # --> debuging purposes
+        self.new_cards = {}     # --> debugging k neki ne dela ok
         self.betting_map = {}
+        self.betting_map_node = True    # --> more or less debugining purposes i think
+
+        # Terminal state k rabs pr payoutu
+        current_stage = self.infoSet.split("|")[(self.infoSet.count("|") + 1) - 1]
+        self.terminal = isTerminalState(infoSet)
+        if self.terminal != False:
+            self.pot_size = current_stage.count("b")
+            self.player = (current_stage.count("b") + current_stage.count("p")) % 2  # -->TO BE optimized
+
 
 class node:
     NUM_ACTIONS = 2
@@ -19,13 +29,17 @@ class node:
         # Nadaljne veje iz drevesa
         self.betting_map = {}  # pri vsaki iteraciji imaš 4 nova stanja pp, pb, bp, bb --> razen ko p0 prvic igra, takrat samo 2 stanja p in b
 
-        # Ostalo
-        self.terminal = isTerminalState(infoSet)
+        # Terminal state k rabs pr payoutu
         self.gameStage = self.infoSet.count("|") + 1
         current_stage = self.infoSet.split("|")[self.gameStage - 1]
-        self.player = (current_stage.count("b") + current_stage.count("p"))%2   # --> optimized
-        self.pot_size = current_stage.count("b")
-        self.newStage = isNewStage(infoSet) or isNewStage(infoSet[:-2])   # --> -2 je za p1 po tem ko je p0 že šel v novo rundo
+        self.terminal = isTerminalState(infoSet)
+        if self.terminal:
+            self.pot_size = current_stage.count("b")
+        self.player = (current_stage.count("b") + current_stage.count("p"))%2   # -->TO BE optimized
+
+        # Ostalo
+        self.betting_map_node = False
+        #self.newStage = isNewStage(infoSet) or isNewStage(infoSet[:-2])   # --> TODO neki ne dela ok
         #if self.newStage == True:  --> OPTIMIZACIJA nared da se to kreira samo v nodih kjer je potrebno (na nodih ko pridemo v nov stage)
         self.new_cards = {}  #list nodov za vsako kombinacijo novih kart ki padejo na flopu, turnu in riverju
 
@@ -68,14 +82,13 @@ class node:
                 avgStrat[i] = 1.0 / self.NUM_ACTIONS
         return avgStrat
 
-    def toString(self):
-        return ((self.infoSet),":   ",self.getAvgStrat())
+
 
 # --------------------------------------------------------------------------------------------------
 
 
 ##GLOBAL FUNCTIONS
-def isNewStage(infoSet):  # da vemo ce je nasledna flop, turn, river
+def isNewStage_(infoSet):  # da vemo ce je nasledna flop, turn, river
     # pregledamo mozne bete in passe
     splitHistory = infoSet.split("|")
     gameStage = len(splitHistory)
@@ -113,7 +126,7 @@ def isTerminalState(infoSet):
     stg_len = len(current_stage)
 
     # ce igrata do konca da odpreta karte
-    if gameStage == 4 and isNewStage(infoSet):
+    if gameStage == 4 and isNewStage_(infoSet):
         return "call_betterCards"   #--> sta igrala do konca kazeta karte
     # ce nekdo nekje folda
     else:

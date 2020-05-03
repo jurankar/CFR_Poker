@@ -114,14 +114,14 @@ def igrajIgro(learner): # --> TO DO ne dela ok
 
 
 
-
+# TODO v nodes.py dj funkcije vn iz nodov v globalne k ceuga fuka pomoje zasedejo
 ## MAIN
 if __name__ == "__main__":
     global total_isNewStage_fun_time
     total_isNewStage_fun_time = 0
     start_time = time.time()
     learner = cfr_poker.Poker_Learner()
-    learner.train(1000000)
+    learner.train(10000)
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
 
     # igranje igre
@@ -136,8 +136,12 @@ poker.
 Čas izvajanja s slovarjem aka. brez dreves za 1000000 iteracij: 5848.5 sekund --> 97.5 minut.....
 porabil sem okoli 1.5-1.8 GB rama, kar je že mejilo na to koliko lahko računalnik sploh porabi(ker imam trenutno notri 8gb, kmalu bom dodal na 16gb)
 
-2. verzija z drevesi, pravila ista kot v prejšnji
+2. verzija z drevesi(neoptimizirana), pravila ista kot v prejšnji
 Čas izvajanja z drevesi za 1000000 iteracij: 22.7 minut
+Porab cca 700mb rama
+POPRAVEK: Bil je nek bug in je izdeloval čisto premalo nodov, ob popravku buga, program sedaj kuri ogromno spomina,
+        in sicer po 10k iteracijah porabi 2.8gb rama in potem se sesuje in ne deluje vec ker zmanka rama
+        -največ kar gre je 8k iteracij trenutno in za to porabi cca. 55 sekund.
 
 """
 
@@ -146,7 +150,9 @@ TODO:
 - Če smo v newStagu pol ne rabmo cekerat "pyouta" pa dobivat strategije (prvih cca. 20 vrstic v cfrju)
 - funkcijo betterCards zračuni na začetku ker jo zdj brez veze 200x racunas
 - verjetno lahkot das velik node_init_p1 namest node, ker velik mn zasede
-- Dopiš komentarje za profesorja
+- Dopiš komentarje za profesorja --> KO TOLE USPOSOBŠ MU POŠL VERZIJO DA MAL KOMENTERA
+- Handi k so bli mn igrani jih vec igrej
+- Nared da se infoset nosi s sabo z rekurzijo (ker prek dreves itak ves), ne da ga mas shranenga v vsakem nodu posebej
 
 
 
