@@ -54,7 +54,6 @@ def igrajIgro(learner): # --> TO DO ne dela ok
 
         print("\n\ntvoji karti sta: ", moji_karti_str)
         karte_na_mizi = ""
-        end_round = False
         for i in range(4):  #preflop, flop, turn, river
 
             if i != 0:
@@ -114,14 +113,13 @@ def igrajIgro(learner): # --> TO DO ne dela ok
 
 
 
-# TODO v nodes.py dj funkcije vn iz nodov v globalne k ceuga fuka pomoje zasedejo
 ## MAIN
 if __name__ == "__main__":
     global total_isNewStage_fun_time
     total_isNewStage_fun_time = 0
     start_time = time.time()
     learner = cfr_poker.Poker_Learner()
-    learner.train(10000)
+    learner.train(20000)
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
 
     # igranje igre
@@ -153,6 +151,7 @@ TODO:
 - Dopiš komentarje za profesorja --> KO TOLE USPOSOBŠ MU POŠL VERZIJO DA MAL KOMENTERA
 - Handi k so bli mn igrani jih vec igrej
 - Nared da se infoset nosi s sabo z rekurzijo (ker prek dreves itak ves), ne da ga mas shranenga v vsakem nodu posebej
+- Namest pickla nared svoj file txt kjer sharns sam bistvene podatke
 
 
 

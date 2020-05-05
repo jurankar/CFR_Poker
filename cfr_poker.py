@@ -1,5 +1,6 @@
 import random
 import nodes
+import pickle
 
 
 ##POKER_LEARNER_CFR
@@ -8,8 +9,8 @@ class Poker_Learner:
     PASS = 0
     BET = 1
     NUM_ACTIONS = 2
-    nodeMap_p0 = {}    # ta dictionary povezuje infoSete z nodi
-    nodeMap_p1 = {}
+    nodeMap_p0 = []   # v tem arrayu je zapisan keri handi so ze v fajlih in keri še ne
+    nodeMap_p1 = []
 
     def betterCards(self, cards,player):  # --> return TRUE ce ma players bolse karte in FALSE ce ma slabse
         #najprej določmo karte
@@ -167,36 +168,6 @@ class Poker_Learner:
             return "continue"
 
 
-
-    # dobimo node aka. stanje v katerem smo
-    def nodeInformation(self, infoSet, player):
-        # v nodemapu je drevo za vsak mozni zacetni hand
-        if player == 0:
-            if infoSet in self.nodeMap_p0:
-                newNode = self.nodeMap_p0[infoSet]
-            else:
-                newNode = nodes.node("")   # --> ko se node kreira se ze skopirajo ostale vrednosti iz drugih nodov...ne gre iz nule
-                self.nodeMap_p0[infoSet] = newNode
-        elif player == 1:
-            if infoSet in self.nodeMap_p1:
-                newNode = self.nodeMap_p1[infoSet]
-            else:
-                newNode = nodes.node_betting_map("")   # --> tuki ne rabmbo noda ker p1 na prvi potezi ne igra --> sprejmemo samo akcijo ob p0 in nato sele igra
-                self.nodeMap_p1[infoSet] = newNode
-        else:
-            return "error2"
-
-        return newNode
-
-    def poVrsti(self, cards):
-        cards.sort()
-        cards_string = ""
-        for i in range (len(cards)):
-            cards_string += str(cards[i])
-
-        return cards_string
-
-
     # player_infoset in opp_infoset se skupi cez prenasa in se oba hkrati posodabla
     def cfr(self, cards, p0, p1, node_player0, node_player1, p0_turn):
 
@@ -206,10 +177,6 @@ class Poker_Learner:
         else:
             p0_nextTurn = True
         curr_node = node_player0 if player == 0 else node_player1
-
-        if curr_node.betting_map_node == True and curr_node.terminal == False:
-            return "error 6"    # --> se ne sme zgodit...pomen da neki narobe izmenjujem
-
 
         # dobimo payoff ce je končno stanje
         payoff = self.payoff(curr_node)
@@ -277,8 +244,9 @@ class Poker_Learner:
         if "b" not in node_player1.betting_map:
             node_player1.betting_map["b"] = nodes.node(new_infoset) if not p0_nextTurn else nodes.node_betting_map(new_infoset)
 
-
         # TODO neki se ne posodabla pravilno pr strategySum pa to....lahko da je to k sm sam sešteu
+        # TODO node.player se zameša če daš kje umes bet oz. "b"
+        player = 1 if p0_nextTurn else 0
         for i in range(self.NUM_ACTIONS):
             if (p0_nextTurn):
                 # if payoff(curr_node.drevo_bet != "continue") return payoff
@@ -286,22 +254,51 @@ class Poker_Learner:
             else:
                 util[i] = - self.cfr(cards, p0, p1 * strategy[i], node_player0.betting_map["p"], node_player1.betting_map["p"], p0_nextTurn) if i == 0 else - self.cfr(cards, p0 * strategy[i], p1, node_player0.betting_map["b"], node_player1.betting_map["b"], p0_nextTurn)
 
-            if curr_node.betting_map_node == False:
-                nodeUtil += strategy[i] * util[i]
-            else:
-                return "error 4" # --> nikol ne sme bit betting_node aktiven
+            nodeUtil += strategy[i] * util[i]
 
 
         # zdj pa seštejemo counter factual regret
-        if curr_node.betting_map_node == False: # --> če ni legit node nima sploh regret suma
-            for i in range(self.NUM_ACTIONS):
-                regret = util[i] - nodeUtil
-                if (player == 0):
-                    curr_node.regretSum[i] += p1 * regret
-                else:
-                    curr_node.regretSum[i] += p0 * regret
+        for i in range(self.NUM_ACTIONS):
+            regret = util[i] - nodeUtil
+            if (player == 0):
+                curr_node.regretSum[i] += p1 * regret
+            else:
+                curr_node.regretSum[i] += p0 * regret
 
         return nodeUtil
+
+
+    # dobimo node aka. stanje v katerem smo
+    def nodeInformation(self, infoSet, player):
+        # v nodemapu je drevo za vsak mozni zacetni hand
+        if player == 0:
+            file_name = "p0_" + infoSet + ".pkl"
+            if (file_name) in self.nodeMap_p0:
+                with open(file_name, 'rb') as input:
+                    newNode = pickle.load(input)
+            else:
+                newNode = nodes.node("")   # --> ko se node kreira se ze skopirajo ostale vrednosti iz drugih nodov...ne gre iz nule
+                self.nodeMap_p0.append(file_name)
+        elif player == 1:
+            file_name = "p1_" + infoSet + ".pkl"
+            if (file_name) in self.nodeMap_p1:
+                with open(file_name, 'rb') as input:
+                    newNode = pickle.load(input)
+            else:
+                newNode = nodes.node_betting_map("")   # --> tuki ne rabmbo noda ker p1 na prvi potezi ne igra --> sprejmemo samo akcijo ob p0 in nato sele igra
+                self.nodeMap_p1.append(file_name)
+        else:
+            return "error2"
+
+        return newNode
+
+    def poVrsti(self, cards):
+        cards.sort()
+        cards_string = ""
+        for i in range (len(cards)):
+            cards_string += str(cards[i])
+
+        return cards_string
 
 
     def train(self, stIteracij):
@@ -328,9 +325,15 @@ class Poker_Learner:
             if player0_info not in trash_hands:
                 #  v temu nodu ni vazn kaj je, ker itak bomo sli ali v bet ali pass node v temu nodeu
                 # lahko damo dejansko samo slovar
-                node_player1 = self.nodeInformation(str(player1_info), 1)
                 node_player0 = self.nodeInformation(str(player0_info), 0)
+                node_player1 = self.nodeInformation(str(player1_info), 1)
                 util += self.cfr(cards, 1, 1, node_player0, node_player1, True)
+
+                #zdj zapišemo v fajle posodoblene node
+                with open("p0_" + player0_info + ".pkl", 'wb') as output:
+                    pickle.dump(node_player0, output, pickle.HIGHEST_PROTOCOL)
+                with open("p1_" + player1_info + ".pkl", 'wb') as output:
+                    pickle.dump(node_player1, output, pickle.HIGHEST_PROTOCOL)
 
 
         print("Average game return: ", util / stIteracij)

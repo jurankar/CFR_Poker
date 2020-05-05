@@ -1,12 +1,11 @@
 ###NODES
 class node_betting_map:
     def __init__(self, infoSet):
-        self.infoSet = infoSet  # --> debuging purposes
         self.new_cards = {}     # --> debugging k neki ne dela ok
         self.betting_map = {}
-        self.betting_map_node = True    # --> more or less debugining purposes i think
 
         # Terminal state k rabs pr payoutu
+        self.infoSet = infoSet
         current_stage = self.infoSet.split("|")[(self.infoSet.count("|") + 1) - 1]
         self.terminal = isTerminalState(infoSet)
         if self.terminal != False:
@@ -38,7 +37,6 @@ class node:
         self.player = (current_stage.count("b") + current_stage.count("p"))%2   # -->TO BE optimized
 
         # Ostalo
-        self.betting_map_node = False
         #self.newStage = isNewStage(infoSet) or isNewStage(infoSet[:-2])   # --> TODO neki ne dela ok
         #if self.newStage == True:  --> OPTIMIZACIJA nared da se to kreira samo v nodih kjer je potrebno (na nodih ko pridemo v nov stage)
         self.new_cards = {}  #list nodov za vsako kombinacijo novih kart ki padejo na flopu, turnu in riverju
