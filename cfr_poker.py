@@ -9,8 +9,13 @@ class Poker_Learner:
     PASS = 0
     BET = 1
     NUM_ACTIONS = 2
+    """
     nodeMap_p0 = []   # v tem arrayu je zapisan keri handi so ze v fajlih in keri še ne
     nodeMap_p1 = []
+    """
+    nodeMap_p0 = {}   # v tem arrayu je dictionary vseh nodov
+    nodeMap_p1 = {}
+
 
     def betterCards(self, cards,player):  # --> return TRUE ce ma players bolse karte in FALSE ce ma slabse
         #najprej določmo karte
@@ -183,6 +188,10 @@ class Poker_Learner:
         if payoff != "continue":
             return payoff
 
+
+        if curr_node.node_legit == False:
+            debug = True
+
         # rekurzivno kličemo self.cfr za opcijo bet in opcijo pass
         strategy = curr_node.getStrat(p0) if player == 0 else curr_node.getStrat(p1)
         util = [0, 0]   # kolk utila mamo za bet pa kolk za pass
@@ -272,6 +281,7 @@ class Poker_Learner:
     def nodeInformation(self, infoSet, player):
         # v nodemapu je drevo za vsak mozni zacetni hand
         if player == 0:
+            """
             file_name = "p0_" + infoSet + ".pkl"
             if (file_name) in self.nodeMap_p0:
                 with open(file_name, 'rb') as input:
@@ -279,7 +289,15 @@ class Poker_Learner:
             else:
                 newNode = nodes.node("")   # --> ko se node kreira se ze skopirajo ostale vrednosti iz drugih nodov...ne gre iz nule
                 self.nodeMap_p0.append(file_name)
+            """
+            if infoSet in self.nodeMap_p0:
+                newNode = self.nodeMap_p0[infoSet]
+            else:
+                newNode = nodes.node("")
+                self.nodeMap_p0[infoSet] = newNode
+
         elif player == 1:
+            """
             file_name = "p1_" + infoSet + ".pkl"
             if (file_name) in self.nodeMap_p1:
                 with open(file_name, 'rb') as input:
@@ -287,6 +305,13 @@ class Poker_Learner:
             else:
                 newNode = nodes.node_betting_map("")   # --> tuki ne rabmbo noda ker p1 na prvi potezi ne igra --> sprejmemo samo akcijo ob p0 in nato sele igra
                 self.nodeMap_p1.append(file_name)
+            """
+            if infoSet in self.nodeMap_p1:
+                newNode = self.nodeMap_p1[infoSet]
+            else:
+                newNode = nodes.node_betting_map("")
+                self.nodeMap_p1[infoSet] = newNode
+
         else:
             return "error2"
 
@@ -329,11 +354,13 @@ class Poker_Learner:
                 node_player1 = self.nodeInformation(str(player1_info), 1)
                 util += self.cfr(cards, 1, 1, node_player0, node_player1, True)
 
-                #zdj zapišemo v fajle posodoblene node
+                # zdj zapišemo v fajle posodoblene node
+                """"               
                 with open("p0_" + player0_info + ".pkl", 'wb') as output:
                     pickle.dump(node_player0, output, pickle.HIGHEST_PROTOCOL)
                 with open("p1_" + player1_info + ".pkl", 'wb') as output:
                     pickle.dump(node_player1, output, pickle.HIGHEST_PROTOCOL)
+                """
 
 
         print("Average game return: ", util / stIteracij)

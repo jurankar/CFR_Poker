@@ -1,6 +1,9 @@
 ###NODES
 class node_betting_map:
+
     def __init__(self, infoSet):
+        self.node_legit = False
+
         self.new_cards = {}     # --> debugging k neki ne dela ok
         self.betting_map = {}
 
@@ -17,6 +20,7 @@ class node:
     NUM_ACTIONS = 2
 
     def __init__(self, infoSet):
+        self.node_legit = True
 
         # Algoritem
         self.infoSet = infoSet
