@@ -119,7 +119,7 @@ if __name__ == "__main__":
     total_isNewStage_fun_time = 0
     start_time = time.time()
     learner = cfr_poker.Poker_Learner()
-    learner.train(100)
+    learner.train(6500)
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
 
     # igranje igre
@@ -135,10 +135,7 @@ poker.
 porabil sem okoli 1.5-1.8 GB rama, kar je že mejilo na to koliko lahko računalnik sploh porabi(ker imam trenutno notri 8gb, kmalu bom dodal na 16gb)
 
 2. verzija z drevesi(neoptimizirana), pravila ista kot v prejšnji
-Čas izvajanja z drevesi za 1000000 iteracij: 22.7 minut
-Porab cca 700mb rama
-POPRAVEK: Bil je nek bug in je izdeloval čisto premalo nodov, ob popravku buga, program sedaj kuri ogromno spomina,
-        in sicer po 10k iteracijah porabi 2.8gb rama in potem se sesuje in ne deluje vec ker zmanka rama
+ po 10k iteracijah porabi 2.8gb rama in potem se sesuje in ne deluje vec ker zmanka rama
         -največ kar gre je 8k iteracij trenutno in za to porabi cca. 55 sekund.
 
 """

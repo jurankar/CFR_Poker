@@ -177,11 +177,13 @@ class Poker_Learner:
     def cfr(self, cards, p0, p1, node_player0, node_player1, p0_turn):
 
         player = 0 if p0_turn else 1
-        if player == 0:
-            p0_nextTurn = False
-        else:
-            p0_nextTurn = True
+        p0_nextTurn = False if player == 0 else True
         curr_node = node_player0 if player == 0 else node_player1
+        curr_node.player = player
+
+        #debugging purposes
+        if not curr_node.node_legit and curr_node.terminal == False:
+            return "error 6"
 
         # dobimo payoff ce je končno stanje
         payoff = self.payoff(curr_node)
@@ -189,10 +191,11 @@ class Poker_Learner:
             return payoff
 
 
-        if curr_node.node_legit == False:
-            debug = True
-
         # rekurzivno kličemo self.cfr za opcijo bet in opcijo pass
+        #TODO TUKAJ NADALJUJ!!!! nekje vmes kreiras nou curr_node in zato se tudi spremeni referenca in posledično ne updajtas
+        #TODO noda v drevesu ampak samo en node ki si ga ravnokar ustvaru ki se potem tudi uniči ko končaš loop
+        if bool(curr_node.new_cards) and curr_node.regretSum[0] == 0:
+            a = "debug"
         strategy = curr_node.getStrat(p0) if player == 0 else curr_node.getStrat(p1)
         util = [0, 0]   # kolk utila mamo za bet pa kolk za pass
         nodeUtil = 0
@@ -220,7 +223,7 @@ class Poker_Learner:
             else:
                 return "error3"
 
-            # create nodes if necessary
+            # create nodes if necessary --> vedno kreiramo node v p0 in node_betting_map v p1 ker na začetku staga vedno začne p0
             if new_cards_ not in node_player0.new_cards:
                 node_player0.new_cards[new_cards_] = nodes.node(node_player0.infoSet)
             if new_cards_ not in node_player1.new_cards:
@@ -229,7 +232,7 @@ class Poker_Learner:
             #update nodes
             node_player0 = node_player0.new_cards[new_cards_]
             node_player1 = node_player1.new_cards[new_cards_]
-            curr_node = node_player0 if player == 0 else node_player1
+            curr_node = node_player0 if player == 0 else node_player1   #TODO TUKAJ SE SPREMENI REFERENCA --> POMOJE SE TUKI NEKI SFUKA
             # non_curr_node = node_player0 if player == 1 else node_player1
 
             #p0 začne na začetku vsake runde(flop, trun, river) --> tuki je false ker js v vsaki rundi gledam za eno rundo nazaj
@@ -253,15 +256,13 @@ class Poker_Learner:
         if "b" not in node_player1.betting_map:
             node_player1.betting_map["b"] = nodes.node(new_infoset) if not p0_nextTurn else nodes.node_betting_map(new_infoset)
 
-        # TODO neki se ne posodabla pravilno pr strategySum pa to....lahko da je to k sm sam sešteu
-        # TODO node.player se zameša če daš kje umes bet oz. "b"
-        player = 1 if p0_nextTurn else 0
+        # TODO regretSUm je skos na 0 --> pejt od začetka čez ceu program pa glej use 
+        # prvo prevermo če je v kkšnih nodih že payoff sicer gremo v rekurzijo
         for i in range(self.NUM_ACTIONS):
-            if (p0_nextTurn):
-                # if payoff(curr_node.drevo_bet != "continue") return payoff
+            if (player == 0):   # --> TODO nimam pojma kaj nj dam v ta pogoj
                 util[i] = - self.cfr(cards, p0 * strategy[i], p1, node_player0.betting_map["p"], node_player1.betting_map["p"], p0_nextTurn) if i == 0 else - self.cfr(cards, p0 * strategy[i], p1, node_player0.betting_map["b"], node_player1.betting_map["b"], p0_nextTurn)
             else:
-                util[i] = - self.cfr(cards, p0, p1 * strategy[i], node_player0.betting_map["p"], node_player1.betting_map["p"], p0_nextTurn) if i == 0 else - self.cfr(cards, p0 * strategy[i], p1, node_player0.betting_map["b"], node_player1.betting_map["b"], p0_nextTurn)
+                util[i] = - self.cfr(cards, p0, p1 * strategy[i], node_player0.betting_map["p"], node_player1.betting_map["p"], p0_nextTurn) if i == 0 else - self.cfr(cards, p0, p1 * strategy[i], node_player0.betting_map["b"], node_player1.betting_map["b"], p0_nextTurn)
 
             nodeUtil += strategy[i] * util[i]
 
@@ -276,6 +277,7 @@ class Poker_Learner:
 
         return nodeUtil
 
+# ----------------------------------------------------------------------------------
 
     # dobimo node aka. stanje v katerem smo
     def nodeInformation(self, infoSet, player):
