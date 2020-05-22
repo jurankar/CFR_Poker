@@ -13,12 +13,10 @@ import  cfr_poker
 def stevilkaVKarto(st):
 
     switcher = {
-        1: "9",
-        2: "10",
-        3: "J",
-        4: "Q",
-        5: "K",
-        6: "A",
+        1: "J",
+        2: "Q",
+        3: "K",
+        4: "A",
     }
 
     return (switcher.get(st, "Error ni te karte"))
@@ -38,7 +36,7 @@ def game_payoff(learner, stanjePlayer, botInfoSet, cards):
     return stanjePlayer, False
 
 def igrajIgro(learner): # --> TO DO ne dela ok
-    cards = [1,1,1,1, 2,2,2,2, 3,3,3,3 ,4,4,4,4, 5,5,5,5, 6,6,6,6]
+    cards = [1,1,1,1, 2,2,2,2, 3,3,3,3 ,4,4,4,4]
     input_word = "hec"
 
     stanjePlayer = 30
@@ -119,7 +117,7 @@ if __name__ == "__main__":
     total_isNewStage_fun_time = 0
     start_time = time.time()
     learner = cfr_poker.Poker_Learner()
-    learner.train(6500)
+    learner.train(10000)
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
 
     # igranje igre

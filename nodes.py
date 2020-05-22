@@ -12,7 +12,7 @@ class node_betting_map:
         current_stage = self.infoSet.split("|")[(self.infoSet.count("|") + 1) - 1]
         self.terminal = isTerminalState(infoSet)
         if self.terminal != False:
-            self.pot_size = current_stage.count("b")
+            self.pot_size = infoSet.count("b")
             self.player = (current_stage.count("b") + current_stage.count("p")) % 2  # -->TO BE optimized
 
 
@@ -37,7 +37,7 @@ class node:
         current_stage = self.infoSet.split("|")[self.gameStage - 1]
         self.terminal = isTerminalState(infoSet)
         if self.terminal:
-            self.pot_size = current_stage.count("b")
+            self.pot_size = infoSet.count("b")
         self.player = (current_stage.count("b") + current_stage.count("p"))%2   # -->TO BE optimized
 
         # Ostalo
@@ -71,7 +71,7 @@ class node:
     # vzamemo povprečno strategijo ki jo mamo v stretegySum[] od prej
     # ker vsaka posamična strategija je lahko negativna
     # ubistvu sam normaliziramo strategySum[]
-    def getAvgStrat(self):  # --> cisti copy paste iz RM rock paper scissors
+    def getAvgStrat(self):
         avgStrat = [0, 0]
         normalizingSum = 0
         for i in range(self.NUM_ACTIONS):
@@ -91,33 +91,21 @@ class node:
 
 ##GLOBAL FUNCTIONS
 def isNewStage_(infoSet):  # da vemo ce je nasledna flop, turn, river
+    if infoSet != "" and infoSet[-1] == '|':
+        infoSet = infoSet[:-1]
+
     # pregledamo mozne bete in passe
     splitHistory = infoSet.split("|")
     gameStage = len(splitHistory)
     current_stage = (splitHistory[gameStage - 1])
-    stg_len = len(current_stage)
-
-    if(stg_len >= 1 and current_stage[0] == "p"):
-        if(stg_len >= 2 and current_stage[1] == "p"):
+    končna_stanja = ["pp", "pbb", "bb"]
+    for i in končna_stanja:
+        if current_stage == i:
             return True
-        elif(stg_len >= 2 and current_stage[1] == "b"):
-            # v 3jem stagu sta bet in pass new stage
-            if(stg_len >= 3):
-                return True
-            else:
-                return False
-        else:
-            return False
-    elif(stg_len >= 1 and current_stage[0] == "b"):
-        #v 2gem stagu sta bet in pass new stage
-        if(stg_len >= 2 and current_stage[1] == "b"):
-            return True
-        else:
-            return False
-    else:
-        return False    #prazen infoSet
+    return False
 
 
+# nam pove če smo zaključili rundo ali ne
 def isTerminalState(infoSet):
     # pregledamo mozne bete in passe
     splitHistory = infoSet.split("|")
@@ -128,6 +116,8 @@ def isTerminalState(infoSet):
     stg_len = len(current_stage)
 
     # ce igrata do konca da odpreta karte
+    if gameStage == 4:
+        a = "debug"
     if gameStage == 4 and isNewStage_(infoSet):
         return "call_betterCards"   #--> sta igrala do konca kazeta karte
     # ce nekdo nekje folda
