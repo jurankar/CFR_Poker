@@ -155,6 +155,7 @@ class Poker_Learner:
 
     #TODO TUKAJ NADALJUJ TA FUNKCIJA NEKI NE VRACA OK....neki +/- ni kul
     # payoff for terminal states --> preveri če je konc runde in če je izplačaj zmagovalnega igralca
+    # + ne stej zadne stave, glej samo tiste stave, ki sta jih ze dala na mizo oba playerja....če p1 raisa zadno rundo 500 in p1 folda, potem ne štej teh 500
     def payoff(self, curr_node):
 
         terminal_node = curr_node.terminal
@@ -244,7 +245,7 @@ class Poker_Learner:
         p0_nextTurn = False if player == 0 else True
         curr_node = node_player0 if player == 0 else node_player1
 
-        if curr_node.infoSet == "pp|pp|pp|pb":
+        if curr_node.infoSet == "pp|bb|bb|b":
             a = "debug"
 
         # dobimo payoff ce je končno stanje
@@ -257,7 +258,7 @@ class Poker_Learner:
         new_stage_bool = isNewStage(curr_node.infoSet)
         if new_stage_bool:
             new_cards_ = self.new_stage_incoming(curr_node, node_player0, node_player1, cards)
-            if self.poVrsti([cards[0], cards[1]]) == "33" and new_cards_ == "f133":
+            if self.poVrsti([cards[0], cards[1]]) == "11" and self.poVrsti([cards[4], cards[5], cards[6], cards[7], cards[8]]) == "22233": # TODO TUKAJ NADALJUJ
                 a = "debug"
             # update nodes
             node_player0 = node_player0.new_cards[new_cards_]
@@ -290,9 +291,9 @@ class Poker_Learner:
         for i in range(self.NUM_ACTIONS):
             regret = util[i] - nodeUtil
             if (player == 0):
-                curr_node.regretSum[i] += p1 * regret
+                curr_node.regretSum[i] += regret
             else:
-                curr_node.regretSum[i] += p0 * regret
+                curr_node.regretSum[i] += regret
 
         return nodeUtil
 
@@ -417,8 +418,6 @@ def isTerminalState(infoSet):
     stg_len = len(current_stage)
 
     # ce igrata do konca da odpreta karte
-    if gameStage == 4:
-        a = "debug"
     if gameStage == 4 and isNewStage(infoSet):
         return "call_betterCards"   #--> sta igrala do konca kazeta karte
     # ce nekdo nekje folda

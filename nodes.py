@@ -24,7 +24,7 @@ class node:
 
         # Algoritem
         self.infoSet = infoSet
-        self.regretSum = [0, 0]
+        self.regretSum = [50, 50]
         self.strategy = [0, 0]   # verjetnost da zberemo PASS ali BET
         self.strategySum = [0, 0]
         self.avgStrat = []              # --> to be optimized !
@@ -110,14 +110,10 @@ def isTerminalState(infoSet):
     # pregledamo mozne bete in passe
     splitHistory = infoSet.split("|")
     gameStage = len(splitHistory)
-    if gameStage == 4:  #DEBUG --> pobirs pol
-        debug = True
     current_stage = (splitHistory[gameStage - 1])
     stg_len = len(current_stage)
 
     # ce igrata do konca da odpreta karte
-    if gameStage == 4:
-        a = "debug"
     if gameStage == 4 and isNewStage_(infoSet):
         return "call_betterCards"   #--> sta igrala do konca kazeta karte
     # ce nekdo nekje folda

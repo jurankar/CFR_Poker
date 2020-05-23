@@ -117,7 +117,7 @@ if __name__ == "__main__":
     total_isNewStage_fun_time = 0
     start_time = time.time()
     learner = cfr_poker.Poker_Learner()
-    learner.train(10000)
+    learner.train(300000)
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
 
     # igranje igre
