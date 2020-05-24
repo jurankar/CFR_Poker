@@ -16,6 +16,14 @@ class Poker_Learner:
     nodeMap_p0 = {}   # v tem arrayu je dictionary vseh nodov
     nodeMap_p1 = {}
 
+    def tris_to_pair(self, trisi, pari):
+        if len(trisi) > 1:
+            for i in range(len(trisi)):
+                if i >= 1:
+                    pari.append(trisi[i])
+                    trisi.remove(trisi[i])
+
+        return trisi, pari
 
     def betterCards(self, cards,player):  # --> return TRUE ce ma players bolse karte in FALSE ce ma slabse
         #najprej določmo karte
@@ -58,8 +66,14 @@ class Poker_Learner:
                 pari_op.append(int(i))
         trisi_op.sort(reverse=True)
         trisi_pl.sort(reverse=True)
+
+        #če imamo več kot en tris, potem ostale trise dodamo k parom (ker več kot 1 tris ne upostevamo)
+        trisi_pl, pari_pl = self.tris_to_pair(trisi_pl, pari_pl)
+        trisi_op, pari_op = self.tris_to_pair(trisi_op, pari_op)
         pari_op.sort(reverse=True)
         pari_pl.sort(reverse=True)
+
+
 
         # če ma nekdo poker pol vemo iz prve da je zmagu ker je to najbolsa kombinacija
         if len(poker_pl) == 1 and len(poker_op) == 1:
@@ -153,19 +167,18 @@ class Poker_Learner:
             if player == 1:
                 total_money_bet += 1 if i[1] == "b" else 0
 
-    #TODO TUKAJ NADALJUJ TA FUNKCIJA NEKI NE VRACA OK....neki +/- ni kul
-    # payoff for terminal states --> preveri če je konc runde in če je izplačaj zmagovalnega igralca
-    # + ne stej zadne stave, glej samo tiste stave, ki sta jih ze dala na mizo oba playerja....če p1 raisa zadno rundo 500 in p1 folda, potem ne štej teh 500
+
     def payoff(self, curr_node):
 
         terminal_node = curr_node.terminal
         if terminal_node != False:
-            pot_size = curr_node.pot_size
+            pot_size = curr_node.infoSet.count("b")
             player = curr_node.player
-            # če kdo prej folda kot obicajno, pol nasprotnik dobi 1/2 pota + zadnjo stavo, ki je player ni callou
-            # torej dobi pot/2 + 1
-            ante = 0.5  # vsota ki jo vsak player da na mizo se preden dobi karte --> kasneje lahko zamenjas za small pa big blind
-            winnings = pot_size/2 + ante    # TODO to ni accurate, ker če mamo situacijo pbp, potem bo player izgubil 1, čeprav je stavil samo 0.5(ante)
+            ante = 0.125  # vsota ki jo vsak player da na mizo se preden dobi karte --> kasneje lahko zamenjas za small pa big blind
+
+            # če kdo prej folda kot obicajno, pol nasprotnik dobi 1/2 pota minus zadnjo stavo(-1), ki je player ni callou
+            # torej dobi (pot - 1)/2   --> Kasneje to ne bo delovalo tako ko bodo dinamične stave !!
+            winnings = (pot_size - 1) / 2 + ante
             if terminal_node == "p0_win":
                 return winnings if player == 0 else -winnings
             elif terminal_node == "p1_win":
@@ -174,11 +187,14 @@ class Poker_Learner:
             if terminal_node == "call_betterCards":
                 # Vsak dobi sam pol pota ker tut v resnici staviš pol ti pol opponent in dejansko si na +/- sam za polovico pota
                 # Gre ravno cez pol ker sta
+                winnings = pot_size/2 + ante
                 if player == 0:
                     global better_cards_p0
+                    a = better_cards_p0
                     return winnings if better_cards_p0 else -winnings # winnings = pot/2 + ante
                 elif player == 1:
                     global better_cards_p1
+                    a = better_cards_p1
                     return winnings if better_cards_p1 else -winnings # winnings = pot/2 + ante
                 else:
                     return "error"
@@ -241,12 +257,12 @@ class Poker_Learner:
     # player_infoset in opp_infoset se skupi cez prenasa in se oba hkrati posodabla
     def cfr(self, cards, p0, p1, node_player0, node_player1, p0_turn):
 
+
+
         player = 0 if p0_turn else 1
         p0_nextTurn = False if player == 0 else True
         curr_node = node_player0 if player == 0 else node_player1
 
-        if curr_node.infoSet == "pp|bb|bb|b":
-            a = "debug"
 
         # dobimo payoff ce je končno stanje
         payoff = self.payoff(curr_node)
@@ -257,9 +273,11 @@ class Poker_Learner:
         # --> !! TO DO optimiziraj da ta informacija ze v nodih ne da vedno sprot računas --> trenutno je curr_node.newStage neki sfukan in ne kaze vedno prou
         new_stage_bool = isNewStage(curr_node.infoSet)
         if new_stage_bool:
-            new_cards_ = self.new_stage_incoming(curr_node, node_player0, node_player1, cards)
-            if self.poVrsti([cards[0], cards[1]]) == "11" and self.poVrsti([cards[4], cards[5], cards[6], cards[7], cards[8]]) == "22233": # TODO TUKAJ NADALJUJ
+
+            if self.poVrsti([cards[0], cards[1]]) == "12" and self.poVrsti( [cards[2], cards[3]]) != "69" and self.poVrsti( [cards[4], cards[5], cards[6], cards[7], cards[8]]) == "22233":  # TODO TUKAJ NADALJUJ
                 a = "debug"
+
+            new_cards_ = self.new_stage_incoming(curr_node, node_player0, node_player1, cards)
             # update nodes
             node_player0 = node_player0.new_cards[new_cards_]
             node_player1 = node_player1.new_cards[new_cards_]
@@ -269,7 +287,10 @@ class Poker_Learner:
 
 
         # Pridobimo podatke o strategiji
-        strategy = curr_node.getStrat(p0) if player == 0 else curr_node.getStrat(p1)
+
+        # ORIGINAL --> strategy = curr_node.getStrat(p0) if player == 0 else curr_node.getStrat(p1)
+        curr_node.getStrat(p0) if player == 0 else curr_node.getStrat(p1)
+        strategy = curr_node.getAvgStrat()
         util = [0, 0]   # kolk utila mamo za bet pa kolk za pass
         nodeUtil = 0
 
@@ -286,14 +307,16 @@ class Poker_Learner:
 
             nodeUtil += strategy[i] * util[i]
 
+        if curr_node.infoSet == "bb|bb|bb|b":
+            a = "debug"
 
         # zdj pa seštejemo counter factual regret
         for i in range(self.NUM_ACTIONS):
             regret = util[i] - nodeUtil
             if (player == 0):
-                curr_node.regretSum[i] += regret
+                curr_node.regretSum[i] += p1 * regret   # ORIGINAL --> p1 * regret
             else:
-                curr_node.regretSum[i] += regret
+                curr_node.regretSum[i] += p0 * regret   # ORIGINAL --> p0 * regret
 
         return nodeUtil
 
@@ -348,6 +371,7 @@ class Poker_Learner:
         return cards_string
 
 
+    # TODO node_map_p1 ne dela po flopu
     def train(self, stIteracij):
         # prvi dve sta od playerja, drugi dve sta od opponenta, naslednjih 5 je na mizi
         cards = [1,1,1,1, 2,2,2,2, 3,3,3,3]
@@ -363,10 +387,16 @@ class Poker_Learner:
             random.shuffle(cards)
             player0_info = self.poVrsti([cards[0], cards[1]])
             player1_info = self.poVrsti([cards[2], cards[3]])
+
+            if self.poVrsti([cards[0], cards[1]]) == "11" and self.poVrsti( [cards[2], cards[3]]) == "13" and self.poVrsti( [cards[4], cards[5], cards[6], cards[7], cards[8]]) == "22233":
+                a = "debug"
+
             global better_cards_p0
-            better_cards_p0 = self.betterCards(cards, 0)
+            better_cards_p0 = self.betterCards(cards, 0)        # TODO BODI POZOREN NA TO FUNKCIJO
+            a = better_cards_p0
             global better_cards_p1
             better_cards_p1 = self.betterCards(cards, 1)
+            b = better_cards_p1
 
             # vecina projev na zacetku ze raisa, ce nima nekega trash handa
             if player0_info not in trash_hands:

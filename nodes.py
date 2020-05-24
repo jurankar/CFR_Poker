@@ -24,7 +24,7 @@ class node:
 
         # Algoritem
         self.infoSet = infoSet
-        self.regretSum = [50, 50]
+        self.regretSum = [0, 0]
         self.strategy = [0, 0]   # verjetnost da zberemo PASS ali BET
         self.strategySum = [0, 0]
         self.avgStrat = []              # --> to be optimized !
