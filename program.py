@@ -117,7 +117,7 @@ if __name__ == "__main__":
     total_isNewStage_fun_time = 0
     start_time = time.time()
     learner = cfr_poker.Poker_Learner()
-    learner.train(100000)
+    learner.train(10000, 0)
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
 
     # igranje igre
@@ -135,6 +135,10 @@ porabil sem okoli 1.5-1.8 GB rama, kar je že mejilo na to koliko lahko računal
 2. verzija z drevesi(neoptimizirana), pravila ista kot v prejšnji
  po 10k iteracijah porabi 2.8gb rama in potem se sesuje in ne deluje vec ker zmanka rama
         -največ kar gre je 8k iteracij trenutno in za to porabi cca. 55 sekund.
+        
+3. verzija, popravljeni bugi iz prejsnje verzije.
+    Ce damo v kupcek 5 različnih kart (skupaj 20) za 10k iteracij porabimo cca 2min 10s, kar je kr ok
+    Na tej točki problem postane optimizacijski problem, ker trenutno nodi zasedejo prevec rama
 
 """
 

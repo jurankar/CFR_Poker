@@ -22,6 +22,7 @@ class node:
     def __init__(self, infoSet):
         self.node_legit = True
 
+        #TODO nastimi da gre lohka regret sum pa strategy sum max do Max_Integer da ne dobis integer overflow
         # Algoritem
         self.infoSet = infoSet
         self.regretSum = [0, 0]

@@ -9,12 +9,15 @@ class Poker_Learner:
     PASS = 0
     BET = 1
     NUM_ACTIONS = 2
+
     """
     nodeMap_p0 = []   # v tem arrayu je zapisan keri handi so ze v fajlih in keri še ne
     nodeMap_p1 = []
     """
+
     nodeMap_p0 = {}   # v tem arrayu je dictionary vseh nodov
     nodeMap_p1 = {}
+
 
     def tris_to_pair(self, trisi, pari):
         if len(trisi) > 1:
@@ -274,9 +277,6 @@ class Poker_Learner:
         new_stage_bool = isNewStage(curr_node.infoSet)
         if new_stage_bool:
 
-            if self.poVrsti([cards[0], cards[1]]) == "12" and self.poVrsti( [cards[2], cards[3]]) != "69" and self.poVrsti( [cards[4], cards[5], cards[6], cards[7], cards[8]]) == "22233":  # TODO TUKAJ NADALJUJ
-                a = "debug"
-
             new_cards_ = self.new_stage_incoming(curr_node, node_player0, node_player1, cards)
             # update nodes
             node_player0 = node_player0.new_cards[new_cards_]
@@ -307,8 +307,6 @@ class Poker_Learner:
 
             nodeUtil += strategy[i] * util[i]
 
-        if curr_node.infoSet == "bb|bb|bb|b":
-            a = "debug"
 
         # zdj pa seštejemo counter factual regret
         for i in range(self.NUM_ACTIONS):
@@ -327,6 +325,8 @@ class Poker_Learner:
         # v nodemapu je drevo za vsak mozni zacetni hand
         if player == 0:
             """
+            #TODO zdaj vsakič ko zazenem program na novo, zbrisem stare node in naredim nove
+            # TODO v ifu moram pogledat keri fajli so ze narejeni in ce fajl se ni narejen, naredi nov fajl
             file_name = "p0_" + infoSet + ".pkl"
             if (file_name) in self.nodeMap_p0:
                 with open(file_name, 'rb') as input:
@@ -370,11 +370,20 @@ class Poker_Learner:
 
         return cards_string
 
+    def partly_shuffle(self, cards):
+        # shranimo hande od playerjev
+        new_deck = [cards[0], cards[1], cards[2], cards[3]]
+        #pobrisemo te karte iz kupcka in nato kupcek zmesamo
+        for i in range(4):
+            cards.remove(new_deck[i])
+        random.shuffle(cards)
+        #zdruzimo hande in nov premesan kupcek
+        new_deck += cards
+        return new_deck
 
-    # TODO node_map_p1 ne dela po flopu
-    def train(self, stIteracij):
+    def train(self, stIteracij, stIgerNaIteracijo):
         # prvi dve sta od playerja, drugi dve sta od opponenta, naslednjih 5 je na mizi
-        cards = [1,1,1,1, 2,2,2,2, 3,3,3,3]
+        cards = [1,1,1,1, 2,2,2,2, 3,3,3,3, 4,4,4,4, 5,5,5,5]
         util = 0
 
         trash_hands = []  # #--> to do
@@ -388,26 +397,26 @@ class Poker_Learner:
             player0_info = self.poVrsti([cards[0], cards[1]])
             player1_info = self.poVrsti([cards[2], cards[3]])
 
-            if self.poVrsti([cards[0], cards[1]]) == "11" and self.poVrsti( [cards[2], cards[3]]) == "13" and self.poVrsti( [cards[4], cards[5], cards[6], cards[7], cards[8]]) == "22233":
-                a = "debug"
-
-            global better_cards_p0
-            better_cards_p0 = self.betterCards(cards, 0)        # TODO BODI POZOREN NA TO FUNKCIJO
-            a = better_cards_p0
-            global better_cards_p1
-            better_cards_p1 = self.betterCards(cards, 1)
-            b = better_cards_p1
-
             # vecina projev na zacetku ze raisa, ce nima nekega trash handa
             if player0_info not in trash_hands:
                 #  v temu nodu ni vazn kaj je, ker itak bomo sli ali v bet ali pass node v temu nodeu
                 # lahko damo dejansko samo slovar
+
+                # ker ne moremo naloziti vseh nodov v ram, na enkrat nalozimo samo dva, enega za playerja in enega za opponenta
+                # ker nalaganje porabi ogromno časa, bomo za vaskič ko nalozimo dva noda, s temi kartami opravili "stIgerNaIteracijo" iger, ampak z drugačnim kupckom (npr. 1000 iger)
                 node_player0 = self.nodeInformation(str(player0_info), 0)
                 node_player1 = self.nodeInformation(str(player1_info), 1)
+                #for i in range(stIgerNaIteracijo):
+                #    cards = self.partly_shuffle(cards.copy())
+                global better_cards_p0
+                better_cards_p0 = self.betterCards(cards, 0)  # TODO BODI POZOREN NA TO FUNKCIJO
+                global better_cards_p1
+                better_cards_p1 = self.betterCards(cards, 1)
                 util += self.cfr(cards, 1, 1, node_player0, node_player1, True)
 
+
                 # zdj zapišemo v fajle posodoblene node
-                """"               
+                """"
                 with open("p0_" + player0_info + ".pkl", 'wb') as output:
                     pickle.dump(node_player0, output, pickle.HIGHEST_PROTOCOL)
                 with open("p1_" + player1_info + ".pkl", 'wb') as output:
@@ -442,8 +451,6 @@ def isTerminalState(infoSet):
     # pregledamo mozne bete in passe
     splitHistory = infoSet.split("|")
     gameStage = len(splitHistory)
-    if gameStage == 4:  #DEBUG --> pobirs pol
-        debug = True
     current_stage = (splitHistory[gameStage - 1])
     stg_len = len(current_stage)
 
