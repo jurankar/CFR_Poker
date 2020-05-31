@@ -51,7 +51,7 @@ class Poker_Learner:
         # lestvica_op = []     --> TO DO ko bojo karte 2-A
 
         #pogledamo pokre, trise in pare
-        for i in range(7, 0, -1):
+        for i in range(9, 0, -1):
             i = str(i)
             if playerCards.count(i) == 4:
                 poker_pl.append(int(i))
@@ -87,7 +87,7 @@ class Poker_Learner:
             return False
 
         # pogledamo HC
-        for i in range(8):
+        for i in range(10): # 0-9
             i = str(i)
             if playerCards.count(i) > 0:
                 hc_pl = int(i)
@@ -171,13 +171,15 @@ class Poker_Learner:
                 total_money_bet += 1 if i[1] == "b" else 0
 
 
-    def payoff(self, curr_node):
+    def payoff(self, infoSet):
 
-        terminal_node = curr_node.terminal
+        terminal_node = isTerminalState(infoSet)
         if terminal_node != False:
-            pot_size = curr_node.infoSet.count("b")
-            player = curr_node.player
-            ante = 0.125  # vsota ki jo vsak player da na mizo se preden dobi karte --> kasneje lahko zamenjas za small pa big blind
+            current_stage = infoSet.split("|")[(infoSet.count("|") + 1) - 1]
+            player = (current_stage.count("b") + current_stage.count("p")) % 2
+
+            pot_size = infoSet.count("b")
+            ante = 1  # vsota ki jo vsak player da na mizo se preden dobi karte --> kasneje lahko zamenjas za small pa big blind
 
             # če kdo prej folda kot obicajno, pol nasprotnik dobi 1/2 pota minus zadnjo stavo(-1), ki je player ni callou
             # torej dobi (pot - 1)/2   --> Kasneje to ne bo delovalo tako ko bodo dinamične stave !!
@@ -208,6 +210,8 @@ class Poker_Learner:
             return "continue"
 
     def kreiraj_sinove(self, curr_node, node_player0, node_player1, p0_nextTurn):
+        # TODO mogoče je p0_nextTurn drugacen odvisno kaj stavimo...recmo bp(p0) ali pa pbp(p0 still) --> vseeno lahko je drugace se mi zdi
+        # TODO mogoče zdj še ni bug in se slučajno poklapa ampak v prihodnosti ko bo current_round pbbbbb pol ne bo to slo
         new_infoset = curr_node.infoSet + "p"
         if p0_nextTurn == False:
             p0_nextTurn = isNewStage(new_infoset)
@@ -233,11 +237,9 @@ class Poker_Learner:
             curr_node.infoSet += "|"
 
         # zdj preeidemo v nov node, ki je vezan na to kakšne karte padejo
-        if hasattr(curr_node, 'gameStage'):
-            curr_game_stage = curr_node.gameStage
-        else:
-            return "error 5"
+        curr_game_stage = curr_node.infoSet.count("|")
 
+        #preflop je stage 0
         if curr_game_stage == 1:
             new_cards_ = "f" + self.poVrsti([cards[4], cards[5], cards[6]])  # flop
         elif curr_game_stage == 2:
@@ -255,28 +257,35 @@ class Poker_Learner:
 
         return new_cards_
 
-
+    # TODO TUKAJ NAPREJ neki ni ok s payoff funkcijo....zgleda mi kukr da je player narobe določen (al v cfr funckciji al pa v payoff)
+    # TODO aka. ko bi mogel bit player==1 je player==0 in obratno....če sm iskren morm it  cez kodo k tut js nism fix
+    def payoff_decide_between_nodes(self, node_player0, node_player1, i, p0_nextTurn):
+        if i == 0:
+            if p0_nextTurn: #p0 next turn in trenutna poteza je bila pass
+                return self.payoff(node_player0.betting_map["p"].infoSet)
+            else:   #p1 next turn in trenutna poteza je bila pass
+                return self.payoff(node_player1.betting_map["p"].infoSet)
+        else:
+            if p0_nextTurn: #p0 next turn in trenutna poteza je bila bet
+                return self.payoff(node_player0.betting_map["b"].infoSet)
+            else: #p1 next turn in trenutna poteza je bila bet
+                return self.payoff(node_player1.betting_map["b"].infoSet)
 
     # player_infoset in opp_infoset se skupi cez prenasa in se oba hkrati posodabla
     def cfr(self, cards, p0, p1, node_player0, node_player1, p0_turn):
-
-
 
         player = 0 if p0_turn else 1
         p0_nextTurn = False if player == 0 else True
         curr_node = node_player0 if player == 0 else node_player1
 
+        if self.poVrsti([cards[0], cards[1]]) == "12" and self.poVrsti([cards[2], cards[3]]) != "12" and self.poVrsti([cards[4], cards[5], cards[6], cards[7], cards[8]]) == "33444" :
+            a = "debug"
 
-        # dobimo payoff ce je končno stanje
-        payoff = self.payoff(curr_node)
-        if payoff != "continue":
-            return payoff
 
         # posodobimo in po potrebi ustvarimo nove sinove če še niso ustvarjeni
         # --> !! TO DO optimiziraj da ta informacija ze v nodih ne da vedno sprot računas --> trenutno je curr_node.newStage neki sfukan in ne kaze vedno prou
         new_stage_bool = isNewStage(curr_node.infoSet)
         if new_stage_bool:
-
             new_cards_ = self.new_stage_incoming(curr_node, node_player0, node_player1, cards)
             # update nodes
             node_player0 = node_player0.new_cards[new_cards_]
@@ -287,23 +296,25 @@ class Poker_Learner:
 
 
         # Pridobimo podatke o strategiji
-
         # ORIGINAL --> strategy = curr_node.getStrat(p0) if player == 0 else curr_node.getStrat(p1)
         curr_node.getStrat(p0) if player == 0 else curr_node.getStrat(p1)
         strategy = curr_node.getAvgStrat()
         util = [0, 0]   # kolk utila mamo za bet pa kolk za pass
         nodeUtil = 0
 
-        # TO DO nared neki da vid ce je zadna runda aka. nekdo pobere denar. ker sedaj naredi en nivo v drevesu preveč
         # Kreacija sinov v drevesu --> posebi node ce je player sedaj passou al pa ce je bettou
         p0_nextTurn = self.kreiraj_sinove(curr_node, node_player0, node_player1, p0_nextTurn)
 
         # prvo prevermo če je v kkšnih nodih že payoff sicer gremo v rekurzijo
         for i in range(self.NUM_ACTIONS):
-            if (player == 0):   # --> Nism fix da je prau pogoj
-                util[i] = - self.cfr(cards, p0 * strategy[i], p1, node_player0.betting_map["p"], node_player1.betting_map["p"], p0_nextTurn) if i == 0 else - self.cfr(cards, p0 * strategy[i], p1, node_player0.betting_map["b"], node_player1.betting_map["b"], p0_nextTurn)
+            payoff = self.payoff_decide_between_nodes(node_player0, node_player1, i, p0_nextTurn)
+            if payoff != "continue":
+                util[i] = - payoff  # - pred funkcijo ker se zamenja player ko gremo v funkcijo...enako kot 4 vrstice pod tem
             else:
-                util[i] = - self.cfr(cards, p0, p1 * strategy[i], node_player0.betting_map["p"], node_player1.betting_map["p"], p0_nextTurn) if i == 0 else - self.cfr(cards, p0, p1 * strategy[i], node_player0.betting_map["b"], node_player1.betting_map["b"], p0_nextTurn)
+                if (player == 0):
+                    util[i] = - self.cfr(cards, p0 * strategy[i], p1, node_player0.betting_map["p"], node_player1.betting_map["p"], p0_nextTurn) if i == 0 else - self.cfr(cards, p0 * strategy[i], p1, node_player0.betting_map["b"], node_player1.betting_map["b"], p0_nextTurn)
+                else:
+                    util[i] = - self.cfr(cards, p0, p1 * strategy[i], node_player0.betting_map["p"], node_player1.betting_map["p"], p0_nextTurn) if i == 0 else - self.cfr(cards, p0, p1 * strategy[i], node_player0.betting_map["b"], node_player1.betting_map["b"], p0_nextTurn)
 
             nodeUtil += strategy[i] * util[i]
 
@@ -383,7 +394,7 @@ class Poker_Learner:
 
     def train(self, stIteracij, stIgerNaIteracijo):
         # prvi dve sta od playerja, drugi dve sta od opponenta, naslednjih 5 je na mizi
-        cards = [1,1,1,1, 2,2,2,2, 3,3,3,3, 4,4,4,4, 5,5,5,5]
+        cards = [1,1,1,1, 2,2,2,2, 3,3,3,3, 4,4,4,4, 5,5,5,5, 6,6,6,6]
         util = 0
 
         trash_hands = []  # #--> to do
@@ -410,6 +421,7 @@ class Poker_Learner:
                 #    cards = self.partly_shuffle(cards.copy())
                 global better_cards_p0
                 better_cards_p0 = self.betterCards(cards, 0)  # TODO BODI POZOREN NA TO FUNKCIJO
+                a = better_cards_p0
                 global better_cards_p1
                 better_cards_p1 = self.betterCards(cards, 1)
                 util += self.cfr(cards, 1, 1, node_player0, node_player1, True)

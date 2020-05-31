@@ -2,25 +2,21 @@
 class node_betting_map:
 
     def __init__(self, infoSet):
-        self.node_legit = False
-
-        self.betting_map = {}
-        self.new_cards = {}
 
         # Terminal state k rabs pr payoutu
         self.infoSet = infoSet
-        current_stage = self.infoSet.split("|")[(self.infoSet.count("|") + 1) - 1]
-        self.terminal = isTerminalState(infoSet)
-        if self.terminal != False:
-            self.pot_size = infoSet.count("b")
-            self.player = (current_stage.count("b") + current_stage.count("p")) % 2  # -->TO BE optimized
+
+
+        self.betting_map = {}
+        if isNewStage_(infoSet):
+            self.new_cards = {}
+
 
 
 class node:
     NUM_ACTIONS = 2
 
     def __init__(self, infoSet):
-        self.node_legit = True
 
         #TODO nastimi da gre lohka regret sum pa strategy sum max do Max_Integer da ne dobis integer overflow
         # Algoritem
@@ -28,23 +24,14 @@ class node:
         self.regretSum = [0, 0]
         self.strategy = [0, 0]   # verjetnost da zberemo PASS ali BET
         self.strategySum = [0, 0]
-        self.avgStrat = []              # --> to be optimized !
 
         # Nadaljne veje iz drevesa
         self.betting_map = {}  # pri vsaki iteraciji imaš 4 nova stanja pp, pb, bp, bb --> razen ko p0 prvic igra, takrat samo 2 stanja p in b
 
         # Terminal state k rabs pr payoutu
-        self.gameStage = self.infoSet.count("|") + 1
-        current_stage = self.infoSet.split("|")[self.gameStage - 1]
-        self.terminal = isTerminalState(infoSet)
-        if self.terminal:
-            self.pot_size = infoSet.count("b")
-        self.player = (current_stage.count("b") + current_stage.count("p"))%2   # -->TO BE optimized
+        if isNewStage_(infoSet):
+            self.new_cards = {}
 
-        # Ostalo
-        #self.newStage = isNewStage(infoSet) or isNewStage(infoSet[:-2])   # --> TODO neki ne dela ok
-        #if self.newStage == True:  --> OPTIMIZACIJA nared da se to kreira samo v nodih kjer je potrebno (na nodih ko pridemo v nov stage)
-        self.new_cards = {}  #list nodov za vsako kombinacijo novih kart ki padejo na flopu, turnu in riverju
 
     #strategy[] je ubistvu sam normaliziran regretSum[] --> skor copy paste iz RM rock paper scissors
     def getStrat(self, realizationWeight):
@@ -81,7 +68,6 @@ class node:
             if(normalizingSum > 0):
                 avgStrat[i] = self.strategySum[i] / normalizingSum
             else:
-                #print("error bruh")
                 avgStrat[i] = 1.0 / self.NUM_ACTIONS
         return avgStrat
 
@@ -140,3 +126,9 @@ def isTerminalState(infoSet):
                 return False
         else:
             return False    #prazen infoSet
+
+
+"""
+TODO
+    -Elimineri infoset iz noda in ga prenasi zravn skupi z rekurzijo --> po tem bodo nodi dokončno optimizirani
+"""
