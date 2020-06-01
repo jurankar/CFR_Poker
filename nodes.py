@@ -92,41 +92,6 @@ def isNewStage_(infoSet):  # da vemo ce je nasledna flop, turn, river
     return False
 
 
-# nam pove če smo zaključili rundo ali ne
-def isTerminalState(infoSet):
-    # pregledamo mozne bete in passe
-    splitHistory = infoSet.split("|")
-    gameStage = len(splitHistory)
-    current_stage = (splitHistory[gameStage - 1])
-    stg_len = len(current_stage)
-
-    # ce igrata do konca da odpreta karte
-    if gameStage == 4 and isNewStage_(infoSet):
-        return "call_betterCards"   #--> sta igrala do konca kazeta karte
-    # ce nekdo nekje folda
-    else:
-        if stg_len >=1 and current_stage[0] == "p":
-            if stg_len >=2 and current_stage[1] == "p":
-                return False
-            elif stg_len >=2 and current_stage[1] == "b":
-                if stg_len >=3 and current_stage[2] == "p":
-                    return "p1_win"
-                elif stg_len >=3 and current_stage[2] == "b":
-                    return False
-                else:
-                    return False
-            else:
-                return False
-        elif stg_len >=1 and current_stage[0] == "b":
-            if stg_len >=2 and current_stage[1] == "p":
-                return "p0_win"
-            elif stg_len >=2 and current_stage[1] == "b":
-                return False
-            else:
-                return False
-        else:
-            return False    #prazen infoSet
-
 
 """
 TODO

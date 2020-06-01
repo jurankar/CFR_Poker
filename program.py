@@ -1,8 +1,8 @@
 from random import random as randDec
 import random
 import time
-import  cfr_poker
-
+import cfr_poker
+import nodes
 ##GLOBAL VARIABLES
 
 
@@ -13,16 +13,18 @@ import  cfr_poker
 def stevilkaVKarto(st):
 
     switcher = {
-        1: "J",
-        2: "Q",
-        3: "K",
-        4: "A",
+        1: "9",
+        2: "10",
+        3: "J",
+        4: "Q",
+        5: "K",
+        6: "A"
     }
 
     return (switcher.get(st, "Error ni te karte"))
 
 def game_payoff(learner, stanjePlayer, botInfoSet, cards):
-    payoff = learner.payoff(botInfoSet, cards, 0)
+    payoff = learner.payoff(botInfoSet)
     if payoff != "continue":
         if payoff < 0:
             print("Izgubili ste ", payoff, " vra.")
@@ -35,66 +37,93 @@ def game_payoff(learner, stanjePlayer, botInfoSet, cards):
 
     return stanjePlayer, False
 
+
+def poVrsti(cards):
+    cards.sort()
+    cards_string = ""
+    for i in range (len(cards)):
+        cards_string += str(cards[i])
+
+    return cards_string
+
 def igrajIgro(learner): # --> TO DO ne dela ok
-    cards = [1,1,1,1, 2,2,2,2, 3,3,3,3 ,4,4,4,4]
+    cards = [1,1,1,1, 2,2,2,2, 3,3,3,3, 4,4,4,4, 5,5,5,5, 6,6,6,6]
     input_word = "hec"
 
     stanjePlayer = 30
 
-    print("\n\n\n\n\nmozne karte so od 8 do As")
+    print("\n\n\nmozne karte so od 9 do As")
     print("če želiš zaključiti igro vpiši besedo end\n\n")
     while input_word != "end":
+        print("\n")
         random.shuffle(cards)
-        plays = 0
         moji_karti_str = stevilkaVKarto(cards[0]) + "," + stevilkaVKarto(cards[1])
         bot_karti_str = stevilkaVKarto(cards[2]) + "," + stevilkaVKarto(cards[3])
-        botInfoSet = learner.poVrsti([cards[2], cards[3]])
+        botNode = learner.nodeMap_p1[poVrsti([cards[2], cards[3]])];
 
         print("\n\ntvoji karti sta: ", moji_karti_str)
         karte_na_mizi = ""
         for i in range(4):  #preflop, flop, turn, river
+            print("\n")
 
             if i != 0:
                 print("Na mizi so karte: ", karte_na_mizi, "      Tvoji karti sta: ", moji_karti_str)
 
             print("če želiš staviti napiši b, če pa želiš checkati pa vpiši p")
             actionPlayer = input("Vnesi: ")
-            plays += 1
 
             #zdj določm še za bota action
-            botInfoSet += ",P0" + str(actionPlayer)
-            node = learner.nodeInformation(botInfoSet)
-            if node.strategySum[0] == 0 and node.strategySum[1] == 0:
-                print ("\nnew node --> ", botInfoSet + "\n")
-            strat = node.getAvgStrat()
+            botNode = botNode.betting_map[actionPlayer]
+
+            if botNode.strategySum[0] == 0 and botNode.strategySum[1] == 0:
+                print ("\nnew node --> ", botNode.infoSet + "\n")   # --> debugging
+
+            # določimo kaj bo naredil bot
+            strat = botNode.getAvgStrat()
             if(randDec() > strat[0]):
                 actionBot = "b"
                 print("Bot se odločil za bet   oz. B")
             else:
                 actionBot = "p"
                 print("Bot se odločil za pass  oz.  P")
-            plays += 1
-            botInfoSet += ",P1" + actionBot
-            stanjePlayer, end_round = game_payoff(learner, stanjePlayer, botInfoSet, cards)
+            botNode = botNode.betting_map[actionBot]
+            stanjePlayer, end_round = game_payoff(learner, stanjePlayer, botNode.infoSet, cards)
             if end_round: break
 
-
             if actionPlayer == "p" and actionBot == "b":
-                print("če želiš staviti napiši b, če pa želiš checkati pa vpiši p")
+                print("če želiš izenačiti napiši b, če pa želiš foldati pa vpiši p")
                 actionPlayer = input("Vnesi: ")
-                botInfoSet += ",P0" + actionPlayer
+                botNode = botNode.betting_map[actionPlayer]
 
             if i == 0:
                 new_cards = learner.poVrsti([cards[4], cards[5], cards[6]])
                 karte_na_mizi += stevilkaVKarto(cards[4]) + "," + stevilkaVKarto(cards[5]) + "," + stevilkaVKarto(cards[6])
+                if ("f" + new_cards) in botNode.new_cards:
+                    botNode = botNode.new_cards["f" + new_cards]
+                else:
+                    print("missing node on flop --> ni bilo dovolj učenja zato se ta node še ni kreiral")
+                    print("Sedaj bomo začeli novo rundo")
+                    break;
             elif i == 1:
                 new_cards = str(cards[7])
                 karte_na_mizi += "," + stevilkaVKarto(cards[7])
+                if ("t" + new_cards) in botNode.new_cards:
+                    botNode = botNode.new_cards["t" + new_cards]
+                else:
+                    print("missing node on turn --> ni bilo dovolj učenja zato se ta node še ni kreiral")
+                    print("Sedaj bomo začeli novo rundo")
+                    break;
             elif i == 2:
                 new_cards = str(cards[8])
                 karte_na_mizi += "," + stevilkaVKarto(cards[8])
-            botInfoSet += "|" + new_cards
-            stanjePlayer, end_round = game_payoff(learner, stanjePlayer, botInfoSet, cards)
+                if ("r" + new_cards) in botNode.new_cards:
+                    botNode = botNode.new_cards["r" + new_cards]
+                else:
+                    print("missing node on river --> ni bilo dovolj učenja zato se ta node še ni kreiral")
+                    print("Sedaj bomo začeli novo rundo")
+                    break;
+
+            stanjePlayer, end_round = game_payoff(learner, stanjePlayer, botNode.infoSet, cards)
             if end_round: break
 
         print("Na mizi: ", karte_na_mizi, "     Player: ", moji_karti_str, "    Bot: ", bot_karti_str)
@@ -113,15 +142,13 @@ def igrajIgro(learner): # --> TO DO ne dela ok
 
 ## MAIN
 if __name__ == "__main__":
-    global total_isNewStage_fun_time
-    total_isNewStage_fun_time = 0
     start_time = time.time()
     learner = cfr_poker.Poker_Learner()
-    learner.train(200000, 0)
+    learner.train(5000000, 0)
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
 
     # igranje igre
-    #igrajIgro(learner)
+    igrajIgro(learner)
 
 """
 Zdaj razvijam osnovno obliko pokra s kartami 9-A, kjer bomo gledali samo High card, par, dva para, tris, full house,
@@ -137,16 +164,22 @@ porabil sem okoli 1.5-1.8 GB rama, kar je že mejilo na to koliko lahko računal
         -največ kar gre je 8k iteracij trenutno in za to porabi cca. 55 sekund.
         
 3. verzija, popravljeni bugi iz prejsnje verzije.
-    Ce damo v kupcek 5 različnih kart (skupaj 20) za 10k iteracij porabimo cca 2min 10s, kar je kr ok
-    Na tej točki problem postane optimizacijski problem, ker trenutno nodi zasedejo prevec rama
+    Ce damo v kupcek 5 različnih kart (skupaj 20) zac 10k iteracij porabimo cca 10min, kar je kr ok
+    Na tej točki problem postane optimizacijski problem, ker trenutno nodi zasedejo cisto prevec rama
 
+4. verzija, optimizirana dreves
+    Trenutno porabimo za 10k iteracij 1 minuto, s tem da na zacetku porabljamo veliko rama in časa ker se 
+    ustvarjajo nodi, ampak po tem pa program začne delovati precej hitreje(cca 1x hitreje kot na začetku) in 
+    porablja manj rama(ker je večina nodov že narejenih in samo popravlja verjetnosti), tako da je  
+    časovna zahtevnost glede na št iteracij O(log n) (se mi zdi)
+    
 """
 
 """
 TODO:
 - Če smo v newStagu pol ne rabmo cekerat "pyouta" pa dobivat strategije (prvih cca. 20 vrstic v cfrju)  --> Done
 - funkcijo betterCards zračuni na začetku ker jo zdj brez veze 200x racunas --> Done
-- verjetno lahkot das velik node_init_p1 namest node, ker velik mn zasede --> pri newStage nodih je treba dat node_init_1 in pa zadnji nivo nodov je treba pobrisat
+- verjetno lahkot das velik node_betting_map namest node, ker velik mn zasede --> pri newStage nodih je treba dat node_betting_map in pa zadnji nivo nodov je treba pobrisat
 - Dopiš komentarje za profesorja --> KO TOLE USPOSOBŠ MU POŠL VERZIJO DA MAL KOMENTERA
 - Handi k so bli mn igrani jih vec igrej
 - Nared da se infoset nosi s sabo z rekurzijo (ker prek dreves itak ves), ne da ga mas shranenga v vsakem nodu posebej
@@ -154,23 +187,20 @@ TODO:
     ker s tem bos veliko manj casa porabil z nalaganjem in zapisovanjem nazaj
 
 
-
-
-
-
-Other:
 - optimizacija: 
-    -ce je drevo v zadnjem nodu, ne rabis it se v en node samo za payoff --> optimiziraj da ne bo treba it do zadnjega nivoja(ki je tudi največji)
+    -ce je drevo v zadnjem nodu, ne rabis it se v en node samo za payoff --> optimiziraj da ne bo treba it do zadnjega nivoja(ki je tudi največji nivo)
     -probi se znebit infoseta --> zavzema velik časa in rama
-- dodj zacetne stave oz ante
-- dodj vse karte notr od 2 do A
-    --> pol dodeli funkcijo self.betterCards (dodj lestvice)
+- dodj zacetne stave poleg anteja, aka. big/small blind
+- dodeli igro 
+    --> dodaj vse karte notr od 2 do A
+    --> pol dodeli funkcijo self.betterCards (dodj lestvice, flushe)
+    --> večji razpon stavljenja, ker treunto lahko samo staviš 1 ali passaš
+        -zgolj v rekurziji dodaš dodatne rekurzij (drevo se bo precej razširilo)
 - preber navodila kako je s kickerjom 
     - dodj split pr payoffu
 
-    
-- trash handi --> handi k jih iz prve foldaš ker so trash (uzemi bolj "tight" tehniko kjer velik foldaš in velik raisaš ker to bl zmede beginner playerje)
-- dopoln igro da enkrat začne player enkat bot
+- dopoln "igrajIgro(learner)" da enkrat začne player enkat bot
+    - Sedaj vedno začne player
 
 
 """

@@ -70,7 +70,7 @@ class Poker_Learner:
         trisi_op.sort(reverse=True)
         trisi_pl.sort(reverse=True)
 
-        #če imamo več kot en tris, potem ostale trise dodamo k parom (ker več kot 1 tris ne upostevamo)
+        #če imamo več kot en tris, potem ostale trise dodamo k parom (ker več kot 1 tris ne upostevamo v igri)
         trisi_pl, pari_pl = self.tris_to_pair(trisi_pl, pari_pl)
         trisi_op, pari_op = self.tris_to_pair(trisi_op, pari_op)
         pari_op.sort(reverse=True)
@@ -179,7 +179,7 @@ class Poker_Learner:
             player = (current_stage.count("b") + current_stage.count("p")) % 2
 
             pot_size = infoSet.count("b")
-            ante = 1  # vsota ki jo vsak player da na mizo se preden dobi karte --> kasneje lahko zamenjas za small pa big blind
+            ante = 0.5  # vsota ki jo vsak player da na mizo se preden dobi karte --> kasneje lahko zamenjas za small pa big blind
 
             # če kdo prej folda kot obicajno, pol nasprotnik dobi 1/2 pota minus zadnjo stavo(-1), ki je player ni callou
             # torej dobi (pot - 1)/2   --> Kasneje to ne bo delovalo tako ko bodo dinamične stave !!
@@ -257,8 +257,6 @@ class Poker_Learner:
 
         return new_cards_
 
-    # TODO TUKAJ NAPREJ neki ni ok s payoff funkcijo....zgleda mi kukr da je player narobe določen (al v cfr funckciji al pa v payoff)
-    # TODO aka. ko bi mogel bit player==1 je player==0 in obratno....če sm iskren morm it  cez kodo k tut js nism fix
     def payoff_decide_between_nodes(self, node_player0, node_player1, i, p0_nextTurn):
         if i == 0:
             if p0_nextTurn: #p0 next turn in trenutna poteza je bila pass
@@ -458,7 +456,7 @@ def isNewStage(infoSet):  # da vemo ce je nasledna flop, turn, river
 
 
 
-
+#nam pove a smo zaklučl igro/rundo al ne
 def isTerminalState(infoSet):
     # pregledamo mozne bete in passe
     splitHistory = infoSet.split("|")
