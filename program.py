@@ -144,11 +144,11 @@ def igrajIgro(learner): # --> TO DO ne dela ok
 if __name__ == "__main__":
     start_time = time.time()
     learner = cfr_poker.Poker_Learner()
-    learner.train(5000000, 0)
+    learner.train(5000, 0)
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
 
     # igranje igre
-    igrajIgro(learner)
+    # igrajIgro(learner)
 
 """
 Zdaj razvijam osnovno obliko pokra s kartami 9-A, kjer bomo gledali samo High card, par, dva para, tris, full house,
@@ -177,14 +177,12 @@ porabil sem okoli 1.5-1.8 GB rama, kar je že mejilo na to koliko lahko računal
 
 """
 TODO:
-- Če smo v newStagu pol ne rabmo cekerat "pyouta" pa dobivat strategije (prvih cca. 20 vrstic v cfrju)  --> Done
-- funkcijo betterCards zračuni na začetku ker jo zdj brez veze 200x racunas --> Done
-- verjetno lahkot das velik node_betting_map namest node, ker velik mn zasede --> pri newStage nodih je treba dat node_betting_map in pa zadnji nivo nodov je treba pobrisat
-- Dopiš komentarje za profesorja --> KO TOLE USPOSOBŠ MU POŠL VERZIJO DA MAL KOMENTERA
+- verjetno lahkot das velik node_betting_map namest node, ker velik mn zasede --> DONE
 - Handi k so bli mn igrani jih vec igrej
 - Nared da se infoset nosi s sabo z rekurzijo (ker prek dreves itak ves), ne da ga mas shranenga v vsakem nodu posebej
 - Ko nalozis node od p0 in node od p1, potem igraj kakih 1000 handov s kartami, ki jih ima p1 in p0 in potem zamenjaj
     ker s tem bos veliko manj casa porabil z nalaganjem in zapisovanjem nazaj
+- Cleaning
 
 
 - optimizacija: 
@@ -196,6 +194,7 @@ TODO:
     --> pol dodeli funkcijo self.betterCards (dodj lestvice, flushe)
     --> večji razpon stavljenja, ker treunto lahko samo staviš 1 ali passaš
         -zgolj v rekurziji dodaš dodatne rekurzij (drevo se bo precej razširilo)
+    --> V payoff dodej lestvice, mogoče se spomn neki za flush
 - preber navodila kako je s kickerjom 
     - dodj split pr payoffu
 
