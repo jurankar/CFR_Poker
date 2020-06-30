@@ -5,6 +5,10 @@ import cfr_poker
 import nodes
 ##GLOBAL VARIABLES
 
+#DEBUGGING
+import os
+import psutil
+
 
 # --------------------------------------------------------------------------------------------------
 # PLAYING POKER GAME
@@ -146,6 +150,8 @@ if __name__ == "__main__":
     learner = cfr_poker.Poker_Learner()
     learner.train(10000, 0)
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
+    process = psutil.Process(os.getpid())
+    print("Porabljenih je:", process.memory_info()[0]/(1024*1024), " MB rama")
 
     # igranje igre
     # igrajIgro(learner)
@@ -174,14 +180,9 @@ porabil sem okoli 1.5-1.8 GB rama, kar je že mejilo na to koliko lahko računal
     časovna zahtevnost glede na št iteracij O(log n) (se mi zdi)
     
 5. VERZIJA PRED/PO SLOTIH: drevesa bolje optimizirana, uporabljamo 3 tipe stav; 0, 1/2pota, pot...in pa 4 karte(J,Q,K,A)
-    ko zaženemo za 50 000 iteracij:
-        -brez slotov: pri 25% porabljamo 5340 MB rama
-        -z sloti: pri 25% uporabljamo 3650 MB rama
-    čas pri 10 000 iteracijah:
-        -brez slotov: 7.5 minut
-        -z sloti: 18.35 minut
-    sloti nam priranijo kakih 30-40% prostora, ampak so 2.5x počasnejši
-    
+    ko zaženemo za 10 000 iteracij:
+        -z sloti: 3500 MB RAMa, 6.9 minut
+        -brez slotov: 4500 MB RAMa, 7.1 minut
     
 """
 
