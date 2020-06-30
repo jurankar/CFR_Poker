@@ -148,7 +148,7 @@ def igrajIgro(learner): # --> TO DO ne dela ok
 if __name__ == "__main__":
     start_time = time.time()
     learner = cfr_poker.Poker_Learner()
-    learner.train(10000, 0)
+    learner.train(1, 100000)
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
     process = psutil.Process(os.getpid())
     print("Porabljenih je:", process.memory_info()[0]/(1024*1024), " MB rama")
@@ -183,6 +183,10 @@ porabil sem okoli 1.5-1.8 GB rama, kar je že mejilo na to koliko lahko računal
     ko zaženemo za 10 000 iteracij:
         -z sloti: 3500 MB RAMa, 6.9 minut
         -brez slotov: 4500 MB RAMa, 7.1 minut
+
+6. Zapisovanje stanj na disk:
+    -če delamo za vsak hand 100 iteracij, potem load/dump porabita 36% časa
+    -če delamo za vsak hand 1000 iteracij, potem load/dump porabita 6.3% časa
     
 """
 
@@ -203,14 +207,15 @@ TODO:
 - dodeli igro 
     --> dodaj vse karte notr od 2 do A
     --> pol dodeli funkcijo self.betterCards (dodj lestvice, flushe)
-    --> večji razpon stavljenja, ker treunto lahko samo staviš 1 ali passaš
-        -zgolj v rekurziji dodaš dodatne rekurzij (drevo se bo precej razširilo)
-    --> V payoff dodej lestvice, mogoče se spomn neki za flush
+    --> večji razpon stavljenja, ker treunto lahko samo staviš 1 ali passaš --> DONE
 - preber navodila kako je s kickerjom 
-    - dodj split pr payoffu
+    - vzem top 5 kart in poglej prvo k se razlikuje (zmaga tisti, k ma večjo)
+    - če je vseh pet istih, pol splitaš
 
 - dopoln "igrajIgro(learner)" da enkrat začne player enkat bot
     - Sedaj vedno začne player
+
+- skupi dj nizje karte v node, recimo 2 in 3, 4 in 5, 6 in 7, 8 in 9 --> s tem bi mogu dost dobit da bo optimalno delal
 
 
 """

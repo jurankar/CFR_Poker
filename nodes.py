@@ -6,20 +6,20 @@ import numpy as np
 #uporabljamo ko je node v terminal stanju (igra se zaključi ker je nekdo foldou ali pa sta pokazala karte)
 #tukaj rabimo samo infoset ker ga rabmo samo za payoffe
 class node_payoff:
-    #__slots__ = ["infoSet"]
+    __slots__ = ["infoSet"]
     def __init__(self, infoSet):
         self.infoSet = infoSet
 
 #uporabljamo ko pridemo v nov stage
 class node_new_cards:
-    #__slots__ = ["infoSet", "new_cards"]
+    __slots__ = ["infoSet", "new_cards"]
     def __init__(self, infoSet):
         self.infoSet = infoSet
         self.new_cards = {}
 
 #uporabljamo ko player ni na vrsti ampak samo belezimo akcijo prejsnjega igralca
 class node_betting_map:
-    #__slots__ = ["infoSet", "betting_map"]
+    __slots__ = ["infoSet", "betting_map"]
     def __init__(self, infoSet):
         # Terminal state k rabs pr payoutu
         self.infoSet = infoSet
@@ -30,14 +30,14 @@ class node_betting_map:
 #uporabljamo ko smo na potezi in racunamo verjetnosi in se odločamo kakšno potezo bomo naredili
 class node:
     NUM_ACTIONS = 3
-    #__slots__ = ["infoSet", "regretSum", "strategySum", "avg_strategy", "strategy", "betting_map"]
+    __slots__ = ["infoSet", "regretSum", "strategySum", "betting_map"]
     def __init__(self, infoSet):
         self.infoSet = infoSet
         num_of_actions = num_actions(infoSet, self.NUM_ACTIONS)
         self.regretSum = np.zeros(num_of_actions)
         self.strategySum = np.zeros(num_of_actions) # verjetnost da zberemo PASS ali BET
-        self.avg_strategy = np.zeros(num_of_actions)  # --> to be deleted
-        self.strategy = np.zeros(num_of_actions)    # --> to be deleted
+        #self.avg_strategy = np.zeros(num_of_actions)  # --> to be deleted
+        #self.strategy = np.zeros(num_of_actions)    # --> to be deleted
 
         # Nadaljne veje iz drevesa
         self.betting_map = {}  # pri vsaki iteraciji imaš 4 nova stanja pp, pb, bp, bb --> razen ko p0 prvic igra, takrat samo 2 stanja p in b
@@ -63,8 +63,7 @@ class node:
             self.strategySum[i] += realizationWeight * strategy[i]
 
         #debugging
-        self.strategy = strategy
-        self.avg_strategy = self.getAvgStrat()
+        #self.strategy = strategy
         return strategy
 
 
@@ -82,7 +81,7 @@ class node:
                 avgStrat[i] = self.strategySum[i] / normalizingSum
             else:
                 avgStrat[i] = 1.0 / num_actions
-        self.avg_strategy = avgStrat
+        #self.avg_strategy = avgStrat
         return avgStrat
 
 
@@ -91,7 +90,6 @@ class node:
 
 
 ##GLOBAL FUNCTIONS
-# TODO tuki naprej deli
 def isNewStage(infoSet):  # da vemo ce je nasledna flop, turn, river
     if infoSet != "" and infoSet[-1] == '|':
         infoSet = infoSet[:-1]
@@ -102,7 +100,7 @@ def isNewStage(infoSet):  # da vemo ce je nasledna flop, turn, river
     current_stage = (splitHistory[gameStage - 1]).split("b")
     del current_stage[0]
 
-    if len(current_stage) > 1 and (int(current_stage[0]) == 0):# p0 checka    # TODO ko nastimas da ne stavi skos iste vrednosti poprau to vrstico !!!
+    if len(current_stage) > 1 and (int(current_stage[0]) == 0):# p0 checka
         if len(current_stage) == 2 and int(current_stage[1]) == 0:  # oba checkata
             return True
         elif len(current_stage) == 3:  # check bet fold/call
