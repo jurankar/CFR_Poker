@@ -471,7 +471,7 @@ class Poker_Learner:
 
     def train(self, stIteracij, stIgerNaIteracijo):
         # prvi dve sta od playerja, drugi dve sta od opponenta, naslednjih 5 je na mizi
-        cards = [1,1,1,1, 2,2,2,2, 3,3,3,3]
+        cards = [1,1,1,1, 2,2,2,2, 3,3,3,3, 4,4,4,4]
         util = 0
 
         trash_hands = []  # #--> to do

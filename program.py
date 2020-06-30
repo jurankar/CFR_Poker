@@ -144,7 +144,7 @@ def igrajIgro(learner): # --> TO DO ne dela ok
 if __name__ == "__main__":
     start_time = time.time()
     learner = cfr_poker.Poker_Learner()
-    learner.train(5000, 0)
+    learner.train(10000, 0)
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
 
     # igranje igre
@@ -173,6 +173,16 @@ porabil sem okoli 1.5-1.8 GB rama, kar je že mejilo na to koliko lahko računal
     porablja manj rama(ker je večina nodov že narejenih in samo popravlja verjetnosti), tako da je  
     časovna zahtevnost glede na št iteracij O(log n) (se mi zdi)
     
+5. VERZIJA PRED/PO SLOTIH: drevesa bolje optimizirana, uporabljamo 3 tipe stav; 0, 1/2pota, pot...in pa 4 karte(J,Q,K,A)
+    ko zaženemo za 50 000 iteracij:
+        -brez slotov: pri 25% porabljamo 5340 MB rama
+        -z sloti: pri 25% uporabljamo 3650 MB rama
+    čas pri 10 000 iteracijah:
+        -brez slotov: 7.5 minut
+        -z sloti: 18.35 minut
+    sloti nam priranijo kakih 30-40% prostora, ampak so 2.5x počasnejši
+    
+    
 """
 
 """
@@ -186,7 +196,7 @@ TODO:
 
 
 - optimizacija: 
-    -ce je drevo v zadnjem nodu, ne rabis it se v en node samo za payoff --> optimiziraj da ne bo treba it do zadnjega nivoja(ki je tudi največji nivo)
+    -ce je drevo v zadnjem nodu, ne rabis it se v en node samo za payoff --> optimiziraj da ne bo treba it do zadnjega nivoja(ki je tudi največji nivo) --> DONE
     -probi se znebit infoseta --> zavzema velik časa in rama
 - dodj zacetne stave poleg anteja, aka. big/small blind
 - dodeli igro 

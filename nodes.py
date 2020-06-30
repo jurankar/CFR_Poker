@@ -6,34 +6,32 @@ import numpy as np
 #uporabljamo ko je node v terminal stanju (igra se zaključi ker je nekdo foldou ali pa sta pokazala karte)
 #tukaj rabimo samo infoset ker ga rabmo samo za payoffe
 class node_payoff:
+    #__slots__ = ["infoSet"]
     def __init__(self, infoSet):
         self.infoSet = infoSet
 
 #uporabljamo ko pridemo v nov stage
 class node_new_cards:
+    #__slots__ = ["infoSet", "new_cards"]
     def __init__(self, infoSet):
         self.infoSet = infoSet
         self.new_cards = {}
 
 #uporabljamo ko player ni na vrsti ampak samo belezimo akcijo prejsnjega igralca
 class node_betting_map:
-
+    #__slots__ = ["infoSet", "betting_map"]
     def __init__(self, infoSet):
         # Terminal state k rabs pr payoutu
         self.infoSet = infoSet
         self.betting_map = {}
 
+#TODO nastimi da gre lohka regret sum pa strategy sum max do Max_Integer da ne dobis integer overflow
+# Implement __slots__
 #uporabljamo ko smo na potezi in racunamo verjetnosi in se odločamo kakšno potezo bomo naredili
 class node:
     NUM_ACTIONS = 3
-    # imamo 8 možnih akcij --> po novem 5
-    # fold/check, call, big_blind raise, 1/4 pot raise
-    # 1/2 pot raise, pot raise, 2x pot raise, all in
-
+    #__slots__ = ["infoSet", "regretSum", "strategySum", "avg_strategy", "strategy", "betting_map"]
     def __init__(self, infoSet):
-
-        #TODO nastimi da gre lohka regret sum pa strategy sum max do Max_Integer da ne dobis integer overflow
-        # Algoritem
         self.infoSet = infoSet
         num_of_actions = num_actions(infoSet, self.NUM_ACTIONS)
         self.regretSum = np.zeros(num_of_actions)
@@ -66,7 +64,7 @@ class node:
 
         #debugging
         self.strategy = strategy
-        self.avgStrat = self.getAvgStrat()
+        self.avg_strategy = self.getAvgStrat()
         return strategy
 
 
