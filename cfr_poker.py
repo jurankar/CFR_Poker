@@ -479,8 +479,8 @@ class Poker_Learner:
 
         for i in range(stIteracij):
 
-            #if i % (stIteracij/100) == 0:
-            #    print(i / (stIteracij/100), " %")
+            if i % (stIteracij/100) == 0:
+                print(i / (stIteracij/100), " %")
 
             random.shuffle(cards)
             player0_info = self.poVrsti([cards[0], cards[1]])
@@ -496,8 +496,8 @@ class Poker_Learner:
                 node_player0 = self.nodeInformation(str(player0_info), 0)
                 node_player1 = self.nodeInformation(str(player1_info), 1)
                 for i in range(stIgerNaIteracijo):
-                    if i % (stIgerNaIteracijo / 100) == 0:
-                        print(i / (stIgerNaIteracijo / 100), " %")
+                    #if i % (stIgerNaIteracijo / 100) == 0:
+                    #    print(i / (stIgerNaIteracijo / 100), " %")
 
                     cards = self.partly_shuffle(cards.copy())
                     global better_cards_p0

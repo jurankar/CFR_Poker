@@ -148,7 +148,7 @@ def igrajIgro(learner): # --> TO DO ne dela ok
 if __name__ == "__main__":
     start_time = time.time()
     learner = cfr_poker.Poker_Learner()
-    learner.train(1, 100000)
+    learner.train(10, 1000)
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
     process = psutil.Process(os.getpid())
     print("Porabljenih je:", process.memory_info()[0]/(1024*1024), " MB rama")
@@ -185,8 +185,14 @@ porabil sem okoli 1.5-1.8 GB rama, kar je že mejilo na to koliko lahko računal
         -brez slotov: 4500 MB RAMa, 7.1 minut
 
 6. Zapisovanje stanj na disk:
+    Laptop:
     -če delamo za vsak hand 100 iteracij, potem load/dump porabita 36% časa
     -če delamo za vsak hand 1000 iteracij, potem load/dump porabita 6.3% časa
+    Kišta:
+    -če delamo za vsak hand 10 iteracij, potem load/dump porabita 85% časa  (za 1000,10 porabimo 235 minut)
+    -če delamo za vsak hand 100 iteracij, potem load/dump porabita 70% časa  (za 100,100 porabimo 60 minut)
+    -če delamo za vsak hand 1000 iteracij, potem load/dump porabita 42% časa (za 10, 1000 porabimo 25 minut)    --> OPTIMALNO
+    -če delamo za vsak hand 5000 iteracij, potem nam zmanjka rama in se stvari začnejo shranjevati na disk, kar je pa totalno prepočasno
     
 """
 
