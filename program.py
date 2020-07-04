@@ -148,7 +148,7 @@ def igrajIgro(learner): # --> TO DO ne dela ok
 if __name__ == "__main__":
     start_time = time.time()
     learner = cfr_poker.Poker_Learner()
-    learner.train(10, 1000)
+    learner.train(1000, 100)
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
     process = psutil.Process(os.getpid())
     print("Porabljenih je:", process.memory_info()[0]/(1024*1024), " MB rama")

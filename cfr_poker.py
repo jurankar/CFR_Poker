@@ -22,26 +22,27 @@ class Poker_Learner:
     nodeMap_p0 = {}   # v tem arrayu je dictionary vseh nodov
     nodeMap_p1 = {}
 
+    #pove če ima player high card
+    def isHighCard(self, playerCards, opponentCards):
+        playerCards.sort(reverse=True)
+        opponentCards.sort(reverse=True)
+        for i in range(5):
+            if playerCards[i] > opponentCards[i]:
+                return True
+            elif playerCards[i] < opponentCards[i]:
+                return False
+        return "split"
 
-    def tris_to_pair(self, trisi, pari):
-        if len(trisi) > 1:
-            for i in range(len(trisi)):
-                if i >= 1:
-                    pari.append(trisi[i])
-
-            trisi = [trisi[0]]
-
-        return trisi, pari
 
     def betterCards(self, cards,player):  # --> return TRUE ce ma players bolse karte in FALSE ce ma slabse
         #najprej določmo karte
-        cards_on_table = str(cards[4]) + str(cards[5]) + str(cards[6]) + str(cards[7]) + str(cards[8])
+        cards_on_table = [cards[4], cards[5], cards[6], cards[7], cards[8]]
         if player == 0:
-            playerCards = str(cards[0]) + str(cards[1]) + cards_on_table
-            opponentCards = str(cards[2]) + str(cards[3]) + cards_on_table
+            playerCards = [cards[0], cards[1]] + cards_on_table
+            opponentCards = [cards[2], cards[3]] + cards_on_table
         else:
-            playerCards = str(cards[2]) + str(cards[3]) + cards_on_table
-            opponentCards = str(cards[0]) + str(cards[1]) + cards_on_table
+            playerCards = [cards[2], cards[3]] + cards_on_table
+            opponentCards = [cards[0], cards[1]] + cards_on_table
 
 
         # tuki bomo gledal sam poker, full house, tris, dva para, par, pa High Card
@@ -56,8 +57,8 @@ class Poker_Learner:
         # lestvica_op = []     --> TO DO ko bojo karte 2-A
 
         #pogledamo pokre, trise in pare
-        for i in range(9, 0, -1):
-            i = str(i)
+        for i in range(14, 0, -1):
+
             if playerCards.count(i) == 4:
                 poker_pl.append(int(i))
             if opponentCards.count(i) == 4:
@@ -76,8 +77,8 @@ class Poker_Learner:
         trisi_pl.sort(reverse=True)
 
         #če imamo več kot en tris, potem ostale trise dodamo k parom (ker več kot 1 tris ne upostevamo v igri)
-        trisi_pl, pari_pl = self.tris_to_pair(trisi_pl, pari_pl)
-        trisi_op, pari_op = self.tris_to_pair(trisi_op, pari_op)
+        trisi_pl, pari_pl = tris_to_pair(trisi_pl, pari_pl)
+        trisi_op, pari_op = tris_to_pair(trisi_op, pari_op)
         pari_op.sort(reverse=True)
         pari_pl.sort(reverse=True)
 
@@ -90,14 +91,6 @@ class Poker_Learner:
             return True
         elif len(poker_pl) == 0 and len(poker_op) == 1:
             return False
-
-        # pogledamo HC
-        for i in range(10): # 0-9
-            i = str(i)
-            if playerCards.count(i) > 0:
-                hc_pl = int(i)
-            if opponentCards.count(i) > 0:
-                hc_opp = int(i)
 
         #tuki zdj primerjamo hande med sabo
 
@@ -113,7 +106,7 @@ class Poker_Learner:
                 elif pari_pl[0] < pari_op[0]:
                     return False
                 else:   #para sta enaka
-                    return True if hc_pl >= hc_opp else False   # --> TO DO split ce je isti high card
+                    return self.isHighCard(playerCards, opponentCards)
 
         elif len(trisi_pl) > 0 and len(pari_pl) > 0 and (len(trisi_op) == 0 or len(pari_op) == 0):  #player ma full opp ne
             return True
@@ -127,7 +120,7 @@ class Poker_Learner:
             elif trisi_pl[0] < trisi_op[0]:
                 return False
             else:   #isti tris
-                return True if hc_pl >= hc_opp else False  # --> TO DO split ce je isti high card
+                return self.isHighCard(playerCards, opponentCards)
         elif len(trisi_pl) > 0 and len(trisi_op) == 0:
             return True
         elif len(trisi_pl) == 0 and len(trisi_op) > 0:
@@ -141,7 +134,7 @@ class Poker_Learner:
                 if pari_pl[1] > pari_op[1]: return True
                 elif pari_pl[1] < pari_op[1]: return False
                 else:   # isti second pair
-                    return True if hc_pl >= hc_opp else False  # --> TO DO split ce je isti high card
+                    return self.isHighCard(playerCards, opponentCards)
         elif len(pari_pl) > 1 and len(pari_op) <= 1:
             return True
         elif len(pari_pl) <= 1 and len(pari_op) > 1:
@@ -152,18 +145,17 @@ class Poker_Learner:
             if pari_pl[0] > pari_op[0]: return  True
             elif pari_pl[0] < pari_op[0]: return False
             else:
-                return True if hc_pl >= hc_opp else False  # --> TO DO split ce je isti high card
+                return self.isHighCard(playerCards, opponentCards)
         elif len(pari_pl) == 1 and len(pari_op) == 0:
             return True
         elif len(pari_pl) == 0 and len(pari_op) == 1:
             return False
 
-        return True if hc_pl >= hc_opp else False  # --> TO DO split ce je isti high card
+        return self.isHighCard(playerCards, opponentCards)
 
 
 
     def payoff(self, infoSet, old_pot):
-
         terminal_node = isTerminalState(infoSet)
         if terminal_node != False:
             current_stage = infoSet.split("|")[(infoSet.count("|") + 1) - 1]
@@ -182,13 +174,17 @@ class Poker_Learner:
                 # Vsak dobi sam pol pota ker tut v resnici staviš pol ti pol opponent in dejansko si na +/- sam za polovico pota
                 # Gre ravno cez pol ker sta
                 winnings = old_pot/2 + ante
+
+                global better_cards_p0
+                a = better_cards_p0
+                global better_cards_p1
+                b = better_cards_p1
+                if better_cards_p0 == "split":
+                    return 0
+
                 if player == 0:
-                    global better_cards_p0
-                    a = better_cards_p0
                     return winnings if better_cards_p0 else -winnings # winnings = pot/2 + ante
                 elif player == 1:
-                    global better_cards_p1
-                    a = better_cards_p1
                     return winnings if better_cards_p1 else -winnings # winnings = pot/2 + ante
                 else:
                     return "error"
@@ -546,3 +542,14 @@ def isTerminalState(infoSet):
                 return False
         else:
             return False
+
+
+def tris_to_pair(trisi, pari):
+    if len(trisi) > 1:
+        for i in range(len(trisi)):
+            if i >= 1:
+                pari.append(trisi[i])
+
+        trisi = [trisi[0]]
+
+    return trisi, pari
