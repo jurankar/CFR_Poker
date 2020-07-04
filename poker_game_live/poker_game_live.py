@@ -22,6 +22,13 @@ global infoSet
 infoSet = ""
 global pot_amount
 pot_amount = 0
+global player_start
+player_start = True  # kdo začne stage --> true če player, false če bot
+
+global bet_amount_bot
+bet_amount_bot = 0
+global bet_amount_player
+bet_amount_player = 0
 
 #-------------------------------------------------------------------------------------------
 
@@ -105,32 +112,41 @@ def bet_type_fun(bet_amount, pot_amount):
     else:
         return "b2"
 
-def player_action(action, infoSet, bet_amount, pot_amount):
+def player_action(action, infoSet, pot_amount):
+    global bet_amount_bot
+    global bet_amount_player
 
     if action == "fold/check":
         infoSet += "b0"
 
     if action == "call":    #check in call sta ista akcija in isti gumb
-        if bet_amount <= 0:
-            print("error bruh")
         infoSet += "b1"
-        pot_amount += bet_amount  # izenačimo stavo od playerja
+        pot_amount += bet_amount_bot  # izenačimo stavo od bota
+        bet_amount_bot = 0
 
     if action == "raise":
-        if bet_amount <= 0:
+        bet_amount_player = bet_amount_player - bet_amount_bot
+        bet_amount_bot = 0
+        if bet_amount_player <= 0 :
             print("error bruh2")
-        infoSet += bet_type_fun(bet_amount, pot_amount)
-        pot_amount += bet_amount
+            label_game_info["text"] = "error bruh --> ne cheatat feget" # TODO zbriš preden pošlš profesorju
+        infoSet += bet_type_fun(bet_amount_player, pot_amount)
+        pot_amount += bet_amount_player
 
     return infoSet, pot_amount
 
 
 #TODO ta funkcija bo kasneje vračala actine glede na naš program
-def bot_action(infoSet, bet_amount, pot_amount):
-    if bet_amount > 0:  #player je bettou
+def bot_action(infoSet, pot_amount):
+    global bet_amount_bot
+    global bet_amount_player
+
+    if bet_amount_player > 0:  #player je bettou
         infoSet += "b1"
-        pot_amount += bet_amount
+        pot_amount += bet_amount_player #izenačimo stavo od playeja
+        bet_amount_player = 0
         return "call", infoSet, pot_amount
+
     else:   #player je checkou
         infoSet += "b0"
         return "check", infoSet, pot_amount
@@ -175,7 +191,7 @@ def winnings_fun(winnings, infoSet, player_start):
 
     label_ply_stanje["text"] = "Stanje player: " + str(Player_stanje)
     label_bot_stanje["text"] = "Stanje bot: " + str(Bot_stanje)
-    label_bot_cards["text"] = "Bot cards: " + num_to_card(cards[2]) + " " + num_to_card(cards[3]) if player_start else "Player cards: " + num_to_card(cards[0]) + " " + num_to_card(cards[1])
+    label_bot_cards["text"] = "BOT cards: " + num_to_card(cards[2]) + " " + num_to_card(cards[3]) if player_start else "BOT cards: " + num_to_card(cards[0]) + " " + num_to_card(cards[1])
 
 
 
@@ -188,17 +204,31 @@ def play(action, bet_amount):   # --> amount gledamo samo pri raisu
     debug1 = infoSet
     global pot_amount
     debug2 = pot_amount
-    player_start = True #kdo začne stage --> true če player, false če bot
+    global player_start
     player_move = True  #kdo je naslednji na potezi
     global new_player_move_need
     new_player_move_need = False    #hranimo, če smo že igrali playerja, da če smo moramo it ven in ga spet prasat za potezo
+    global bet_amount_player
+    bet_amount_player = bet_amount
 
     #zmešamo in razdelimo karte
     if label_player_cards["text"] == "PLAYER Cards:  X X":
+        #nastavimo karte, premešamo karte
         random.shuffle(cards)
-        label_player_cards["text"] = "Player cards: " + num_to_card(cards[0]) + " " + num_to_card(cards[1]) if player_start else "Player cards: " + num_to_card(cards[2]) + " " + num_to_card(cards[3])
+        label_player_cards["text"] = "PLAYER Cards: " + num_to_card(cards[0]) + " " + num_to_card(cards[1]) if player_start else "Player cards: " + num_to_card(cards[2]) + " " + num_to_card(cards[3])
+
+        #če ima prvo potezo bot, jo naredimo tukaj
+        if player_start == False:
+            # če prtisnemo na zacetku raise
+            bet_amount_player = 0
+            bet_amount = 0
+            #naredimo potezo
+            action, infoSet, pot_amount = bot_action(infoSet, pot_amount)  # vedno checkamo
+            label_game_info["text"] = "Bot move action:" + action + "       pot_amount:" + str(pot_amount + 20) + "       bet_amount:" + str(bet_amount)
+            print("Bot move infoset:", infoSet, "       pot_amount:", pot_amount, "                bet_amount:", bet_amount)
+            print("Bot action: " + action)
+
         return True
-    #print("action: ", action, "     amount: ", bet_amount)  #debug
 
     #smo v tem loopu, dokler player spet ne rabi kliknt gumba
     while(True):
@@ -206,13 +236,13 @@ def play(action, bet_amount):   # --> amount gledamo samo pri raisu
             if new_player_move_need:    #če smo že enkrat igral z playerjom, potem mu mormo rect zdj za novo potezo
                 new_player_move_need = False    # --> poenostavimo na default
                 break
-            infoSet, pot_amount = player_action(action, infoSet, int(bet_amount), pot_amount)
+            infoSet, pot_amount = player_action(action, infoSet, pot_amount)
             print("Player move infoset:", infoSet, "       pot_amount:", pot_amount, "                bet_amount:", bet_amount)
             new_player_move_need = True
             print("Player action: ", action)
         else:
             #bot action = bot_action(action, amount, pot_amount) --> tuki pride v upostav naše strojno učenje
-            action, infoSet, pot_amount = bot_action(infoSet, int(bet_amount), pot_amount)    # vedno callamo
+            action, infoSet, pot_amount = bot_action(infoSet, pot_amount)    # vedno callamo
             label_game_info["text"] = "Bot move action:" + action + "       pot_amount:" + str(pot_amount + 20) + "       bet_amount:" + str(bet_amount)
             print("Bot move infoset:", infoSet, "       pot_amount:", pot_amount, "                bet_amount:",
                   bet_amount)
@@ -236,6 +266,8 @@ def new_game():
     infoSet = ""
     global pot_amount
     pot_amount = 0
+    global player_start
+    player_start = not player_start # --> enkat začne bot, enkrat player
 
     label_bot_cards["text"] = "BOT Cards:  X X"
     label_player_cards["text"] = "PLAYER Cards:  X X"
@@ -304,7 +336,7 @@ button_call.place(relx=0.65, relheight=1, relwidth=0.15)
 
 entry = tk.Entry(lower_frame, font=40)
 entry.place(relwidth=0.40, relheight=1)
-button_raise = tk.Button(lower_frame, text="Raise", font=40, command=lambda: play("raise", entry.get()))  # , command=lambda: get_weather(entry.get())
+button_raise = tk.Button(lower_frame, text="Raise", font=40, command=lambda: play("raise", int(entry.get())))  # , command=lambda: get_weather(entry.get())
 button_raise.place(relx=0.85, relheight=1, relwidth=0.15)
 
 #BOTTOM LABEL

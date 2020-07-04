@@ -22,17 +22,6 @@ class Poker_Learner:
     nodeMap_p0 = {}   # v tem arrayu je dictionary vseh nodov
     nodeMap_p1 = {}
 
-    #pove če ima player high card
-    def isHighCard(self, playerCards, opponentCards):
-        playerCards.sort(reverse=True)
-        opponentCards.sort(reverse=True)
-        for i in range(5):
-            if playerCards[i] > opponentCards[i]:
-                return True
-            elif playerCards[i] < opponentCards[i]:
-                return False
-        return "split"
-
 
     def betterCards(self, cards,player):  # --> return TRUE ce ma players bolse karte in FALSE ce ma slabse
         #najprej določmo karte
@@ -106,7 +95,7 @@ class Poker_Learner:
                 elif pari_pl[0] < pari_op[0]:
                     return False
                 else:   #para sta enaka
-                    return self.isHighCard(playerCards, opponentCards)
+                    return isHighCard(playerCards, opponentCards)
 
         elif len(trisi_pl) > 0 and len(pari_pl) > 0 and (len(trisi_op) == 0 or len(pari_op) == 0):  #player ma full opp ne
             return True
@@ -120,7 +109,7 @@ class Poker_Learner:
             elif trisi_pl[0] < trisi_op[0]:
                 return False
             else:   #isti tris
-                return self.isHighCard(playerCards, opponentCards)
+                return isHighCard(playerCards, opponentCards)
         elif len(trisi_pl) > 0 and len(trisi_op) == 0:
             return True
         elif len(trisi_pl) == 0 and len(trisi_op) > 0:
@@ -134,7 +123,7 @@ class Poker_Learner:
                 if pari_pl[1] > pari_op[1]: return True
                 elif pari_pl[1] < pari_op[1]: return False
                 else:   # isti second pair
-                    return self.isHighCard(playerCards, opponentCards)
+                    return isHighCard(playerCards, opponentCards)
         elif len(pari_pl) > 1 and len(pari_op) <= 1:
             return True
         elif len(pari_pl) <= 1 and len(pari_op) > 1:
@@ -145,13 +134,13 @@ class Poker_Learner:
             if pari_pl[0] > pari_op[0]: return  True
             elif pari_pl[0] < pari_op[0]: return False
             else:
-                return self.isHighCard(playerCards, opponentCards)
+                return isHighCard(playerCards, opponentCards)
         elif len(pari_pl) == 1 and len(pari_op) == 0:
             return True
         elif len(pari_pl) == 0 and len(pari_op) == 1:
             return False
 
-        return self.isHighCard(playerCards, opponentCards)
+        return isHighCard(playerCards, opponentCards)
 
 
 
@@ -553,3 +542,14 @@ def tris_to_pair(trisi, pari):
         trisi = [trisi[0]]
 
     return trisi, pari
+
+#pove če ima player high card
+def isHighCard(playerCards, opponentCards):
+    playerCards.sort(reverse=True)
+    opponentCards.sort(reverse=True)
+    for i in range(5):
+        if playerCards[i] > opponentCards[i]:
+            return True
+        elif playerCards[i] < opponentCards[i]:
+            return False
+    return "split"
