@@ -102,6 +102,17 @@ class Poker_Learner:
         elif len(trisi_op) > 0 and len(pari_op) > 0 and (len(trisi_pl) == 0 or len(pari_pl) == 0):  # opp ma full player ne
             return False
 
+        #lestvica
+        player_straight = get_that_straight(playerCards)
+        bot_straight = get_that_straight(opponentCards)
+
+        if player_straight > bot_straight:
+            return True
+        elif player_straight < bot_straight:
+            return False
+        elif player_straight != -1 and bot_straight != -1 and player_straight == bot_straight:  # --> oba isti straight
+            return "split"
+
         #tris
         if len(trisi_pl) > 0 and len(trisi_op) > 0: #oba tris
             if trisi_pl[0] > trisi_op[0]:
@@ -117,7 +128,7 @@ class Poker_Learner:
 
         #dva para
         if len(pari_pl) > 1 and len(pari_op) > 1:   #oba mata 2 para
-            if pari_pl[0] > pari_op[0]: return  True
+            if pari_pl[0] > pari_op[0]: return True
             elif pari_pl[0] < pari_op[0]: return False
             else:   #isti top pair
                 if pari_pl[1] > pari_op[1]: return True
@@ -542,6 +553,30 @@ def tris_to_pair(trisi, pari):
         trisi = [trisi[0]]
 
     return trisi, pari
+
+def get_that_straight(cards):
+    cards.sort(reverse=True)
+    curr_high = -1
+    num_of_consecutive_cards = 0
+
+    #ko najdemo prvo zaporedje 5ih kart, breakamo
+    curr_high = cards[0]
+    num_of_consecutive_cards = 1
+    for i in range(len(cards)): #range je ponavad 7....2 v roki + 2 na mizi
+        if i != 0:
+            if cards[i] == cards[i-1] - 1:
+                num_of_consecutive_cards += 1
+            elif cards[i] != cards[i-1]:    #če ima kdo v lestvici dve enaki karti npr J,10,9,8,8,7,3
+                curr_high = cards[i]
+                num_of_consecutive_cards = 1
+        if num_of_consecutive_cards == 5:
+            return curr_high
+
+    #nismo našli lestvice
+    return -1
+
+
+
 
 #pove če ima player high card
 def isHighCard(playerCards, opponentCards):
