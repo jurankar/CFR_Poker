@@ -150,8 +150,7 @@ if __name__ == "__main__":
     learner = cfr_poker.Poker_Learner()
     learner.train(100, 1000)
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
-    process = psutil.Process(os.getpid())
-    print("Porabljenih je:", process.memory_info()[0]/(1024*1024), " MB rama")
+
 
     # igranje igre
     # igrajIgro(learner)
@@ -185,33 +184,48 @@ porabil sem okoli 1.5-1.8 GB rama, kar je že mejilo na to koliko lahko računal
         -brez slotov: 4500 MB RAMa, 7.1 minut
 
 6. Zapisovanje stanj na disk:
-    Laptop:
-    -če delamo za vsak hand 100 iteracij, potem load/dump porabita 36% časa
-    -če delamo za vsak hand 1000 iteracij, potem load/dump porabita 6.3% časa
-    Kišta:
-    -če delamo za vsak hand 10 iteracij, potem load/dump porabita 85% časa  (za 1000,10 porabimo 235 minut za profile program)
-    -če delamo za vsak hand 100 iteracij, potem load/dump porabita 70% časa  (za 100,100 porabimo 60 minut za profile program)
-    -če delamo za vsak hand 1000 iteracij, potem load/dump porabita 42% časa (za 10, 1000 porabimo 25 minut za profile program)    --> OPTIMALNO
-    -če delamo za vsak hand 5000 iteracij, potem nam zmanjka rama in se stvari začnejo shranjevati na disk, kar je pa totalno prepočasno
-    
+    3 možne stave:
+        Laptop:
+        -če delamo za vsak hand 100 iteracij, potem load/dump porabita 36% časa
+        -če delamo za vsak hand 1000 iteracij, potem load/dump porabita 6.3% časa
+        Kišta:
+        -če delamo za vsak hand 10 iteracij, potem load/dump porabita 85% časa  (za 1000,10 porabimo 235 minut v profile program)
+        -če delamo za vsak hand 100 iteracij, potem load/dump porabita 70% časa  (za 100,100 porabimo 60 minut v profile program)
+        -če delamo za vsak hand 1000 iteracij, potem load/dump porabita 42% časa (za 10, 1000 porabimo 25 minut v profile program)    --> OPTIMALNO
+        -če delamo za vsak hand 5000 iteracij, potem nam zmanjka rama in se stvari začnejo shranjevati na disk, kar je pa totalno prepočasno
+    2 možne stave:
+        Kišta:
+        -za 100,1000 porabimo 40 minut v profile program, load/dump 
+        -za 10, 10000 12 minut v profile program, load/dump 
+
 """
 
 """
 TODO:
 - verjetno lahkot das velik node_betting_map namest node, ker velik mn zasede --> DONE
 - Handi k so bli mn igrani jih vec igrej
+- Nared da se infoset nosi s sabo z rekurzijo (ker prek dreves itak ves), ne da ga mas shranenga v vsakem nodu posebej
 - Ko nalozis node od p0 in node od p1, potem igraj kakih 1000 handov s kartami, ki jih ima p1 in p0 in potem zamenjaj
-    ker s tem bos veliko manj casa porabil z nalaganjem in zapisovanjem nazaj   --> DONE
+    ker s tem bos veliko manj casa porabil z nalaganjem in zapisovanjem nazaj
 - Cleaning
+
+
 - optimizacija: 
     -ce je drevo v zadnjem nodu, ne rabis it se v en node samo za payoff --> optimiziraj da ne bo treba it do zadnjega nivoja(ki je tudi največji nivo) --> DONE
+    -probi se znebit infoseta --> zavzema velik časa in rama
 - dodj zacetne stave poleg anteja, aka. big/small blind
 - dodeli igro 
-    --> dodaj vse karte notr od 2 do A --> DONE
-    --> pol dodeli funkcijo self.betterCards (dodj lestvice) --> DONE
+    --> dodaj vse karte notr od 2 do A
+    --> pol dodeli funkcijo self.betterCards (dodj lestvice, flushe)
     --> večji razpon stavljenja, ker treunto lahko samo staviš 1 ali passaš --> DONE
 - preber navodila kako je s kickerjom 
-    - vzem top 5 kart in poglej prvo k se razlikuje (zmaga tisti, k ma večjo) --> DONE
-    - če je vseh pet istih, pol splitaš  --> DONE
+    - vzem top 5 kart in poglej prvo k se razlikuje (zmaga tisti, k ma večjo)
+    - če je vseh pet istih, pol splitaš
+
+- dopoln "igrajIgro(learner)" da enkrat začne player enkat bot
+    - Sedaj vedno začne player
+
+- skupi dj nizje karte v node, recimo 2 in 3, 4 in 5, 6 in 7, 8 in 9 --> s tem bi mogu dost dobit da bo optimalno delal
+
 
 """

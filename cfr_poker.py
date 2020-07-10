@@ -1,6 +1,10 @@
 import random
+
 import nodes
 import numpy as np
+import psutil
+import os
+import gc
 
 #Save files to disk
 import os
@@ -12,7 +16,7 @@ import pickle
 ##POKER_LEARNER_CFR
 
 class Poker_Learner:
-    NUM_ACTIONS = 3
+    NUM_ACTIONS = 2
 
     """
     nodeMap_p0 = []   # v tem arrayu je zapisan keri handi so ze v fajlih in keri še ne
@@ -274,8 +278,8 @@ class Poker_Learner:
         stava = 0
         if round_num == 1:
             if i == 0: stava = 0
-            if i == 1: stava = self.round_on_5(new_pot/4)
-            if i == 2: stava = self.round_on_5(new_pot/2)
+            if i == 1: stava = self.round_on_5(new_pot/2)
+            #if i == 2: stava = self.round_on_5(new_pot/2)
 
             if stava >= big_blind:
                 return stava
@@ -474,9 +478,11 @@ class Poker_Learner:
         trash_hands = []  # #--> to do
 
         for i in range(stIteracij):
+            print(i)
 
-            if i % (stIteracij/100) == 0:
-                print(i / (stIteracij/100), " %")
+
+            #if i % (stIteracij/100) == 0:
+            #    print(i / (stIteracij/100), " %")
 
             random.shuffle(cards)
             player0_info = self.poVrsti([cards[0], cards[1]])
@@ -489,8 +495,13 @@ class Poker_Learner:
 
                 # ker ne moremo naloziti vseh nodov v ram, na enkrat nalozimo samo dva, enega za playerja in enega za opponenta
                 # ker nalaganje porabi ogromno časa, bomo za vaskič ko nalozimo dva noda, s temi kartami opravili "stIgerNaIteracijo" iger, ampak z drugačnim kupckom (npr. 1000 iger)
+
+                process = psutil.Process(os.getpid())
+                print("Porabljenih je:", process.memory_info()[0] / (1024 * 1024), " MB rama")
                 node_player0 = self.nodeInformation(str(player0_info), 0)
                 node_player1 = self.nodeInformation(str(player1_info), 1)
+                gc.collect()    # --> force garbage collector
+                print("Po menjavi noda je porabljenih:", process.memory_info()[0] / (1024 * 1024), " MB rama\n\n")
                 for i in range(stIgerNaIteracijo):
                     #if i % (stIgerNaIteracijo / 100) == 0:
                     #    print(i / (stIgerNaIteracijo / 100), " %")
@@ -511,7 +522,7 @@ class Poker_Learner:
                     pickle.dump(node_player1, output, pickle.HIGHEST_PROTOCOL)
 
 
-        print("Average game return: ", util / stIteracij)
+        print("Average game return: ", util / (stIteracij * stIgerNaIteracijo))
 # --------------------------------------------------------------------------------------------------
 
 

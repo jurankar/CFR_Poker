@@ -29,7 +29,7 @@ class node_betting_map:
 # Implement __slots__
 #uporabljamo ko smo na potezi in racunamo verjetnosi in se odločamo kakšno potezo bomo naredili
 class node:
-    NUM_ACTIONS = 3
+    NUM_ACTIONS = 2
     __slots__ = ["infoSet", "regretSum", "strategySum", "betting_map"]
     def __init__(self, infoSet):
         self.infoSet = infoSet
