@@ -148,7 +148,7 @@ def igrajIgro(learner): # --> TO DO ne dela ok
 if __name__ == "__main__":
     start_time = time.time()
     learner = cfr_poker.Poker_Learner()
-    learner.train(100, 1000)
+    learner.train(100, 10000)
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
 
 
@@ -195,6 +195,7 @@ porabil sem okoli 1.5-1.8 GB rama, kar je že mejilo na to koliko lahko računal
         -če delamo za vsak hand 5000 iteracij, potem nam zmanjka rama in se stvari začnejo shranjevati na disk, kar je pa totalno prepočasno
     2 možne stave:
         Kišta:
+        Ko oddigraš cca. 1,5 mio handov si na okoli 10,9GB RAMa in tam se ustavi
         -za 100,1000 porabimo 40 minut v profile program, load/dump 
         -za 10, 10000 12 minut v profile program, load/dump 
 

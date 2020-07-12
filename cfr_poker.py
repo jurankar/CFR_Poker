@@ -279,7 +279,7 @@ class Poker_Learner:
         if round_num == 1:
             if i == 0: stava = 0
             if i == 1: stava = self.round_on_5(new_pot/2)
-            #if i == 2: stava = self.round_on_5(new_pot/2)
+            #if i == 2: stava = self.round_on_5(new_pot)
 
             if stava >= big_blind:
                 return stava
@@ -478,11 +478,11 @@ class Poker_Learner:
         trash_hands = []  # #--> to do
 
         for i in range(stIteracij):
-            print(i)
+            #print(i)
 
 
-            #if i % (stIteracij/100) == 0:
-            #    print(i / (stIteracij/100), " %")
+            if i % (stIteracij/100) == 0:
+                print(i / (stIteracij/100), " %")
 
             random.shuffle(cards)
             player0_info = self.poVrsti([cards[0], cards[1]])
@@ -497,14 +497,16 @@ class Poker_Learner:
                 # ker nalaganje porabi ogromno časa, bomo za vaskič ko nalozimo dva noda, s temi kartami opravili "stIgerNaIteracijo" iger, ampak z drugačnim kupckom (npr. 1000 iger)
 
                 process = psutil.Process(os.getpid())
-                print("Porabljenih je:", process.memory_info()[0] / (1024 * 1024), " MB rama")
+                #print("p0:" + player0_info + "                      p1:" + player1_info)
+                #print("Porabljenih je:", process.memory_info()[0] / (1024 * 1024), " MB rama")
                 node_player0 = self.nodeInformation(str(player0_info), 0)
                 node_player1 = self.nodeInformation(str(player1_info), 1)
                 gc.collect()    # --> force garbage collector
-                print("Po menjavi noda je porabljenih:", process.memory_info()[0] / (1024 * 1024), " MB rama\n\n")
-                for i in range(stIgerNaIteracijo):
-                    #if i % (stIgerNaIteracijo / 100) == 0:
-                    #    print(i / (stIgerNaIteracijo / 100), " %")
+                #print("Po menjavi noda je porabljenih:", process.memory_info()[0] / (1024 * 1024), " MB rama\n\n")
+
+                for j in range(stIgerNaIteracijo):
+                    #if j % (stIgerNaIteracijo / 100) == 0:
+                    #    print(j / (stIgerNaIteracijo / 100), " %")
 
                     cards = self.partly_shuffle(cards.copy())
                     global better_cards_p0
