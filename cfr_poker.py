@@ -165,7 +165,7 @@ class Poker_Learner:
             current_stage = infoSet.split("|")[(infoSet.count("|") + 1) - 1]
             player = (current_stage.count("b")) % 2
 
-            ante = 0  # vsota ki jo vsak player da na mizo se preden dobi karte --> kasneje lahko zamenjas za small pa big blind --> je vključena ze na začetku ko nastavimo zacetni "old_pot" in "new_pot"
+            ante = 50  # vsota ki jo vsak player da na mizo se preden dobi karte --> kasneje lahko zamenjas za small pa big blind --> je vključena ze na začetku ko nastavimo zacetni "old_pot" in "new_pot"
 
             # če kdo prej folda kot obicajno, pol nasprotnik dobi 1/2 pota minus zadnjo stavo(-1), ki je player ni callou
             winnings = old_pot / 2 + ante
@@ -200,9 +200,6 @@ class Poker_Learner:
 
 
     def kreiraj_sinove(self, curr_node, node_player0, node_player1, p0_nextTurn):
-        # TODO mogoče je p0_nextTurn drugacen odvisno kaj stavimo...recmo bp(p0) ali pa pbp(p0 still) --> vseeno lahko je drugace se mi zdi
-        # TODO mogoče zdj še ni bug in se slučajno poklapa ampak v prihodnosti ko bo current_round pbbbbb pol ne bo to slo
-        # TODO reraise lahko označiš kukr samo "bb" na koncu dneva tut če je 16 rerasiov
 
         num_actions = nodes.num_actions(curr_node.infoSet, self.NUM_ACTIONS)
         for i in range(num_actions):
@@ -274,10 +271,10 @@ class Poker_Learner:
         return number
 
     def new_bet_amount(self, new_pot, old_pot, i, last_round, round_num):
-        big_blind = 10
+        big_blind = 100
         stava = 0
         if round_num == 1:
-            if i == 0: stava = 0
+            if i == 0: return 0
             if i == 1: stava = self.round_on_5(new_pot/2)
             #if i == 2: stava = self.round_on_5(new_pot)
 
@@ -478,11 +475,11 @@ class Poker_Learner:
         trash_hands = []  # #--> to do
 
         for i in range(stIteracij):
-            #print(i)
+            print(i)
 
 
-            if i % (stIteracij/100) == 0:
-                print(i / (stIteracij/100), " %")
+            #if i % (stIteracij/100) == 0:
+            #    print(i / (stIteracij/100), " %")
 
             random.shuffle(cards)
             player0_info = self.poVrsti([cards[0], cards[1]])
@@ -496,13 +493,12 @@ class Poker_Learner:
                 # ker ne moremo naloziti vseh nodov v ram, na enkrat nalozimo samo dva, enega za playerja in enega za opponenta
                 # ker nalaganje porabi ogromno časa, bomo za vaskič ko nalozimo dva noda, s temi kartami opravili "stIgerNaIteracijo" iger, ampak z drugačnim kupckom (npr. 1000 iger)
 
-                process = psutil.Process(os.getpid())
+
                 #print("p0:" + player0_info + "                      p1:" + player1_info)
                 #print("Porabljenih je:", process.memory_info()[0] / (1024 * 1024), " MB rama")
                 node_player0 = self.nodeInformation(str(player0_info), 0)
                 node_player1 = self.nodeInformation(str(player1_info), 1)
                 gc.collect()    # --> force garbage collector
-                #print("Po menjavi noda je porabljenih:", process.memory_info()[0] / (1024 * 1024), " MB rama\n\n")
 
                 for j in range(stIgerNaIteracijo):
                     #if j % (stIgerNaIteracijo / 100) == 0:
@@ -514,8 +510,10 @@ class Poker_Learner:
                     a = better_cards_p0
                     global better_cards_p1
                     better_cards_p1 = self.betterCards(cards, 1)
-                    util += self.cfr(cards, 1, 1, node_player0, node_player1, True, 100, 100, True) # --> vsak da po 5 ante zato je začetni pot 10
+                    util += self.cfr(cards, 1, 1, node_player0, node_player1, True, 50, 50, True) # na poker starsu je BB 100, SM 50 pri heads up za 10k....50 obema odbijem v payoffu kot ante, p0 pa tukaj da se 50 na kup
 
+                process = psutil.Process(os.getpid())
+                print("Node ob koncu simulacije porabi:", process.memory_info()[0] / (1024 * 1024), " MB rama\n\n")
 
                 # zdj zapišemo v fajle posodoblene node --> če noda še ni naredi nov fajl
                 with open("p0_" + player0_info + ".pkl", 'wb') as output:

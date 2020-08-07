@@ -148,7 +148,7 @@ def igrajIgro(learner): # --> TO DO ne dela ok
 if __name__ == "__main__":
     start_time = time.time()
     learner = cfr_poker.Poker_Learner()
-    learner.train(100, 10000)
+    learner.train(25, 10000)
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
 
 
