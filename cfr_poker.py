@@ -476,14 +476,18 @@ class Poker_Learner:
 
         for i in range(stIteracij):
             print(i)
-
-
             #if i % (stIteracij/100) == 0:
             #    print(i / (stIteracij/100), " %")
 
             random.shuffle(cards)
             player0_info = self.poVrsti([cards[0], cards[1]])
             player1_info = self.poVrsti([cards[2], cards[3]])
+
+            #logs
+            f = open("logs.txt", "a")
+            write_str = str(i) + "==>    p0_cards:" + player0_info + "        p1_cards:" + player1_info + "                                     Lahko Ustavis\n"
+            f.write(write_str)
+            f.close()
 
             # vecina projev na zacetku ze raisa, ce nima nekega trash handa
             if player0_info not in trash_hands:
@@ -512,12 +516,25 @@ class Poker_Learner:
                     better_cards_p1 = self.betterCards(cards, 1)
                     util += self.cfr(cards, 1, 1, node_player0, node_player1, True, 50, 50, True) # na poker starsu je BB 100, SM 50 pri heads up za 10k....50 obema odbijem v payoffu kot ante, p0 pa tukaj da se 50 na kup
 
+                #logs
                 process = psutil.Process(os.getpid())
-                print("Node ob koncu simulacije porabi:", process.memory_info()[0] / (1024 * 1024), " MB rama\n\n")
+                f = open("logs.txt", "a")
+                write_str = "Node ob koncu simulacije porabi:" + str(process.memory_info()[0] / (1024 * 1024)) + " MB rama                                    Ne Ustavit\n"
+                f.write(write_str)
+                f.close()
 
                 # zdj zapišemo v fajle posodoblene node --> če noda še ni naredi nov fajl
+                f = open("logs.txt", "a")
+                f.write("writing p0_info\n")
+                f.close()
+
                 with open("p0_" + player0_info + ".pkl", 'wb') as output:
                     pickle.dump(node_player0, output, pickle.HIGHEST_PROTOCOL)
+
+                f = open("logs.txt", "a")
+                f.write("writing p1_info \n\n\n")
+                f.close()
+
                 with open("p1_" + player1_info + ".pkl", 'wb') as output:
                     pickle.dump(node_player1, output, pickle.HIGHEST_PROTOCOL)
 

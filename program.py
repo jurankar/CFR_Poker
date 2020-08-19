@@ -145,10 +145,11 @@ def igrajIgro(learner): # --> TO DO ne dela ok
 
 
 ## MAIN
+#TODO nared da se laufa zuni pycharma k ta kurac preveč rama zasede
 if __name__ == "__main__":
     start_time = time.time()
     learner = cfr_poker.Poker_Learner()
-    learner.train(25, 10000)
+    learner.train(10, 100)
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
 
 
@@ -160,7 +161,7 @@ Zdaj razvijam osnovno obliko pokra s kartami 9-A, kjer bomo gledali samo High ca
 poker.
 
 1. verzija bo brez dreves, da bom nato videl razliko glede časa z drevesi. Prav tako bos lahko stavil samo
-1 bet na potezo. 
+1 bet na potezo. +
 Čas izvajanja s slovarjem aka. brez dreves za 1000000 iteracij: 5848.5 sekund --> 97.5 minut.....
 porabil sem okoli 1.5-1.8 GB rama, kar je že mejilo na to koliko lahko računalnik sploh porabi(ker imam trenutno notri 8gb, kmalu bom dodal na 16gb)
 
