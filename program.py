@@ -145,11 +145,10 @@ def igrajIgro(learner): # --> TO DO ne dela ok
 
 
 ## MAIN
-#TODO nared da se laufa zuni pycharma k ta kurac preveč rama zasede
 if __name__ == "__main__":
     start_time = time.time()
     learner = cfr_poker.Poker_Learner()
-    learner.train(10, 100)
+    learner.train(10000, 10000)
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
 
 
