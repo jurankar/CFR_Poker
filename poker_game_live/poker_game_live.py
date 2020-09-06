@@ -148,9 +148,19 @@ def get_bot_action(node, bet, bet_amount_player):
 
     action_0 = randDec() < strategy[0]  #ali igramo z action 0 v nodu
     if bet:
-        return "fold" if action_0 else "call"   #p0 je bettou --> mi lahko foldamo ali callamo
+        action = "fold" if action_0 else "call"   #p0 je bettou --> mi lahko foldamo ali callamo
     else:
-        return "check" if action_0 else "raise" #p0 ni bettou --> mi lahko checkamo ali raisamo
+        action = "check" if action_0 else "raise" #p0 ni bettou --> mi lahko checkamo ali raisamo
+
+    if action == "fold":
+        return action, bet_amount_player
+    elif action == "call":
+        return action, 2*bet_amount_player
+    elif action == "check":
+        return action, 0
+    elif action == "raise":
+        return action, pot_amount*1.5   #ko raisamo, raisamo za 1/2 pota, ni vazn kolk je stavu player
+
 
 #TODO tuki naprej --> zrihti zdj da se prešteje kolk je pol v potu glede na to koliko je kdo stavil
 
@@ -163,9 +173,10 @@ def bot_action(infoSet, pot_amount):
     if bet_amount_player > 0:  #player je bettou
         bot_node = bot_node.betting_map["b"]
         infoSet += "b1"
-        bot_action = get_bot_action(bot_node, True)
 
         pot_amount += bet_amount_player #izenačimo stavo od playeja
+        bot_action = get_bot_action(bot_node, True, pot_amount)
+
         bet_amount_player = 0
         return "call", infoSet, pot_amount
 
