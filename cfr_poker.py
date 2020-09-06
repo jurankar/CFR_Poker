@@ -519,7 +519,7 @@ class Poker_Learner:
                 #logs
                 process = psutil.Process(os.getpid())
                 f = open("logs.txt", "a")
-                write_str = "Node ob koncu simulacije porabi:" + str(process.memory_info()[0] / (1024 * 1024)) + " MB rama                                    Ne Ustavit\n"
+                write_str = "Program ob koncu simulacije porabi:" + str(process.memory_info()[0] / (1024 * 1024)) + " MB rama                                    Ne Ustavit\n"
                 f.write(write_str)
                 f.close()
 
@@ -532,11 +532,18 @@ class Poker_Learner:
                     pickle.dump(node_player0, output, pickle.HIGHEST_PROTOCOL)
 
                 f = open("logs.txt", "a")
-                f.write("writing p1_info \n\n\n")
+                f.write("writing p1_info \n")
                 f.close()
 
                 with open("p1_" + player1_info + ".pkl", 'wb') as output:
                     pickle.dump(node_player1, output, pickle.HIGHEST_PROTOCOL)
+
+                del node_player0
+                del node_player1
+                f = open("logs.txt", "a")
+                write_str = "Program po brisanju porabi porabi:" + str(process.memory_info()[0] / (1024 * 1024)) + " MB rama                                    Ne Ustavit\n\n\n"
+                f.write(write_str)
+                f.close()
 
 
         print("Average game return: ", util / (stIteracij * stIgerNaIteracijo))

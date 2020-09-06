@@ -1,8 +1,11 @@
 import tkinter as tk
-import requests
 import cfr_poker
 import nodes
 import random
+from random import random as randDec
+import numpy as np
+
+import pickle
 
 #SETTINGS
 HEIGHT = 800
@@ -29,6 +32,8 @@ global bet_amount_bot
 bet_amount_bot = 0
 global bet_amount_player
 bet_amount_player = 0
+
+global bot_node
 
 #-------------------------------------------------------------------------------------------
 
@@ -136,18 +141,36 @@ def player_action(action, infoSet, pot_amount):
     return infoSet, pot_amount
 
 
-#TODO ta funkcija bo kasneje vračala actine glede na naš program
+#Tukaj se uporabijo naši natrenirani nodi
+#Bet nam pove ali je player pred nami bettou...če je bet false, potem je checkou
+def get_bot_action(node, bet, bet_amount_player):
+    strategy = getAvgStrat(node)
+
+    action_0 = randDec() < strategy[0]  #ali igramo z action 0 v nodu
+    if bet:
+        return "fold" if action_0 else "call"   #p0 je bettou --> mi lahko foldamo ali callamo
+    else:
+        return "check" if action_0 else "raise" #p0 ni bettou --> mi lahko checkamo ali raisamo
+
+#TODO tuki naprej --> zrihti zdj da se prešteje kolk je pol v potu glede na to koliko je kdo stavil
+
+
 def bot_action(infoSet, pot_amount):
     global bet_amount_bot
     global bet_amount_player
+    global bot_node
 
     if bet_amount_player > 0:  #player je bettou
+        bot_node = bot_node.betting_map["b"]
         infoSet += "b1"
+        bot_action = get_bot_action(bot_node, True)
+
         pot_amount += bet_amount_player #izenačimo stavo od playeja
         bet_amount_player = 0
         return "call", infoSet, pot_amount
 
     else:   #player je checkou
+        bot_node = bot_node.betting_map["p"]
         infoSet += "b0"
         return "check", infoSet, pot_amount
 
@@ -194,6 +217,44 @@ def winnings_fun(winnings, infoSet, player_start):
     label_bot_cards["text"] = "BOT cards: " + num_to_card(cards[2]) + " " + num_to_card(cards[3]) if player_start else "BOT cards: " + num_to_card(cards[0]) + " " + num_to_card(cards[1])
 
 
+def poVrsti(cards):
+    cards.sort()
+    cards_string = ""
+    for i in range (len(cards)):
+        cards_string += str(cards[i])
+        if i != len(cards)-1: cards_string += ","
+
+    return cards_string
+
+def getAvgStrat(node):
+    num_actions = len(node.regretSum)
+    avgStrat = np.zeros(num_actions)
+    normalizingSum = 0
+    for i in range(num_actions):
+        normalizingSum += node.strategySum[i]
+    for i in range(num_actions):
+        if(normalizingSum > 0):
+            avgStrat[i] = node.strategySum[i] / normalizingSum
+        else:
+            avgStrat[i] = 1.0 / num_actions
+
+    return avgStrat
+
+def get_bot_node(player_start):
+
+    if player_start:    #če je player == p0
+        bot_cards = poVrsti([cards[2], cards[3]])
+        file_name = "../p1_" + bot_cards + ".pkl"
+        with open(file_name, 'rb') as input:
+            botNode = pickle.load(input)
+
+    else:   #če je bot == p0
+        bot_cards = poVrsti([cards[0], cards[1]])
+        file_name = "../p0_" + bot_cards + ".pkl"
+        with open(file_name, 'rb') as input:
+            botNode = pickle.load(input)
+
+    return botNode
 
 
 
@@ -215,6 +276,8 @@ def play(action, bet_amount):   # --> amount gledamo samo pri raisu
     if label_player_cards["text"] == "PLAYER Cards:  X X":
         #nastavimo karte, premešamo karte
         random.shuffle(cards)
+        global bot_node
+        bot_node = get_bot_node(player_start)
         label_player_cards["text"] = "PLAYER Cards: " + num_to_card(cards[0]) + " " + num_to_card(cards[1]) if player_start else "Player cards: " + num_to_card(cards[2]) + " " + num_to_card(cards[3])
 
         #če ima prvo potezo bot, jo naredimo tukaj

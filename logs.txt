@@ -1,0 +1,2748 @@
+0==>    p0_cards:8,14        p1_cards:6,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1546.68359375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+1==>    p0_cards:4,14        p1_cards:2,3                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1631.5625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+2==>    p0_cards:6,12        p1_cards:2,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1637.8046875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+3==>    p0_cards:8,11        p1_cards:6,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:3302.06640625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+4==>    p0_cards:2,6        p1_cards:3,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1719.171875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+5==>    p0_cards:6,7        p1_cards:4,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1722.5703125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+6==>    p0_cards:6,13        p1_cards:9,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1628.5390625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+7==>    p0_cards:2,2        p1_cards:3,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1627.12890625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+8==>    p0_cards:3,11        p1_cards:9,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1620.69140625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+9==>    p0_cards:2,9        p1_cards:9,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1626.08203125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+10==>    p0_cards:4,11        p1_cards:2,6                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1640.28515625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+11==>    p0_cards:4,7        p1_cards:4,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1623.4296875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+12==>    p0_cards:3,5        p1_cards:13,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1656.296875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+13==>    p0_cards:4,9        p1_cards:11,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1670.91796875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+14==>    p0_cards:2,6        p1_cards:13,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:4448.51171875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+15==>    p0_cards:2,13        p1_cards:4,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1715.734375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+16==>    p0_cards:2,11        p1_cards:6,7                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1638.97265625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+17==>    p0_cards:9,10        p1_cards:3,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:3370.55859375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+18==>    p0_cards:7,11        p1_cards:9,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:4901.49609375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+19==>    p0_cards:4,14        p1_cards:3,6                                     Lahko Ustavis
+Node ob koncu simulacije porabi:5141.27734375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+20==>    p0_cards:3,12        p1_cards:3,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1705.8125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+21==>    p0_cards:6,12        p1_cards:3,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:2957.046875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+22==>    p0_cards:5,12        p1_cards:5,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1703.390625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+23==>    p0_cards:3,5        p1_cards:6,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:6073.52734375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+24==>    p0_cards:3,10        p1_cards:4,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1705.77734375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+25==>    p0_cards:6,8        p1_cards:3,7                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1739.46484375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+26==>    p0_cards:6,7        p1_cards:7,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:2773.78125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+27==>    p0_cards:13,14        p1_cards:4,5                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1718.890625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+28==>    p0_cards:5,9        p1_cards:2,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1841.71484375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+29==>    p0_cards:4,13        p1_cards:10,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1772.64453125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+30==>    p0_cards:4,7        p1_cards:11,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:2748.765625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+31==>    p0_cards:2,11        p1_cards:6,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:3437.7109375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+32==>    p0_cards:6,9        p1_cards:4,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1717.5625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+33==>    p0_cards:8,14        p1_cards:5,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:3004.76953125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+34==>    p0_cards:2,11        p1_cards:7,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:4792.78125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+35==>    p0_cards:3,8        p1_cards:6,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1716.92578125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+36==>    p0_cards:4,11        p1_cards:2,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:2849.44921875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+37==>    p0_cards:4,12        p1_cards:2,4                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1707.5546875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+38==>    p0_cards:8,9        p1_cards:3,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:3415.44921875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+39==>    p0_cards:5,8        p1_cards:12,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1712.4453125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+40==>    p0_cards:11,11        p1_cards:3,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:3487.44921875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+41==>    p0_cards:7,13        p1_cards:5,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:4815.33203125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+42==>    p0_cards:4,6        p1_cards:13,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:5972.72265625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+43==>    p0_cards:5,9        p1_cards:11,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:6178.92578125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+44==>    p0_cards:2,8        p1_cards:2,3                                     Lahko Ustavis
+Node ob koncu simulacije porabi:6303.94921875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+45==>    p0_cards:10,12        p1_cards:4,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1711.27734375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+46==>    p0_cards:6,14        p1_cards:4,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:3526.40625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+47==>    p0_cards:4,5        p1_cards:2,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:4925.80078125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+48==>    p0_cards:8,10        p1_cards:2,6                                     Lahko Ustavis
+Node ob koncu simulacije porabi:5176.96484375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+49==>    p0_cards:5,10        p1_cards:2,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1719.29296875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+50==>    p0_cards:7,10        p1_cards:12,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1719.6640625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+51==>    p0_cards:3,8        p1_cards:4,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:4595.203125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+52==>    p0_cards:8,12        p1_cards:3,6                                     Lahko Ustavis
+Node ob koncu simulacije porabi:5410.68359375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+53==>    p0_cards:2,12        p1_cards:3,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1716.578125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+54==>    p0_cards:4,4        p1_cards:3,5                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1915.80078125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+55==>    p0_cards:7,12        p1_cards:8,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1830.69140625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+56==>    p0_cards:2,4        p1_cards:4,6                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1620.38671875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+57==>    p0_cards:8,9        p1_cards:4,4                                     Lahko Ustavis
+Node ob koncu simulacije porabi:2962.74609375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+58==>    p0_cards:3,14        p1_cards:7,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1925.44921875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+59==>    p0_cards:9,11        p1_cards:8,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:3377.42578125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+60==>    p0_cards:3,14        p1_cards:12,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:5653.3515625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+61==>    p0_cards:6,10        p1_cards:12,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:5892.5234375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+62==>    p0_cards:6,13        p1_cards:5,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:6225.21875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+63==>    p0_cards:11,12        p1_cards:2,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:6332.89453125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+64==>    p0_cards:3,3        p1_cards:4,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:6305.73046875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+65==>    p0_cards:6,8        p1_cards:5,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:6398.48046875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+66==>    p0_cards:7,12        p1_cards:3,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:6481.96484375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+67==>    p0_cards:4,8        p1_cards:7,7                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1706.02734375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+68==>    p0_cards:10,12        p1_cards:4,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:7294.4765625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+69==>    p0_cards:7,14        p1_cards:2,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1878.2578125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+70==>    p0_cards:6,12        p1_cards:5,6                                     Lahko Ustavis
+Node ob koncu simulacije porabi:4696.29296875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+71==>    p0_cards:2,13        p1_cards:7,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:4544.546875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+72==>    p0_cards:4,7        p1_cards:3,6                                     Lahko Ustavis
+Node ob koncu simulacije porabi:7080.42578125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+73==>    p0_cards:3,9        p1_cards:5,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1746.44140625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+74==>    p0_cards:5,8        p1_cards:2,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:6283.8984375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+75==>    p0_cards:2,7        p1_cards:3,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:7463.01953125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+76==>    p0_cards:10,12        p1_cards:6,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:7844.83984375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+77==>    p0_cards:4,12        p1_cards:8,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:7422.27734375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+78==>    p0_cards:3,13        p1_cards:2,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1658.640625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+79==>    p0_cards:8,11        p1_cards:2,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:4698.48046875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+80==>    p0_cards:3,13        p1_cards:6,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:8558.84375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+81==>    p0_cards:12,12        p1_cards:13,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1699.8984375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+82==>    p0_cards:7,14        p1_cards:8,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:3033.47265625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+83==>    p0_cards:5,11        p1_cards:7,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:4283.8046875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+84==>    p0_cards:6,14        p1_cards:8,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:5549.84765625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+85==>    p0_cards:2,5        p1_cards:5,7                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1702.4765625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+86==>    p0_cards:7,9        p1_cards:2,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:5042.58984375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+87==>    p0_cards:3,3        p1_cards:5,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:6845.1796875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+88==>    p0_cards:2,2        p1_cards:3,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:8514.65625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+89==>    p0_cards:11,11        p1_cards:4,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:8680.50390625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+90==>    p0_cards:4,14        p1_cards:5,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:8840.0234375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+91==>    p0_cards:11,11        p1_cards:5,5                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9323.78125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+92==>    p0_cards:3,8        p1_cards:9,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9401.5625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+93==>    p0_cards:4,5        p1_cards:3,4                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9275.9765625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+94==>    p0_cards:2,6        p1_cards:4,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9612.0234375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+95==>    p0_cards:3,6        p1_cards:2,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9525.87890625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+96==>    p0_cards:3,14        p1_cards:5,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10717.6796875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+97==>    p0_cards:4,14        p1_cards:6,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11476.0078125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+98==>    p0_cards:2,13        p1_cards:10,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9545.4375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+99==>    p0_cards:7,10        p1_cards:5,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9066.53125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+100==>    p0_cards:7,12        p1_cards:8,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9446.421875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+101==>    p0_cards:7,9        p1_cards:11,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9252.5390625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+102==>    p0_cards:3,11        p1_cards:10,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9487.4765625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+103==>    p0_cards:4,14        p1_cards:4,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11057.9140625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+104==>    p0_cards:8,10        p1_cards:3,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9941.02734375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+105==>    p0_cards:11,14        p1_cards:9,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1821.14453125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+106==>    p0_cards:11,12        p1_cards:2,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:7424.34375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+107==>    p0_cards:2,7        p1_cards:12,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10061.91796875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+108==>    p0_cards:2,14        p1_cards:10,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1869.01171875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+109==>    p0_cards:5,9        p1_cards:4,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9212.578125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+110==>    p0_cards:12,12        p1_cards:6,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10302.78125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+111==>    p0_cards:3,6        p1_cards:7,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9722.11328125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+112==>    p0_cards:5,6        p1_cards:2,4                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9396.53125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+113==>    p0_cards:3,13        p1_cards:7,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:7268.49609375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+114==>    p0_cards:2,3        p1_cards:2,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:7427.9140625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+115==>    p0_cards:13,13        p1_cards:8,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:7085.5390625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+116==>    p0_cards:7,8        p1_cards:3,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:7380.54296875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+117==>    p0_cards:2,6        p1_cards:4,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:8813.04296875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+118==>    p0_cards:5,6        p1_cards:8,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:8921.39453125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+119==>    p0_cards:9,13        p1_cards:6,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1828.0546875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+120==>    p0_cards:4,14        p1_cards:7,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9505.1796875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+121==>    p0_cards:2,10        p1_cards:4,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10314.9375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+122==>    p0_cards:6,7        p1_cards:4,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10399.75 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+123==>    p0_cards:9,12        p1_cards:4,7                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1715.65234375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+124==>    p0_cards:5,12        p1_cards:2,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:3017.390625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+125==>    p0_cards:8,11        p1_cards:5,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:6779.10546875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+126==>    p0_cards:4,12        p1_cards:3,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:8689.37890625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+127==>    p0_cards:5,6        p1_cards:4,5                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9453.73046875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+128==>    p0_cards:4,10        p1_cards:10,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:8585.84375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+129==>    p0_cards:4,5        p1_cards:11,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:8485.26953125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+130==>    p0_cards:10,13        p1_cards:3,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:8537.14453125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+131==>    p0_cards:10,12        p1_cards:6,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:8898.52734375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+132==>    p0_cards:2,13        p1_cards:3,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10475.18359375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+133==>    p0_cards:6,14        p1_cards:9,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9530.19921875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+134==>    p0_cards:12,13        p1_cards:4,5                                     Lahko Ustavis
+Node ob koncu simulacije porabi:8837.10546875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+135==>    p0_cards:2,8        p1_cards:4,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9322.83203125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+136==>    p0_cards:2,14        p1_cards:4,5                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9823.87109375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+137==>    p0_cards:2,13        p1_cards:3,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:12154.9140625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+138==>    p0_cards:13,14        p1_cards:6,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11611.2265625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+139==>    p0_cards:5,11        p1_cards:10,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10650.140625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+140==>    p0_cards:2,11        p1_cards:4,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10915.984375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+141==>    p0_cards:6,8        p1_cards:7,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10635.125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+142==>    p0_cards:4,13        p1_cards:2,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10778.60546875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+143==>    p0_cards:5,11        p1_cards:4,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10727.12109375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+144==>    p0_cards:3,11        p1_cards:9,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10725.85546875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+145==>    p0_cards:5,12        p1_cards:7,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10576.34765625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+146==>    p0_cards:5,7        p1_cards:5,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10286.02734375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+147==>    p0_cards:9,11        p1_cards:5,7                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10398.87109375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+148==>    p0_cards:2,7        p1_cards:3,7                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10759.10546875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+149==>    p0_cards:10,12        p1_cards:3,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11463.765625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+150==>    p0_cards:13,14        p1_cards:8,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11862.9921875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+151==>    p0_cards:2,3        p1_cards:4,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11037.265625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+152==>    p0_cards:3,14        p1_cards:4,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11153.51953125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+153==>    p0_cards:11,11        p1_cards:4,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11712.80078125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+154==>    p0_cards:2,8        p1_cards:4,7                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10946.28125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+155==>    p0_cards:8,9        p1_cards:11,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11547.21484375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+156==>    p0_cards:9,10        p1_cards:4,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11059.29296875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+157==>    p0_cards:9,13        p1_cards:3,7                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10723.39453125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+158==>    p0_cards:12,13        p1_cards:10,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10649.4609375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+159==>    p0_cards:7,13        p1_cards:4,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10633.953125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+160==>    p0_cards:8,11        p1_cards:7,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10900.48046875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+161==>    p0_cards:3,10        p1_cards:5,7                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11041.3125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+162==>    p0_cards:3,9        p1_cards:7,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10998.88671875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+163==>    p0_cards:12,13        p1_cards:11,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10968.9609375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+164==>    p0_cards:9,9        p1_cards:6,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1697.8671875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+165==>    p0_cards:3,12        p1_cards:2,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:4443.55078125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+166==>    p0_cards:6,11        p1_cards:2,3                                     Lahko Ustavis
+Node ob koncu simulacije porabi:6307.859375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+167==>    p0_cards:3,13        p1_cards:3,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9598.65234375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+168==>    p0_cards:6,8        p1_cards:10,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11467.921875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+169==>    p0_cards:12,12        p1_cards:4,4                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9179.59375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+170==>    p0_cards:6,7        p1_cards:6,6                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9719.625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+171==>    p0_cards:6,9        p1_cards:7,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9788.65234375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+172==>    p0_cards:13,14        p1_cards:8,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10373.2265625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+173==>    p0_cards:5,14        p1_cards:6,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9794.7265625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+174==>    p0_cards:9,11        p1_cards:9,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9560.87109375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+175==>    p0_cards:3,6        p1_cards:5,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9944.109375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+176==>    p0_cards:6,9        p1_cards:2,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9603.16015625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+177==>    p0_cards:5,8        p1_cards:2,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9580.66796875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+178==>    p0_cards:9,9        p1_cards:2,7                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9035.81640625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+179==>    p0_cards:4,10        p1_cards:3,5                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9088.1171875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+180==>    p0_cards:2,14        p1_cards:10,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10538.3671875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+181==>    p0_cards:2,10        p1_cards:4,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10667.4140625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+182==>    p0_cards:3,9        p1_cards:4,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10666.4375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+183==>    p0_cards:6,14        p1_cards:6,6                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10917.6796875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+184==>    p0_cards:5,11        p1_cards:12,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10622.7265625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+185==>    p0_cards:6,7        p1_cards:11,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11212.1640625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+186==>    p0_cards:3,5        p1_cards:9,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11895.5859375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+187==>    p0_cards:5,6        p1_cards:5,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:12396.53125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info
+
+0==>    p0_cards:5,13        p1_cards:10,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:3942.33984375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+1==>    p0_cards:2,4        p1_cards:4,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10093.16796875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+2==>    p0_cards:12,13        p1_cards:3,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:12894.31640625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+3==>    p0_cards:12,13        p1_cards:2,3                                     Lahko Ustavis
+Node ob koncu simulacije porabi:13607.49609375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+4==>    p0_cards:11,13        p1_cards:5,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11468.31640625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+5==>    p0_cards:5,6        p1_cards:7,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11967.92578125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+6==>    p0_cards:3,12        p1_cards:6,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11939.078125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+7==>    p0_cards:2,4        p1_cards:6,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11758.3671875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+8==>    p0_cards:2,9        p1_cards:6,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11725.19921875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+9==>    p0_cards:9,11        p1_cards:5,5                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11588.98828125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+10==>    p0_cards:5,14        p1_cards:8,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10501.859375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+11==>    p0_cards:3,6        p1_cards:2,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10677.546875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+12==>    p0_cards:8,12        p1_cards:4,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10657.00390625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+13==>    p0_cards:8,13        p1_cards:4,7                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11150.6640625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+14==>    p0_cards:6,14        p1_cards:3,7                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11395.83203125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+15==>    p0_cards:10,11        p1_cards:5,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9878.62890625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+16==>    p0_cards:5,14        p1_cards:2,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:12394.64453125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+17==>    p0_cards:8,12        p1_cards:8,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11450.828125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+18==>    p0_cards:2,7        p1_cards:5,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:12113.0078125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+19==>    p0_cards:3,10        p1_cards:6,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:12461.13671875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+20==>    p0_cards:11,12        p1_cards:8,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11641.76171875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+21==>    p0_cards:3,6        p1_cards:7,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:12486.83984375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+22==>    p0_cards:2,7        p1_cards:10,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:13463.9765625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+23==>    p0_cards:6,12        p1_cards:2,4                                     Lahko Ustavis
+Node ob koncu simulacije porabi:12393.265625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+24==>    p0_cards:7,9        p1_cards:12,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11621.109375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+25==>    p0_cards:9,12        p1_cards:10,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11995.828125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+26==>    p0_cards:10,11        p1_cards:7,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11418.9453125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+27==>    p0_cards:2,8        p1_cards:3,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11473.14453125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+28==>    p0_cards:4,14        p1_cards:7,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:13638.6171875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+29==>    p0_cards:3,8        p1_cards:6,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:13301.3828125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+30==>    p0_cards:12,13        p1_cards:7,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:12226.90234375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+31==>    p0_cards:2,9        p1_cards:5,6                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11900.15234375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+32==>    p0_cards:6,9        p1_cards:10,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11580.5703125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+33==>    p0_cards:11,13        p1_cards:2,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:8747.6484375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+34==>    p0_cards:5,10        p1_cards:5,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9006.0625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+35==>    p0_cards:2,7        p1_cards:4,6                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11965.96484375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+36==>    p0_cards:12,13        p1_cards:5,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:13870.45703125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+37==>    p0_cards:3,4        p1_cards:2,8                                     Lahko Ustavis
+Node ob koncu simulacije porabi:12454.7109375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+38==>    p0_cards:3,7        p1_cards:7,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:1863.55859375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+39==>    p0_cards:4,12        p1_cards:8,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:9104.98046875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+40==>    p0_cards:12,14        p1_cards:7,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:10186.3671875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+41==>    p0_cards:9,12        p1_cards:5,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:14098.8671875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+42==>    p0_cards:4,6        p1_cards:5,7                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11981.0234375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+43==>    p0_cards:8,14        p1_cards:3,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:12069.0234375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+44==>    p0_cards:13,14        p1_cards:8,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:13597.2421875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+45==>    p0_cards:12,12        p1_cards:2,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:12254.60546875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+46==>    p0_cards:4,8        p1_cards:11,14                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11393.14453125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+47==>    p0_cards:8,10        p1_cards:2,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11705.80078125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+48==>    p0_cards:6,9        p1_cards:2,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11981.20703125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+49==>    p0_cards:9,10        p1_cards:2,4                                     Lahko Ustavis
+Node ob koncu simulacije porabi:12217.26171875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+50==>    p0_cards:4,7        p1_cards:8,9                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11683.9765625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+51==>    p0_cards:3,8        p1_cards:12,13                                     Lahko Ustavis
+Node ob koncu simulacije porabi:13421.3046875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+52==>    p0_cards:7,10        p1_cards:3,4                                     Lahko Ustavis
+Node ob koncu simulacije porabi:12057.94921875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+53==>    p0_cards:2,14        p1_cards:10,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:11358.25 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+54==>    p0_cards:5,9        p1_cards:2,4                                     Lahko Ustavis
+Node ob koncu simulacije porabi:13104.46875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+55==>    p0_cards:3,8        p1_cards:6,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:13650.3125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+56==>    p0_cards:5,8        p1_cards:4,7                                     Lahko Ustavis
+Node ob koncu simulacije porabi:12346.76171875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+57==>    p0_cards:9,10        p1_cards:5,12                                     Lahko Ustavis
+Node ob koncu simulacije porabi:13663.3984375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+58==>    p0_cards:9,10        p1_cards:5,10                                     Lahko Ustavis
+Node ob koncu simulacije porabi:13999.46875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+59==>    p0_cards:4,14        p1_cards:2,11                                     Lahko Ustavis
+Node ob koncu simulacije porabi:13302.3984375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+
+
+60==>    p0_cards:5,10        p1_cards:3,9                                     Lahko Ustavis
+
+
+0==>    p0_cards:3,11        p1_cards:7,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:5566.44140625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:332.7578125 MB rama                                    Ne Ustavit
+
+
+1==>    p0_cards:3,4        p1_cards:6,8                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6325.84375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:378.23046875 MB rama                                    Ne Ustavit
+
+
+2==>    p0_cards:3,12        p1_cards:4,14                                     Lahko Ustavis
+0==>    p0_cards:3,12        p1_cards:7,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6458.91796875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:566.05859375 MB rama                                    Ne Ustavit
+
+
+1==>    p0_cards:8,8        p1_cards:2,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6440.3984375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:539.13671875 MB rama                                    Ne Ustavit
+
+
+2==>    p0_cards:2,14        p1_cards:6,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7502.6796875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:861.12109375 MB rama                                    Ne Ustavit
+
+
+3==>    p0_cards:9,14        p1_cards:6,7                                     Lahko Ustavis
+Program ob koncu simulacije porabi:3229.05078125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:806.25390625 MB rama                                    Ne Ustavit
+
+
+4==>    p0_cards:6,8        p1_cards:9,10                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7198.96484375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:680.66796875 MB rama                                    Ne Ustavit
+
+
+5==>    p0_cards:5,12        p1_cards:8,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6944.95703125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:1018.13671875 MB rama                                    Ne Ustavit
+
+
+6==>    p0_cards:11,12        p1_cards:5,8                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8253.125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:443.390625 MB rama                                    Ne Ustavit
+
+
+7==>    p0_cards:4,6        p1_cards:2,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9271.06640625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:505.1875 MB rama                                    Ne Ustavit
+
+
+8==>    p0_cards:10,13        p1_cards:6,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:3812.32421875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:496.33203125 MB rama                                    Ne Ustavit
+
+
+9==>    p0_cards:11,12        p1_cards:13,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6862.0390625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:499.56640625 MB rama                                    Ne Ustavit
+
+
+10==>    p0_cards:10,12        p1_cards:3,6                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9049.0078125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:512.76953125 MB rama                                    Ne Ustavit
+
+
+11==>    p0_cards:7,13        p1_cards:4,8                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9208.1640625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:495.0 MB rama                                    Ne Ustavit
+
+
+12==>    p0_cards:5,10        p1_cards:2,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10018.0625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:502.91015625 MB rama                                    Ne Ustavit
+
+
+13==>    p0_cards:11,14        p1_cards:3,7                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7423.96875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:473.94921875 MB rama                                    Ne Ustavit
+
+
+14==>    p0_cards:4,7        p1_cards:8,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7493.6953125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:607.5546875 MB rama                                    Ne Ustavit
+
+
+15==>    p0_cards:4,11        p1_cards:12,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:4847.0078125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:501.765625 MB rama                                    Ne Ustavit
+
+
+16==>    p0_cards:5,13        p1_cards:6,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6469.71875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:478.63671875 MB rama                                    Ne Ustavit
+
+
+17==>    p0_cards:11,13        p1_cards:9,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7281.1953125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:502.09765625 MB rama                                    Ne Ustavit
+
+
+18==>    p0_cards:9,12        p1_cards:3,5                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6778.58984375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:555.52734375 MB rama                                    Ne Ustavit
+
+
+19==>    p0_cards:4,6        p1_cards:7,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6793.26171875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:669.34765625 MB rama                                    Ne Ustavit
+
+
+0==>    p0_cards:3,7        p1_cards:8,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7194.53125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:476.10546875 MB rama                                    Ne Ustavit
+
+
+1==>    p0_cards:8,11        p1_cards:3,8                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7501.015625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:625.16015625 MB rama                                    Ne Ustavit
+
+
+2==>    p0_cards:7,10        p1_cards:7,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:5897.265625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:507.5859375 MB rama                                    Ne Ustavit
+
+
+3==>    p0_cards:9,13        p1_cards:3,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:4829.52734375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:505.296875 MB rama                                    Ne Ustavit
+
+
+4==>    p0_cards:6,12        p1_cards:5,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6414.87109375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:408.67578125 MB rama                                    Ne Ustavit
+
+
+5==>    p0_cards:6,14        p1_cards:3,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8293.14453125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:546.4921875 MB rama                                    Ne Ustavit
+
+
+6==>    p0_cards:6,7        p1_cards:8,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9025.36328125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:502.48046875 MB rama                                    Ne Ustavit
+
+
+7==>    p0_cards:3,5        p1_cards:4,10                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8982.46875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:460.65234375 MB rama                                    Ne Ustavit
+
+
+8==>    p0_cards:11,14        p1_cards:3,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10046.8671875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:442.2578125 MB rama                                    Ne Ustavit
+
+
+9==>    p0_cards:3,7        p1_cards:11,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7210.9609375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:505.7109375 MB rama                                    Ne Ustavit
+
+
+10==>    p0_cards:9,12        p1_cards:3,7                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10557.34765625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:439.73046875 MB rama                                    Ne Ustavit
+
+
+11==>    p0_cards:4,12        p1_cards:3,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10471.2109375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:531.1171875 MB rama                                    Ne Ustavit
+
+
+12==>    p0_cards:4,14        p1_cards:9,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9984.109375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:518.0234375 MB rama                                    Ne Ustavit
+
+
+13==>    p0_cards:12,12        p1_cards:7,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10459.07421875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:542.64453125 MB rama                                    Ne Ustavit
+
+
+14==>    p0_cards:4,8        p1_cards:5,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6063.5625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:430.01953125 MB rama                                    Ne Ustavit
+
+
+15==>    p0_cards:5,8        p1_cards:5,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6894.015625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:869.86328125 MB rama                                    Ne Ustavit
+
+
+16==>    p0_cards:7,11        p1_cards:3,7                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9541.46484375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:623.2578125 MB rama                                    Ne Ustavit
+
+
+17==>    p0_cards:8,9        p1_cards:11,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:5989.9765625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:759.9140625 MB rama                                    Ne Ustavit
+
+
+18==>    p0_cards:12,14        p1_cards:6,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7745.18359375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:485.2734375 MB rama                                    Ne Ustavit
+
+
+19==>    p0_cards:3,6        p1_cards:7,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8072.21875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:592.12109375 MB rama                                    Ne Ustavit
+
+
+20==>    p0_cards:5,11        p1_cards:6,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10545.3203125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:501.0546875 MB rama                                    Ne Ustavit
+
+
+21==>    p0_cards:5,13        p1_cards:11,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6061.80859375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:609.48828125 MB rama                                    Ne Ustavit
+
+
+22==>    p0_cards:9,10        p1_cards:7,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9056.80078125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:556.54296875 MB rama                                    Ne Ustavit
+
+
+23==>    p0_cards:5,10        p1_cards:10,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:5872.50390625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:632.89453125 MB rama                                    Ne Ustavit
+
+
+24==>    p0_cards:13,13        p1_cards:2,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6568.625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:718.53125 MB rama                                    Ne Ustavit
+
+
+25==>    p0_cards:3,12        p1_cards:7,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11605.18359375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:512.44140625 MB rama                                    Ne Ustavit
+
+
+26==>    p0_cards:5,13        p1_cards:8,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9003.44140625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:539.28125 MB rama                                    Ne Ustavit
+
+
+27==>    p0_cards:2,14        p1_cards:5,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:12562.296875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:571.24609375 MB rama                                    Ne Ustavit
+
+
+28==>    p0_cards:5,6        p1_cards:8,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9015.8046875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:499.20703125 MB rama                                    Ne Ustavit
+
+
+29==>    p0_cards:3,13        p1_cards:3,10                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9559.04296875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:468.1640625 MB rama                                    Ne Ustavit
+
+
+30==>    p0_cards:3,9        p1_cards:5,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10698.75390625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:470.71484375 MB rama                                    Ne Ustavit
+
+
+31==>    p0_cards:6,7        p1_cards:3,4                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8760.0859375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:545.859375 MB rama                                    Ne Ustavit
+
+
+32==>    p0_cards:4,12        p1_cards:4,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8123.20703125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:605.81640625 MB rama                                    Ne Ustavit
+
+
+33==>    p0_cards:8,10        p1_cards:8,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:5423.84375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:578.640625 MB rama                                    Ne Ustavit
+
+
+34==>    p0_cards:9,14        p1_cards:3,8                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6435.078125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:481.4921875 MB rama                                    Ne Ustavit
+
+
+35==>    p0_cards:8,10        p1_cards:2,5                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6394.703125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:416.36328125 MB rama                                    Ne Ustavit
+
+
+36==>    p0_cards:7,9        p1_cards:2,6                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6644.28125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:595.96875 MB rama                                    Ne Ustavit
+
+
+37==>    p0_cards:6,8        p1_cards:4,10                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11096.5859375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:520.72265625 MB rama                                    Ne Ustavit
+
+
+38==>    p0_cards:2,7        p1_cards:8,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11477.91015625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:585.6875 MB rama                                    Ne Ustavit
+
+
+39==>    p0_cards:3,7        p1_cards:2,10                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9931.90625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:467.65625 MB rama                                    Ne Ustavit
+
+
+40==>    p0_cards:5,9        p1_cards:12,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7493.671875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:618.0703125 MB rama                                    Ne Ustavit
+
+
+41==>    p0_cards:3,6        p1_cards:4,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9546.03515625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:459.46875 MB rama                                    Ne Ustavit
+
+
+42==>    p0_cards:6,12        p1_cards:9,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8133.55078125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:593.93359375 MB rama                                    Ne Ustavit
+
+
+43==>    p0_cards:3,12        p1_cards:2,10                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11792.62890625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:524.02734375 MB rama                                    Ne Ustavit
+
+
+44==>    p0_cards:3,11        p1_cards:6,7                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7473.24609375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:614.8515625 MB rama                                    Ne Ustavit
+
+
+45==>    p0_cards:4,11        p1_cards:5,7                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9069.33984375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:438.75 MB rama                                    Ne Ustavit
+
+
+46==>    p0_cards:7,12        p1_cards:8,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:5809.42578125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:537.87109375 MB rama                                    Ne Ustavit
+
+
+47==>    p0_cards:12,13        p1_cards:3,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:12570.3984375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:631.1796875 MB rama                                    Ne Ustavit
+
+
+48==>    p0_cards:3,12        p1_cards:6,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8884.265625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:831.43359375 MB rama                                    Ne Ustavit
+
+
+49==>    p0_cards:4,11        p1_cards:6,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8753.8984375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:492.1328125 MB rama                                    Ne Ustavit
+
+
+50==>    p0_cards:7,8        p1_cards:3,7                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9926.5703125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:519.36328125 MB rama                                    Ne Ustavit
+
+
+51==>    p0_cards:7,11        p1_cards:5,5                                     Lahko Ustavis
+Program ob koncu simulacije porabi:5960.83203125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:585.73046875 MB rama                                    Ne Ustavit
+
+
+52==>    p0_cards:9,13        p1_cards:4,7                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8915.12109375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:854.859375 MB rama                                    Ne Ustavit
+
+
+53==>    p0_cards:2,13        p1_cards:10,10                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8048.0390625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:873.37890625 MB rama                                    Ne Ustavit
+
+
+54==>    p0_cards:5,10        p1_cards:4,6                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7824.703125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:939.58203125 MB rama                                    Ne Ustavit
+
+
+55==>    p0_cards:7,14        p1_cards:5,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11066.94140625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:559.14453125 MB rama                                    Ne Ustavit
+
+
+56==>    p0_cards:5,11        p1_cards:13,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8993.5078125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:541.91796875 MB rama                                    Ne Ustavit
+
+
+57==>    p0_cards:6,7        p1_cards:8,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9399.203125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:543.37890625 MB rama                                    Ne Ustavit
+
+
+58==>    p0_cards:11,12        p1_cards:3,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:12465.70703125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:540.734375 MB rama                                    Ne Ustavit
+
+
+59==>    p0_cards:3,13        p1_cards:4,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9014.9921875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:581.359375 MB rama                                    Ne Ustavit
+
+
+60==>    p0_cards:6,10        p1_cards:7,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6501.0625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:359.03125 MB rama                                    Ne Ustavit
+
+
+61==>    p0_cards:11,12        p1_cards:2,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8738.875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:915.67578125 MB rama                                    Ne Ustavit
+
+
+62==>    p0_cards:6,13        p1_cards:12,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6445.94921875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:931.5 MB rama                                    Ne Ustavit
+
+
+63==>    p0_cards:10,14        p1_cards:5,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:3239.640625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:1335.3359375 MB rama                                    Ne Ustavit
+
+
+64==>    p0_cards:12,14        p1_cards:5,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6510.0390625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:871.58984375 MB rama                                    Ne Ustavit
+
+
+65==>    p0_cards:6,14        p1_cards:4,10                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10416.63671875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:504.54296875 MB rama                                    Ne Ustavit
+
+
+66==>    p0_cards:10,14        p1_cards:7,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7435.7578125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:501.828125 MB rama                                    Ne Ustavit
+
+
+67==>    p0_cards:7,10        p1_cards:10,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6776.0078125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:573.24609375 MB rama                                    Ne Ustavit
+
+
+68==>    p0_cards:8,11        p1_cards:7,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9084.20703125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:485.04296875 MB rama                                    Ne Ustavit
+
+
+69==>    p0_cards:3,13        p1_cards:6,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10489.1328125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:563.99609375 MB rama                                    Ne Ustavit
+
+
+70==>    p0_cards:5,11        p1_cards:2,7                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8447.28125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:541.54296875 MB rama                                    Ne Ustavit
+
+
+71==>    p0_cards:2,5        p1_cards:3,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:5301.53515625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:604.82421875 MB rama                                    Ne Ustavit
+
+
+72==>    p0_cards:8,10        p1_cards:3,5                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9050.53515625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:873.7578125 MB rama                                    Ne Ustavit
+
+
+73==>    p0_cards:5,13        p1_cards:10,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11670.85546875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:688.77734375 MB rama                                    Ne Ustavit
+
+
+74==>    p0_cards:3,4        p1_cards:12,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9499.47265625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:772.45703125 MB rama                                    Ne Ustavit
+
+
+75==>    p0_cards:5,13        p1_cards:10,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:12690.94921875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:628.45703125 MB rama                                    Ne Ustavit
+
+
+76==>    p0_cards:7,10        p1_cards:6,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11285.125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:545.61328125 MB rama                                    Ne Ustavit
+
+
+77==>    p0_cards:5,10        p1_cards:5,6                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8226.9609375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:815.87890625 MB rama                                    Ne Ustavit
+
+
+78==>    p0_cards:8,12        p1_cards:2,10                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11690.7109375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:612.18359375 MB rama                                    Ne Ustavit
+
+
+79==>    p0_cards:5,6        p1_cards:3,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8483.8046875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:719.8203125 MB rama                                    Ne Ustavit
+
+
+80==>    p0_cards:4,6        p1_cards:2,4                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10753.546875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:566.42578125 MB rama                                    Ne Ustavit
+
+
+81==>    p0_cards:5,14        p1_cards:8,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7987.84765625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:679.23046875 MB rama                                    Ne Ustavit
+
+
+82==>    p0_cards:4,7        p1_cards:3,4                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9203.375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:893.07421875 MB rama                                    Ne Ustavit
+
+
+83==>    p0_cards:7,14        p1_cards:2,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11805.640625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:629.55078125 MB rama                                    Ne Ustavit
+
+
+84==>    p0_cards:3,11        p1_cards:7,8                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10312.52734375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:531.51171875 MB rama                                    Ne Ustavit
+
+
+85==>    p0_cards:4,5        p1_cards:9,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9052.69140625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:759.515625 MB rama                                    Ne Ustavit
+
+
+86==>    p0_cards:3,6        p1_cards:3,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:13528.453125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:605.58984375 MB rama                                    Ne Ustavit
+
+
+87==>    p0_cards:2,11        p1_cards:8,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9652.65625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:791.30859375 MB rama                                    Ne Ustavit
+
+
+88==>    p0_cards:12,14        p1_cards:11,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9295.3671875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:514.1171875 MB rama                                    Ne Ustavit
+
+
+89==>    p0_cards:4,8        p1_cards:5,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6769.109375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:629.7421875 MB rama                                    Ne Ustavit
+
+
+90==>    p0_cards:4,8        p1_cards:9,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6897.09375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:564.1171875 MB rama                                    Ne Ustavit
+
+
+91==>    p0_cards:3,4        p1_cards:8,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10796.40234375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:529.5078125 MB rama                                    Ne Ustavit
+
+
+92==>    p0_cards:6,11        p1_cards:13,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7450.88671875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:514.99609375 MB rama                                    Ne Ustavit
+
+
+93==>    p0_cards:4,4        p1_cards:7,8                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8441.64453125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:555.53125 MB rama                                    Ne Ustavit
+
+
+94==>    p0_cards:2,6        p1_cards:9,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6801.2578125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:541.828125 MB rama                                    Ne Ustavit
+
+
+95==>    p0_cards:8,11        p1_cards:9,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11536.95703125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:520.78125 MB rama                                    Ne Ustavit
+
+
+96==>    p0_cards:2,11        p1_cards:7,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10062.73828125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:496.67578125 MB rama                                    Ne Ustavit
+
+
+97==>    p0_cards:9,10        p1_cards:6,8                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10545.30078125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:553.16015625 MB rama                                    Ne Ustavit
+
+
+98==>    p0_cards:2,11        p1_cards:7,7                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8398.71484375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:547.796875 MB rama                                    Ne Ustavit
+
+
+99==>    p0_cards:3,11        p1_cards:13,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11515.6171875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:517.51171875 MB rama                                    Ne Ustavit
+
+
+100==>    p0_cards:3,4        p1_cards:5,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8508.35546875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:517.07421875 MB rama                                    Ne Ustavit
+
+
+101==>    p0_cards:3,13        p1_cards:9,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9417.62109375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:551.5859375 MB rama                                    Ne Ustavit
+
+
+102==>    p0_cards:9,14        p1_cards:4,8                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10055.01953125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:520.58203125 MB rama                                    Ne Ustavit
+
+
+103==>    p0_cards:4,14        p1_cards:5,6                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10946.80859375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:448.25 MB rama                                    Ne Ustavit
+
+
+104==>    p0_cards:4,6        p1_cards:6,6                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8094.58203125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:600.1875 MB rama                                    Ne Ustavit
+
+
+105==>    p0_cards:9,10        p1_cards:11,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10092.98828125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:509.84375 MB rama                                    Ne Ustavit
+
+
+106==>    p0_cards:3,9        p1_cards:6,10                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8486.73046875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:484.03515625 MB rama                                    Ne Ustavit
+
+
+107==>    p0_cards:8,8        p1_cards:7,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7510.02734375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:529.30859375 MB rama                                    Ne Ustavit
+
+
+108==>    p0_cards:2,8        p1_cards:6,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7550.34765625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:605.64453125 MB rama                                    Ne Ustavit
+
+
+109==>    p0_cards:3,10        p1_cards:5,6                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9043.51171875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:559.31640625 MB rama                                    Ne Ustavit
+
+
+110==>    p0_cards:9,9        p1_cards:2,7                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6081.40625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:592.046875 MB rama                                    Ne Ustavit
+
+
+111==>    p0_cards:7,8        p1_cards:2,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7293.421875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:809.27734375 MB rama                                    Ne Ustavit
+
+
+112==>    p0_cards:4,8        p1_cards:9,10                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8543.78125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:822.91015625 MB rama                                    Ne Ustavit
+
+
+113==>    p0_cards:2,13        p1_cards:6,7                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9766.12109375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:934.6015625 MB rama                                    Ne Ustavit
+
+
+114==>    p0_cards:2,13        p1_cards:9,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:13022.39453125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:558.44921875 MB rama                                    Ne Ustavit
+
+
+115==>    p0_cards:4,10        p1_cards:5,8                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8304.76953125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:563.0703125 MB rama                                    Ne Ustavit
+
+
+116==>    p0_cards:10,12        p1_cards:3,6                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10577.63671875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:489.421875 MB rama                                    Ne Ustavit
+
+
+117==>    p0_cards:12,13        p1_cards:2,3                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11319.8828125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:638.3515625 MB rama                                    Ne Ustavit
+
+
+118==>    p0_cards:7,7        p1_cards:7,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7291.0625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:1320.78515625 MB rama                                    Ne Ustavit
+
+
+119==>    p0_cards:9,13        p1_cards:3,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8869.5859375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:506.32421875 MB rama                                    Ne Ustavit
+
+
+120==>    p0_cards:6,9        p1_cards:5,6                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11101.0859375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:510.21875 MB rama                                    Ne Ustavit
+
+
+121==>    p0_cards:5,7        p1_cards:6,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7450.74609375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:507.91796875 MB rama                                    Ne Ustavit
+
+
+122==>    p0_cards:8,8        p1_cards:8,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7279.421875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:505.62109375 MB rama                                    Ne Ustavit
+
+
+123==>    p0_cards:2,5        p1_cards:9,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6092.78515625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:602.109375 MB rama                                    Ne Ustavit
+
+
+124==>    p0_cards:4,13        p1_cards:5,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7340.92578125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:808.79296875 MB rama                                    Ne Ustavit
+
+
+125==>    p0_cards:8,10        p1_cards:4,5                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10909.57421875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:546.39453125 MB rama                                    Ne Ustavit
+
+
+126==>    p0_cards:10,11        p1_cards:3,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8497.59765625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:856.55078125 MB rama                                    Ne Ustavit
+
+
+127==>    p0_cards:10,13        p1_cards:10,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:6415.5625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:447.78515625 MB rama                                    Ne Ustavit
+
+
+128==>    p0_cards:8,11        p1_cards:2,3                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11744.2734375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:511.9140625 MB rama                                    Ne Ustavit
+
+
+129==>    p0_cards:2,9        p1_cards:2,8                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9002.453125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:556.6875 MB rama                                    Ne Ustavit
+
+
+130==>    p0_cards:5,11        p1_cards:7,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11002.65234375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:517.2109375 MB rama                                    Ne Ustavit
+
+
+131==>    p0_cards:11,11        p1_cards:4,10                                     Lahko Ustavis
+Program ob koncu simulacije porabi:12021.13671875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:601.7734375 MB rama                                    Ne Ustavit
+
+
+132==>    p0_cards:4,10        p1_cards:5,5                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7859.84375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:475.109375 MB rama                                    Ne Ustavit
+
+
+133==>    p0_cards:8,12        p1_cards:3,8                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9597.01953125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:445.90234375 MB rama                                    Ne Ustavit
+
+
+134==>    p0_cards:2,2        p1_cards:3,6                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9198.40234375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:517.796875 MB rama                                    Ne Ustavit
+
+
+135==>    p0_cards:4,12        p1_cards:2,5                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8381.15625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:553.3359375 MB rama                                    Ne Ustavit
+
+
+136==>    p0_cards:2,13        p1_cards:4,10                                     Lahko Ustavis
+Program ob koncu simulacije porabi:14162.72265625 MB rama                                    Ne Ustavit
+writing p0_info
+
+
+
+
+0==>    p0_cards:10,12        p1_cards:3,8                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11440.5546875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:498.89453125 MB rama                                    Ne Ustavit
+
+
+1==>    p0_cards:4,11        p1_cards:6,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11825.171875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:515.87109375 MB rama                                    Ne Ustavit
+
+
+2==>    p0_cards:2,9        p1_cards:7,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10514.08203125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:461.125 MB rama                                    Ne Ustavit
+
+
+3==>    p0_cards:8,11        p1_cards:3,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11303.35546875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:570.9140625 MB rama                                    Ne Ustavit
+
+
+4==>    p0_cards:3,9        p1_cards:5,6                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11801.8984375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:509.73828125 MB rama                                    Ne Ustavit
+
+
+5==>    p0_cards:6,14        p1_cards:2,6                                     Lahko Ustavis
+Program ob koncu simulacije porabi:7938.66015625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:500.90234375 MB rama                                    Ne Ustavit
+
+
+6==>    p0_cards:5,8        p1_cards:5,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:9085.4140625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:567.93359375 MB rama                                    Ne Ustavit
+
+
+7==>    p0_cards:7,9        p1_cards:12,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11391.75390625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:493.46875 MB rama                                    Ne Ustavit
+
+
+8==>    p0_cards:6,6        p1_cards:7,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8089.6953125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:558.77734375 MB rama                                    Ne Ustavit
+
+
+9==>    p0_cards:6,12        p1_cards:4,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11386.2265625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:478.3515625 MB rama                                    Ne Ustavit
+
+
+10==>    p0_cards:7,9        p1_cards:5,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10078.140625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:498.01953125 MB rama                                    Ne Ustavit
+
+
+11==>    p0_cards:4,11        p1_cards:10,10                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8808.8828125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:520.328125 MB rama                                    Ne Ustavit
+
+
+12==>    p0_cards:2,7        p1_cards:13,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:12618.140625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:544.13671875 MB rama                                    Ne Ustavit
+
+
+13==>    p0_cards:6,9        p1_cards:6,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:12309.71875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:564.69921875 MB rama                                    Ne Ustavit
+
+
+14==>    p0_cards:2,14        p1_cards:7,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11433.1796875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:502.16796875 MB rama                                    Ne Ustavit
+
+
+15==>    p0_cards:2,14        p1_cards:2,7                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10102.640625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:484.05859375 MB rama                                    Ne Ustavit
+
+
+16==>    p0_cards:3,14        p1_cards:11,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10526.34765625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:484.671875 MB rama                                    Ne Ustavit
+
+
+17==>    p0_cards:5,7        p1_cards:2,7                                     Lahko Ustavis
+Program ob koncu simulacije porabi:8252.99609375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:536.71875 MB rama                                    Ne Ustavit
+
+
+18==>    p0_cards:7,8        p1_cards:10,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:11957.1328125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:546.15625 MB rama                                    Ne Ustavit
+
+
+19==>    p0_cards:5,10        p1_cards:5,13                                     Lahko Ustavis
+Program ob koncu simulacije porabi:10532.6640625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:466.10546875 MB rama                                    Ne Ustavit
+
+
+20==>    p0_cards:12,13        p1_cards:3,7                                     Lahko Ustavis
+Program ob koncu simulacije porabi:13557.51171875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
