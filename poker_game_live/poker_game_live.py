@@ -10,7 +10,7 @@ import pickle
 #SETTINGS
 HEIGHT = 800
 WIDTH = 1200
-ZAČETNO_STANJE = 1000
+ZAČETNO_STANJE = 10000
 SMALL_BLIND = 10
 BIG_BLIND = SMALL_BLIND * 2
 
@@ -46,10 +46,8 @@ def payoff(infoSet, old_pot):
         current_stage = infoSet.split("|")[(infoSet.count("|") + 1) - 1]
         player = (current_stage.count("b")) % 2
 
-        ante = 10  # vsota ki jo vsak player da na mizo se preden dobi karte --> kasneje lahko zamenjas za small pa big blind --> je vključena ze na začetku ko nastavimo zacetni "old_pot" in "new_pot"
-
         # če kdo prej folda kot obicajno, pol nasprotnik dobi 1/2 pota minus zadnjo stavo(-1), ki je player ni callou
-        winnings = old_pot / 2 + ante
+        winnings = old_pot / 2
         if terminal_node == "p0_win":
             return winnings if player == 0 else -winnings
         elif terminal_node == "p1_win":
@@ -58,7 +56,7 @@ def payoff(infoSet, old_pot):
         if terminal_node == "call_betterCards":
             # Vsak dobi sam pol pota ker tut v resnici staviš pol ti pol opponent in dejansko si na +/- sam za polovico pota
             # Gre ravno cez pol ker sta
-            winnings = old_pot / 2 + ante
+            winnings = old_pot / 2
             better_cards_p0 = cfr_poker.Poker_Learner.betterCards("", cards, player)
             if better_cards_p0 == "split":
                 return 0
@@ -95,10 +93,21 @@ def show_cards(game_stage):
     print("show_cards")
     if game_stage == 1:
         text = num_to_card(cards[4]) + " " + num_to_card(cards[5]) + " " + num_to_card(cards[6])
+        new_cards_ = "f" + poVrsti([cards[4], cards[5], cards[6]])
     elif game_stage == 2:
         text = num_to_card(cards[4]) + " " + num_to_card(cards[5]) + " " + num_to_card(cards[6]) + " " + num_to_card(cards[7])
+        new_cards_ = "t" + poVrsti([cards[7]])
     elif game_stage == 3:
         text = num_to_card(cards[4]) + " " + num_to_card(cards[5]) + " " + num_to_card(cards[6]) + " " + num_to_card(cards[7]) + " " + num_to_card(cards[8])
+        new_cards_ = "r" + poVrsti([cards[8]])
+    else:
+        return "error show cards"
+
+    global bot_node
+    if new_cards_ in bot_node.new_cards:
+        bot_node = bot_node.new_cards[new_cards_]
+    else:
+        bot_node = "empty_node"
     label_cards_table["text"] = text
 
 def bet_type_fun(bet_amount, pot_amount):
@@ -117,73 +126,83 @@ def bet_type_fun(bet_amount, pot_amount):
     else:
         return "b2"
 
-def player_action(action, infoSet, pot_amount):
+def player_action(action, pot_amount):
     global bet_amount_bot
     global bet_amount_player
+    bot_bet_amount = bet_amount_bot
 
     if action == "fold/check":
-        infoSet += "b0"
+        action_info = "b0"
 
-    if action == "call":    #check in call sta ista akcija in isti gumb
-        infoSet += "b1"
+    elif action == "call":    #check in call sta ista akcija in isti gumb
+        action_info = "b1"
         pot_amount += bet_amount_bot  # izenačimo stavo od bota
-        bet_amount_bot = 0
 
-    if action == "raise":
+    elif action == "raise":
         bet_amount_player = bet_amount_player - bet_amount_bot
-        bet_amount_bot = 0
         if bet_amount_player <= 0 :
             print("error bruh2")
-            label_game_info["text"] = "error bruh --> ne cheatat feget" # TODO zbriš preden pošlš profesorju
-        infoSet += bet_type_fun(bet_amount_player, pot_amount)
-        pot_amount += bet_amount_player
+            label_game_info["text"] = "error bruh --> ne cheatat"
+        action_info = "b1"
+        pot_amount += bet_amount_player + bet_amount_bot
 
-    return infoSet, pot_amount
+    else:
+        return "error player action function"
+
+    bet_amount_bot = 0
+    return action_info, pot_amount
 
 
 #Tukaj se uporabijo naši natrenirani nodi
 #Bet nam pove ali je player pred nami bettou...če je bet false, potem je checkou
-def get_bot_action(node, bet, bet_amount_player):
-    strategy = getAvgStrat(node)
+def get_bot_action(node, bet_amount_player):
+    node_hec = node
+
+    if bet_amount_player == 0:
+        bet = False
+    else:
+        bet = True
+
+    if bot_node == "empty_node":    # --> Če nismo prišli do kakšnega stanja med simulacijo; v tem primeru mamo pol 50/50 šanse
+        strategy = [0.5, 0.5]
+    else:
+        strategy = getAvgStrat(node)
 
     action_0 = randDec() < strategy[0]  #ali igramo z action 0 v nodu
+
     if bet:
         action = "fold" if action_0 else "call"   #p0 je bettou --> mi lahko foldamo ali callamo
     else:
         action = "check" if action_0 else "raise" #p0 ni bettou --> mi lahko checkamo ali raisamo
 
     if action == "fold":
-        return action, bet_amount_player
+        return action,"b0" , 0
     elif action == "call":
-        return action, 2*bet_amount_player
+        return action, "b1", bet_amount_player
     elif action == "check":
-        return action, 0
+        return action, "b0", 0
     elif action == "raise":
-        return action, pot_amount*1.5   #ko raisamo, raisamo za 1/2 pota, ni vazn kolk je stavu player
+        return action, "b1", pot_amount * 0.5   #ko raisamo, raisamo za 1/2 pota, ni vazn kolk je stavu player : včasih se zna to zgodit na riverju
+    else:
+        return "error"
 
 
-#TODO tuki naprej --> zrihti zdj da se prešteje kolk je pol v potu glede na to koliko je kdo stavil
-
-
-def bot_action(infoSet, pot_amount):
+def bot_action(pot_amount):
     global bet_amount_bot
     global bet_amount_player
     global bot_node
+    node = bot_node
 
     if bet_amount_player > 0:  #player je bettou
-        bot_node = bot_node.betting_map["b"]
-        infoSet += "b1"
-
-        pot_amount += bet_amount_player #izenačimo stavo od playeja
-        bot_action = get_bot_action(bot_node, True, pot_amount)
-
+        pot_amount += bet_amount_player #izenačimo stavo od playerja
+        bot_action, action_info, bet_amount_bot = get_bot_action(bot_node, bet_amount_player)
         bet_amount_player = 0
-        return "call", infoSet, pot_amount
 
     else:   #player je checkou
-        bot_node = bot_node.betting_map["p"]
-        infoSet += "b0"
-        return "check", infoSet, pot_amount
+        bot_action, action_info, bet_amount_bot = get_bot_action(bot_node, 0)
+
+    pot_amount += bet_amount_bot
+    return bot_action, action_info, pot_amount, bet_amount_bot
 
 
 #pove nam ali je naslednjo rundo na vrsti player ali bot
@@ -221,7 +240,7 @@ def winnings_fun(winnings, infoSet, player_start):
     else:
         Player_stanje -= winnings
         Bot_stanje += winnings
-        label_game_info["text"] = "Konec igre, bot je dobil: " + str(-winnings) + "     in playeryevo novo stanje je:" + str(Player_stanje)
+        label_game_info["text"] = "Konec igre, bot je dobil: " + str(winnings) + "     in playeryevo novo stanje je:" + str(Player_stanje)
 
     label_ply_stanje["text"] = "Stanje player: " + str(Player_stanje)
     label_bot_stanje["text"] = "Stanje bot: " + str(Bot_stanje)
@@ -287,18 +306,22 @@ def play(action, bet_amount):   # --> amount gledamo samo pri raisu
     if label_player_cards["text"] == "PLAYER Cards:  X X":
         #nastavimo karte, premešamo karte
         random.shuffle(cards)
+        pot_amount = 100    # --> each player ante 50
         global bot_node
         bot_node = get_bot_node(player_start)
         label_player_cards["text"] = "PLAYER Cards: " + num_to_card(cards[0]) + " " + num_to_card(cards[1]) if player_start else "Player cards: " + num_to_card(cards[2]) + " " + num_to_card(cards[3])
 
         #če ima prvo potezo bot, jo naredimo tukaj
         if player_start == False:
-            # če prtisnemo na zacetku raise
             bet_amount_player = 0
             bet_amount = 0
+
             #naredimo potezo
-            action, infoSet, pot_amount = bot_action(infoSet, pot_amount)  # vedno checkamo
-            label_game_info["text"] = "Bot move action:" + action + "       pot_amount:" + str(pot_amount + 20) + "       bet_amount:" + str(bet_amount)
+            action, action_info, pot_amount, bet_amount_bot = bot_action(pot_amount)
+            infoSet += action_info
+            if bot_node != "empty_node":
+                bot_node = bot_node.betting_map[action_info]    # --> update node accordingly
+            label_game_info["text"] = "Bot move action:" + action + "       pot_amount:" + str(pot_amount) + "       bet_amount:" + str(bet_amount)
             print("Bot move infoset:", infoSet, "       pot_amount:", pot_amount, "                bet_amount:", bet_amount)
             print("Bot action: " + action)
 
@@ -306,20 +329,29 @@ def play(action, bet_amount):   # --> amount gledamo samo pri raisu
 
     #smo v tem loopu, dokler player spet ne rabi kliknt gumba
     while(True):
+        node = bot_node
         if(player_move):
             if new_player_move_need:    #če smo že enkrat igral z playerjom, potem mu mormo rect zdj za novo potezo
                 new_player_move_need = False    # --> poenostavimo na default
                 break
-            infoSet, pot_amount = player_action(action, infoSet, pot_amount)
-            print("Player move infoset:", infoSet, "       pot_amount:", pot_amount, "                bet_amount:", bet_amount)
+            action_info, pot_amount = player_action(action, pot_amount)
+            infoSet += action_info
+            if bot_node != "empty_node":
+                bot_node = bot_node.betting_map[action_info]    # --> update node accordingly
+
+            label_game_info["text"] = "Pot_amount:" + str(pot_amount) + "   Player action:" + str(action_info)
+            print("Player move infoset:", infoSet, "       pot_amount:", pot_amount, "                bet_amount:", bet_amount_player)
             new_player_move_need = True
             print("Player action: ", action)
         else:
             #bot action = bot_action(action, amount, pot_amount) --> tuki pride v upostav naše strojno učenje
-            action, infoSet, pot_amount = bot_action(infoSet, pot_amount)    # vedno callamo
-            label_game_info["text"] = "Bot move action:" + action + "       pot_amount:" + str(pot_amount + 20) + "       bet_amount:" + str(bet_amount)
-            print("Bot move infoset:", infoSet, "       pot_amount:", pot_amount, "                bet_amount:",
-                  bet_amount)
+            action, action_info, pot_amount, bet_amount_bot = bot_action(pot_amount)
+            infoSet += action_info
+            if bot_node != "empty_node":
+                bot_node = bot_node.betting_map[action_info]    # --> update node accordingly
+
+            label_game_info["text"] = "Bot move action:" + action + "       pot_amount:" + str(pot_amount) + "       bet_amount:" + str(bet_amount_bot)
+            print("Bot move infoset:", infoSet, "       pot_amount:", pot_amount, "          bet_amount:", bet_amount)
             debug2 = infoSet
             print("Bot action: " + action)
         print("\n")
@@ -339,14 +371,14 @@ def new_game():
     global infoSet
     infoSet = ""
     global pot_amount
-    pot_amount = 0
+    pot_amount = 100    # --> each player ante 50
     global player_start
     player_start = not player_start # --> enkat začne bot, enkrat player
 
     label_bot_cards["text"] = "BOT Cards:  X X"
     label_player_cards["text"] = "PLAYER Cards:  X X"
     label_cards_table["text"] = ""
-    label_game_info["text"] = "Game Info:   ante=10"
+    label_game_info["text"] = "Game Info:   ante=50"
 
 
 
@@ -394,7 +426,7 @@ label_cards_table.place(relx=0.1, rely = 0.19, relwidth=0.8, relheight=0.46)
 label_player_cards = tk.Label(label_mid, font=40, bg='#ccffcc', text="PLAYER Cards:  X X")
 label_player_cards.place(relx=0.2, rely = 0.7, relwidth=0.6, relheight=0.12)
 
-label_game_info = tk.Label(label_mid, font=40, bg='#99c2ff', text="Game Info:   ante=10")
+label_game_info = tk.Label(label_mid, font=40, bg='#99c2ff', text="Game Info:   ante=50")
 label_game_info.place(relx=0.05, rely = 0.85, relwidth=0.9, relheight=0.14)
 
 
