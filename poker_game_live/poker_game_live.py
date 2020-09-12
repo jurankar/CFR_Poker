@@ -39,15 +39,27 @@ global bot_node
 
 #IGRA --> vsakič ko pritisnemo gumb, igramo
 
-def payoff(infoSet, old_pot):
-    a = cards
+def raise_fold(infoSet):
+    splitHistory = infoSet.split("|")
+    his_len = len(splitHistory)
+    last_round = splitHistory[his_len-1]
+    if last_round == "b0b1b0" or last_round == "b1b0":
+        return True
+    else:
+        return False
+
+def payoff(infoSet, pot, prev_bet):
     terminal_node = cfr_poker.isTerminalState(infoSet)
     if terminal_node != False:
         current_stage = infoSet.split("|")[(infoSet.count("|") + 1) - 1]
         player = (current_stage.count("b")) % 2
 
-        # če kdo prej folda kot obicajno, pol nasprotnik dobi 1/2 pota minus zadnjo stavo(-1), ki je player ni callou
-        winnings = old_pot / 2
+        # če kdo prej folda kot obicajno, pol nasprotnik dobi 1/2 pota minus zadnjo stavo, ki je player ni callou
+        if(raise_fold(infoSet)):
+            winnings = (pot - prev_bet) / 2
+        else:
+            winnings = pot / 2
+
         if terminal_node == "p0_win":
             return winnings if player == 0 else -winnings
         elif terminal_node == "p1_win":
@@ -56,7 +68,7 @@ def payoff(infoSet, old_pot):
         if terminal_node == "call_betterCards":
             # Vsak dobi sam pol pota ker tut v resnici staviš pol ti pol opponent in dejansko si na +/- sam za polovico pota
             # Gre ravno cez pol ker sta
-            winnings = old_pot / 2
+            winnings = pot / 2
             better_cards_p0 = cfr_poker.Poker_Learner.betterCards("", cards, player)
             if better_cards_p0 == "split":
                 return 0
@@ -139,12 +151,12 @@ def player_action(action, pot_amount):
         pot_amount += bet_amount_bot  # izenačimo stavo od bota
 
     elif action == "raise":
-        bet_amount_player = bet_amount_player - bet_amount_bot
+        #bet_amount_player = bet_amount_player - bet_amount_bot
         if bet_amount_player <= 0 :
             print("error bruh2")
             label_game_info["text"] = "error bruh --> ne cheatat"
         action_info = "b1"
-        pot_amount += bet_amount_player + bet_amount_bot
+        pot_amount += bet_amount_player + bet_amount_bot    # izenačimo bota + raisamo za "bet_amount_player"
 
     else:
         return "error player action function"
@@ -194,7 +206,6 @@ def bot_action(pot_amount):
     node = bot_node
 
     if bet_amount_player > 0:  #player je bettou
-        pot_amount += bet_amount_player #izenačimo stavo od playerja
         bot_action, action_info, bet_amount_bot = get_bot_action(bot_node, bet_amount_player)
         bet_amount_player = 0
 
@@ -218,6 +229,13 @@ def next_move_player(player_start, infoSet, player_move):
         game_stage = infoSet.count("|")
         if game_stage > 0:  # and nodes.isNewStage(infoSet)
             show_cards(game_stage)
+
+        #ponastaumo stave na nič
+        global bet_amount_bot
+        global bet_amount_player
+        bet_amount_player = 0
+        bet_amount_bot = 0
+
         return player_start, infoSet
     #če ni nou stage pa samo zamenjamo igarlca
     else:
@@ -245,6 +263,11 @@ def winnings_fun(winnings, infoSet, player_start):
     label_ply_stanje["text"] = "Stanje player: " + str(Player_stanje)
     label_bot_stanje["text"] = "Stanje bot: " + str(Bot_stanje)
     label_bot_cards["text"] = "BOT cards: " + num_to_card(cards[2]) + " " + num_to_card(cards[3]) if player_start else "BOT cards: " + num_to_card(cards[0]) + " " + num_to_card(cards[1])
+
+    if Player_stanje <= 0:
+        label_game_info["text"] = "Player je izgubil"
+    elif Bot_stanje <= 0:
+        label_game_info["text"] = "Bot je izgubil"
 
 
 def poVrsti(cards):
@@ -286,6 +309,18 @@ def get_bot_node(player_start):
 
     return botNode
 
+def is_reraise(infoSet, player_action):
+    splitHistory = infoSet.split("|")
+    his_len = len(splitHistory)
+    last_round = splitHistory[his_len-1]
+
+    if last_round == "b0b1b1" and player_action == "raise":
+        return True
+    else:
+        return False
+
+
+
 
 
 def play(action, bet_amount):   # --> amount gledamo samo pri raisu
@@ -321,7 +356,7 @@ def play(action, bet_amount):   # --> amount gledamo samo pri raisu
             infoSet += action_info
             if bot_node != "empty_node":
                 bot_node = bot_node.betting_map[action_info]    # --> update node accordingly
-            label_game_info["text"] = "Bot move action:" + action + "       pot_amount:" + str(pot_amount) + "       bet_amount:" + str(bet_amount)
+            label_game_info["text"] = "Bot move action:" + action + "       pot_amount:" + str(pot_amount) + "       bet_amount:" + str(bet_amount_bot)
             print("Bot move infoset:", infoSet, "       pot_amount:", pot_amount, "                bet_amount:", bet_amount)
             print("Bot action: " + action)
 
@@ -335,17 +370,28 @@ def play(action, bet_amount):   # --> amount gledamo samo pri raisu
                 new_player_move_need = False    # --> poenostavimo na default
                 break
             action_info, pot_amount = player_action(action, pot_amount)
+            prev_bet = bet_amount_player
             infoSet += action_info
+
             if bot_node != "empty_node":
                 bot_node = bot_node.betting_map[action_info]    # --> update node accordingly
 
-            label_game_info["text"] = "Pot_amount:" + str(pot_amount) + "   Player action:" + str(action_info)
+            label_game_info["text"] = "Pot_amount:" + str(pot_amount) + "   Player action:" + str(action)
             print("Player move infoset:", infoSet, "       pot_amount:", pot_amount, "                bet_amount:", bet_amount_player)
             new_player_move_need = True
             print("Player action: ", action)
+
+            #če player reraise bota, potem callamo raise
+            if is_reraise(infoSet, action):
+                pot_amount += bet_amount_player
+                label_game_info["text"] = "Pot_amount:" + str(pot_amount) + "   Bot action: call" + "     Call amount:" + str(bet_amount_player)
+                print("Bot move infoset:", infoSet, "       pot_amount:", pot_amount, "                bet_amount:", bet_amount_player)
+
+
         else:
             #bot action = bot_action(action, amount, pot_amount) --> tuki pride v upostav naše strojno učenje
             action, action_info, pot_amount, bet_amount_bot = bot_action(pot_amount)
+            prev_bet = bet_amount_bot
             infoSet += action_info
             if bot_node != "empty_node":
                 bot_node = bot_node.betting_map[action_info]    # --> update node accordingly
@@ -358,11 +404,11 @@ def play(action, bet_amount):   # --> amount gledamo samo pri raisu
 
 
         #pogledamo če je smo že v terminal nodu in že izplačamo winningse
-        winnings = payoff(infoSet, pot_amount)
+        winnings = payoff(infoSet, pot_amount, prev_bet)
         if winnings != "continue":
-            payoff(infoSet, pot_amount)
+            #payoff(infoSet, pot_amount)
             winnings_fun(winnings, infoSet, player_start)
-            break;
+            break
 
         #določimo kdo bo naslednji na potezi
         player_move, infoSet = next_move_player(player_start, infoSet, player_move)
