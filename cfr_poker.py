@@ -343,6 +343,26 @@ class Poker_Learner:
         curr_node = node_player0 if player == 0 else node_player1
         infoSet = curr_node.infoSet
 
+        # Tukaj pogledamo če je node že "izracunan" aka. če smo ga že tolikokrat igrali, da ga ne rabimo več igrat, ker že vemo kaj je optimalna poteza
+        try:
+            if curr_node.computed_node:
+                strat = curr_node.getStrat(p0) if player == 0 else curr_node.getStrat(p1)
+                correct_action = np.argmax(strat)
+                oznaka_stave = "b" + str(correct_action)
+
+                # strat[correct_action) je vedno 1.0, ker smo izračunal da je to najbolša opcija
+                if (player == 0):
+                    return - self.cfr(cards, p0 * strat[correct_action], p1, node_player0.betting_map[oznaka_stave],
+                                         node_player1.betting_map[oznaka_stave], p0_nextTurn, old_pot, new_pot, False)
+                else:
+                    return - self.cfr(cards, p0, p1 * strat[correct_action], node_player0.betting_map[oznaka_stave],
+                                         node_player1.betting_map[oznaka_stave], p0_nextTurn, old_pot, new_pot, False)
+        except:
+            # "Če node ni tipa 'node' potem nima variabla compute_node in vrne exception"
+            pass
+
+
+
         # posodobimo in po potrebi ustvarimo nove sinove če še niso ustvarjeni
         # --> !! TO DO optimiziraj da ta informacija ze v nodih ne da vedno sprot računas --> trenutno je curr_node.newStage neki sfukan in ne kaze vedno prou
         new_stage_bool = nodes.isNewStage(infoSet)
@@ -385,7 +405,7 @@ class Poker_Learner:
                 if betting_round:
                     nova_stava = new_pot - old_pot
 
-                if (not betting_round) or (nova_stava not in alredy_played_bets and betting_round):  #drugi del preverja da ze nismo igrali stave s to velikostjo (npr pot/2 in pot/4 gresta na stavo 10 ker je to minimalna stava) in da smo v stanju ko stavimo --> ce smo v stanju ko ne stavimo ne gledamo ce smo neko stavo ze igrali ker imamo samo call/fold
+                if (not betting_round) or (nova_stava not in alredy_played_bets):  #drugi del preverja da ze nismo igrali stave s to velikostjo (npr pot/2 in pot/4 gresta na stavo 10 ker je to minimalna stava) in da smo v stanju ko stavimo --> ce smo v stanju ko ne stavimo ne gledamo ce smo neko stavo ze igrali ker imamo samo call/fold
                     if betting_round: alredy_played_bets.append(nova_stava)
 
                     if (player == 0):
@@ -502,6 +522,7 @@ class Poker_Learner:
                 #print("Porabljenih je:", process.memory_info()[0] / (1024 * 1024), " MB rama")
                 node_player0 = self.nodeInformation(str(player0_info), 0)
                 node_player1 = self.nodeInformation(str(player1_info), 1)
+
                 gc.collect()    # --> force garbage collector
 
                 for j in range(stIgerNaIteracijo):

@@ -148,7 +148,7 @@ def igrajIgro(learner): # --> TO DO ne dela ok
 if __name__ == "__main__":
     start_time = time.time()
     learner = cfr_poker.Poker_Learner()
-    learner.train(10000, 10000)
+    learner.train(1000, 100)
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
 
 
@@ -203,30 +203,27 @@ porabil sem okoli 1.5-1.8 GB rama, kar je že mejilo na to koliko lahko računal
 
 """
 TODO:
-- verjetno lahkot das velik node_betting_map namest node, ker velik mn zasede --> DONE
-- Handi k so bli mn igrani jih vec igrej
-- Nared da se infoset nosi s sabo z rekurzijo (ker prek dreves itak ves), ne da ga mas shranenga v vsakem nodu posebej
 - Ko nalozis node od p0 in node od p1, potem igraj kakih 1000 handov s kartami, ki jih ima p1 in p0 in potem zamenjaj
     ker s tem bos veliko manj casa porabil z nalaganjem in zapisovanjem nazaj
-- Cleaning
-
-
-- optimizacija: 
-    -ce je drevo v zadnjem nodu, ne rabis it se v en node samo za payoff --> optimiziraj da ne bo treba it do zadnjega nivoja(ki je tudi največji nivo) --> DONE
-    -probi se znebit infoseta --> zavzema velik časa in rama
+    
 - dodj zacetne stave poleg anteja, aka. big/small blind
-- dodeli igro 
-    --> dodaj vse karte notr od 2 do A
-    --> pol dodeli funkcijo self.betterCards (dodj lestvice, flushe)
-    --> večji razpon stavljenja, ker treunto lahko samo staviš 1 ali passaš --> DONE
-- preber navodila kako je s kickerjom 
-    - vzem top 5 kart in poglej prvo k se razlikuje (zmaga tisti, k ma večjo)
-    - če je vseh pet istih, pol splitaš
 
-- dopoln "igrajIgro(learner)" da enkrat začne player enkat bot
-    - Sedaj vedno začne player
+"""
 
-- skupi dj nizje karte v node, recimo 2 in 3, 4 in 5, 6 in 7, 8 in 9 --> s tem bi mogu dost dobit da bo optimalno delal
+"""
+- Regret sum on the main node after:
+    -100 games cca: 6000
+    -200 games cca: 10000
+    -300 games cca: 15000
+    -400 games cca: 18500
+    -500 games cca: 25000
+    
+- 
 
+"""
+
+
+"""
+for image comparison: https://www.pyimagesearch.com/2014/09/15/python-compare-two-images/
 
 """

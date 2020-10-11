@@ -30,7 +30,7 @@ class node_betting_map:
 #uporabljamo ko smo na potezi in racunamo verjetnosi in se odločamo kakšno potezo bomo naredili
 class node:
     NUM_ACTIONS = 2
-    __slots__ = ["infoSet", "regretSum", "strategySum", "betting_map"]
+    __slots__ = ["infoSet", "regretSum", "strategySum", "betting_map", "computed_node"]
     def __init__(self, infoSet):
         self.infoSet = infoSet
         num_of_actions = num_actions(infoSet, self.NUM_ACTIONS)
@@ -39,28 +39,59 @@ class node:
         #self.avg_strategy = np.zeros(num_of_actions)  # --> to be deleted
         #self.strategy = np.zeros(num_of_actions)    # --> to be deleted
 
+        # Ce je node ze "izracunan" aka. smo ga tolikokrat simulirali, da vemo kaj je najbolsa opcija in drugih opcij ne gledamo več
+        self.computed_node = False
+
         # Nadaljne veje iz drevesa
         self.betting_map = {}  # pri vsaki iteraciji imaš 4 nova stanja pp, pb, bp, bb --> razen ko p0 prvic igra, takrat samo 2 stanja p in b
+
+
+
+    def is_computed(self):
+        max_regret = np.max(self.regretSum)
+        min_regret = np.min(self.regretSum)
+
+        # 100000 je meja regreta, ki sem jo določil da je node izracunan
+        minmax_regret = 100000
+        if max_regret > minmax_regret or min_regret < -minmax_regret:
+            self.computed_node = True
+            max_index = np.argmax(self.regretSum)
+            for i in range(len(self.strategySum)):
+                #vse opcije ki niso naša najbolša pobrišemo node in nastavimo verjetnosi na 0
+                if i != max_index:
+                    self.strategySum[i] = 0.0
+                    bet_type = "b" + str(i)
+                    del self.betting_map[bet_type]
+
+            #zdj nastavimo "izracunano" najbolso opcijo na 1
+            self.strategySum[max_index] = 1.0
+
 
 
     #strategy[] je ubistvu sam normaliziran regretSum[] --> skor copy paste iz RM rock paper scissors
     def getStrat(self, realizationWeight):
 
-        # if(not (self.regretSum[0] == 0 and self.regretSum[1] == 0) ):    # if da ne gre pr prvi iteraciji notr
-        normalizingSum = 0
-        num_actions = len(self.regretSum)
-        strategy = np.zeros(num_actions)
+        # Če smo node že "izračunali", potem ne računamo več verjetnosti --> vrnemo samo array kjer ima ena izmed opcij 100% oz. 1.0 (to je shranjeno v strategy sum)
+        if self.computed_node:
+            return self.strategySum
+        else:
+            normalizingSum = 0
+            num_actions = len(self.regretSum)
+            strategy = np.zeros(num_actions)
 
-        for i in range(num_actions):
-            strategy[i] = self.regretSum[i] if self.regretSum[i] > 0 else 0
-            normalizingSum += strategy[i]
+            for i in range(num_actions):
+                strategy[i] = self.regretSum[i] if self.regretSum[i] > 0 else 0
+                normalizingSum += strategy[i]
 
-        for i in range(num_actions):
-            if(normalizingSum > 0):
-                strategy[i] /= normalizingSum
-            else:
-                strategy[i] = 1.0 / num_actions
-            self.strategySum[i] += realizationWeight * strategy[i]
+            for i in range(num_actions):
+                if(normalizingSum > 0):
+                    strategy[i] /= normalizingSum
+                else:
+                    strategy[i] = 1.0 / num_actions
+                self.strategySum[i] += realizationWeight * strategy[i]
+
+        # preverimo če mode sedaj "izračunan" aka "computed"
+        self.is_computed()
 
         #debugging
         #self.strategy = strategy
