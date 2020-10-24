@@ -1,0 +1,5401 @@
+Game started at: 2016/12/30 12:54:25
+Game ID: 808941103 0.50/1 (PRR) Karkadann (Short) (Hold'em)
+Seat 9 is the button
+Seat 1: Maria_Pia (40).
+Seat 2: RunnerLucker (58.13).
+Seat 3: Pimpika (100.60).
+Seat 4: twoakers (52.88).
+Seat 5: _robbyJ (55.50).
+Seat 6: IlxxxlI (53.50).
+Seat 7: Ice Bank Mice Elf (76.75).
+Seat 8: gust (49.31).
+Seat 9: AironVega (56.76).
+Player Maria_Pia has small blind (0.50)
+Player RunnerLucker has big blind (1)
+Player Maria_Pia received a card.
+Player Maria_Pia received a card.
+Player RunnerLucker received a card.
+Player RunnerLucker received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player twoakers received a card.
+Player twoakers received a card.
+Player _robbyJ received a card.
+Player _robbyJ received a card.
+Player IlxxxlI received card: [Jd]
+Player IlxxxlI received card: [Jc]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player gust received a card.
+Player gust received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player Pimpika folds
+Player twoakers folds
+Player _robbyJ calls (1)
+Player IlxxxlI raises (4)
+Player Ice Bank Mice Elf folds
+Player gust folds
+Player AironVega folds
+Player Maria_Pia raises (10.50)
+Player RunnerLucker folds
+Player _robbyJ folds
+Player IlxxxlI folds
+Uncalled bet (7) returned to Maria_Pia
+Player Maria_Pia mucks cards
+------ Summary ------
+Pot: 10. Rake 0
+*Player Maria_Pia mucks (does not show cards). Bets: 4. Collects: 10. Wins: 6.
+Player RunnerLucker does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player twoakers does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player _robbyJ does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player IlxxxlI does not show cards.Bets: 4. Collects: 0. Loses: 4.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player gust does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:55:45
+
+Game started at: 2016/12/30 13:0:3
+Game ID: 808943744 0.50/1 (PRR) Karkadann (Short) (Hold'em)
+Seat 3 is the button
+Seat 1: Maria_Pia (48.28).
+Seat 2: RunnerLucker (56.63).
+Seat 3: Pimpika (40).
+Seat 4: twoakers (51.88).
+Seat 5: _robbyJ (54.50).
+Seat 6: IlxxxlI (49.50).
+Seat 7: Ice Bank Mice Elf (151.50).
+Seat 8: gust (49.31).
+Seat 9: AironVega (56.76).
+Player twoakers has small blind (0.50)
+Player _robbyJ has big blind (1)
+Player twoakers received a card.
+Player twoakers received a card.
+Player _robbyJ received a card.
+Player _robbyJ received a card.
+Player IlxxxlI received card: [9c]
+Player IlxxxlI received card: [Ac]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player gust received a card.
+Player gust received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player Maria_Pia received a card.
+Player Maria_Pia received a card.
+Player RunnerLucker received a card.
+Player RunnerLucker received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI raises (3)
+Player Ice Bank Mice Elf folds
+Player gust folds
+Player AironVega folds
+Player Maria_Pia calls (3)
+Player RunnerLucker folds
+Player Pimpika folds
+Player twoakers folds
+Player _robbyJ calls (2)
+*** FLOP ***: [4h 8s 2s]
+Player _robbyJ checks
+Player IlxxxlI checks
+Player Maria_Pia bets (3.20)
+Player _robbyJ folds
+Player IlxxxlI raises (12)
+Player Maria_Pia folds
+Uncalled bet (8.80) returned to IlxxxlI
+Player IlxxxlI mucks cards
+------ Summary ------
+Pot: 15.11. Rake 0.55. JP fee 0.24
+Board: [4h 8s 2s]
+Player Maria_Pia does not show cards.Bets: 6.20. Collects: 0. Loses: 6.20.
+Player RunnerLucker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player twoakers does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player _robbyJ does not show cards.Bets: 3. Collects: 0. Loses: 3.
+*Player IlxxxlI mucks (does not show cards). Bets: 6.20. Collects: 15.11. Wins: 8.91.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player gust does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 13:1:41
+
+Game started at: 2016/12/30 12:57:13
+Game ID: 808942446 0.50/1 (PRR) Karkadann (Short) (Hold'em)
+Seat 2 is the button
+Seat 1: Maria_Pia (48.28).
+Seat 2: RunnerLucker (56.63).
+Seat 3: Pimpika (98.60).
+Seat 4: twoakers (52.88).
+Seat 5: _robbyJ (54.50).
+Seat 6: IlxxxlI (49.50).
+Seat 7: Ice Bank Mice Elf (76.75).
+Seat 8: gust (49.31).
+Seat 9: AironVega (56.76).
+Player Pimpika has small blind (0.50)
+Player twoakers has big blind (1)
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player twoakers received a card.
+Player twoakers received a card.
+Player _robbyJ received a card.
+Player _robbyJ received a card.
+Player IlxxxlI received card: [6d]
+Player IlxxxlI received card: [4d]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player gust received a card.
+Player gust received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player Maria_Pia received a card.
+Player Maria_Pia received a card.
+Player RunnerLucker received a card.
+Player RunnerLucker received a card.
+Player _robbyJ folds
+Player IlxxxlI folds
+Player Ice Bank Mice Elf raises (3)
+Player gust folds
+Player AironVega folds
+Player Maria_Pia folds
+Player RunnerLucker folds
+Player Pimpika raises (7.50)
+Player twoakers folds
+Player Ice Bank Mice Elf calls (5)
+*** FLOP ***: [Jd 9s 8d]
+Player Pimpika bets (9)
+Player Ice Bank Mice Elf calls (9)
+*** TURN ***: [Jd 9s 8d] [Qc]
+Player Pimpika checks
+Player Ice Bank Mice Elf bets (17.62)
+Player Pimpika allin (81.60)
+Player Ice Bank Mice Elf allin (42.13)
+Uncalled bet (21.85) returned to Pimpika
+*** RIVER ***: [Jd 9s 8d Qc] [2c]
+------ Summary ------
+Pot: 151.50. Rake 2.76. JP fee 0.24
+Board: [Jd 9s 8d Qc 2c]
+Player Maria_Pia does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player RunnerLucker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika shows: Three Of Kind of Qs [Qs Qd]. Bets: 76.75. Collects: 0. Loses: 76.75.
+Player twoakers does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player _robbyJ does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player Ice Bank Mice Elf shows: Straight to Q [10c Ac]. Bets: 76.75. Collects: 151.50. Wins: 74.75.
+Player gust does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:59:59
+
+Game started at: 2016/12/30 12:55:48
+Game ID: 808941818 0.50/1 (PRR) Karkadann (Short) (Hold'em)
+Seat 1 is the button
+Seat 1: Maria_Pia (46).
+Seat 2: RunnerLucker (57.13).
+Seat 3: Pimpika (100.60).
+Seat 4: twoakers (52.88).
+Seat 5: _robbyJ (54.50).
+Seat 6: IlxxxlI (49.50).
+Seat 7: Ice Bank Mice Elf (76.75).
+Seat 8: gust (49.31).
+Seat 9: AironVega (56.76).
+Player RunnerLucker has small blind (0.50)
+Player Pimpika has big blind (1)
+Player RunnerLucker received a card.
+Player RunnerLucker received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player twoakers received a card.
+Player twoakers received a card.
+Player _robbyJ received a card.
+Player _robbyJ received a card.
+Player IlxxxlI received card: [7d]
+Player IlxxxlI received card: [Qc]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player gust received a card.
+Player gust received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player Maria_Pia received a card.
+Player Maria_Pia received a card.
+Player twoakers folds
+Player _robbyJ folds
+Player IlxxxlI folds
+Player Ice Bank Mice Elf folds
+Player gust folds
+Player AironVega folds
+Player Maria_Pia raises (2)
+Player RunnerLucker folds
+Player Pimpika calls (1)
+*** FLOP ***: [7c Jc Jh]
+Player Pimpika checks
+Player Maria_Pia bets (1.50)
+Player Pimpika folds
+Uncalled bet (1.50) returned to Maria_Pia
+Player Maria_Pia mucks cards
+------ Summary ------
+Pot: 4.28. Rake 0.16. JP fee 0.06
+Board: [7c Jc Jh]
+*Player Maria_Pia mucks (does not show cards). Bets: 2. Collects: 4.28. Wins: 2.28.
+Player RunnerLucker does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player Pimpika does not show cards.Bets: 2. Collects: 0. Loses: 2.
+Player twoakers does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player _robbyJ does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player gust does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:57:10
+
+Game started at: 2016/12/30 12:54:20
+Game ID: 808941048 0.25/0.50 (PRR) Garuda (Short) (Hold'em)
+Seat 6 is the button
+Seat 1: IlxxxlI (10).
+Seat 2: sabiurr (19.26).
+Seat 3: autobuyer (23.25).
+Seat 4: Spagetti1 (23.50).
+Seat 5: 0nlyDaNuts (28.51).
+Seat 6: FirstClan (43.99).
+Seat 7: pineapplesand (10).
+Seat 8: Ice Bank Mice Elf (56.33).
+Seat 9: Pimpika (28.07).
+Player pineapplesand has small blind (0.25)
+Player Ice Bank Mice Elf has big blind (0.50)
+Player pineapplesand received a card.
+Player pineapplesand received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI received card: [9s]
+Player IlxxxlI received card: [3d]
+Player sabiurr received a card.
+Player sabiurr received a card.
+Player autobuyer received a card.
+Player autobuyer received a card.
+Player Spagetti1 received a card.
+Player Spagetti1 received a card.
+Player 0nlyDaNuts received a card.
+Player 0nlyDaNuts received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player Pimpika folds
+Player IlxxxlI folds
+Player sabiurr folds
+Player autobuyer folds
+Player Spagetti1 folds
+Player 0nlyDaNuts folds
+Player FirstClan raises (1)
+Player pineapplesand folds
+Player Ice Bank Mice Elf folds
+Uncalled bet (0.50) returned to FirstClan
+Player FirstClan mucks cards
+------ Summary ------
+Pot: 1.25. Rake 0
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player sabiurr does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player autobuyer does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Spagetti1 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player 0nlyDaNuts does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player FirstClan mucks (does not show cards). Bets: 0.50. Collects: 1.25. Wins: 0.75.
+Player pineapplesand does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player Ice Bank Mice Elf does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:55:9
+
+Game started at: 2016/12/30 12:53:49
+Game ID: 808940729 0.50/1 (PRR) Kraken (short) - 4 (Hold'em)
+Seat 6 is the button
+Seat 1: Portly23 (47.99).
+Seat 2: winnipuh (55.83).
+Seat 3: Ice Bank Mice Elf (50).
+Seat 4: IlxxxlI (42.90).
+Seat 5: l3ae (53.84).
+Seat 6: Pimpika (60.36).
+Player Portly23 has small blind (0.50)
+Player winnipuh has big blind (1)
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player winnipuh received a card.
+Player winnipuh received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player IlxxxlI received card: [Qh]
+Player IlxxxlI received card: [5s]
+Player l3ae received a card.
+Player l3ae received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player Ice Bank Mice Elf raises (2.50)
+Player IlxxxlI folds
+Player l3ae folds
+Player Pimpika folds
+Player Portly23 calls (2)
+Player winnipuh folds
+*** FLOP ***: [Kh 9s 8s]
+Player Portly23 checks
+Player Ice Bank Mice Elf bets (2.85)
+Player Portly23 calls (2.85)
+*** TURN ***: [Kh 9s 8s] [3s]
+Player Portly23 checks
+Player Ice Bank Mice Elf checks
+*** RIVER ***: [Kh 9s 8s 3s] [7h]
+Player Portly23 checks
+Player Ice Bank Mice Elf checks
+Player Ice Bank Mice Elf mucks cards
+------ Summary ------
+Pot: 11.12. Rake 0.40. JP fee 0.18
+Board: [Kh 9s 8s 3s 7h]
+*Player Portly23 shows: One pair of 9s [10c 9c]. Bets: 5.35. Collects: 11.12. Wins: 5.77.
+Player winnipuh does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player Ice Bank Mice Elf mucks (does not show cards). Bets: 5.35. Collects: 0. Loses: 5.35.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player l3ae does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:55:43
+
+Game started at: 2016/12/30 12:53:38
+Game ID: 808940590 0.25/0.50 (PRR) Garuda (Short) (Hold'em)
+Seat 5 is the button
+Seat 1: IlxxxlI (10).
+Seat 2: sabiurr (19.26).
+Seat 3: autobuyer (23.25).
+Seat 4: Spagetti1 (23.50).
+Seat 5: 0nlyDaNuts (28.51).
+Seat 6: FirstClan (43.49).
+Seat 7: pineapplesand (10).
+Seat 8: Ice Bank Mice Elf (56.33).
+Seat 9: Pimpika (28.07).
+Player FirstClan has small blind (0.25)
+Player pineapplesand has big blind (0.50)
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player pineapplesand received a card.
+Player pineapplesand received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI received card: [4c]
+Player IlxxxlI received card: [9d]
+Player sabiurr received a card.
+Player sabiurr received a card.
+Player autobuyer received a card.
+Player autobuyer received a card.
+Player Spagetti1 received a card.
+Player Spagetti1 received a card.
+Player 0nlyDaNuts received a card.
+Player 0nlyDaNuts received a card.
+Player Ice Bank Mice Elf folds
+Player Pimpika folds
+Player IlxxxlI folds
+Player sabiurr folds
+Player autobuyer folds
+Player Spagetti1 folds
+Player 0nlyDaNuts folds
+Player FirstClan raises (0.95)
+Player pineapplesand folds
+Uncalled bet (0.70) returned to FirstClan
+Player FirstClan mucks cards
+------ Summary ------
+Pot: 1. Rake 0
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player sabiurr does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player autobuyer does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Spagetti1 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player 0nlyDaNuts does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player FirstClan mucks (does not show cards). Bets: 0.50. Collects: 1. Wins: 0.50.
+Player pineapplesand does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:54:17
+
+Game started at: 2016/12/30 12:53:11
+Game ID: 808940297 0.50/1 (PRR) Karkadann (Short) (Hold'em)
+Seat 8 is the button
+Seat 1: Maria_Pia (40).
+Seat 2: RunnerLucker (58.13).
+Seat 3: Pimpika (100.60).
+Seat 4: twoakers (52.88).
+Seat 5: _robbyJ (54).
+Seat 6: IlxxxlI (53.50).
+Seat 7: Ice Bank Mice Elf (76.75).
+Seat 8: gust (49.31).
+Seat 9: AironVega (57.26).
+Player AironVega has small blind (0.50)
+Player Maria_Pia has big blind (1)
+Player AironVega received a card.
+Player AironVega received a card.
+Player Maria_Pia received a card.
+Player Maria_Pia received a card.
+Player RunnerLucker received a card.
+Player RunnerLucker received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player twoakers received a card.
+Player twoakers received a card.
+Player _robbyJ received a card.
+Player _robbyJ received a card.
+Player IlxxxlI received card: [5d]
+Player IlxxxlI received card: [Jc]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player gust received a card.
+Player gust received a card.
+Player RunnerLucker folds
+Player Pimpika folds
+Player twoakers folds
+Player _robbyJ raises (3)
+Player IlxxxlI folds
+Player Ice Bank Mice Elf folds
+Player gust folds
+Player AironVega folds
+Player Maria_Pia folds
+Uncalled bet (2) returned to _robbyJ
+Player _robbyJ mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+Player Maria_Pia does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player RunnerLucker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player twoakers does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player _robbyJ mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player gust does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Game ended at: 2016/12/30 12:54:22
+
+Game started at: 2016/12/30 12:52:53
+Game ID: 808940090 0.10/0.25 (PRR) Ekek (Short) (Hold'em)
+Seat 4 is the button
+Seat 1: MNspecktacular (14.55).
+Seat 2: IlxxxlI (13.58).
+Seat 3: bclever (15.95).
+Seat 4: FirstClan (21.04).
+Seat 5: dtnfk (10).
+Seat 6: Parcker (16.20).
+Player dtnfk has small blind (0.10)
+Player Parcker sitting out
+Player MNspecktacular has big blind (0.25)
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player MNspecktacular received a card.
+Player MNspecktacular received a card.
+Player IlxxxlI received card: [9c]
+Player IlxxxlI received card: [Qc]
+Player bclever received a card.
+Player bclever received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player IlxxxlI raises (0.62)
+Player bclever folds
+Player FirstClan folds
+Player dtnfk raises (1.40)
+Player MNspecktacular folds
+Player IlxxxlI folds
+Uncalled bet (0.88) returned to dtnfk
+Player dtnfk mucks cards
+------ Summary ------
+Pot: 1.49. Rake 0
+Player MNspecktacular does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player IlxxxlI does not show cards.Bets: 0.62. Collects: 0. Loses: 0.62.
+Player bclever does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player FirstClan does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player dtnfk mucks (does not show cards). Bets: 0.62. Collects: 1.49. Wins: 0.87.
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:53:22
+
+Game started at: 2016/12/30 12:52:44
+Game ID: 808939998 0.25/0.50 (PRR) Garuda (Short) (Hold'em)
+Seat 4 is the button
+Seat 1: IlxxxlI (20.74).
+Seat 2: sabiurr (19.26).
+Seat 3: autobuyer (23.25).
+Seat 4: Spagetti1 (23.50).
+Seat 5: 0nlyDaNuts (28.76).
+Seat 6: FirstClan (43.99).
+Seat 7: pineapplesand (10).
+Seat 8: Ice Bank Mice Elf (36.95).
+Seat 9: Pimpika (28.07).
+Player 0nlyDaNuts has small blind (0.25)
+Player FirstClan has big blind (0.50)
+Player 0nlyDaNuts received a card.
+Player 0nlyDaNuts received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player pineapplesand received a card.
+Player pineapplesand received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI received card: [As]
+Player IlxxxlI received card: [Ks]
+Player sabiurr received a card.
+Player sabiurr received a card.
+Player autobuyer received a card.
+Player autobuyer received a card.
+Player Spagetti1 received a card.
+Player Spagetti1 received a card.
+Player pineapplesand folds
+Player Ice Bank Mice Elf raises (1.50)
+Player Pimpika folds
+Player IlxxxlI raises (9)
+Player sabiurr folds
+Player autobuyer folds
+Player Spagetti1 folds
+Player 0nlyDaNuts folds
+Player FirstClan folds
+Player Ice Bank Mice Elf allin (35.45)
+Player IlxxxlI allin (11.74)
+Uncalled bet (16.21) returned to Ice Bank Mice Elf
+*** FLOP ***: [3c 3d 10d]
+*** TURN ***: [3c 3d 10d] [6c]
+*** RIVER ***: [3c 3d 10d 6c] [9s]
+------ Summary ------
+Pot: 40.12. Rake 1.87. JP fee 0.24
+Board: [3c 3d 10d 6c 9s]
+Player IlxxxlI shows: One pair of 3s [As Ks]. Bets: 20.74. Collects: 0. Loses: 20.74.
+Player sabiurr does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player autobuyer does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Spagetti1 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player 0nlyDaNuts does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player FirstClan does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player pineapplesand does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player Ice Bank Mice Elf shows: Two pairs. 8s and 3s [8s 8c]. Bets: 20.74. Collects: 40.12. Wins: 19.38.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:53:34
+
+Game started at: 2016/12/30 12:52:38
+Game ID: 808939929 0.50/1 (PRR) Kraken (short) - 5 (Hold'em)
+Seat 6 is the button
+Seat 1: AironVega (50).
+Seat 2: Ice Bank Mice Elf (50).
+Seat 4: IlxxxlI (20).
+Seat 5: tootsie (76.57).
+Seat 6: 8link (46.99).
+Player AironVega has small blind (0.50)
+Player Ice Bank Mice Elf has big blind (1)
+Player AironVega received a card.
+Player AironVega received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player IlxxxlI received card: [4c]
+Player IlxxxlI received card: [Kh]
+Player tootsie received a card.
+Player tootsie received a card.
+Player 8link received a card.
+Player 8link received a card.
+Player IlxxxlI folds
+Player tootsie calls (1)
+Player 8link folds
+Player AironVega folds
+Player Ice Bank Mice Elf checks
+*** FLOP ***: [3h 5c Kc]
+Player Ice Bank Mice Elf checks
+Player tootsie checks
+*** TURN ***: [3h 5c Kc] [8s]
+Player Ice Bank Mice Elf bets (1.79)
+Player tootsie calls (1.79)
+*** RIVER ***: [3h 5c Kc 8s] [Ad]
+Player Ice Bank Mice Elf bets (3.85)
+Player tootsie folds
+Uncalled bet (3.85) returned to Ice Bank Mice Elf
+Player Ice Bank Mice Elf mucks cards
+------ Summary ------
+Pot: 5.78. Rake 0.20. JP fee 0.10
+Board: [3h 5c Kc 8s Ad]
+Player AironVega does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+*Player Ice Bank Mice Elf mucks (does not show cards). Bets: 2.79. Collects: 5.78. Wins: 2.99.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player tootsie does not show cards.Bets: 2.79. Collects: 0. Loses: 2.79.
+Player 8link does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:54:13
+
+Game started at: 2016/12/30 12:52:32
+Game ID: 808939859 0.50/1 (PRR) Kraken (short) - 4 (Hold'em)
+Seat 5 is the button
+Seat 1: Portly23 (48.99).
+Seat 2: winnipuh (55.83).
+Seat 3: Ice Bank Mice Elf (50).
+Seat 4: IlxxxlI (42.90).
+Seat 5: l3ae (52.46).
+Seat 6: Pimpika (60.86).
+Player Pimpika has small blind (0.50)
+Player Portly23 has big blind (1)
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player winnipuh received a card.
+Player winnipuh received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player IlxxxlI received card: [3s]
+Player IlxxxlI received card: [Jc]
+Player l3ae received a card.
+Player l3ae received a card.
+Player winnipuh folds
+Player Ice Bank Mice Elf folds
+Player IlxxxlI folds
+Player l3ae calls (1)
+Player Pimpika folds
+Player Portly23 checks
+*** FLOP ***: [Ac 4d 8h]
+Player Portly23 checks
+Player l3ae bets (1)
+Player Portly23 folds
+Uncalled bet (1) returned to l3ae
+Player l3ae mucks cards
+------ Summary ------
+Pot: 2.38. Rake 0.08. JP fee 0.04
+Board: [Ac 4d 8h]
+Player Portly23 does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player winnipuh does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player l3ae mucks (does not show cards). Bets: 1. Collects: 2.38. Wins: 1.38.
+Player Pimpika does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Game ended at: 2016/12/30 12:53:47
+
+Game started at: 2016/12/30 12:51:59
+Game ID: 808939505 0.50/1 (PRR) Karkadann (Short) (Hold'em)
+Seat 7 is the button
+Seat 2: RunnerLucker (65.13).
+Seat 3: Pimpika (100.60).
+Seat 4: twoakers (52.88).
+Seat 5: _robbyJ (54).
+Seat 6: IlxxxlI (53.50).
+Seat 7: Ice Bank Mice Elf (76.75).
+Seat 8: gust (42.06).
+Seat 9: AironVega (58.26).
+Player gust has small blind (0.50)
+Player AironVega has big blind (1)
+Player gust received a card.
+Player gust received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player RunnerLucker received a card.
+Player RunnerLucker received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player twoakers received a card.
+Player twoakers received a card.
+Player _robbyJ received a card.
+Player _robbyJ received a card.
+Player IlxxxlI received card: [6h]
+Player IlxxxlI received card: [4s]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player RunnerLucker raises (3)
+Player Pimpika folds
+Player twoakers folds
+Player _robbyJ folds
+Player IlxxxlI folds
+Player Ice Bank Mice Elf folds
+Player gust calls (2.50)
+Player AironVega folds
+*** FLOP ***: [6c Jd 3s]
+Player gust checks
+Player RunnerLucker bets (4)
+Player gust raises (10)
+Player RunnerLucker folds
+Uncalled bet (6) returned to gust
+Player gust mucks cards
+------ Summary ------
+Pot: 14.25. Rake 0.51. JP fee 0.24
+Board: [6c Jd 3s]
+Player RunnerLucker does not show cards.Bets: 7. Collects: 0. Loses: 7.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player twoakers does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player _robbyJ does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player gust mucks (does not show cards). Bets: 7. Collects: 14.25. Wins: 7.25.
+Player AironVega does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Game ended at: 2016/12/30 12:53:8
+
+Game started at: 2016/12/30 12:51:49
+Game ID: 808939395 0.50/1 (PRR) Kraken (short) - 5 (Hold'em)
+Seat 5 is the button
+Seat 1: AironVega (50).
+Seat 2: Ice Bank Mice Elf (50).
+Seat 4: IlxxxlI (20).
+Seat 5: tootsie (81.07).
+Seat 6: 8link (37.71).
+Player 8link has small blind (0.50)
+Player AironVega has big blind (1)
+Player 8link received a card.
+Player 8link received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player IlxxxlI received card: [As]
+Player IlxxxlI received card: [Kd]
+Player tootsie received a card.
+Player tootsie received a card.
+Player Ice Bank Mice Elf folds
+Player IlxxxlI raises (2.50)
+Player tootsie calls (2.50)
+Player 8link calls (2)
+Player AironVega folds
+*** FLOP ***: [3h 3c 7s]
+Player 8link checks
+Player IlxxxlI bets (2)
+Player tootsie calls (2)
+Player 8link allin (35.21)
+Player IlxxxlI folds
+Player tootsie folds
+Uncalled bet (33.21) returned to 8link
+Player 8link mucks cards
+------ Summary ------
+Pot: 13.78. Rake 0.48. JP fee 0.24
+Board: [3h 3c 7s]
+Player AironVega does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 4.50. Collects: 0. Loses: 4.50.
+Player tootsie does not show cards.Bets: 4.50. Collects: 0. Loses: 4.50.
+*Player 8link mucks (does not show cards). Bets: 4.50. Collects: 13.78. Wins: 9.28.
+Game ended at: 2016/12/30 12:52:35
+
+Game started at: 2016/12/30 12:51:46
+Game ID: 808939358 0.10/0.25 (PRR) Ekek (Short) (Hold'em)
+Seat 3 is the button
+Seat 1: MNspecktacular (14.80).
+Seat 2: IlxxxlI (13.58).
+Seat 3: bclever (16.20).
+Seat 4: FirstClan (20.29).
+Seat 5: dtnfk (10).
+Seat 6: Parcker (16.20).
+Player FirstClan has small blind (0.10)
+Player dtnfk has big blind (0.25)
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player MNspecktacular received a card.
+Player MNspecktacular received a card.
+Player IlxxxlI received card: [Jh]
+Player IlxxxlI received card: [6s]
+Player bclever received a card.
+Player bclever received a card.
+Player Parcker folds
+Player MNspecktacular calls (0.25)
+Player IlxxxlI folds
+Player bclever calls (0.25)
+Player FirstClan raises (1.40)
+Player dtnfk folds
+Player MNspecktacular folds
+Player bclever folds
+Uncalled bet (1.25) returned to FirstClan
+Player FirstClan mucks cards
+------ Summary ------
+Pot: 1. Rake 0
+Player MNspecktacular does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player bclever does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+*Player FirstClan mucks (does not show cards). Bets: 0.25. Collects: 1. Wins: 0.75.
+Player dtnfk does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:52:50
+
+Game started at: 2016/12/30 12:51:30
+Game ID: 808939170 0.50/1 (PRR) Kajsa (short) - 2 (Hold'em)
+Seat 3 is the button
+Seat 1: IlxxxlI (38.91).
+Seat 2: gust (46.36).
+Seat 3: Portly23 (13.77).
+Seat 4: Pimpika (44.54).
+Seat 5: AironVega (53).
+Seat 6: pineapplesand (41.85).
+Player Pimpika has small blind (0.50)
+Player AironVega has big blind (1)
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player pineapplesand received a card.
+Player pineapplesand received a card.
+Player IlxxxlI received card: [Kc]
+Player IlxxxlI received card: [Qs]
+Player gust received a card.
+Player gust received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player pineapplesand raises (2)
+Player IlxxxlI folds
+Player gust folds
+Player Portly23 folds
+Player Pimpika folds
+Player AironVega folds
+Uncalled bet (1) returned to pineapplesand
+Player pineapplesand mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player gust does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player AironVega does not show cards.Bets: 1. Collects: 0. Loses: 1.
+*Player pineapplesand mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Game ended at: 2016/12/30 12:52:24
+
+Game started at: 2016/12/30 12:51:16
+Game ID: 808939003 0.50/1 (PRR) Kraken (short) - 4 (Hold'em)
+Seat 4 is the button
+Seat 1: Portly23 (50.99).
+Seat 2: winnipuh (55.83).
+Seat 3: Ice Bank Mice Elf (50).
+Seat 4: IlxxxlI (42.90).
+Seat 5: l3ae (49.71).
+Seat 6: Pimpika (61.86).
+Player l3ae has small blind (0.50)
+Player Pimpika has big blind (1)
+Player l3ae received a card.
+Player l3ae received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player winnipuh received a card.
+Player winnipuh received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player IlxxxlI received card: [8d]
+Player IlxxxlI received card: [6c]
+Player Portly23 raises (2)
+Player winnipuh folds
+Player Ice Bank Mice Elf folds
+Player IlxxxlI folds
+Player l3ae calls (1.50)
+Player Pimpika folds
+*** FLOP ***: [4s 10c Jh]
+Player l3ae checks
+Player Portly23 checks
+*** TURN ***: [4s 10c Jh] [Qh]
+Player l3ae checks
+Player Portly23 checks
+*** RIVER ***: [4s 10c Jh Qh] [As]
+Player l3ae bets (1)
+Player Portly23 folds
+Uncalled bet (1) returned to l3ae
+Player l3ae mucks cards
+------ Summary ------
+Pot: 4.75. Rake 0.17. JP fee 0.08
+Board: [4s 10c Jh Qh As]
+Player Portly23 does not show cards.Bets: 2. Collects: 0. Loses: 2.
+Player winnipuh does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player l3ae mucks (does not show cards). Bets: 2. Collects: 4.75. Wins: 2.75.
+Player Pimpika does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Game ended at: 2016/12/30 12:52:29
+
+Game started at: 2016/12/30 12:51:11
+Game ID: 808938940 0.50/1 (PRR) Karkadann (Short) (Hold'em)
+Seat 6 is the button
+Seat 2: RunnerLucker (65.13).
+Seat 3: Pimpika (102.60).
+Seat 4: twoakers (52.88).
+Seat 5: _robbyJ (50.50).
+Seat 6: IlxxxlI (53.50).
+Seat 7: Ice Bank Mice Elf (77.25).
+Seat 8: gust (43.06).
+Seat 9: AironVega (58.26).
+Player Ice Bank Mice Elf has small blind (0.50)
+Player gust has big blind (1)
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player gust received a card.
+Player gust received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player RunnerLucker received a card.
+Player RunnerLucker received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player twoakers received a card.
+Player twoakers received a card.
+Player _robbyJ received a card.
+Player _robbyJ received a card.
+Player IlxxxlI received card: [Kd]
+Player IlxxxlI received card: [Qd]
+Player AironVega folds
+Player RunnerLucker folds
+Player Pimpika raises (2)
+Player twoakers folds
+Player _robbyJ raises (7)
+Player IlxxxlI folds
+Player Ice Bank Mice Elf folds
+Player gust folds
+Player Pimpika folds
+Uncalled bet (5) returned to _robbyJ
+Player _robbyJ mucks cards
+------ Summary ------
+Pot: 5.50. Rake 0
+Player RunnerLucker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 2. Collects: 0. Loses: 2.
+Player twoakers does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player _robbyJ mucks (does not show cards). Bets: 2. Collects: 5.50. Wins: 3.50.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player gust does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player AironVega does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:51:57
+
+Game started at: 2016/12/30 12:50:56
+Game ID: 808938770 0.50/1 (PRR) Kajsa (short) - 2 (Hold'em)
+Seat 2 is the button
+Seat 1: IlxxxlI (38.91).
+Seat 2: gust (44.86).
+Seat 3: Portly23 (14.27).
+Seat 4: Pimpika (45.54).
+Seat 6: pineapplesand (41.85).
+Player Portly23 has small blind (0.50)
+Player Pimpika has big blind (1)
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player pineapplesand received a card.
+Player pineapplesand received a card.
+Player IlxxxlI received card: [3s]
+Player IlxxxlI received card: [Jh]
+Player gust received a card.
+Player gust received a card.
+Player pineapplesand folds
+Player IlxxxlI folds
+Player gust raises (2)
+Player Portly23 folds
+Player Pimpika folds
+Uncalled bet (1) returned to gust
+Player gust mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player gust mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Player Portly23 does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player Pimpika does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player pineapplesand does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:51:27
+
+Game started at: 2016/12/30 12:50:51
+Game ID: 808938724 0.50/1 (PRR) Kraken (short) - 5 (Hold'em)
+Seat 4 is the button
+Seat 2: Ice Bank Mice Elf (50).
+Seat 4: IlxxxlI (20).
+Seat 5: tootsie (75.01).
+Seat 6: 8link (40.01).
+Player tootsie has small blind (0.50)
+Player 8link has big blind (1)
+Player tootsie received a card.
+Player tootsie received a card.
+Player 8link received a card.
+Player 8link received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player IlxxxlI received card: [10h]
+Player IlxxxlI received card: [Kh]
+Player Ice Bank Mice Elf folds
+Player IlxxxlI raises (2.30)
+Player tootsie calls (1.80)
+Player 8link calls (1.30)
+*** FLOP ***: [6d Ad 5d]
+Player tootsie checks
+Player 8link checks
+Player IlxxxlI bets (2)
+Player tootsie calls (2)
+Player 8link folds
+*** TURN ***: [6d Ad 5d] [7c]
+Player tootsie checks
+Player IlxxxlI checks
+*** RIVER ***: [6d Ad 5d 7c] [5h]
+Player tootsie checks
+Player IlxxxlI checks
+Player IlxxxlI mucks cards
+------ Summary ------
+Pot: 10.36. Rake 0.36. JP fee 0.18
+Board: [6d Ad 5d 7c 5h]
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI mucks (does not show: [10h Kh]). Bets: 4.30. Collects: 0. Loses: 4.30.
+*Player tootsie shows: Two pairs. As and 5s [As 9s]. Bets: 4.30. Collects: 10.36. Wins: 6.06.
+Player 8link does not show cards.Bets: 2.30. Collects: 0. Loses: 2.30.
+Game ended at: 2016/12/30 12:51:44
+
+Game started at: 2016/12/30 12:50:35
+Game ID: 808938541 0.25/0.50 (PRR) Garuda (Short) (Hold'em)
+Seat 3 is the button
+Seat 1: IlxxxlI (20.74).
+Seat 2: sabiurr (19.26).
+Seat 3: autobuyer (23.25).
+Seat 4: Spagetti1 (23.75).
+Seat 5: 0nlyDaNuts (36.32).
+Seat 6: FirstClan (43.99).
+Seat 7: pineapplesand (10).
+Seat 8: Ice Bank Mice Elf (29.90).
+Seat 9: Pimpika (28.07).
+Player Spagetti1 has small blind (0.25)
+Player 0nlyDaNuts has big blind (0.50)
+Player Spagetti1 received a card.
+Player Spagetti1 received a card.
+Player 0nlyDaNuts received a card.
+Player 0nlyDaNuts received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player pineapplesand received a card.
+Player pineapplesand received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI received card: [8c]
+Player IlxxxlI received card: [2c]
+Player sabiurr received a card.
+Player sabiurr received a card.
+Player autobuyer received a card.
+Player autobuyer received a card.
+Player FirstClan folds
+Player pineapplesand folds
+Player Ice Bank Mice Elf raises (1.50)
+Player Pimpika folds
+Player IlxxxlI folds
+Player sabiurr folds
+Player autobuyer folds
+Player Spagetti1 folds
+Player 0nlyDaNuts calls (1)
+*** FLOP ***: [4c Jd 5h]
+Player 0nlyDaNuts checks
+Player Ice Bank Mice Elf bets (1.54)
+Player 0nlyDaNuts calls (1.54)
+*** TURN ***: [4c Jd 5h] [Qs]
+Player 0nlyDaNuts checks
+Player Ice Bank Mice Elf bets (4.52)
+Player 0nlyDaNuts calls (4.52)
+*** RIVER ***: [4c Jd 5h Qs] [4d]
+Player 0nlyDaNuts checks
+Player Ice Bank Mice Elf bets (10.96)
+Player 0nlyDaNuts folds
+Uncalled bet (10.96) returned to Ice Bank Mice Elf
+Player Ice Bank Mice Elf mucks cards
+------ Summary ------
+Pot: 14.61. Rake 0.52. JP fee 0.24
+Board: [4c Jd 5h Qs 4d]
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player sabiurr does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player autobuyer does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Spagetti1 does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player 0nlyDaNuts does not show cards.Bets: 7.56. Collects: 0. Loses: 7.56.
+Player FirstClan does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player pineapplesand does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player Ice Bank Mice Elf mucks (does not show cards). Bets: 7.56. Collects: 14.61. Wins: 7.05.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:52:41
+
+Game started at: 2016/12/30 12:50:28
+Game ID: 808938481 0.50/1 (PRR) Kajsa (short) - 2 (Hold'em)
+Seat 1 is the button
+Seat 1: IlxxxlI (37.41).
+Seat 2: gust (45.36).
+Seat 3: Portly23 (15.27).
+Seat 4: Pimpika (45.54).
+Seat 6: pineapplesand (41.85).
+Player gust has small blind (0.50)
+Player Portly23 has big blind (1)
+Player gust received a card.
+Player gust received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player pineapplesand received a card.
+Player pineapplesand received a card.
+Player IlxxxlI received card: [10h]
+Player IlxxxlI received card: [Qd]
+Player Pimpika folds
+Player pineapplesand folds
+Player IlxxxlI raises (2.30)
+Player gust folds
+Player Portly23 folds
+Uncalled bet (1.30) returned to IlxxxlI
+Player IlxxxlI mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+*Player IlxxxlI mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Player gust does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player Portly23 does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player pineapplesand does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:50:53
+
+Game started at: 2016/12/30 12:50:26
+Game ID: 808938453 0.50/1 (PRR) Kraken (Cap) - 3 (Hold'em)
+Seat 1 is the button
+Seat 1: Ice Bank Mice Elf (168.45).
+Seat 2: Wyavale (102.50).
+Seat 3: Pimpika (48.42).
+Seat 4: WomboComboAA (134.58).
+Seat 5: IlxxxlI (106.45).
+Seat 6: gust (40).
+Player Wyavale has small blind (0.50)
+Player Pimpika has big blind (1)
+Player Wyavale received a card.
+Player Wyavale received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player WomboComboAA received a card.
+Player WomboComboAA received a card.
+Player IlxxxlI received card: [5c]
+Player IlxxxlI received card: [Kc]
+Player gust received a card.
+Player gust received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player WomboComboAA folds
+Player IlxxxlI folds
+Player gust raises (2)
+Player Ice Bank Mice Elf folds
+Player Wyavale folds
+Player Pimpika folds
+Uncalled bet (1) returned to gust
+Player gust mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Wyavale does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player Pimpika does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player WomboComboAA does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player gust mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Game ended at: 2016/12/30 12:50:52
+
+Game started at: 2016/12/30 12:50:21
+Game ID: 808938388 0.10/0.25 (PRR) Ekek (Short) (Hold'em)
+Seat 2 is the button
+Seat 1: MNspecktacular (15.30).
+Seat 2: IlxxxlI (6.72).
+Seat 3: bclever (16.30).
+Seat 4: FirstClan (20.54).
+Seat 5: dtnfk (14.58).
+Seat 6: Parcker (16.20).
+Player bclever has small blind (0.10)
+Player FirstClan has big blind (0.25)
+Player bclever received a card.
+Player bclever received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player MNspecktacular received a card.
+Player MNspecktacular received a card.
+Player IlxxxlI received card: [Kc]
+Player IlxxxlI received card: [As]
+Player dtnfk raises (0.50)
+Player Parcker folds
+Player MNspecktacular calls (0.50)
+Player IlxxxlI raises (3.20)
+Player bclever folds
+Player FirstClan folds
+Player dtnfk calls (2.70)
+Player MNspecktacular folds
+*** FLOP ***: [Ks 6h 8s]
+Player dtnfk checks
+Player IlxxxlI bets (2)
+Player dtnfk raises (4)
+Player IlxxxlI allin (1.52)
+Uncalled bet (0.48) returned to dtnfk
+*** TURN ***: [Ks 6h 8s] [Ac]
+*** RIVER ***: [Ks 6h 8s Ac] [6d]
+------ Summary ------
+Pot: 13.58. Rake 0.49. JP fee 0.22
+Board: [Ks 6h 8s Ac 6d]
+Player MNspecktacular does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+*Player IlxxxlI shows: Two pairs. As and Ks [Kc As]. Bets: 6.72. Collects: 13.58. Wins: 6.86.
+Player bclever does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player FirstClan does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player dtnfk shows: Two pairs. Qs and 6s [Qs Qh]. Bets: 6.72. Collects: 0. Loses: 6.72.
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:51:42
+
+Game started at: 2016/12/30 12:50:3
+Game ID: 808938165 0.10/0.25 (PRR) Ettin (Cap) (Hold'em)
+Seat 6 is the button
+Seat 1: Parcker (29.68).
+Seat 2: IlxxxlI (10).
+Seat 4: BadOutfit (9.32).
+Seat 5: swill300857 (23.17).
+Seat 6: solasso (17.49).
+Seat 8: Ice Bank Mice Elf (27.08).
+Seat 9: joeyzzz (51.54).
+Player Ice Bank Mice Elf has small blind (0.10)
+Player joeyzzz has big blind (0.25)
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player joeyzzz received a card.
+Player joeyzzz received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player IlxxxlI received card: [Ah]
+Player IlxxxlI received card: [Jh]
+Player BadOutfit received a card.
+Player BadOutfit received a card.
+Player swill300857 received a card.
+Player swill300857 received a card.
+Player solasso received a card.
+Player solasso received a card.
+Player Parcker folds
+Player IlxxxlI raises (0.75)
+Player BadOutfit calls (0.75)
+Player swill300857 folds
+Player solasso folds
+Player Ice Bank Mice Elf folds
+Player joeyzzz calls (0.50)
+*** FLOP ***: [8c Js Qd]
+Player joeyzzz checks
+Player IlxxxlI bets (0.74)
+Player BadOutfit folds
+Player joeyzzz calls (0.74)
+*** TURN ***: [8c Js Qd] [9d]
+Player joeyzzz checks
+Player IlxxxlI checks
+*** RIVER ***: [8c Js Qd 9d] [6s]
+Player joeyzzz bets (2.42)
+Player IlxxxlI folds
+Uncalled bet (2.42) returned to joeyzzz
+Player joeyzzz mucks cards
+------ Summary ------
+Pot: 3.64. Rake 0.13. JP fee 0.06
+Board: [8c Js Qd 9d 6s]
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 1.49. Collects: 0. Loses: 1.49.
+Player BadOutfit does not show cards.Bets: 0.75. Collects: 0. Loses: 0.75.
+Player swill300857 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player solasso does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+*Player joeyzzz mucks (does not show cards). Bets: 1.49. Collects: 3.64. Wins: 2.15.
+Game ended at: 2016/12/30 12:51:5
+
+Game started at: 2016/12/30 12:50:0
+Game ID: 808938125 0.50/1 (PRR) Karkadann (Short) (Hold'em)
+Seat 5 is the button
+Seat 2: RunnerLucker (61).
+Seat 3: Pimpika (102.60).
+Seat 4: twoakers (52.88).
+Seat 5: _robbyJ (53.50).
+Seat 6: IlxxxlI (54).
+Seat 7: Ice Bank Mice Elf (78.25).
+Seat 8: gust (43.06).
+Seat 9: AironVega (58.26).
+Player IlxxxlI has small blind (0.50)
+Player Ice Bank Mice Elf has big blind (1)
+Player IlxxxlI received card: [4d]
+Player IlxxxlI received card: [8c]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player gust received a card.
+Player gust received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player RunnerLucker received a card.
+Player RunnerLucker received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player twoakers received a card.
+Player twoakers received a card.
+Player _robbyJ received a card.
+Player _robbyJ received a card.
+Player gust folds
+Player AironVega folds
+Player RunnerLucker raises (3)
+Player Pimpika folds
+Player twoakers folds
+Player _robbyJ calls (3)
+Player IlxxxlI folds
+Player Ice Bank Mice Elf folds
+*** FLOP ***: [Kh 3c Qd]
+Player RunnerLucker bets (4)
+Player _robbyJ folds
+Uncalled bet (4) returned to RunnerLucker
+Player RunnerLucker mucks cards
+------ Summary ------
+Pot: 7.13. Rake 0.25. JP fee 0.12
+Board: [Kh 3c Qd]
+*Player RunnerLucker mucks (does not show cards). Bets: 3. Collects: 7.13. Wins: 4.13.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player twoakers does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player _robbyJ does not show cards.Bets: 3. Collects: 0. Loses: 3.
+Player IlxxxlI does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player Ice Bank Mice Elf does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player gust does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:51:9
+
+Game started at: 2016/12/30 12:49:56
+Game ID: 808938076 0.50/1 (PRR) Kajsa (short) - 2 (Hold'em)
+Seat 6 is the button
+Seat 1: IlxxxlI (37.91).
+Seat 2: gust (46.36).
+Seat 3: Portly23 (15.27).
+Seat 4: Pimpika (45.54).
+Seat 6: pineapplesand (40.35).
+Player IlxxxlI has small blind (0.50)
+Player gust has big blind (1)
+Player IlxxxlI received card: [Ac]
+Player IlxxxlI received card: [3s]
+Player gust received a card.
+Player gust received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player pineapplesand received a card.
+Player pineapplesand received a card.
+Player Portly23 folds
+Player Pimpika folds
+Player pineapplesand raises (2)
+Player IlxxxlI folds
+Player gust folds
+Uncalled bet (1) returned to pineapplesand
+Player pineapplesand mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+Player IlxxxlI does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player gust does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player pineapplesand mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Game ended at: 2016/12/30 12:50:25
+
+Game started at: 2016/12/30 12:49:51
+Game ID: 808938020 0.50/1 (PRR) Kraken (short) - 4 (Hold'em)
+Seat 3 is the button
+Seat 1: Portly23 (50.99).
+Seat 2: winnipuh (66.33).
+Seat 3: Ice Bank Mice Elf (50).
+Seat 4: IlxxxlI (43.40).
+Seat 5: l3ae (39.78).
+Seat 6: Pimpika (61.86).
+Player IlxxxlI has small blind (0.50)
+Player l3ae has big blind (1)
+Player IlxxxlI received card: [8s]
+Player IlxxxlI received card: [Jh]
+Player l3ae received a card.
+Player l3ae received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player winnipuh received a card.
+Player winnipuh received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player Pimpika folds
+Player Portly23 folds
+Player winnipuh raises (2.50)
+Player Ice Bank Mice Elf folds
+Player IlxxxlI folds
+Player l3ae calls (1.50)
+*** FLOP ***: [Kh Js Jd]
+Player l3ae checks
+Player winnipuh checks
+*** TURN ***: [Kh Js Jd] [10h]
+Player l3ae checks
+Player winnipuh bets (4)
+Player l3ae raises (8)
+Player winnipuh calls (4)
+*** RIVER ***: [Kh Js Jd 10h] [9d]
+Player l3ae allin (29.28)
+Player winnipuh folds
+Uncalled bet (29.28) returned to l3ae
+Player l3ae mucks cards
+------ Summary ------
+Pot: 20.43. Rake 0.83. JP fee 0.24
+Board: [Kh Js Jd 10h 9d]
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player winnipuh does not show cards.Bets: 10.50. Collects: 0. Loses: 10.50.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+*Player l3ae mucks (does not show cards). Bets: 10.50. Collects: 20.43. Wins: 9.93.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:51:13
+
+Game started at: 2016/12/30 12:49:50
+Game ID: 808938009 0.10/0.25 (PRR) Ekek (Short) (Hold'em)
+Seat 1 is the button
+Seat 1: MNspecktacular (15.30).
+Seat 2: IlxxxlI (6.82).
+Seat 3: bclever (16.55).
+Seat 4: FirstClan (20.54).
+Seat 5: dtnfk (14.23).
+Seat 6: Parcker (16.20).
+Player IlxxxlI has small blind (0.10)
+Player bclever has big blind (0.25)
+Player IlxxxlI received card: [5h]
+Player IlxxxlI received card: [4h]
+Player bclever received a card.
+Player bclever received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player MNspecktacular received a card.
+Player MNspecktacular received a card.
+Player FirstClan folds
+Player dtnfk raises (0.50)
+Player Parcker folds
+Player MNspecktacular folds
+Player IlxxxlI folds
+Player bclever folds
+Uncalled bet (0.25) returned to dtnfk
+Player dtnfk mucks cards
+------ Summary ------
+Pot: 0.60. Rake 0
+Player MNspecktacular does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player bclever does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player FirstClan does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player dtnfk mucks (does not show cards). Bets: 0.25. Collects: 0.60. Wins: 0.35.
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:50:19
+
+Game started at: 2016/12/30 12:49:47
+Game ID: 808937981 0.25/0.50 (PRR) Garuda (Short) (Hold'em)
+Seat 2 is the button
+Seat 1: IlxxxlI (20.74).
+Seat 2: sabiurr (19.26).
+Seat 3: autobuyer (23.50).
+Seat 4: Spagetti1 (23.50).
+Seat 5: 0nlyDaNuts (36.32).
+Seat 6: FirstClan (43.99).
+Seat 7: pineapplesand (10).
+Seat 8: Ice Bank Mice Elf (29.90).
+Seat 9: Pimpika (28.07).
+Player autobuyer has small blind (0.25)
+Player Spagetti1 has big blind (0.50)
+Player autobuyer received a card.
+Player autobuyer received a card.
+Player Spagetti1 received a card.
+Player Spagetti1 received a card.
+Player 0nlyDaNuts received a card.
+Player 0nlyDaNuts received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player pineapplesand received a card.
+Player pineapplesand received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI received card: [9d]
+Player IlxxxlI received card: [10h]
+Player sabiurr received a card.
+Player sabiurr received a card.
+Player 0nlyDaNuts folds
+Player FirstClan folds
+Player pineapplesand folds
+Player Ice Bank Mice Elf folds
+Player Pimpika folds
+Player IlxxxlI folds
+Player sabiurr folds
+Player autobuyer folds
+Uncalled bet (0.25) returned to Spagetti1
+Player Spagetti1 mucks cards
+------ Summary ------
+Pot: 0.50. Rake 0
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player sabiurr does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player autobuyer does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+*Player Spagetti1 mucks (does not show cards). Bets: 0.25. Collects: 0.50. Wins: 0.25.
+Player 0nlyDaNuts does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player FirstClan does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player pineapplesand does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:50:32Player dtnfk does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player Parcker does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Game ended at: 2016/12/30 12:40:57
+
+Game started at: 2016/12/30 12:39:46
+Game ID: 808931401 0.50/1 (PRR) Kajsa (short) - 2 (Hold'em)
+Seat 1 is the button
+Seat 1: IlxxxlI (42.90).
+Seat 2: gust (50.26).
+Seat 3: Portly23 (12.26).
+Seat 4: Pimpika (56.02).
+Seat 5: AironVega (51.50).
+Seat 6: pineapplesand (20).
+Player gust has small blind (0.50)
+Player Portly23 has big blind (1)
+Player gust received a card.
+Player gust received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player pineapplesand received a card.
+Player pineapplesand received a card.
+Player IlxxxlI received card: [4d]
+Player IlxxxlI received card: [9c]
+Player Pimpika folds
+Player AironVega folds
+Player pineapplesand folds
+Player IlxxxlI folds
+Player gust raises (1.50)
+Player Portly23 calls (1)
+*** FLOP ***: [3d Qc As]
+Player gust bets (1.90)
+Player Portly23 calls (1.90)
+*** TURN ***: [3d Qc As] [6d]
+Player gust checks
+Player Portly23 bets (4.94)
+Player gust folds
+Uncalled bet (4.94) returned to Portly23
+Player Portly23 mucks cards
+------ Summary ------
+Pot: 7.41. Rake 0.27. JP fee 0.12
+Board: [3d Qc As 6d]
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player gust does not show cards.Bets: 3.90. Collects: 0. Loses: 3.90.
+*Player Portly23 mucks (does not show cards). Bets: 3.90. Collects: 7.41. Wins: 3.51.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player pineapplesand does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:41:1
+
+Game started at: 2016/12/30 12:39:46
+Game ID: 808931396 0.25/0.50 (PRR) Garuda (Short) (Hold'em)
+Seat 1 is the button
+Seat 1: IlxxxlI (19.74).
+Seat 2: sabiurr (10.10).
+Seat 4: Spagetti1 (24.25).
+Seat 6: FirstClan (45.24).
+Seat 7: pineapplesand (11).
+Seat 8: Ice Bank Mice Elf (30.90).
+Seat 9: Pimpika (28.07).
+Player sabiurr has small blind (0.25)
+Player Spagetti1 has big blind (0.50)
+Player sabiurr received a card.
+Player sabiurr received a card.
+Player Spagetti1 received a card.
+Player Spagetti1 received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player pineapplesand received a card.
+Player pineapplesand received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI received card: [Jd]
+Player IlxxxlI received card: [Jc]
+Player FirstClan folds
+Player pineapplesand folds
+Player Ice Bank Mice Elf folds
+Player Pimpika raises (1)
+Player IlxxxlI raises (3.50)
+Player sabiurr folds
+Player Spagetti1 folds
+Player Pimpika folds
+Uncalled bet (2.50) returned to IlxxxlI
+Player IlxxxlI mucks cards
+------ Summary ------
+Pot: 2.75. Rake 0
+*Player IlxxxlI mucks (does not show cards). Bets: 1. Collects: 2.75. Wins: 1.75.
+Player sabiurr does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player Spagetti1 does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player FirstClan does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player pineapplesand does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Game ended at: 2016/12/30 12:40:35
+
+Game started at: 2016/12/30 12:39:32
+Game ID: 808931232 0.50/1 (PRR) Kraken (short) - 4 (Hold'em)
+Seat 3 is the button
+Seat 1: Portly23 (42.16).
+Seat 2: winnipuh (79.13).
+Seat 3: Ice Bank Mice Elf (73.85).
+Seat 4: IlxxxlI (36.11).
+Seat 5: l3ae (40.22).
+Seat 6: Pimpika (44.13).
+Player IlxxxlI has small blind (0.50)
+Player l3ae has big blind (1)
+Player IlxxxlI received card: [Ah]
+Player IlxxxlI received card: [3c]
+Player l3ae received a card.
+Player l3ae received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player winnipuh received a card.
+Player winnipuh received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player Pimpika folds
+Player Portly23 folds
+Player winnipuh folds
+Player Ice Bank Mice Elf folds
+Player IlxxxlI raises (2.80)
+Player l3ae calls (2.30)
+*** FLOP ***: [5c 2c 6h]
+Player IlxxxlI checks
+Player l3ae checks
+*** TURN ***: [5c 2c 6h] [4h]
+Player IlxxxlI bets (3.13)
+Player l3ae calls (3.13)
+*** RIVER ***: [5c 2c 6h 4h] [Jd]
+Player IlxxxlI bets (10)
+Player l3ae calls (10)
+Player l3ae mucks cards
+------ Summary ------
+Pot: 31.22. Rake 1.40. JP fee 0.24
+Board: [5c 2c 6h 4h Jd]
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player winnipuh does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player IlxxxlI shows: Straight to 6 [Ah 3c]. Bets: 16.43. Collects: 31.22. Wins: 14.79.
+Player l3ae mucks (does not show cards). Bets: 16.43. Collects: 0. Loses: 16.43.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:40:28
+
+Game started at: 2016/12/30 12:39:31
+Game ID: 808931219 0.50/1 (PRR) Kraken (Cap) - 3 (Hold'em)
+Seat 2 is the button
+Seat 1: Ice Bank Mice Elf (169.95).
+Seat 2: FirstClan (158.81).
+Seat 3: Pimpika (48.62).
+Seat 4: WomboComboAA (138.45).
+Seat 5: IlxxxlI (99.02).
+Player Pimpika has small blind (0.50)
+Player WomboComboAA has big blind (1)
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player WomboComboAA received a card.
+Player WomboComboAA received a card.
+Player IlxxxlI received card: [Ah]
+Player IlxxxlI received card: [Qs]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player IlxxxlI raises (2.50)
+Player Ice Bank Mice Elf folds
+Player FirstClan folds
+Player Pimpika folds
+Player WomboComboAA folds
+Uncalled bet (1.50) returned to IlxxxlI
+Player IlxxxlI mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player FirstClan does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player WomboComboAA does not show cards.Bets: 1. Collects: 0. Loses: 1.
+*Player IlxxxlI mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Game ended at: 2016/12/30 12:40:0
+
+Game started at: 2016/12/30 12:39:27
+Game ID: 808931182 0.10/0.25 (PRR) Ettin (Cap) (Hold'em)
+Seat 2 is the button
+Seat 1: Parcker (28.30).
+Seat 2: IlxxxlI (10).
+Seat 3: DarkKnight247 (23.05).
+Seat 4: BadOutfit (9.01).
+Seat 5: swill300857 (23.87).
+Seat 6: solasso (23.87).
+Seat 7: xx10jqkaxx (7.36).
+Seat 8: Ice Bank Mice Elf (28.43).
+Seat 9: joeyzzz (45.93).
+Player DarkKnight247 has small blind (0.10)
+Player BadOutfit has big blind (0.25)
+Player DarkKnight247 received a card.
+Player DarkKnight247 received a card.
+Player BadOutfit received a card.
+Player BadOutfit received a card.
+Player swill300857 received a card.
+Player swill300857 received a card.
+Player solasso received a card.
+Player solasso received a card.
+Player xx10jqkaxx received a card.
+Player xx10jqkaxx received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player joeyzzz received a card.
+Player joeyzzz received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player IlxxxlI received card: [10s]
+Player IlxxxlI received card: [8s]
+Player swill300857 folds
+Player solasso folds
+Player xx10jqkaxx calls (0.25)
+Player Ice Bank Mice Elf folds
+Player joeyzzz calls (0.25)
+Player Parcker folds
+Player IlxxxlI folds
+Player DarkKnight247 folds
+Player BadOutfit checks
+*** FLOP ***: [10h 5h 5c]
+Player BadOutfit checks
+Player xx10jqkaxx checks
+Player joeyzzz bets (0.54)
+Player BadOutfit folds
+Player xx10jqkaxx folds
+Uncalled bet (0.54) returned to joeyzzz
+Player joeyzzz mucks cards
+------ Summary ------
+Pot: 0.81. Rake 0.04
+Board: [10h 5h 5c]
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player DarkKnight247 does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player BadOutfit does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player swill300857 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player solasso does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player xx10jqkaxx does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player joeyzzz mucks (does not show cards). Bets: 0.25. Collects: 0.81. Wins: 0.56.
+Game ended at: 2016/12/30 12:40:22
+
+Game started at: 2016/12/30 12:39:22
+Game ID: 808931130 0.10/0.25 (PRR) Ekek (Short) - 2 (Hold'em)
+Seat 3 is the button
+Seat 1: Zzzzzzz10 (13.92).
+Seat 3: IlxxxlI (5.67).
+Seat 5: Flushdogg (15.17).
+Player Flushdogg has small blind (0.10)
+Player Zzzzzzz10 sitting out
+Player IlxxxlI has big blind (0.25)
+Player Flushdogg received a card.
+Player Flushdogg received a card.
+Player IlxxxlI received card: [9c]
+Player IlxxxlI received card: [As]
+Player Flushdogg raises (0.40)
+Player IlxxxlI calls (0.25)
+*** FLOP ***: [5s Qc 7d]
+Player Flushdogg bets (0.47)
+Player IlxxxlI calls (0.47)
+*** TURN ***: [5s Qc 7d] [10s]
+Player Flushdogg checks
+Player IlxxxlI checks
+*** RIVER ***: [5s Qc 7d 10s] [Js]
+Player Flushdogg checks
+Player IlxxxlI checks
+Player IlxxxlI mucks cards
+------ Summary ------
+Pot: 1.85. Rake 0.07. JP fee 0.02
+Board: [5s Qc 7d 10s Js]
+Player Zzzzzzz10 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI mucks (does not show: [9c As]). Bets: 0.97. Collects: 0. Loses: 0.97.
+*Player Flushdogg shows: One pair of 10s [10d Kc]. Bets: 0.97. Collects: 1.85. Wins: 0.88.
+Game ended at: 2016/12/30 12:40:9
+
+Game started at: 2016/12/30 12:39:21
+Game ID: 808931111 0.50/1 (PRR) Kraken (short) - 3 (Hold'em)
+Seat 4 is the button
+Seat 2: AironVega (51.80).
+Seat 3: Portly23 (43.94).
+Seat 4: GamesDean (48.76).
+Seat 5: Pimpika (51.16).
+Seat 6: IlxxxlI (24.68).
+Player Pimpika has small blind (0.50)
+Player IlxxxlI has big blind (1)
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI received card: [10h]
+Player IlxxxlI received card: [Ah]
+Player AironVega received a card.
+Player AironVega received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player GamesDean received a card.
+Player GamesDean received a card.
+Player AironVega folds
+Player Portly23 folds
+Player GamesDean folds
+Player Pimpika folds
+Uncalled bet (0.50) returned to IlxxxlI
+Player IlxxxlI mucks cards
+------ Summary ------
+Pot: 1. Rake 0
+Player AironVega does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player GamesDean does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+*Player IlxxxlI mucks (does not show cards). Bets: 0.50. Collects: 1. Wins: 0.50.
+Game ended at: 2016/12/30 12:39:46
+
+Game started at: 2016/12/30 12:39:12
+Game ID: 808930990 0.50/1 (PRR) Karkadann (Short) (Hold'em)
+Seat 3 is the button
+Seat 1: scootie (62.99).
+Seat 2: RunnerLucker (50).
+Seat 3: Pimpika (105.10).
+Seat 4: twoakers (51.70).
+Seat 5: _robbyJ (50).
+Seat 6: IlxxxlI (47).
+Seat 7: Ice Bank Mice Elf (94.25).
+Seat 9: AironVega (53.86).
+Player twoakers has small blind (0.50)
+Player _robbyJ has big blind (1)
+Player twoakers received a card.
+Player twoakers received a card.
+Player _robbyJ received a card.
+Player _robbyJ received a card.
+Player IlxxxlI received card: [9h]
+Player IlxxxlI received card: [Js]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player scootie received a card.
+Player scootie received a card.
+Player RunnerLucker received a card.
+Player RunnerLucker received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI folds
+Player Ice Bank Mice Elf folds
+Player AironVega folds
+Player scootie folds
+Player RunnerLucker raises (3)
+Player Pimpika folds
+Player twoakers calls (2.50)
+Player _robbyJ raises (10)
+Player RunnerLucker folds
+Player twoakers folds
+Uncalled bet (8) returned to _robbyJ
+Player _robbyJ mucks cards
+------ Summary ------
+Pot: 9. Rake 0
+Player scootie does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player RunnerLucker does not show cards.Bets: 3. Collects: 0. Loses: 3.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player twoakers does not show cards.Bets: 3. Collects: 0. Loses: 3.
+*Player _robbyJ mucks (does not show cards). Bets: 3. Collects: 9. Wins: 6.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:40:1
+
+Game started at: 2016/12/30 12:39:11
+Game ID: 808930981 0.10/0.25 (PRR) Ekek (Short) (Hold'em)
+Seat 3 is the button
+Seat 1: MNspecktacular (16.15).
+Seat 2: IlxxxlI (6.61).
+Seat 3: bclever (15.94).
+Seat 4: FirstClan (24.24).
+Seat 5: dtnfk (10.79).
+Seat 6: Parcker (16.55).
+Player FirstClan has small blind (0.10)
+Player dtnfk has big blind (0.25)
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player MNspecktacular received a card.
+Player MNspecktacular received a card.
+Player IlxxxlI received card: [Ah]
+Player IlxxxlI received card: [9c]
+Player bclever received a card.
+Player bclever received a card.
+Player Parcker folds
+Player MNspecktacular folds
+Player IlxxxlI raises (0.50)
+Player bclever folds
+Player FirstClan folds
+Player dtnfk folds
+Uncalled bet (0.25) returned to IlxxxlI
+Player IlxxxlI mucks cards
+------ Summary ------
+Pot: 0.60. Rake 0
+Player MNspecktacular does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player IlxxxlI mucks (does not show cards). Bets: 0.25. Collects: 0.60. Wins: 0.35.
+Player bclever does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player FirstClan does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player dtnfk does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:39:45
+
+Game started at: 2016/12/30 12:39:2
+Game ID: 808930873 0.25/0.50 (PRR) Garuda (Short) (Hold'em)
+Seat 9 is the button
+Seat 1: IlxxxlI (19.24).
+Seat 2: sabiurr (10.60).
+Seat 3: Yule (13.98).
+Seat 4: Spagetti1 (24.25).
+Seat 6: FirstClan (45.24).
+Seat 7: pineapplesand (11).
+Seat 8: Ice Bank Mice Elf (30.90).
+Seat 9: Pimpika (28.07).
+Player IlxxxlI has small blind (0.25)
+Player sabiurr has big blind (0.50)
+Player IlxxxlI received card: [As]
+Player IlxxxlI received card: [10c]
+Player sabiurr received a card.
+Player sabiurr received a card.
+Player Yule received a card.
+Player Yule received a card.
+Player Spagetti1 received a card.
+Player Spagetti1 received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player pineapplesand received a card.
+Player pineapplesand received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player Yule folds
+Player Spagetti1 folds
+Player FirstClan folds
+Player pineapplesand folds
+Player Ice Bank Mice Elf folds
+Player Pimpika folds
+Player IlxxxlI raises (1.40)
+Player sabiurr folds
+Uncalled bet (1.15) returned to IlxxxlI
+Player IlxxxlI mucks cards
+------ Summary ------
+Pot: 1. Rake 0
+*Player IlxxxlI mucks (does not show cards). Bets: 0.50. Collects: 1. Wins: 0.50.
+Player sabiurr does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player Yule does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Spagetti1 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player FirstClan does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player pineapplesand does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:39:44
+
+Game started at: 2016/12/30 12:38:59
+Game ID: 808930837 0.50/1 (PRR) Kraken (Cap) - 3 (Hold'em)
+Seat 1 is the button
+Seat 1: Ice Bank Mice Elf (169.95).
+Seat 2: FirstClan (159.31).
+Seat 3: Pimpika (48.12).
+Seat 4: WomboComboAA (138.45).
+Seat 5: IlxxxlI (99.02).
+Player FirstClan has small blind (0.50)
+Player Pimpika has big blind (1)
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player WomboComboAA received a card.
+Player WomboComboAA received a card.
+Player IlxxxlI received card: [3c]
+Player IlxxxlI received card: [7d]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player WomboComboAA folds
+Player IlxxxlI folds
+Player Ice Bank Mice Elf folds
+Player FirstClan folds
+Uncalled bet (0.50) returned to Pimpika
+Player Pimpika mucks cards
+------ Summary ------
+Pot: 1. Rake 0
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player FirstClan does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+*Player Pimpika mucks (does not show cards). Bets: 0.50. Collects: 1. Wins: 0.50.
+Player WomboComboAA does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:39:29
+
+Game started at: 2016/12/30 12:38:54
+Game ID: 808930770 0.10/0.25 (PRR) Ettin (Cap) (Hold'em)
+Seat 1 is the button
+Seat 1: Parcker (28.30).
+Seat 2: IlxxxlI (10).
+Seat 3: DarkKnight247 (23.30).
+Seat 4: BadOutfit (9.01).
+Seat 5: swill300857 (23.55).
+Seat 6: solasso (23.87).
+Seat 7: xx10jqkaxx (7.36).
+Seat 8: Ice Bank Mice Elf (28.43).
+Seat 9: joeyzzz (45.93).
+Player IlxxxlI has small blind (0.10)
+Player DarkKnight247 has big blind (0.25)
+Player IlxxxlI received card: [7c]
+Player IlxxxlI received card: [Qd]
+Player DarkKnight247 received a card.
+Player DarkKnight247 received a card.
+Player BadOutfit received a card.
+Player BadOutfit received a card.
+Player swill300857 received a card.
+Player swill300857 received a card.
+Player solasso received a card.
+Player solasso received a card.
+Player xx10jqkaxx received a card.
+Player xx10jqkaxx received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player joeyzzz received a card.
+Player joeyzzz received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player BadOutfit folds
+Player swill300857 calls (0.25)
+Player solasso folds
+Player xx10jqkaxx folds
+Player Ice Bank Mice Elf folds
+Player joeyzzz folds
+Player Parcker folds
+Player IlxxxlI folds
+Player DarkKnight247 checks
+*** FLOP ***: [3d 3s 8s]
+Player DarkKnight247 checks
+Player swill300857 bets (0.50)
+Player DarkKnight247 folds
+Uncalled bet (0.50) returned to swill300857
+Player swill300857 mucks cards
+------ Summary ------
+Pot: 0.57. Rake 0.03
+Board: [3d 3s 8s]
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player DarkKnight247 does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player BadOutfit does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player swill300857 mucks (does not show cards). Bets: 0.25. Collects: 0.57. Wins: 0.32.
+Player solasso does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player xx10jqkaxx does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player joeyzzz does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:39:24
+
+Game started at: 2016/12/30 12:38:54
+Game ID: 808930774 0.50/1 (PRR) Kraken (short) - 3 (Hold'em)
+Seat 3 is the button
+Seat 2: AironVega (51.80).
+Seat 3: Portly23 (43.94).
+Seat 4: GamesDean (49.26).
+Seat 5: Pimpika (50.66).
+Seat 6: IlxxxlI (24.68).
+Player GamesDean has small blind (0.50)
+Player Pimpika has big blind (1)
+Player GamesDean received a card.
+Player GamesDean received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI received card: [3c]
+Player IlxxxlI received card: [8h]
+Player AironVega received a card.
+Player AironVega received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player IlxxxlI folds
+Player AironVega folds
+Player Portly23 folds
+Player GamesDean folds
+Uncalled bet (0.50) returned to Pimpika
+Player Pimpika mucks cards
+------ Summary ------
+Pot: 1. Rake 0
+Player AironVega does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player GamesDean does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+*Player Pimpika mucks (does not show cards). Bets: 0.50. Collects: 1. Wins: 0.50.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:39:18
+
+Game started at: 2016/12/30 12:38:47
+Game ID: 808930700 0.50/1 (PRR) Kajsa (short) - 2 (Hold'em)
+Seat 6 is the button
+Seat 1: IlxxxlI (43.40).
+Seat 2: gust (51.26).
+Seat 3: Portly23 (12.26).
+Seat 4: Pimpika (56.02).
+Seat 5: AironVega (50).
+Seat 6: pineapplesand (20).
+Player IlxxxlI has small blind (0.50)
+Player gust has big blind (1)
+Player IlxxxlI received card: [2d]
+Player IlxxxlI received card: [9h]
+Player gust received a card.
+Player gust received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player pineapplesand received a card.
+Player pineapplesand received a card.
+Player Portly23 folds
+Player Pimpika folds
+Player AironVega raises (2)
+Player pineapplesand folds
+Player IlxxxlI folds
+Player gust folds
+Uncalled bet (1) returned to AironVega
+Player AironVega mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+Player IlxxxlI does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player gust does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player AironVega mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Player pineapplesand does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:39:43
+
+Game started at: 2016/12/30 12:38:34
+Game ID: 808930533 0.10/0.25 (PRR) Ekek (Short) - 2 (Hold'em)
+Seat 1 is the button
+Seat 1: Zzzzzzz10 (12.50).
+Seat 3: IlxxxlI (5.77).
+Seat 4: Parcker (18.89).
+Seat 5: Flushdogg (16.64).
+Player IlxxxlI has small blind (0.10)
+Player Parcker sitting out
+Player Flushdogg has big blind (0.25)
+Player IlxxxlI received card: [6h]
+Player IlxxxlI received card: [2h]
+Player Flushdogg received a card.
+Player Flushdogg received a card.
+Player Zzzzzzz10 received a card.
+Player Zzzzzzz10 received a card.
+Player Zzzzzzz10 raises (0.62)
+Player IlxxxlI folds
+Player Flushdogg calls (0.37)
+*** FLOP ***: [7s 6c 2d]
+Player Flushdogg checks
+Player Zzzzzzz10 bets (0.85)
+Player Flushdogg calls (0.85)
+*** TURN ***: [7s 6c 2d] [3h]
+Player Flushdogg checks
+Player Zzzzzzz10 bets (1.44)
+Player Flushdogg folds
+Uncalled bet (1.44) returned to Zzzzzzz10
+Player Zzzzzzz10 mucks cards
+------ Summary ------
+Pot: 2.89. Rake 0.11. JP fee 0.04
+Board: [7s 6c 2d 3h]
+*Player Zzzzzzz10 mucks (does not show cards). Bets: 1.47. Collects: 2.89. Wins: 1.42.
+Player IlxxxlI does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Flushdogg does not show cards.Bets: 1.47. Collects: 0. Loses: 1.47.
+Game ended at: 2016/12/30 12:39:20
+
+Game started at: 2016/12/30 12:38:32
+Game ID: 808930503 0.50/1 (PRR) Kraken (short) - 4 (Hold'em)
+Seat 2 is the button
+Seat 1: Portly23 (42.16).
+Seat 2: winnipuh (76.40).
+Seat 3: Ice Bank Mice Elf (74.35).
+Seat 4: IlxxxlI (38.61).
+Seat 5: l3ae (40.22).
+Seat 6: Pimpika (44.13).
+Player Ice Bank Mice Elf has small blind (0.50)
+Player IlxxxlI has big blind (1)
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player IlxxxlI received card: [Ad]
+Player IlxxxlI received card: [5d]
+Player l3ae received a card.
+Player l3ae received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player winnipuh received a card.
+Player winnipuh received a card.
+Player l3ae folds
+Player Pimpika folds
+Player Portly23 folds
+Player winnipuh raises (2.50)
+Player Ice Bank Mice Elf folds
+Player IlxxxlI calls (1.50)
+*** FLOP ***: [3d Ah 4h]
+Player IlxxxlI checks
+Player winnipuh checks
+*** TURN ***: [3d Ah 4h] [8h]
+Player IlxxxlI checks
+Player winnipuh bets (3)
+Player IlxxxlI folds
+Uncalled bet (3) returned to winnipuh
+Player winnipuh mucks cards
+------ Summary ------
+Pot: 5.23. Rake 0.19. JP fee 0.08
+Board: [3d Ah 4h 8h]
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player winnipuh mucks (does not show cards). Bets: 2.50. Collects: 5.23. Wins: 2.73.
+Player Ice Bank Mice Elf does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player IlxxxlI does not show cards.Bets: 2.50. Collects: 0. Loses: 2.50.
+Player l3ae does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:39:29
+
+Game started at: 2016/12/30 12:38:20
+Game ID: 808930348 0.50/1 (PRR) Karkadann (Short) (Hold'em)
+Seat 2 is the button
+Seat 1: scootie (61.49).
+Seat 2: RunnerLucker (50).
+Seat 3: Pimpika (105.60).
+Seat 4: twoakers (52.70).
+Seat 5: _robbyJ (50).
+Seat 6: IlxxxlI (47).
+Seat 7: Ice Bank Mice Elf (94.25).
+Seat 9: AironVega (53.86).
+Player Pimpika has small blind (0.50)
+Player twoakers has big blind (1)
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player twoakers received a card.
+Player twoakers received a card.
+Player _robbyJ received a card.
+Player _robbyJ received a card.
+Player IlxxxlI received card: [9h]
+Player IlxxxlI received card: [7d]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player scootie received a card.
+Player scootie received a card.
+Player RunnerLucker received a card.
+Player RunnerLucker received a card.
+Player _robbyJ folds
+Player IlxxxlI folds
+Player Ice Bank Mice Elf folds
+Player AironVega folds
+Player scootie raises (2.25)
+Player RunnerLucker folds
+Player Pimpika folds
+Player twoakers folds
+Uncalled bet (1.25) returned to scootie
+Player scootie mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+*Player scootie mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Player RunnerLucker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player twoakers does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player _robbyJ does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:39:9
+
+Game started at: 2016/12/30 12:38:19
+Game ID: 808930340 0.50/1 (PRR) Kraken (Cap) - 3 (Hold'em)
+Seat 5 is the button
+Seat 1: Ice Bank Mice Elf (170.45).
+Seat 2: FirstClan (160.31).
+Seat 3: Pimpika (48.12).
+Seat 4: WomboComboAA (136.95).
+Seat 5: IlxxxlI (99.02).
+Player Ice Bank Mice Elf has small blind (0.50)
+Player FirstClan has big blind (1)
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player WomboComboAA received a card.
+Player WomboComboAA received a card.
+Player IlxxxlI received card: [2c]
+Player IlxxxlI received card: [10s]
+Player Pimpika folds
+Player WomboComboAA raises (2)
+Player IlxxxlI folds
+Player Ice Bank Mice Elf folds
+Player FirstClan folds
+Uncalled bet (1) returned to WomboComboAA
+Player WomboComboAA mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+Player Ice Bank Mice Elf does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player FirstClan does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player WomboComboAA mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:38:57
+
+Game started at: 2016/12/30 12:38:18
+Game ID: 808930326 0.10/0.25 (PRR) Ekek (Short) - 2 (Hold'em)
+Seat 5 is the button
+Seat 1: Zzzzzzz10 (12.50).
+Seat 2: dtnfk (50.82).
+Seat 3: IlxxxlI (5.67).
+Seat 4: Parcker (18.89).
+Seat 5: Flushdogg (16.64).
+Player Zzzzzzz10 has small blind (0.10)
+Player dtnfk sitting out
+Player IlxxxlI has big blind (0.25)
+Player Zzzzzzz10 received a card.
+Player Zzzzzzz10 received a card.
+Player IlxxxlI received card: [5s]
+Player IlxxxlI received card: [Js]
+Player Parcker received a card.
+Player Parcker received a card.
+Player Flushdogg received a card.
+Player Flushdogg received a card.
+Player Parcker folds
+Player Flushdogg folds
+Player Zzzzzzz10 folds
+Uncalled bet (0.15) returned to IlxxxlI
+Player IlxxxlI mucks cards
+------ Summary ------
+Pot: 0.20. Rake 0
+Player Zzzzzzz10 does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player dtnfk does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player IlxxxlI mucks (does not show cards). Bets: 0.10. Collects: 0.20. Wins: 0.10.
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Flushdogg does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:38:31
+
+Game started at: 2016/12/30 12:38:16
+Game ID: 808930294 0.10/0.25 (PRR) Ettin (Cap) (Hold'em)
+Seat 9 is the button
+Seat 1: Parcker (28.40).
+Seat 2: IlxxxlI (10).
+Seat 3: DarkKnight247 (23.30).
+Seat 4: BadOutfit (9.01).
+Seat 5: swill300857 (23.55).
+Seat 6: solasso (23.87).
+Seat 7: xx10jqkaxx (7.36).
+Seat 8: Ice Bank Mice Elf (28.08).
+Seat 9: joeyzzz (45.93).
+Player Parcker has small blind (0.10)
+Player IlxxxlI has big blind (0.25)
+Player Parcker received a card.
+Player Parcker received a card.
+Player IlxxxlI received card: [3s]
+Player IlxxxlI received card: [Ah]
+Player DarkKnight247 received a card.
+Player DarkKnight247 received a card.
+Player BadOutfit received a card.
+Player BadOutfit received a card.
+Player swill300857 received a card.
+Player swill300857 received a card.
+Player solasso received a card.
+Player solasso received a card.
+Player xx10jqkaxx received a card.
+Player xx10jqkaxx received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player joeyzzz received a card.
+Player joeyzzz received a card.
+Player DarkKnight247 folds
+Player BadOutfit folds
+Player swill300857 folds
+Player solasso folds
+Player xx10jqkaxx folds
+Player Ice Bank Mice Elf raises (0.63)
+Player joeyzzz folds
+Player Parcker folds
+Player IlxxxlI folds
+Uncalled bet (0.38) returned to Ice Bank Mice Elf
+Player Ice Bank Mice Elf mucks cards
+------ Summary ------
+Pot: 0.60. Rake 0
+Player Parcker does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player IlxxxlI does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player DarkKnight247 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player BadOutfit does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player swill300857 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player solasso does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player xx10jqkaxx does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player Ice Bank Mice Elf mucks (does not show cards). Bets: 0.25. Collects: 0.60. Wins: 0.35.
+Player joeyzzz does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:38:51
+
+Game started at: 2016/12/30 12:37:54
+Game ID: 808930058 0.50/1 (PRR) Kraken (Cap) - 3 (Hold'em)
+Seat 4 is the button
+Seat 1: Ice Bank Mice Elf (169.95).
+Seat 2: FirstClan (160.31).
+Seat 3: Pimpika (48.12).
+Seat 4: WomboComboAA (136.95).
+Seat 5: IlxxxlI (99.52).
+Player IlxxxlI has small blind (0.50)
+Player Ice Bank Mice Elf has big blind (1)
+Player IlxxxlI received card: [Qh]
+Player IlxxxlI received card: [4h]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player WomboComboAA received a card.
+Player WomboComboAA received a card.
+Player FirstClan folds
+Player Pimpika folds
+Player WomboComboAA folds
+Player IlxxxlI folds
+Uncalled bet (0.50) returned to Ice Bank Mice Elf
+Player Ice Bank Mice Elf mucks cards
+------ Summary ------
+Pot: 1. Rake 0
+*Player Ice Bank Mice Elf mucks (does not show cards). Bets: 0.50. Collects: 1. Wins: 0.50.
+Player FirstClan does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player WomboComboAA does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Game ended at: 2016/12/30 12:38:16
+
+Game started at: 2016/12/30 12:37:44
+Game ID: 808929920 0.50/1 (PRR) Kraken (short) - 3 (Hold'em)
+Seat 2 is the button
+Seat 2: AironVega (51.80).
+Seat 3: Portly23 (44.68).
+Seat 4: GamesDean (50).
+Seat 5: Pimpika (50.66).
+Seat 6: IlxxxlI (24.68).
+Player Portly23 has small blind (0.50)
+Player GamesDean has big blind (1)
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player GamesDean received a card.
+Player GamesDean received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI received card: [Kc]
+Player IlxxxlI received card: [6h]
+Player AironVega received a card.
+Player AironVega received a card.
+Player Pimpika folds
+Player IlxxxlI folds
+Player AironVega folds
+Player Portly23 raises (2.50)
+Player GamesDean calls (2)
+*** FLOP ***: [7s 4s Kh]
+Player Portly23 bets (3.80)
+Player GamesDean calls (3.80)
+*** TURN ***: [7s 4s Kh] [6c]
+Player Portly23 checks
+Player GamesDean checks
+*** RIVER ***: [7s 4s Kh 6c] [As]
+Player Portly23 checks
+Player GamesDean bets (8)
+Player Portly23 calls (8)
+------ Summary ------
+Pot: 28.12. Rake 1.24. JP fee 0.24
+Board: [7s 4s Kh 6c As]
+Player AironVega does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player Portly23 shows: One pair of As [Ah Jc]. Bets: 14.80. Collects: 14.06. Loses: 0.74.
+*Player GamesDean shows: One pair of As [Jh Ad]. Bets: 14.80. Collects: 14.06. Loses: 0.74.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:38:49
+
+Game started at: 2016/12/30 12:37:44
+Game ID: 808929924 0.10/0.25 (PRR) Ekek (Short) - 2 (Hold'em)
+Seat 4 is the button
+Seat 1: Zzzzzzz10 (12.50).
+Seat 2: dtnfk (50.47).
+Seat 3: IlxxxlI (5.67).
+Seat 4: Parcker (18.89).
+Seat 5: Flushdogg (16.74).
+Player Flushdogg has small blind (0.10)
+Player Zzzzzzz10 has big blind (0.25)
+Player Flushdogg received a card.
+Player Flushdogg received a card.
+Player Zzzzzzz10 received a card.
+Player Zzzzzzz10 received a card.
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player IlxxxlI received card: [3c]
+Player IlxxxlI received card: [Qs]
+Player Parcker received a card.
+Player Parcker received a card.
+Player dtnfk raises (0.50)
+Player IlxxxlI folds
+Player Parcker folds
+Player Flushdogg folds
+Player Zzzzzzz10 folds
+Uncalled bet (0.25) returned to dtnfk
+Player dtnfk mucks cards
+------ Summary ------
+Pot: 0.60. Rake 0
+Player Zzzzzzz10 does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+*Player dtnfk mucks (does not show cards). Bets: 0.25. Collects: 0.60. Wins: 0.35.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Flushdogg does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Game ended at: 2016/12/30 12:38:15
+
+Game started at: 2016/12/30 12:37:34
+Game ID: 808929811 0.50/1 (PRR) Kraken (short) - 4 (Hold'em)
+Seat 1 is the button
+Seat 1: Portly23 (42.16).
+Seat 2: winnipuh (76.90).
+Seat 3: Ice Bank Mice Elf (75.35).
+Seat 4: IlxxxlI (38.61).
+Seat 5: l3ae (43.22).
+Seat 6: Pimpika (40).
+Player winnipuh has small blind (0.50)
+Player Ice Bank Mice Elf has big blind (1)
+Player winnipuh received a card.
+Player winnipuh received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player IlxxxlI received card: [9d]
+Player IlxxxlI received card: [6h]
+Player l3ae received a card.
+Player l3ae received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player IlxxxlI folds
+Player l3ae calls (1)
+Player Pimpika raises (3)
+Player Portly23 folds
+Player winnipuh folds
+Player Ice Bank Mice Elf folds
+Player l3ae calls (2)
+*** FLOP ***: [As 10s Kc]
+Player l3ae checks
+Player Pimpika bets (4)
+Player l3ae folds
+Uncalled bet (4) returned to Pimpika
+Player Pimpika mucks cards
+------ Summary ------
+Pot: 7.13. Rake 0.25. JP fee 0.12
+Board: [As 10s Kc]
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player winnipuh does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player Ice Bank Mice Elf does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player l3ae does not show cards.Bets: 3. Collects: 0. Loses: 3.
+*Player Pimpika mucks (does not show cards). Bets: 3. Collects: 7.13. Wins: 4.13.
+Game ended at: 2016/12/30 12:38:30
+
+Game started at: 2016/12/30 12:37:34
+Game ID: 808929807 0.10/0.25 (PRR) Ekek (Short) (Hold'em)
+Seat 2 is the button
+Seat 1: MNspecktacular (16.65).
+Seat 2: IlxxxlI (6.61).
+Seat 3: bclever (16.04).
+Seat 4: FirstClan (24.49).
+Seat 5: dtnfk (10).
+Seat 6: Parcker (16.55).
+Player bclever has small blind (0.10)
+Player FirstClan has big blind (0.25)
+Player bclever received a card.
+Player bclever received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player MNspecktacular received a card.
+Player MNspecktacular received a card.
+Player IlxxxlI received card: [4s]
+Player IlxxxlI received card: [4h]
+Player dtnfk raises (0.50)
+Player Parcker folds
+Player MNspecktacular calls (0.50)
+Player IlxxxlI folds
+Player bclever folds
+Player FirstClan folds
+*** FLOP ***: [8s 2h Jd]
+Player dtnfk checks
+Player MNspecktacular checks
+*** TURN ***: [8s 2h Jd] [8h]
+Player dtnfk checks
+Player MNspecktacular checks
+*** RIVER ***: [8s 2h Jd 8h] [7h]
+Player dtnfk checks
+Player MNspecktacular checks
+Player MNspecktacular mucks cards
+------ Summary ------
+Pot: 1.29. Rake 0.04. JP fee 0.02
+Board: [8s 2h Jd 8h 7h]
+Player MNspecktacular mucks (does not show cards). Bets: 0.50. Collects: 0. Loses: 0.50.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player bclever does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player FirstClan does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+*Player dtnfk shows: One pair of 8s [Qs Ks]. Bets: 0.50. Collects: 1.29. Wins: 0.79.
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:39:7
+
+Game started at: 2016/12/30 12:37:34
+Game ID: 808929805 0.25/0.50 (PRR) Garuda (Short) (Hold'em)
+Seat 8 is the button
+Seat 1: IlxxxlI (10).
+Seat 2: sabiurr (10.60).
+Seat 3: Yule (23.98).
+Seat 4: Spagetti1 (24.25).
+Seat 6: FirstClan (45.24).
+Seat 7: pineapplesand (11).
+Seat 8: Ice Bank Mice Elf (30.90).
+Seat 9: Pimpika (28.32).
+Player Pimpika has small blind (0.25)
+Player IlxxxlI has big blind (0.50)
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI received card: [Ac]
+Player IlxxxlI received card: [Ks]
+Player sabiurr received a card.
+Player sabiurr received a card.
+Player Yule received a card.
+Player Yule received a card.
+Player Spagetti1 received a card.
+Player Spagetti1 received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player pineapplesand received a card.
+Player pineapplesand received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player sabiurr folds
+Player Yule raises (1.50)
+Player Spagetti1 folds
+Player FirstClan folds
+Player pineapplesand folds
+Player Ice Bank Mice Elf folds
+Player Pimpika folds
+Player IlxxxlI allin (9.50)
+Player Yule calls (8.50)
+*** FLOP ***: [Ah 10c 7d]
+*** TURN ***: [Ah 10c 7d] [Kh]
+*** RIVER ***: [Ah 10c 7d Kh] [5d]
+------ Summary ------
+Pot: 19.24. Rake 0.77. JP fee 0.24
+Board: [Ah 10c 7d Kh 5d]
+*Player IlxxxlI shows: Two pairs. As and Ks [Ac Ks]. Bets: 10. Collects: 19.24. Wins: 9.24.
+Player sabiurr does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Yule shows: One pair of As [Ad Qc]. Bets: 10. Collects: 0. Loses: 10.
+Player Spagetti1 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player FirstClan does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player pineapplesand does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Game ended at: 2016/12/30 12:38:58
+
+Game started at: 2016/12/30 12:37:29
+Game ID: 808929753 0.50/1 (PRR) Karkadann (Short) (Hold'em)
+Seat 1 is the button
+Seat 1: scootie (61.49).
+Seat 2: RunnerLucker (50).
+Seat 3: Pimpika (106.60).
+Seat 4: twoakers (52.70).
+Seat 5: _robbyJ (50).
+Seat 6: IlxxxlI (47).
+Seat 7: Ice Bank Mice Elf (94.25).
+Seat 9: AironVega (52.36).
+Player RunnerLucker has small blind (0.50)
+Player Pimpika has big blind (1)
+Player RunnerLucker received a card.
+Player RunnerLucker received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player twoakers received a card.
+Player twoakers received a card.
+Player _robbyJ received a card.
+Player _robbyJ received a card.
+Player IlxxxlI received card: [7d]
+Player IlxxxlI received card: [Ks]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player scootie received a card.
+Player scootie received a card.
+Player twoakers folds
+Player _robbyJ folds
+Player IlxxxlI folds
+Player Ice Bank Mice Elf folds
+Player AironVega raises (2)
+Player scootie folds
+Player RunnerLucker folds
+Player Pimpika folds
+Uncalled bet (1) returned to AironVega
+Player AironVega mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+Player scootie does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player RunnerLucker does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player Pimpika does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player twoakers does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player _robbyJ does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player AironVega mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Game ended at: 2016/12/30 12:38:17
+
+Game started at: 2016/12/30 12:37:25
+Game ID: 808929714 0.10/0.25 (PRR) Ekek (Short) - 2 (Hold'em)
+Seat 3 is the button
+Seat 2: dtnfk (50.47).
+Seat 3: IlxxxlI (5.67).
+Seat 4: Parcker (18.64).
+Seat 5: Flushdogg (16.99).
+Player Parcker has small blind (0.10)
+Player Flushdogg has big blind (0.25)
+Player Parcker received a card.
+Player Parcker received a card.
+Player Flushdogg received a card.
+Player Flushdogg received a card.
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player IlxxxlI received card: [5d]
+Player IlxxxlI received card: [7s]
+Player dtnfk folds
+Player IlxxxlI folds
+Player Parcker raises (0.65)
+Player Flushdogg folds
+Uncalled bet (0.50) returned to Parcker
+Player Parcker mucks cards
+------ Summary ------
+Pot: 0.50. Rake 0
+Player dtnfk does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player Parcker mucks (does not show cards). Bets: 0.25. Collects: 0.50. Wins: 0.25.
+Player Flushdogg does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Game ended at: 2016/12/30 12:37:41
+
+Game started at: 2016/12/30 12:37:22
+Game ID: 808929673 0.10/0.25 (PRR) Ettin (Cap) (Hold'em)
+Seat 8 is the button
+Seat 1: Parcker (28.65).
+Seat 2: IlxxxlI (10).
+Seat 3: DarkKnight247 (23.30).
+Seat 4: BadOutfit (9.01).
+Seat 5: swill300857 (23.55).
+Seat 6: solasso (23.87).
+Seat 7: xx10jqkaxx (7.04).
+Seat 8: Ice Bank Mice Elf (28.08).
+Seat 9: joeyzzz (46.03).
+Player joeyzzz has small blind (0.10)
+Player Parcker has big blind (0.25)
+Player joeyzzz received a card.
+Player joeyzzz received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player IlxxxlI received card: [6s]
+Player IlxxxlI received card: [4h]
+Player DarkKnight247 received a card.
+Player DarkKnight247 received a card.
+Player BadOutfit received a card.
+Player BadOutfit received a card.
+Player swill300857 received a card.
+Player swill300857 received a card.
+Player solasso received a card.
+Player solasso received a card.
+Player xx10jqkaxx received a card.
+Player xx10jqkaxx received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player IlxxxlI folds
+Player DarkKnight247 folds
+Player BadOutfit folds
+Player swill300857 folds
+Player solasso folds
+Player xx10jqkaxx calls (0.25)
+Player Ice Bank Mice Elf folds
+Player joeyzzz folds
+Player Parcker checks
+*** FLOP ***: [Qh Ac 3d]
+Player Parcker checks
+Player xx10jqkaxx bets (0.38)
+Player Parcker folds
+Uncalled bet (0.38) returned to xx10jqkaxx
+Player xx10jqkaxx mucks cards
+------ Summary ------
+Pot: 0.57. Rake 0.03
+Board: [Qh Ac 3d]
+Player Parcker does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player DarkKnight247 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player BadOutfit does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player swill300857 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player solasso does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player xx10jqkaxx mucks (does not show cards). Bets: 0.25. Collects: 0.57. Wins: 0.32.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player joeyzzz does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Game ended at: 2016/12/30 12:38:13
+
+Game started at: 2016/12/30 12:37:18
+Game ID: 808929625 0.10/0.25 (PRR) Ekek (Short) - 6 (Hold'em)
+Seat 1 is the button
+Seat 1: Parcker (15.55).
+Seat 2: IlxxxlI (7.36).
+Seat 4: Zzzzzzz10 (12.50).
+Player IlxxxlI has small blind (0.10)
+Player Zzzzzzz10 has big blind (0.25)
+Player IlxxxlI received card: [Qs]
+Player IlxxxlI received card: [7s]
+Player Zzzzzzz10 received a card.
+Player Zzzzzzz10 received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player Parcker folds
+Player IlxxxlI calls (0.15)
+Player Zzzzzzz10 raises (0.55)
+Player IlxxxlI folds
+Uncalled bet (0.55) returned to Zzzzzzz10
+Player Zzzzzzz10 mucks cards
+------ Summary ------
+Pot: 0.50. Rake 0
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+*Player Zzzzzzz10 mucks (does not show cards). Bets: 0.25. Collects: 0.50. Wins: 0.25.
+Game ended at: 2016/12/30 12:37:38
+
+Game started at: 2016/12/30 12:37:3
+Game ID: 808929450 0.50/1 (PRR) Kraken (short) - 3 (Hold'em)
+Seat 6 is the button
+Seat 2: AironVega (50).
+Seat 3: Portly23 (46.68).
+Seat 5: Pimpika (50.66).
+Seat 6: IlxxxlI (24.68).
+Player AironVega has small blind (0.50)
+Player Portly23 has big blind (1)
+Player AironVega received a card.
+Player AironVega received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI received card: [Qd]
+Player IlxxxlI received card: [4h]
+Player Pimpika folds
+Player IlxxxlI folds
+Player AironVega raises (1.50)
+Player Portly23 calls (1)
+*** FLOP ***: [4c Qc 7c]
+Player AironVega bets (1.44)
+Player Portly23 folds
+Uncalled bet (1.44) returned to AironVega
+Player AironVega mucks cards
+------ Summary ------
+Pot: 3.80. Rake 0.14. JP fee 0.06
+Board: [4c Qc 7c]
+*Player AironVega mucks (does not show cards). Bets: 2. Collects: 3.80. Wins: 1.80.
+Player Portly23 does not show cards.Bets: 2. Collects: 0. Loses: 2.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:37:41
+
+Game started at: 2016/12/30 12:36:54
+Game ID: 808929328 0.50/1 (PRR) Kajsa (short) - 2 (Hold'em)
+Seat 5 is the button
+Seat 1: IlxxxlI (22.59).
+Seat 3: Portly23 (12.26).
+Seat 4: Pimpika (56.02).
+Seat 5: AironVega (50).
+Seat 6: pineapplesand (20).
+Player pineapplesand has small blind (0.50)
+Player IlxxxlI has big blind (1)
+Player pineapplesand received a card.
+Player pineapplesand received a card.
+Player IlxxxlI received card: [7d]
+Player IlxxxlI received card: [6d]
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player Portly23 folds
+Player Pimpika folds
+Player AironVega raises (2)
+Player pineapplesand folds
+Player IlxxxlI calls (1)
+*** FLOP ***: [4d Jh 6s]
+Player IlxxxlI checks
+Player AironVega bets (1.63)
+Player IlxxxlI calls (1.63)
+*** TURN ***: [4d Jh 6s] [2s]
+Player IlxxxlI checks
+Player AironVega bets (4.87)
+Player IlxxxlI calls (4.87)
+*** RIVER ***: [4d Jh 6s 2s] [9d]
+Player IlxxxlI checks
+Player AironVega allin (41.50)
+Player IlxxxlI allin (14.09)
+Uncalled bet (27.41) returned to AironVega
+------ Summary ------
+Pot: 43.40. Rake 2.04. JP fee 0.24
+Board: [4d Jh 6s 2s 9d]
+*Player IlxxxlI shows: One pair of 6s [7d 6d]. Bets: 22.59. Collects: 43.40. Wins: 20.81.
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega shows: High card A [Ac 8h]. Bets: 22.59. Collects: 0. Loses: 22.59.
+Player pineapplesand does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Game ended at: 2016/12/30 12:38:43
+
+Game started at: 2016/12/30 12:36:42
+Game ID: 808929205 0.10/0.25 (PRR) Ekek (Short) - 6 (Hold'em)
+Seat 4 is the button
+Seat 1: Parcker (15.65).
+Seat 2: IlxxxlI (5.94).
+Seat 4: Zzzzzzz10 (12.50).
+Player Parcker has small blind (0.10)
+Player IlxxxlI has big blind (0.25)
+Player Parcker received a card.
+Player Parcker received a card.
+Player IlxxxlI received card: [Kc]
+Player IlxxxlI received card: [4c]
+Player Zzzzzzz10 received a card.
+Player Zzzzzzz10 received a card.
+Player Zzzzzzz10 raises (0.62)
+Player Parcker folds
+Player IlxxxlI calls (0.37)
+*** FLOP ***: [7s 3c 7c]
+Player IlxxxlI checks
+Player Zzzzzzz10 bets (0.85)
+Player IlxxxlI raises (2.25)
+Player Zzzzzzz10 folds
+Uncalled bet (1.40) returned to IlxxxlI
+Player IlxxxlI mucks cards
+------ Summary ------
+Pot: 2.89. Rake 0.11. JP fee 0.04
+Board: [7s 3c 7c]
+Player Parcker does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+*Player IlxxxlI mucks (does not show cards). Bets: 1.47. Collects: 2.89. Wins: 1.42.
+Player Zzzzzzz10 does not show cards.Bets: 1.47. Collects: 0. Loses: 1.47.
+Game ended at: 2016/12/30 12:37:15
+
+Game started at: 2016/12/30 12:36:38
+Game ID: 808929158 0.50/1 (PRR) Kraken (short) - 4 (Hold'em)
+Seat 6 is the button
+Seat 1: Portly23 (42.66).
+Seat 2: winnipuh (77.90).
+Seat 3: Ice Bank Mice Elf (73.85).
+Seat 4: IlxxxlI (38.61).
+Seat 5: l3ae (43.22).
+Seat 6: Pimpika (40).
+Player Portly23 has small blind (0.50)
+Player winnipuh has big blind (1)
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player winnipuh received a card.
+Player winnipuh received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player IlxxxlI received card: [2s]
+Player IlxxxlI received card: [7c]
+Player l3ae received a card.
+Player l3ae received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player Ice Bank Mice Elf raises (3)
+Player IlxxxlI folds
+Player l3ae folds
+Player Pimpika folds
+Player Portly23 folds
+Player winnipuh folds
+Uncalled bet (2) returned to Ice Bank Mice Elf
+Player Ice Bank Mice Elf mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+Player Portly23 does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player winnipuh does not show cards.Bets: 1. Collects: 0. Loses: 1.
+*Player Ice Bank Mice Elf mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player l3ae does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:37:32
+
+Game started at: 2016/12/30 12:36:32
+Game ID: 808929078 0.10/0.25 (PRR) Ekek (Short) - 6 (Hold'em)
+Seat 2 is the button
+Seat 1: Parcker (15.55).
+Seat 2: IlxxxlI (5.94).
+Seat 4: Zzzzzzz10 (12.60).
+Seat 6: dtnfk (18.56).
+Player Zzzzzzz10 has small blind (0.10)
+Player dtnfk sitting out
+Player Parcker has big blind (0.25)
+Player Zzzzzzz10 received a card.
+Player Zzzzzzz10 received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player IlxxxlI received card: [9c]
+Player IlxxxlI received card: [8h]
+Player IlxxxlI folds
+Player Zzzzzzz10 folds
+Uncalled bet (0.15) returned to Parcker
+Player Parcker mucks cards
+------ Summary ------
+Pot: 0.20. Rake 0
+*Player Parcker mucks (does not show cards). Bets: 0.10. Collects: 0.20. Wins: 0.10.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Zzzzzzz10 does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player dtnfk does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:36:39
+
+Game started at: 2016/12/30 12:36:31
+Game ID: 808929064 0.50/1 (PRR) Karkadann (Short) (Hold'em)
+Seat 9 is the button
+Seat 1: scootie (61.99).
+Seat 2: RunnerLucker (50).
+Seat 3: Pimpika (106.60).
+Seat 4: twoakers (52.70).
+Seat 5: _robbyJ (50).
+Seat 6: IlxxxlI (44.27).
+Seat 7: Ice Bank Mice Elf (94.25).
+Seat 9: AironVega (52.36).
+Player scootie has small blind (0.50)
+Player RunnerLucker has big blind (1)
+Player scootie received a card.
+Player scootie received a card.
+Player RunnerLucker received a card.
+Player RunnerLucker received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player twoakers received a card.
+Player twoakers received a card.
+Player _robbyJ received a card.
+Player _robbyJ received a card.
+Player IlxxxlI received card: [Qh]
+Player IlxxxlI received card: [Kc]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player Pimpika folds
+Player twoakers folds
+Player _robbyJ folds
+Player IlxxxlI raises (2.50)
+Player Ice Bank Mice Elf folds
+Player AironVega folds
+Player scootie folds
+Player RunnerLucker calls (1.50)
+*** FLOP ***: [Ks 7s 3h]
+Player RunnerLucker checks
+Player IlxxxlI bets (2.09)
+Player RunnerLucker folds
+Uncalled bet (2.09) returned to IlxxxlI
+Player IlxxxlI mucks cards
+------ Summary ------
+Pot: 5.23. Rake 0.19. JP fee 0.08
+Board: [Ks 7s 3h]
+Player scootie does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player RunnerLucker does not show cards.Bets: 2.50. Collects: 0. Loses: 2.50.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player twoakers does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player _robbyJ does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player IlxxxlI mucks (does not show cards). Bets: 2.50. Collects: 5.23. Wins: 2.73.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:37:26
+
+Game started at: 2016/12/30 12:36:24
+Game ID: 808928989 0.50/1 (PRR) Kraken (Cap) - 3 (Hold'em)
+Seat 3 is the button
+Seat 1: Ice Bank Mice Elf (169.95).
+Seat 2: FirstClan (160.31).
+Seat 3: Pimpika (41).
+Seat 4: WomboComboAA (142.75).
+Seat 5: IlxxxlI (101.52).
+Player WomboComboAA has small blind (0.50)
+Player IlxxxlI has big blind (1)
+Player WomboComboAA received a card.
+Player WomboComboAA received a card.
+Player IlxxxlI received card: [9s]
+Player IlxxxlI received card: [3s]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player Ice Bank Mice Elf folds
+Player FirstClan folds
+Player Pimpika raises (2)
+Player WomboComboAA calls (1.50)
+Player IlxxxlI calls (1)
+*** FLOP ***: [5s Jc 4c]
+Player WomboComboAA checks
+Player IlxxxlI checks
+Player Pimpika bets (3.80)
+Player WomboComboAA calls (3.80)
+Player IlxxxlI folds
+*** TURN ***: [5s Jc 4c] [10h]
+Player WomboComboAA checks
+Player Pimpika bets (8.61)
+Player WomboComboAA folds
+Uncalled bet (8.61) returned to Pimpika
+Player Pimpika mucks cards
+------ Summary ------
+Pot: 12.92. Rake 0.46. JP fee 0.22
+Board: [5s Jc 4c 10h]
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player FirstClan does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player Pimpika mucks (does not show cards). Bets: 5.80. Collects: 12.92. Wins: 7.12.
+Player WomboComboAA does not show cards.Bets: 5.80. Collects: 0. Loses: 5.80.
+Player IlxxxlI does not show cards.Bets: 2. Collects: 0. Loses: 2.
+Game ended at: 2016/12/30 12:37:52
+
+Game started at: 2016/12/30 12:36:24
+Game ID: 808928986 0.10/0.25 (PRR) Ettin (Cap) (Hold'em)
+Seat 7 is the button
+Seat 1: Parcker (28.65).
+Seat 2: IlxxxlI (10).
+Seat 3: DarkKnight247 (23.30).
+Seat 4: BadOutfit (9.01).
+Seat 5: swill300857 (23.55).
+Seat 6: solasso (24.12).
+Seat 7: xx10jqkaxx (7.04).
+Seat 8: Ice Bank Mice Elf (27.58).
+Seat 9: joeyzzz (46.28).
+Player Ice Bank Mice Elf has small blind (0.10)
+Player joeyzzz has big blind (0.25)
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player joeyzzz received a card.
+Player joeyzzz received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player IlxxxlI received card: [6s]
+Player IlxxxlI received card: [7c]
+Player DarkKnight247 received a card.
+Player DarkKnight247 received a card.
+Player BadOutfit received a card.
+Player BadOutfit received a card.
+Player swill300857 received a card.
+Player swill300857 received a card.
+Player solasso received a card.
+Player solasso received a card.
+Player xx10jqkaxx received a card.
+Player xx10jqkaxx received a card.
+Player Parcker folds
+Player IlxxxlI folds
+Player DarkKnight247 folds
+Player BadOutfit folds
+Player swill300857 folds
+Player solasso calls (0.25)
+Player xx10jqkaxx folds
+Player Ice Bank Mice Elf raises (1.14)
+Player joeyzzz folds
+Player solasso folds
+Uncalled bet (0.99) returned to Ice Bank Mice Elf
+Player Ice Bank Mice Elf mucks cards
+------ Summary ------
+Pot: 0.75. Rake 0
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player DarkKnight247 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player BadOutfit does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player swill300857 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player solasso does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player xx10jqkaxx does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player Ice Bank Mice Elf mucks (does not show cards). Bets: 0.25. Collects: 0.75. Wins: 0.50.
+Player joeyzzz does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Game ended at: 2016/12/30 12:37:19
+
+Game started at: 2016/12/30 12:36:11
+Game ID: 808928824 0.50/1 (PRR) Kraken (short) - 4 (Hold'em)
+Seat 5 is the button
+Seat 1: Portly23 (43.66).
+Seat 2: winnipuh (77.90).
+Seat 3: Ice Bank Mice Elf (73.85).
+Seat 4: IlxxxlI (38.61).
+Seat 5: l3ae (41.72).
+Seat 6: Pimpika (40).
+Player Pimpika has small blind (0.50)
+Player Portly23 has big blind (1)
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player winnipuh received a card.
+Player winnipuh received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player IlxxxlI received card: [7c]
+Player IlxxxlI received card: [Ah]
+Player l3ae received a card.
+Player l3ae received a card.
+Player winnipuh folds
+Player Ice Bank Mice Elf folds
+Player IlxxxlI folds
+Player l3ae raises (2)
+Player Pimpika folds
+Player Portly23 folds
+Uncalled bet (1) returned to l3ae
+Player l3ae mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+Player Portly23 does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player winnipuh does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player l3ae mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Player Pimpika does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Game ended at: 2016/12/30 12:36:35
+
+Game started at: 2016/12/30 12:35:59
+Game ID: 808928685 0.10/0.25 (PRR) Ekek (Short) - 2 (Hold'em)
+Seat 2 is the button
+Seat 2: dtnfk (49.92).
+Seat 3: IlxxxlI (5.77).
+Seat 4: Parcker (19.14).
+Seat 5: Flushdogg (16.99).
+Player IlxxxlI has small blind (0.10)
+Player Parcker has big blind (0.25)
+Player IlxxxlI received card: [8h]
+Player IlxxxlI received card: [3h]
+Player Parcker received a card.
+Player Parcker received a card.
+Player Flushdogg received a card.
+Player Flushdogg received a card.
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player Flushdogg folds
+Player dtnfk raises (0.50)
+Player IlxxxlI folds
+Player Parcker calls (0.25)
+*** FLOP ***: [3s Qh 7h]
+Player Parcker checks
+Player dtnfk checks
+*** TURN ***: [3s Qh 7h] [Js]
+Player Parcker checks
+Player dtnfk checks
+*** RIVER ***: [3s Qh 7h Js] [6d]
+Player Parcker checks
+Player dtnfk bets (0.70)
+Player Parcker folds
+Uncalled bet (0.70) returned to dtnfk
+Player dtnfk mucks cards
+------ Summary ------
+Pot: 1.05. Rake 0.05
+Board: [3s Qh 7h Js 6d]
+*Player dtnfk mucks (does not show cards). Bets: 0.50. Collects: 1.05. Wins: 0.55.
+Player IlxxxlI does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player Parcker does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player Flushdogg does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:37:23
+
+Game started at: 2016/12/30 12:35:58
+Game ID: 808928675 0.10/0.25 (PRR) Ekek (Short) - 6 (Hold'em)
+Seat 1 is the button
+Seat 1: Parcker (15.55).
+Seat 2: IlxxxlI (6.04).
+Seat 4: Zzzzzzz10 (12.85).
+Seat 6: dtnfk (18.21).
+Player IlxxxlI has small blind (0.10)
+Player Zzzzzzz10 has big blind (0.25)
+Player IlxxxlI received card: [7d]
+Player IlxxxlI received card: [Qs]
+Player Zzzzzzz10 received a card.
+Player Zzzzzzz10 received a card.
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player dtnfk raises (0.50)
+Player Parcker folds
+Player IlxxxlI folds
+Player Zzzzzzz10 folds
+Uncalled bet (0.25) returned to dtnfk
+Player dtnfk mucks cards
+------ Summary ------
+Pot: 0.60. Rake 0
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player Zzzzzzz10 does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+*Player dtnfk mucks (does not show cards). Bets: 0.25. Collects: 0.60. Wins: 0.35.
+Game ended at: 2016/12/30 12:36:28
+
+Game started at: 2016/12/30 12:35:55
+Game ID: 808928639 0.10/0.25 (PRR) Ekek (Short) (Hold'em)
+Seat 1 is the button
+Seat 1: MNspecktacular (12.81).
+Seat 2: IlxxxlI (6.71).
+Seat 3: bclever (18.06).
+Seat 4: FirstClan (24.49).
+Seat 5: dtnfk (10).
+Seat 6: Parcker (18.57).
+Player IlxxxlI has small blind (0.10)
+Player bclever has big blind (0.25)
+Player IlxxxlI received card: [8c]
+Player IlxxxlI received card: [Jd]
+Player bclever received a card.
+Player bclever received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player MNspecktacular received a card.
+Player MNspecktacular received a card.
+Player FirstClan folds
+Player dtnfk folds
+Player Parcker raises (0.62)
+Player MNspecktacular calls (0.62)
+Player IlxxxlI folds
+Player bclever calls (0.37)
+*** FLOP ***: [9h Ah 6s]
+Player bclever checks
+Player Parcker checks
+Player MNspecktacular checks
+*** TURN ***: [9h Ah 6s] [6h]
+Player bclever bets (1.40)
+Player Parcker calls (1.40)
+Player MNspecktacular calls (1.40)
+*** RIVER ***: [9h Ah 6s 6h] [8s]
+Player bclever checks
+Player Parcker checks
+Player MNspecktacular bets (2.93)
+Player bclever folds
+Player Parcker folds
+Uncalled bet (2.93) returned to MNspecktacular
+Player MNspecktacular mucks cards
+------ Summary ------
+Pot: 5.86. Rake 0.20. JP fee 0.10
+Board: [9h Ah 6s 6h 8s]
+*Player MNspecktacular mucks (does not show cards). Bets: 2.02. Collects: 5.86. Wins: 3.84.
+Player IlxxxlI does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player bclever does not show cards.Bets: 2.02. Collects: 0. Loses: 2.02.
+Player FirstClan does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player dtnfk does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Parcker does not show cards.Bets: 2.02. Collects: 0. Loses: 2.02.
+Game ended at: 2016/12/30 12:37:32
+
+Game started at: 2016/12/30 12:35:52
+Game ID: 808928602 0.50/1 (PRR) Karkadann (Short) (Hold'em)
+Seat 7 is the button
+Seat 1: scootie (62.99).
+Seat 3: Pimpika (106.60).
+Seat 4: twoakers (51.20).
+Seat 5: _robbyJ (50).
+Seat 6: IlxxxlI (44.27).
+Seat 7: Ice Bank Mice Elf (94.25).
+Seat 9: AironVega (52.86).
+Player AironVega has small blind (0.50)
+Player scootie has big blind (1)
+Player AironVega received a card.
+Player AironVega received a card.
+Player scootie received a card.
+Player scootie received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player twoakers received a card.
+Player twoakers received a card.
+Player _robbyJ received a card.
+Player _robbyJ received a card.
+Player IlxxxlI received card: [4d]
+Player IlxxxlI received card: [2c]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player Pimpika folds
+Player twoakers raises (2.50)
+Player _robbyJ folds
+Player IlxxxlI folds
+Player Ice Bank Mice Elf folds
+Player AironVega folds
+Player scootie folds
+Uncalled bet (1.50) returned to twoakers
+Player twoakers mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+Player scootie does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player twoakers mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Player _robbyJ does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Game ended at: 2016/12/30 12:36:28
+
+Game started at: 2016/12/30 12:35:51
+Game ID: 808928587 0.10/0.25 (PRR) Ettin (Cap) (Hold'em)
+Seat 6 is the button
+Seat 1: Parcker (28.65).
+Seat 2: IlxxxlI (10).
+Seat 3: DarkKnight247 (23.30).
+Seat 4: BadOutfit (9.01).
+Seat 5: swill300857 (23.55).
+Seat 6: solasso (24.12).
+Seat 7: xx10jqkaxx (7.14).
+Seat 8: Ice Bank Mice Elf (27.48).
+Seat 9: joeyzzz (46.28).
+Player xx10jqkaxx has small blind (0.10)
+Player Ice Bank Mice Elf has big blind (0.25)
+Player xx10jqkaxx received a card.
+Player xx10jqkaxx received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player joeyzzz received a card.
+Player joeyzzz received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player IlxxxlI received card: [5d]
+Player IlxxxlI received card: [8d]
+Player DarkKnight247 received a card.
+Player DarkKnight247 received a card.
+Player BadOutfit received a card.
+Player BadOutfit received a card.
+Player swill300857 received a card.
+Player swill300857 received a card.
+Player solasso received a card.
+Player solasso received a card.
+Player joeyzzz folds
+Player Parcker folds
+Player IlxxxlI folds
+Player DarkKnight247 folds
+Player BadOutfit folds
+Player swill300857 folds
+Player solasso folds
+Player xx10jqkaxx folds
+Uncalled bet (0.15) returned to Ice Bank Mice Elf
+Player Ice Bank Mice Elf mucks cards
+------ Summary ------
+Pot: 0.20. Rake 0
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player DarkKnight247 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player BadOutfit does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player swill300857 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player solasso does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player xx10jqkaxx does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+*Player Ice Bank Mice Elf mucks (does not show cards). Bets: 0.10. Collects: 0.20. Wins: 0.10.
+Player joeyzzz does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:36:21
+
+Game started at: 2016/12/30 12:35:48
+Game ID: 808928549 0.50/1 (PRR) Kraken (Cap) - 3 (Hold'em)
+Seat 2 is the button
+Seat 1: Ice Bank Mice Elf (169.95).
+Seat 2: FirstClan (160.31).
+Seat 3: Pimpika (40).
+Seat 4: WomboComboAA (143.75).
+Seat 5: IlxxxlI (101.52).
+Player Pimpika has small blind (0.50)
+Player WomboComboAA has big blind (1)
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player WomboComboAA received a card.
+Player WomboComboAA received a card.
+Player IlxxxlI received card: [9s]
+Player IlxxxlI received card: [Qd]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player IlxxxlI folds
+Player Ice Bank Mice Elf folds
+Player FirstClan folds
+Player Pimpika raises (1.50)
+Player WomboComboAA folds
+Uncalled bet (1) returned to Pimpika
+Player Pimpika mucks cards
+------ Summary ------
+Pot: 2. Rake 0
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player FirstClan does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player Pimpika mucks (does not show cards). Bets: 1. Collects: 2. Wins: 1.
+Player WomboComboAA does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:36:21
+
+Game started at: 2016/12/30 12:35:32
+Game ID: 808928349 0.10/0.25 (PRR) Ekek (Short) - 2 (Hold'em)
+Seat 5 is the button
+Seat 2: dtnfk (50.02).
+Seat 3: IlxxxlI (6.02).
+Seat 4: Parcker (19.14).
+Seat 5: Flushdogg (16.64).
+Player dtnfk has small blind (0.10)
+Player IlxxxlI has big blind (0.25)
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player IlxxxlI received card: [Qh]
+Player IlxxxlI received card: [4c]
+Player Parcker received a card.
+Player Parcker received a card.
+Player Flushdogg received a card.
+Player Flushdogg received a card.
+Player Parcker folds
+Player Flushdogg raises (0.75)
+Player dtnfk folds
+Player IlxxxlI folds
+Uncalled bet (0.50) returned to Flushdogg
+Player Flushdogg mucks cards
+------ Summary ------
+Pot: 0.60. Rake 0
+Player dtnfk does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player IlxxxlI does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player Flushdogg mucks (does not show cards). Bets: 0.25. Collects: 0.60. Wins: 0.35.
+Game ended at: 2016/12/30 12:35:56
+
+Game started at: 2016/12/30 12:35:20
+Game ID: 808928226 0.50/1 (PRR) Kraken (short) - 3 (Hold'em)
+Seat 5 is the button
+Seat 1: gust (42).
+Seat 2: AironVega (51.50).
+Seat 3: Portly23 (46.68).
+Seat 5: Pimpika (40).
+Seat 6: IlxxxlI (25.18).
+Player IlxxxlI has small blind (0.50)
+Player gust sitting out
+Player AironVega has big blind (1)
+Player IlxxxlI received card: [6s]
+Player IlxxxlI received card: [8h]
+Player AironVega received a card.
+Player AironVega received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player Portly23 folds
+Player Pimpika raises (2)
+Player IlxxxlI folds
+Player AironVega calls (1)
+*** FLOP ***: [2h 10c Qc]
+Player AironVega checks
+Player Pimpika bets (2.85)
+Player AironVega calls (2.85)
+*** TURN ***: [2h 10c Qc] [5c]
+Player AironVega checks
+Player Pimpika bets (6.46)
+Player AironVega calls (6.46)
+*** RIVER ***: [2h 10c Qc 5c] [7c]
+Player AironVega checks
+Player Pimpika bets (12)
+Player AironVega folds
+Uncalled bet (12) returned to Pimpika
+Player Pimpika mucks cards
+------ Summary ------
+Pot: 21.97. Rake 0.91. JP fee 0.24
+Board: [2h 10c Qc 5c 7c]
+Player gust does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega does not show cards.Bets: 11.31. Collects: 0. Loses: 11.31.
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player Pimpika mucks (does not show cards). Bets: 11.31. Collects: 21.97. Wins: 10.66.
+Player IlxxxlI does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Game ended at: 2016/12/30 12:37:1
+
+Game started at: 2016/12/30 12:35:20
+Game ID: 808928225 0.50/1 (PRR) Kraken (Cap) - 3 (Hold'em)
+Seat 1 is the button
+Seat 1: Ice Bank Mice Elf (169.95).
+Seat 2: FirstClan (160.81).
+Seat 3: Pimpika (40).
+Seat 4: WomboComboAA (142.25).
+Seat 5: IlxxxlI (101.52).
+Player FirstClan has small blind (0.50)
+Player Pimpika has big blind (1)
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player WomboComboAA received a card.
+Player WomboComboAA received a card.
+Player IlxxxlI received card: [10c]
+Player IlxxxlI received card: [Jh]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player WomboComboAA raises (2)
+Player IlxxxlI folds
+Player Ice Bank Mice Elf folds
+Player FirstClan folds
+Player Pimpika folds
+Uncalled bet (1) returned to WomboComboAA
+Player WomboComboAA mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player FirstClan does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player Pimpika does not show cards.Bets: 1. Collects: 0. Loses: 1.
+*Player WomboComboAA mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:35:45
+
+Game started at: 2016/12/30 12:35:18
+Game ID: 808928201 0.50/1 (PRR) Kajsa (short) - 2 (Hold'em)
+Seat 4 is the button
+Seat 1: IlxxxlI (22.59).
+Seat 3: Portly23 (12.26).
+Seat 4: Pimpika (42.50).
+Seat 5: AironVega (50.50).
+Seat 6: pineapplesand (20).
+Player AironVega has small blind (0.50)
+Player pineapplesand has big blind (1)
+Player AironVega received a card.
+Player AironVega received a card.
+Player pineapplesand received a card.
+Player pineapplesand received a card.
+Player IlxxxlI received card: [8h]
+Player IlxxxlI received card: [10d]
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI folds
+Player Portly23 folds
+Player Pimpika raises (2)
+Player AironVega raises (7.40)
+Player pineapplesand folds
+Player Pimpika calls (5.90)
+*** FLOP ***: [3c 2d Ac]
+Player AironVega bets (6.06)
+Player Pimpika calls (6.06)
+*** TURN ***: [3c 2d Ac] [7s]
+Player AironVega checks
+Player Pimpika allin (28.54)
+Player AironVega folds
+Uncalled bet (28.54) returned to Pimpika
+Player Pimpika mucks cards
+------ Summary ------
+Pot: 27.48. Rake 1.20. JP fee 0.24
+Board: [3c 2d Ac 7s]
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player Pimpika mucks (does not show cards). Bets: 13.96. Collects: 27.48. Wins: 13.52.
+Player AironVega does not show cards.Bets: 13.96. Collects: 0. Loses: 13.96.
+Player pineapplesand does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Game ended at: 2016/12/30 12:36:52
+
+Game started at: 2016/12/30 12:35:16
+Game ID: 808928179 0.50/1 (PRR) Kraken (short) - 4 (Hold'em)
+Seat 4 is the button
+Seat 1: Portly23 (48.98).
+Seat 2: winnipuh (70.26).
+Seat 3: Ice Bank Mice Elf (73.85).
+Seat 4: IlxxxlI (38.61).
+Seat 5: l3ae (43.72).
+Seat 6: Pimpika (40).
+Player l3ae has small blind (0.50)
+Player Pimpika has big blind (1)
+Player l3ae received a card.
+Player l3ae received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player winnipuh received a card.
+Player winnipuh received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player IlxxxlI received card: [Qd]
+Player IlxxxlI received card: [8h]
+Player Portly23 raises (2)
+Player winnipuh calls (2)
+Player Ice Bank Mice Elf folds
+Player IlxxxlI folds
+Player l3ae calls (1.50)
+Player Pimpika folds
+*** FLOP ***: [7s Qc 6c]
+Player l3ae checks
+Player Portly23 bets (3.32)
+Player winnipuh raises (9)
+Player l3ae folds
+Player Portly23 folds
+Uncalled bet (5.68) returned to winnipuh
+Player winnipuh mucks cards
+------ Summary ------
+Pot: 12.96. Rake 0.46. JP fee 0.22
+Board: [7s Qc 6c]
+Player Portly23 does not show cards.Bets: 5.32. Collects: 0. Loses: 5.32.
+*Player winnipuh mucks (does not show cards). Bets: 5.32. Collects: 12.96. Wins: 7.64.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player l3ae does not show cards.Bets: 2. Collects: 0. Loses: 2.
+Player Pimpika does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Game ended at: 2016/12/30 12:36:8
+
+Game started at: 2016/12/30 12:35:8
+Game ID: 808928075 0.50/1 (PRR) Karkadann (Short) (Hold'em)
+Seat 6 is the button
+Seat 1: scootie (62.99).
+Seat 3: Pimpika (106.60).
+Seat 4: twoakers (52.20).
+Seat 5: _robbyJ (20.77).
+Seat 6: IlxxxlI (44.27).
+Seat 7: Ice Bank Mice Elf (94.75).
+Seat 8: gust (44.56).
+Seat 9: AironVega (53.86).
+Player Ice Bank Mice Elf has small blind (0.50)
+Player gust sitting out
+Player AironVega has big blind (1)
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player scootie received a card.
+Player scootie received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player twoakers received a card.
+Player twoakers received a card.
+Player _robbyJ received a card.
+Player _robbyJ received a card.
+Player IlxxxlI received card: [Kh]
+Player IlxxxlI received card: [6h]
+Player scootie folds
+Player Pimpika folds
+Player twoakers calls (1)
+Player _robbyJ raises (4)
+Player IlxxxlI folds
+Player Ice Bank Mice Elf folds
+Player AironVega folds
+Player twoakers folds
+Uncalled bet (3) returned to _robbyJ
+Player _robbyJ mucks cards
+------ Summary ------
+Pot: 3.50. Rake 0
+Player scootie does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player twoakers does not show cards.Bets: 1. Collects: 0. Loses: 1.
+*Player _robbyJ mucks (does not show cards). Bets: 1. Collects: 3.50. Wins: 2.50.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player gust does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Game ended at: 2016/12/30 12:35:49
+
+Game started at: 2016/12/30 12:35:8
+Game ID: 808928076 0.10/0.25 (PRR) Ettin (Cap) (Hold'em)
+Seat 5 is the button
+Seat 1: Parcker (28.30).
+Seat 2: IlxxxlI (10).
+Seat 3: DarkKnight247 (23.30).
+Seat 4: BadOutfit (9.01).
+Seat 5: swill300857 (23.55).
+Seat 6: solasso (24.22).
+Seat 7: xx10jqkaxx (7.39).
+Seat 8: Ice Bank Mice Elf (27.48).
+Seat 9: joeyzzz (46.28).
+Player solasso has small blind (0.10)
+Player xx10jqkaxx has big blind (0.25)
+Player solasso received a card.
+Player solasso received a card.
+Player xx10jqkaxx received a card.
+Player xx10jqkaxx received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player joeyzzz received a card.
+Player joeyzzz received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player IlxxxlI received card: [9s]
+Player IlxxxlI received card: [3c]
+Player DarkKnight247 received a card.
+Player DarkKnight247 received a card.
+Player BadOutfit received a card.
+Player BadOutfit received a card.
+Player swill300857 received a card.
+Player swill300857 received a card.
+Player Ice Bank Mice Elf folds
+Player joeyzzz folds
+Player Parcker raises (0.75)
+Player IlxxxlI folds
+Player DarkKnight247 folds
+Player BadOutfit folds
+Player swill300857 folds
+Player solasso folds
+Player xx10jqkaxx folds
+Uncalled bet (0.50) returned to Parcker
+Player Parcker mucks cards
+------ Summary ------
+Pot: 0.60. Rake 0
+*Player Parcker mucks (does not show cards). Bets: 0.25. Collects: 0.60. Wins: 0.35.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player DarkKnight247 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player BadOutfit does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player swill300857 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player solasso does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player xx10jqkaxx does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player joeyzzz does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:35:48
+
+Game started at: 2016/12/30 12:34:58
+Game ID: 808927964 0.10/0.25 (PRR) Ekek (Short) - 6 (Hold'em)
+Seat 6 is the button
+Seat 1: Parcker (15.65).
+Seat 2: IlxxxlI (6.29).
+Seat 4: Zzzzzzz10 (12.85).
+Seat 5: FirstClan (21.76).
+Seat 6: dtnfk (17.86).
+Player Parcker has small blind (0.10)
+Player IlxxxlI has big blind (0.25)
+Player Parcker received a card.
+Player Parcker received a card.
+Player IlxxxlI received card: [Qd]
+Player IlxxxlI received card: [2c]
+Player Zzzzzzz10 received a card.
+Player Zzzzzzz10 received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player Zzzzzzz10 folds
+Player FirstClan is timed out.
+Player FirstClan folds
+Player dtnfk raises (0.50)
+Player Parcker folds
+Player IlxxxlI folds
+Uncalled bet (0.25) returned to dtnfk
+Player dtnfk mucks cards
+------ Summary ------
+Pot: 0.60. Rake 0
+Player Parcker does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player IlxxxlI does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player Zzzzzzz10 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player FirstClan does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player dtnfk mucks (does not show cards). Bets: 0.25. Collects: 0.60. Wins: 0.35.
+Game ended at: 2016/12/30 12:35:54
+
+Game started at: 2016/12/30 12:34:58
+Game ID: 808927962 0.50/1 (PRR) Kajsa (short) - 2 (Hold'em)
+Seat 3 is the button
+Seat 1: IlxxxlI (22.59).
+Seat 3: Portly23 (12.26).
+Seat 4: Pimpika (41.50).
+Seat 5: AironVega (51.50).
+Player Pimpika has small blind (0.50)
+Player AironVega has big blind (1)
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player IlxxxlI received card: [6h]
+Player IlxxxlI received card: [5c]
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player IlxxxlI folds
+Player Portly23 folds
+Player Pimpika raises (1.50)
+Player AironVega folds
+Uncalled bet (1) returned to Pimpika
+Player Pimpika mucks cards
+------ Summary ------
+Pot: 2. Rake 0
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player Pimpika mucks (does not show cards). Bets: 1. Collects: 2. Wins: 1.
+Player AironVega does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Game ended at: 2016/12/30 12:35:15
+
+Game started at: 2016/12/30 12:34:55
+Game ID: 808927928 0.50/1 (PRR) Kraken (short) - 4 (Hold'em)
+Seat 3 is the button
+Seat 1: Portly23 (48.98).
+Seat 2: winnipuh (70.26).
+Seat 3: Ice Bank Mice Elf (73.85).
+Seat 4: IlxxxlI (39.11).
+Seat 5: l3ae (43.22).
+Player IlxxxlI has small blind (0.50)
+Player l3ae has big blind (1)
+Player IlxxxlI received card: [7s]
+Player IlxxxlI received card: [2c]
+Player l3ae received a card.
+Player l3ae received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player winnipuh received a card.
+Player winnipuh received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player Portly23 folds
+Player winnipuh folds
+Player Ice Bank Mice Elf folds
+Player IlxxxlI folds
+Uncalled bet (0.50) returned to l3ae
+Player l3ae mucks cards
+------ Summary ------
+Pot: 1. Rake 0
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player winnipuh does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+*Player l3ae mucks (does not show cards). Bets: 0.50. Collects: 1. Wins: 0.50.
+Game ended at: 2016/12/30 12:35:14
+
+Game started at: 2016/12/30 12:34:51
+Game ID: 808927873 0.10/0.25 (PRR) Ekek (Short) (Hold'em)
+Seat 6 is the button
+Seat 1: MNspecktacular (12.91).
+Seat 2: IlxxxlI (6.96).
+Seat 3: bclever (18.06).
+Seat 4: FirstClan (24.49).
+Seat 5: dtnfk (10).
+Seat 6: Parcker (18.22).
+Player MNspecktacular has small blind (0.10)
+Player IlxxxlI has big blind (0.25)
+Player MNspecktacular received a card.
+Player MNspecktacular received a card.
+Player IlxxxlI received card: [5c]
+Player IlxxxlI received card: [Js]
+Player bclever received a card.
+Player bclever received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player bclever folds
+Player FirstClan folds
+Player dtnfk folds
+Player Parcker raises (0.60)
+Player MNspecktacular is timed out.
+Player MNspecktacular folds
+Player IlxxxlI folds
+Uncalled bet (0.35) returned to Parcker
+Player Parcker mucks cards
+------ Summary ------
+Pot: 0.60. Rake 0
+Player MNspecktacular does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player IlxxxlI does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player bclever does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player FirstClan does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player dtnfk does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player Parcker mucks (does not show cards). Bets: 0.25. Collects: 0.60. Wins: 0.35.
+Game ended at: 2016/12/30 12:35:53
+
+Game started at: 2016/12/30 12:34:49
+Game ID: 808927838 0.50/1 (PRR) Karkadann (Short) (Hold'em)
+Seat 5 is the button
+Seat 1: scootie (62.99).
+Seat 3: Pimpika (106.60).
+Seat 4: twoakers (52.20).
+Seat 5: _robbyJ (20.77).
+Seat 6: IlxxxlI (44.77).
+Seat 7: Ice Bank Mice Elf (95.75).
+Seat 8: gust (43.06).
+Seat 9: AironVega (53.86).
+Player IlxxxlI has small blind (0.50)
+Player Ice Bank Mice Elf has big blind (1)
+Player IlxxxlI received card: [6d]
+Player IlxxxlI received card: [Qd]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player gust received a card.
+Player gust received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player scootie received a card.
+Player scootie received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player twoakers received a card.
+Player twoakers received a card.
+Player _robbyJ received a card.
+Player _robbyJ received a card.
+Player gust raises (2)
+Player AironVega folds
+Player scootie folds
+Player Pimpika folds
+Player twoakers folds
+Player _robbyJ folds
+Player IlxxxlI folds
+Player Ice Bank Mice Elf folds
+Uncalled bet (1) returned to gust
+Player gust mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+Player scootie does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player twoakers does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player _robbyJ does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player Ice Bank Mice Elf does not show cards.Bets: 1. Collects: 0. Loses: 1.
+*Player gust mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Player AironVega does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:35:5
+
+Game started at: 2016/12/30 12:34:21
+Game ID: 808927519 0.50/1 (PRR) Kajsa (short) - 2 (Hold'em)
+Seat 1 is the button
+Seat 1: IlxxxlI (22.59).
+Seat 3: Portly23 (12.76).
+Seat 4: Pimpika (42.50).
+Seat 5: AironVega (50).
+Player Portly23 has small blind (0.50)
+Player Pimpika has big blind (1)
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player IlxxxlI received card: [Jc]
+Player IlxxxlI received card: [6c]
+Player AironVega raises (2)
+Player IlxxxlI folds
+Player Portly23 folds
+Player Pimpika folds
+Uncalled bet (1) returned to AironVega
+Player AironVega mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Portly23 does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player Pimpika does not show cards.Bets: 1. Collects: 0. Loses: 1.
+*Player AironVega mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Game ended at: 2016/12/30 12:34:55
+
+Game started at: 2016/12/30 12:34:15
+Game ID: 808927448 0.50/1 (PRR) Kraken (Cap) - 3 (Hold'em)
+Seat 5 is the button
+Seat 1: Ice Bank Mice Elf (199.95).
+Seat 2: FirstClan (161.81).
+Seat 3: Pimpika (40).
+Seat 4: WomboComboAA (112.25).
+Seat 5: IlxxxlI (101.52).
+Player Ice Bank Mice Elf has small blind (0.50)
+Player FirstClan has big blind (1)
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player WomboComboAA received a card.
+Player WomboComboAA received a card.
+Player IlxxxlI received card: [5s]
+Player IlxxxlI received card: [10d]
+Player Pimpika raises (2)
+Player WomboComboAA calls (2)
+Player IlxxxlI folds
+Player Ice Bank Mice Elf caps (29.50)
+Player FirstClan folds
+Player Pimpika folds
+Player WomboComboAA calls (28)
+*** FLOP ***: [8c 2h Kh]
+*** TURN ***: [8c 2h Kh] [10c]
+*** RIVER ***: [8c 2h Kh 10c] [9h]
+------ Summary ------
+Pot: 60. Rake 2.76. JP fee 0.24
+Board: [8c 2h Kh 10c 9h]
+Player Ice Bank Mice Elf shows: One pair of 6s [6d 6c]. Bets: 30. Collects: 0. Loses: 30.
+Player FirstClan does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player Pimpika does not show cards.Bets: 2. Collects: 0. Loses: 2.
+*Player WomboComboAA shows: One pair of As [Ad Ac]. Bets: 30. Collects: 60. Wins: 30.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:35:15
+
+Game started at: 2016/12/30 12:34:15
+Game ID: 808927447 0.10/0.25 (PRR) Ekek (Short) - 2 (Hold'em)
+Seat 4 is the button
+Seat 2: dtnfk (50.02).
+Seat 3: IlxxxlI (6.02).
+Seat 4: Parcker (14.28).
+Seat 5: Flushdogg (16.74).
+Seat 6: ISULDURR (5.29).
+Player Flushdogg has small blind (0.10)
+Player ISULDURR has big blind (0.25)
+Player Flushdogg received a card.
+Player Flushdogg received a card.
+Player ISULDURR received a card.
+Player ISULDURR received a card.
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player IlxxxlI received card: [6s]
+Player IlxxxlI received card: [3s]
+Player Parcker received a card.
+Player Parcker received a card.
+Player dtnfk folds
+Player IlxxxlI folds
+Player Parcker raises (0.60)
+Player Flushdogg folds
+Player ISULDURR calls (0.35)
+*** FLOP ***: [7s 9d 5d]
+Player ISULDURR bets (0.75)
+Player Parcker calls (0.75)
+*** TURN ***: [7s 9d 5d] [4s]
+Player ISULDURR bets (2)
+Player Parcker raises (6)
+Player ISULDURR allin (1.94)
+Uncalled bet (2.06) returned to Parcker
+*** RIVER ***: [7s 9d 5d 4s] [6c]
+------ Summary ------
+Pot: 10.15. Rake 0.37. JP fee 0.16
+Board: [7s 9d 5d 4s 6c]
+Player dtnfk does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player Parcker shows: One pair of 9s [9s Qd]. Bets: 5.29. Collects: 10.15. Wins: 4.86.
+Player Flushdogg does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player ISULDURR shows: High card J [Jd 10c]. Bets: 5.29. Collects: 0. Loses: 5.29.
+Game ended at: 2016/12/30 12:35:28
+
+Game started at: 2016/12/30 12:34:9
+Game ID: 808927373 0.10/0.25 (PRR) Ettin (Cap) (Hold'em)
+Seat 4 is the button
+Seat 1: Parcker (25.70).
+Seat 2: IlxxxlI (10).
+Seat 3: DarkKnight247 (23.30).
+Seat 4: BadOutfit (11.52).
+Seat 5: swill300857 (23.65).
+Seat 6: solasso (24.47).
+Seat 7: xx10jqkaxx (7.39).
+Seat 8: Ice Bank Mice Elf (27.48).
+Seat 9: joeyzzz (46.28).
+Player swill300857 has small blind (0.10)
+Player solasso has big blind (0.25)
+Player swill300857 received a card.
+Player swill300857 received a card.
+Player solasso received a card.
+Player solasso received a card.
+Player xx10jqkaxx received a card.
+Player xx10jqkaxx received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player joeyzzz received a card.
+Player joeyzzz received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player IlxxxlI received card: [10h]
+Player IlxxxlI received card: [3h]
+Player DarkKnight247 received a card.
+Player DarkKnight247 received a card.
+Player BadOutfit received a card.
+Player BadOutfit received a card.
+Player xx10jqkaxx folds
+Player Ice Bank Mice Elf folds
+Player joeyzzz folds
+Player Parcker raises (0.75)
+Player IlxxxlI folds
+Player DarkKnight247 folds
+Player BadOutfit calls (0.75)
+Player swill300857 folds
+Player solasso folds
+*** FLOP ***: [Qh 6c Js]
+Player Parcker bets (0.88)
+Player BadOutfit raises (1.76)
+Player Parcker calls (0.88)
+*** TURN ***: [Qh 6c Js] [10c]
+Player Parcker caps (4.99)
+Player BadOutfit folds
+Uncalled bet (4.99) returned to Parcker
+Player Parcker mucks cards
+------ Summary ------
+Pot: 5.11. Rake 0.18. JP fee 0.08
+Board: [Qh 6c Js 10c]
+*Player Parcker mucks (does not show cards). Bets: 2.51. Collects: 5.11. Wins: 2.60.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player DarkKnight247 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player BadOutfit does not show cards.Bets: 2.51. Collects: 0. Loses: 2.51.
+Player swill300857 does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player solasso does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player xx10jqkaxx does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player joeyzzz does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:35:5
+
+Game started at: 2016/12/30 12:33:58
+Game ID: 808927252 0.10/0.25 (PRR) Ekek (Short) (Hold'em)
+Seat 5 is the button
+Seat 1: MNspecktacular (11.65).
+Seat 2: IlxxxlI (6.96).
+Seat 3: bclever (19.35).
+Seat 4: FirstClan (24.49).
+Seat 5: dtnfk (10).
+Seat 6: Parcker (18.32).
+Player Parcker has small blind (0.10)
+Player MNspecktacular has big blind (0.25)
+Player Parcker received a card.
+Player Parcker received a card.
+Player MNspecktacular received a card.
+Player MNspecktacular received a card.
+Player IlxxxlI received card: [10d]
+Player IlxxxlI received card: [5s]
+Player bclever received a card.
+Player bclever received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player IlxxxlI folds
+Player bclever raises (0.50)
+Player FirstClan folds
+Player dtnfk folds
+Player Parcker folds
+Player MNspecktacular calls (0.25)
+*** FLOP ***: [Ks Jc 7d]
+Player MNspecktacular checks
+Player bclever bets (0.79)
+Player MNspecktacular calls (0.79)
+*** TURN ***: [Ks Jc 7d] [4c]
+Player MNspecktacular checks
+Player bclever checks
+*** RIVER ***: [Ks Jc 7d 4c] [3c]
+Player MNspecktacular checks
+Player bclever checks
+------ Summary ------
+Pot: 2.55. Rake 0.09. JP fee 0.04
+Board: [Ks Jc 7d 4c 3c]
+*Player MNspecktacular shows: High card A (kicker Q) [Qd As]. Bets: 1.29. Collects: 2.55. Wins: 1.26.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player bclever shows: High card A [Ah 9d]. Bets: 1.29. Collects: 0. Loses: 1.29.
+Player FirstClan does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player dtnfk does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Parcker does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Game ended at: 2016/12/30 12:34:46
+
+Game started at: 2016/12/30 12:33:56
+Game ID: 808927234 0.50/1 (PRR) Kraken (short) - 4 (Hold'em)
+Seat 2 is the button
+Seat 1: Portly23 (48.98).
+Seat 2: winnipuh (68.76).
+Seat 3: Ice Bank Mice Elf (74.35).
+Seat 4: IlxxxlI (40.11).
+Seat 5: l3ae (43.22).
+Player Ice Bank Mice Elf has small blind (0.50)
+Player IlxxxlI has big blind (1)
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player IlxxxlI received card: [Kh]
+Player IlxxxlI received card: [3d]
+Player l3ae received a card.
+Player l3ae received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player winnipuh received a card.
+Player winnipuh received a card.
+Player l3ae folds
+Player Portly23 folds
+Player winnipuh raises (2.50)
+Player Ice Bank Mice Elf folds
+Player IlxxxlI folds
+Uncalled bet (1.50) returned to winnipuh
+Player winnipuh mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player winnipuh mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Player Ice Bank Mice Elf does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player IlxxxlI does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player l3ae does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:34:52
+
+Game started at: 2016/12/30 12:33:42
+Game ID: 808927054 0.50/1 (PRR) Kraken (short) - 3 (Hold'em)
+Seat 3 is the button
+Seat 1: gust (42).
+Seat 2: AironVega (51.50).
+Seat 3: Portly23 (46.68).
+Seat 4: pineapplesand (20).
+Seat 5: Pimpika (40).
+Seat 6: IlxxxlI (22).
+Player pineapplesand has small blind (0.50)
+Player Pimpika has big blind (1)
+Player pineapplesand received a card.
+Player pineapplesand received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI received card: [10h]
+Player IlxxxlI received card: [Ah]
+Player gust received a card.
+Player gust received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player IlxxxlI raises (3)
+Player gust folds
+Player AironVega folds
+Player Portly23 folds
+Player pineapplesand folds
+Player Pimpika calls (2)
+*** FLOP ***: [Jc 7d 9s]
+Player Pimpika checks
+Player IlxxxlI checks
+*** TURN ***: [Jc 7d 9s] [9d]
+Player Pimpika checks
+Player IlxxxlI bets (3.09)
+Player Pimpika folds
+Uncalled bet (3.09) returned to IlxxxlI
+Player IlxxxlI mucks cards
+------ Summary ------
+Pot: 6.18. Rake 0.22. JP fee 0.10
+Board: [Jc 7d 9s 9d]
+Player gust does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player pineapplesand does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player Pimpika does not show cards.Bets: 3. Collects: 0. Loses: 3.
+*Player IlxxxlI mucks (does not show cards). Bets: 3. Collects: 6.18. Wins: 3.18.
+Game ended at: 2016/12/30 12:35:18
+
+Game started at: 2016/12/30 12:33:36
+Game ID: 808926978 0.50/1 (PRR) Kajsa (short) - 2 (Hold'em)
+Seat 5 is the button
+Seat 1: IlxxxlI (21.59).
+Seat 2: gust (51.26).
+Seat 3: Portly23 (13.76).
+Seat 4: Pimpika (42.50).
+Seat 5: AironVega (50).
+Player IlxxxlI has small blind (0.50)
+Player gust sitting out
+Player Portly23 has big blind (1)
+Player IlxxxlI received card: [8h]
+Player IlxxxlI received card: [8d]
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player Pimpika folds
+Player AironVega folds
+Player IlxxxlI raises (2.80)
+Player Portly23 folds
+Uncalled bet (2.30) returned to IlxxxlI
+Player IlxxxlI mucks cards
+------ Summary ------
+Pot: 2. Rake 0
+*Player IlxxxlI mucks (does not show cards). Bets: 1. Collects: 2. Wins: 1.
+Player gust does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Portly23 does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:34:19
+
+Game started at: 2016/12/30 12:33:30
+Game ID: 808926908 0.50/1 (PRR) Kraken (short) - 4 (Hold'em)
+Seat 1 is the button
+Seat 1: Portly23 (48.98).
+Seat 2: winnipuh (69.26).
+Seat 3: Ice Bank Mice Elf (73.85).
+Seat 4: IlxxxlI (40.11).
+Seat 5: l3ae (43.22).
+Player winnipuh has small blind (0.50)
+Player Ice Bank Mice Elf has big blind (1)
+Player winnipuh received a card.
+Player winnipuh received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player IlxxxlI received card: [9s]
+Player IlxxxlI received card: [6h]
+Player l3ae received a card.
+Player l3ae received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player IlxxxlI folds
+Player l3ae folds
+Player Portly23 folds
+Player winnipuh folds
+Uncalled bet (0.50) returned to Ice Bank Mice Elf
+Player Ice Bank Mice Elf mucks cards
+------ Summary ------
+Pot: 1. Rake 0
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player winnipuh does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+*Player Ice Bank Mice Elf mucks (does not show cards). Bets: 0.50. Collects: 1. Wins: 0.50.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player l3ae does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:33:53
+
+Game started at: 2016/12/30 12:33:29
+Game ID: 808926888 0.10/0.25 (PRR) Ettin (Cap) (Hold'em)
+Seat 3 is the button
+Seat 1: Parcker (25.70).
+Seat 2: IlxxxlI (10).
+Seat 3: DarkKnight247 (23.30).
+Seat 4: BadOutfit (11.62).
+Seat 5: swill300857 (23.90).
+Seat 6: solasso (24.47).
+Seat 7: xx10jqkaxx (7.39).
+Seat 8: Ice Bank Mice Elf (27.48).
+Seat 9: joeyzzz (45.93).
+Player BadOutfit has small blind (0.10)
+Player swill300857 has big blind (0.25)
+Player BadOutfit received a card.
+Player BadOutfit received a card.
+Player swill300857 received a card.
+Player swill300857 received a card.
+Player solasso received a card.
+Player solasso received a card.
+Player xx10jqkaxx received a card.
+Player xx10jqkaxx received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player joeyzzz received a card.
+Player joeyzzz received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player IlxxxlI received card: [Qh]
+Player IlxxxlI received card: [3d]
+Player DarkKnight247 received a card.
+Player DarkKnight247 received a card.
+Player solasso folds
+Player xx10jqkaxx folds
+Player Ice Bank Mice Elf folds
+Player joeyzzz raises (0.50)
+Player Parcker folds
+Player IlxxxlI folds
+Player DarkKnight247 folds
+Player BadOutfit folds
+Player swill300857 folds
+Uncalled bet (0.25) returned to joeyzzz
+Player joeyzzz mucks cards
+------ Summary ------
+Pot: 0.60. Rake 0
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player DarkKnight247 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player BadOutfit does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player swill300857 does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player solasso does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player xx10jqkaxx does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player joeyzzz mucks (does not show cards). Bets: 0.25. Collects: 0.60. Wins: 0.35.
+Game ended at: 2016/12/30 12:34:6
+
+Game started at: 2016/12/30 12:33:20
+Game ID: 808926804 0.10/0.25 (PRR) Ekek (Short) - 2 (Hold'em)
+Seat 3 is the button
+Seat 2: dtnfk (50.52).
+Seat 3: IlxxxlI (5).
+Seat 4: Parcker (14.38).
+Seat 5: Flushdogg (17.24).
+Seat 6: ISULDURR (5.29).
+Player Parcker has small blind (0.10)
+Player Flushdogg has big blind (0.25)
+Player Parcker received a card.
+Player Parcker received a card.
+Player Flushdogg received a card.
+Player Flushdogg received a card.
+Player ISULDURR received a card.
+Player ISULDURR received a card.
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player IlxxxlI received card: [Ah]
+Player IlxxxlI received card: [Ad]
+Player ISULDURR folds
+Player dtnfk raises (0.50)
+Player IlxxxlI calls (0.50)
+Player Parcker folds
+Player Flushdogg calls (0.25)
+*** FLOP ***: [4s 10c 4c]
+Player Flushdogg checks
+Player dtnfk checks
+Player IlxxxlI bets (0.76)
+Player Flushdogg folds
+Player dtnfk folds
+Uncalled bet (0.76) returned to IlxxxlI
+Player IlxxxlI mucks cards
+------ Summary ------
+Pot: 1.52. Rake 0.06. JP fee 0.02
+Board: [4s 10c 4c]
+Player dtnfk does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+*Player IlxxxlI mucks (does not show cards). Bets: 0.50. Collects: 1.52. Wins: 1.02.
+Player Parcker does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player Flushdogg does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player ISULDURR does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:34:12
+
+Game started at: 2016/12/30 12:33:17
+Game ID: 808926779 0.50/1 (PRR) Kraken (Cap) - 3 (Hold'em)
+Seat 4 is the button
+Seat 1: Ice Bank Mice Elf (197.67).
+Seat 2: FirstClan (161.81).
+Seat 3: Pimpika (40).
+Seat 4: WomboComboAA (112.25).
+Seat 5: IlxxxlI (102.02).
+Player IlxxxlI has small blind (0.50)
+Player Ice Bank Mice Elf has big blind (1)
+Player IlxxxlI received card: [Ah]
+Player IlxxxlI received card: [7d]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player WomboComboAA received a card.
+Player WomboComboAA received a card.
+Player FirstClan folds
+Player Pimpika raises (2)
+Player WomboComboAA folds
+Player IlxxxlI folds
+Player Ice Bank Mice Elf calls (1)
+*** FLOP ***: [9d 6d Jc]
+Player Ice Bank Mice Elf checks
+Player Pimpika checks
+*** TURN ***: [9d 6d Jc] [6h]
+Player Ice Bank Mice Elf bets (3.21)
+Player Pimpika folds
+Uncalled bet (3.21) returned to Ice Bank Mice Elf
+Player Ice Bank Mice Elf mucks cards
+------ Summary ------
+Pot: 4.28. Rake 0.16. JP fee 0.06
+Board: [9d 6d Jc 6h]
+*Player Ice Bank Mice Elf mucks (does not show cards). Bets: 2. Collects: 4.28. Wins: 2.28.
+Player FirstClan does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 2. Collects: 0. Loses: 2.
+Player WomboComboAA does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Game ended at: 2016/12/30 12:34:12
+
+Game started at: 2016/12/30 12:33:6
+Game ID: 808926645 0.10/0.25 (PRR) Ekek (Short) - 2 (Hold'em)
+Seat 2 is the button
+Seat 2: dtnfk (50.52).
+Seat 3: IlxxxlI (5).
+Seat 4: Parcker (14.63).
+Seat 5: Flushdogg (17.24).
+Seat 6: ISULDURR (4.94).
+Player IlxxxlI has small blind (0.10)
+Player Parcker has big blind (0.25)
+Player IlxxxlI received card: [8h]
+Player IlxxxlI received card: [9c]
+Player Parcker received a card.
+Player Parcker received a card.
+Player Flushdogg received a card.
+Player Flushdogg received a card.
+Player ISULDURR received a card.
+Player ISULDURR received a card.
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player Flushdogg folds
+Player ISULDURR raises (0.75)
+Player dtnfk folds
+Player IlxxxlI folds
+Player Parcker folds
+Uncalled bet (0.50) returned to ISULDURR
+Player ISULDURR mucks cards
+------ Summary ------
+Pot: 0.60. Rake 0
+Player dtnfk does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player Parcker does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player Flushdogg does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player ISULDURR mucks (does not show cards). Bets: 0.25. Collects: 0.60. Wins: 0.35.
+Game ended at: 2016/12/30 12:33:17
+
+Game started at: 2016/12/30 12:33:5
+Game ID: 808926631 0.10/0.25 (PRR) Ekek (Short) - 6 (Hold'em)
+Seat 5 is the button
+Seat 1: Parcker (15.90).
+Seat 2: IlxxxlI (6.29).
+Seat 4: Zzzzzzz10 (12.85).
+Seat 5: FirstClan (21.07).
+Seat 6: dtnfk (18.36).
+Player dtnfk has small blind (0.10)
+Player Parcker has big blind (0.25)
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player IlxxxlI received card: [Ah]
+Player IlxxxlI received card: [3h]
+Player Zzzzzzz10 received a card.
+Player Zzzzzzz10 received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player IlxxxlI folds
+Player Zzzzzzz10 folds
+Player FirstClan raises (0.50)
+Player dtnfk calls (0.40)
+Player Parcker folds
+*** FLOP ***: [Qd 10h Ks]
+Player dtnfk checks
+Player FirstClan checks
+*** TURN ***: [Qd 10h Ks] [3c]
+Player dtnfk checks
+Player FirstClan bets (0.79)
+Player dtnfk folds
+Uncalled bet (0.79) returned to FirstClan
+Player FirstClan mucks cards
+------ Summary ------
+Pot: 1.19. Rake 0.04. JP fee 0.02
+Board: [Qd 10h Ks 3c]
+Player Parcker does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Zzzzzzz10 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player FirstClan mucks (does not show cards). Bets: 0.50. Collects: 1.19. Wins: 0.69.
+Player dtnfk does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Game ended at: 2016/12/30 12:34:56
+
+Game started at: 2016/12/30 12:33:3
+Game ID: 808926603 0.50/1 (PRR) Karkadann (Short) (Hold'em)
+Seat 4 is the button
+Seat 1: scootie (62.99).
+Seat 3: Pimpika (106.60).
+Seat 4: twoakers (52.20).
+Seat 5: _robbyJ (44).
+Seat 6: IlxxxlI (47.77).
+Seat 7: Ice Bank Mice Elf (71.99).
+Seat 8: gust (43.06).
+Seat 9: AironVega (53.86).
+Player _robbyJ has small blind (0.50)
+Player IlxxxlI has big blind (1)
+Player _robbyJ received a card.
+Player _robbyJ received a card.
+Player IlxxxlI received card: [6d]
+Player IlxxxlI received card: [7d]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player gust received a card.
+Player gust received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player scootie received a card.
+Player scootie received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player twoakers received a card.
+Player twoakers received a card.
+Player Ice Bank Mice Elf raises (3)
+Player gust folds
+Player AironVega folds
+Player scootie folds
+Player Pimpika folds
+Player twoakers folds
+Player _robbyJ calls (2.50)
+Player IlxxxlI calls (2)
+*** FLOP ***: [3h Js 7h]
+Player _robbyJ checks
+Player IlxxxlI checks
+Player Ice Bank Mice Elf checks
+*** TURN ***: [3h Js 7h] [9s]
+Player _robbyJ checks
+Player IlxxxlI checks
+Player Ice Bank Mice Elf bets (6.41)
+Player _robbyJ calls (6.41)
+Player IlxxxlI folds
+*** RIVER ***: [3h Js 7h 9s] [4h]
+Player _robbyJ checks
+Player Ice Bank Mice Elf bets (13.82)
+Player _robbyJ calls (13.82)
+Player _robbyJ mucks cards
+------ Summary ------
+Pot: 46.99. Rake 2.23. JP fee 0.24
+Board: [3h Js 7h 9s 4h]
+Player scootie does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player twoakers does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player _robbyJ mucks (does not show cards). Bets: 23.23. Collects: 0. Loses: 23.23.
+Player IlxxxlI does not show cards.Bets: 3. Collects: 0. Loses: 3.
+*Player Ice Bank Mice Elf shows: Three Of Kind of 9s [9d 9h]. Bets: 23.23. Collects: 46.99. Wins: 23.76.
+Player gust does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:34:44
+
+Game started at: 2016/12/30 12:32:55
+Game ID: 808926499 0.10/0.25 (PRR) Ekek (Short) (Hold'em)
+Seat 4 is the button
+Seat 1: MNspecktacular (11.90).
+Seat 2: IlxxxlI (6.96).
+Seat 3: bclever (19.35).
+Seat 4: FirstClan (24.49).
+Seat 5: dtnfk (10).
+Seat 6: Parcker (18).
+Player dtnfk has small blind (0.10)
+Player Parcker has big blind (0.25)
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player MNspecktacular received a card.
+Player MNspecktacular received a card.
+Player IlxxxlI received card: [Jh]
+Player IlxxxlI received card: [Qc]
+Player bclever received a card.
+Player bclever received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player MNspecktacular calls (0.25)
+Player IlxxxlI folds
+Player bclever folds
+Player FirstClan folds
+Player dtnfk folds
+Player Parcker checks
+*** FLOP ***: [8h As 5h]
+Player Parcker bets (0.75)
+Player MNspecktacular folds
+Uncalled bet (0.75) returned to Parcker
+Player Parcker mucks cards
+------ Summary ------
+Pot: 0.57. Rake 0.03
+Board: [8h As 5h]
+Player MNspecktacular does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player bclever does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player FirstClan does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player dtnfk does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+*Player Parcker mucks (does not show cards). Bets: 0.25. Collects: 0.57. Wins: 0.32.
+Game ended at: 2016/12/30 12:33:55
+
+Game started at: 2016/12/30 12:32:54
+Game ID: 808926487 0.50/1 (PRR) Kajsa (short) - 2 (Hold'em)
+Seat 4 is the button
+Seat 1: IlxxxlI (21.09).
+Seat 2: gust (51.26).
+Seat 3: Portly23 (13.76).
+Seat 4: Pimpika (42.50).
+Seat 5: AironVega (50.50).
+Player AironVega has small blind (0.50)
+Player IlxxxlI has big blind (1)
+Player AironVega received a card.
+Player AironVega received a card.
+Player IlxxxlI received card: [7c]
+Player IlxxxlI received card: [2s]
+Player gust received a card.
+Player gust received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player gust folds
+Player Portly23 folds
+Player Pimpika folds
+Player AironVega folds
+Uncalled bet (0.50) returned to IlxxxlI
+Player IlxxxlI mucks cards
+------ Summary ------
+Pot: 1. Rake 0
+*Player IlxxxlI mucks (does not show cards). Bets: 0.50. Collects: 1. Wins: 0.50.
+Player gust does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Game ended at: 2016/12/30 12:33:33
+
+Game started at: 2016/12/30 12:32:48
+Game ID: 808926421 0.50/1 (PRR) Kraken (short) - 3 (Hold'em)
+Seat 2 is the button
+Seat 1: gust (42).
+Seat 2: AironVega (51.50).
+Seat 3: Portly23 (45.68).
+Seat 4: pineapplesand (20).
+Seat 5: Pimpika (40).
+Seat 6: IlxxxlI (22).
+Player Portly23 has small blind (0.50)
+Player pineapplesand has big blind (1)
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player pineapplesand received a card.
+Player pineapplesand received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI received card: [8c]
+Player IlxxxlI received card: [10s]
+Player gust received a card.
+Player gust received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player Pimpika folds
+Player IlxxxlI folds
+Player gust folds
+Player AironVega folds
+Player Portly23 raises (1.50)
+Player pineapplesand folds
+Uncalled bet (1) returned to Portly23
+Player Portly23 mucks cards
+------ Summary ------
+Pot: 2. Rake 0
+Player gust does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player Portly23 mucks (does not show cards). Bets: 1. Collects: 2. Wins: 1.
+Player pineapplesand does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:33:40
+
+Game started at: 2016/12/30 12:32:48
+Game ID: 808926426 0.50/1 (PRR) Kraken (Cap) - 3 (Hold'em)
+Seat 3 is the button
+Seat 1: Ice Bank Mice Elf (197.67).
+Seat 2: FirstClan (161.81).
+Seat 3: Pimpika (40).
+Seat 4: WomboComboAA (112.75).
+Seat 5: IlxxxlI (89.03).
+Seat 6: Open_Seat (13.90).
+Player WomboComboAA has small blind (0.50)
+Player IlxxxlI has big blind (1)
+Player WomboComboAA received a card.
+Player WomboComboAA received a card.
+Player IlxxxlI received card: [Kh]
+Player IlxxxlI received card: [Ks]
+Player Open_Seat received a card.
+Player Open_Seat received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player Open_Seat allin (13.90)
+Player Ice Bank Mice Elf folds
+Player FirstClan folds
+Player Pimpika folds
+Player WomboComboAA folds
+Player IlxxxlI calls (12.90)
+*** FLOP ***: [3c 6d 8d]
+*** TURN ***: [3c 6d 8d] [3h]
+*** RIVER ***: [3c 6d 8d 3h] [7s]
+------ Summary ------
+Pot: 26.89. Rake 1.17. JP fee 0.24
+Board: [3c 6d 8d 3h 7s]
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player FirstClan does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player WomboComboAA does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+*Player IlxxxlI shows: Two pairs. Ks and 3s [Kh Ks]. Bets: 13.90. Collects: 26.89. Wins: 12.99.
+Player Open_Seat shows: Two pairs. 9s and 3s [9s 9c]. Bets: 13.90. Collects: 0. Loses: 13.90.
+Game ended at: 2016/12/30 12:33:13
+
+Game started at: 2016/12/30 12:32:45
+Game ID: 808926395 0.50/1 (PRR) Kraken (short) - 4 (Hold'em)
+Seat 5 is the button
+Seat 1: Portly23 (49.48).
+Seat 2: winnipuh (70.26).
+Seat 3: Ice Bank Mice Elf (72.35).
+Seat 4: IlxxxlI (40.11).
+Seat 5: l3ae (43.22).
+Player Portly23 has small blind (0.50)
+Player winnipuh has big blind (1)
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player winnipuh received a card.
+Player winnipuh received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player IlxxxlI received card: [2s]
+Player IlxxxlI received card: [2d]
+Player l3ae received a card.
+Player l3ae received a card.
+Player Ice Bank Mice Elf raises (3)
+Player IlxxxlI folds
+Player l3ae folds
+Player Portly23 folds
+Player winnipuh folds
+Uncalled bet (2) returned to Ice Bank Mice Elf
+Player Ice Bank Mice Elf mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+Player Portly23 does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player winnipuh does not show cards.Bets: 1. Collects: 0. Loses: 1.
+*Player Ice Bank Mice Elf mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player l3ae does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:33:27
+
+Game started at: 2016/12/30 12:32:42
+Game ID: 808926360 0.10/0.25 (PRR) Ettin (Cap) (Hold'em)
+Seat 2 is the button
+Seat 1: Parcker (25.35).
+Seat 2: IlxxxlI (10).
+Seat 3: DarkKnight247 (23.40).
+Seat 4: BadOutfit (11.87).
+Seat 5: swill300857 (23.90).
+Seat 6: solasso (24.47).
+Seat 7: xx10jqkaxx (7.39).
+Seat 8: Ice Bank Mice Elf (27.48).
+Seat 9: joeyzzz (45.93).
+Player DarkKnight247 has small blind (0.10)
+Player BadOutfit has big blind (0.25)
+Player DarkKnight247 received a card.
+Player DarkKnight247 received a card.
+Player BadOutfit received a card.
+Player BadOutfit received a card.
+Player swill300857 received a card.
+Player swill300857 received a card.
+Player solasso received a card.
+Player solasso received a card.
+Player xx10jqkaxx received a card.
+Player xx10jqkaxx received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player joeyzzz received a card.
+Player joeyzzz received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player IlxxxlI received card: [3h]
+Player IlxxxlI received card: [6h]
+Player swill300857 folds
+Player solasso folds
+Player xx10jqkaxx folds
+Player Ice Bank Mice Elf folds
+Player joeyzzz folds
+Player Parcker raises (0.62)
+Player IlxxxlI folds
+Player DarkKnight247 folds
+Player BadOutfit folds
+Uncalled bet (0.37) returned to Parcker
+Player Parcker mucks cards
+------ Summary ------
+Pot: 0.60. Rake 0
+*Player Parcker mucks (does not show cards). Bets: 0.25. Collects: 0.60. Wins: 0.35.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player DarkKnight247 does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player BadOutfit does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player swill300857 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player solasso does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player xx10jqkaxx does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player joeyzzz does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:33:26
+
+Game started at: 2016/12/30 12:32:35
+Game ID: 808926283 0.50/1 (PRR) Kajsa (short) - 2 (Hold'em)
+Seat 3 is the button
+Seat 1: IlxxxlI (21.09).
+Seat 2: gust (51.26).
+Seat 3: Portly23 (13.76).
+Seat 4: Pimpika (43).
+Seat 5: AironVega (50).
+Player Pimpika has small blind (0.50)
+Player AironVega has big blind (1)
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player IlxxxlI received card: [Qc]
+Player IlxxxlI received card: [3c]
+Player gust received a card.
+Player gust received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player IlxxxlI folds
+Player gust folds
+Player Portly23 folds
+Player Pimpika folds
+Uncalled bet (0.50) returned to AironVega
+Player AironVega mucks cards
+------ Summary ------
+Pot: 1. Rake 0
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player gust does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+*Player AironVega mucks (does not show cards). Bets: 0.50. Collects: 1. Wins: 0.50.
+Game ended at: 2016/12/30 12:32:51
+
+Game started at: 2016/12/30 12:32:30
+Game ID: 808926224 0.10/0.25 (PRR) Ekek (Short) - 6 (Hold'em)
+Seat 4 is the button
+Seat 1: Parcker (15.90).
+Seat 2: IlxxxlI (6.29).
+Seat 4: Zzzzzzz10 (12.50).
+Seat 5: FirstClan (21.17).
+Seat 6: dtnfk (18.61).
+Player FirstClan has small blind (0.10)
+Player dtnfk has big blind (0.25)
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player IlxxxlI received card: [3d]
+Player IlxxxlI received card: [7d]
+Player Zzzzzzz10 received a card.
+Player Zzzzzzz10 received a card.
+Player Parcker folds
+Player IlxxxlI folds
+Player Zzzzzzz10 raises (0.62)
+Player FirstClan folds
+Player dtnfk folds
+Uncalled bet (0.37) returned to Zzzzzzz10
+Player Zzzzzzz10 mucks cards
+------ Summary ------
+Pot: 0.60. Rake 0
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player Zzzzzzz10 mucks (does not show cards). Bets: 0.25. Collects: 0.60. Wins: 0.35.
+Player FirstClan does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player dtnfk does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Game ended at: 2016/12/30 12:33:2
+
+Game started at: 2016/12/30 12:32:23
+Game ID: 808926139 0.10/0.25 (PRR) Ekek (Short) (Hold'em)
+Seat 3 is the button
+Seat 1: MNspecktacular (11.90).
+Seat 2: IlxxxlI (6.61).
+Seat 3: bclever (19.35).
+Seat 4: FirstClan (24.59).
+Seat 5: dtnfk (10).
+Seat 6: Parcker (18).
+Player FirstClan has small blind (0.10)
+Player dtnfk has big blind (0.25)
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player MNspecktacular received a card.
+Player MNspecktacular received a card.
+Player IlxxxlI received card: [3s]
+Player IlxxxlI received card: [As]
+Player bclever received a card.
+Player bclever received a card.
+Player Parcker folds
+Player MNspecktacular folds
+Player IlxxxlI raises (0.62)
+Player bclever folds
+Player FirstClan folds
+Player dtnfk folds
+Uncalled bet (0.37) returned to IlxxxlI
+Player IlxxxlI mucks cards
+------ Summary ------
+Pot: 0.60. Rake 0
+Player MNspecktacular does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player IlxxxlI mucks (does not show cards). Bets: 0.25. Collects: 0.60. Wins: 0.35.
+Player bclever does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player FirstClan does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player dtnfk does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:32:52
+
+Game started at: 2016/12/30 12:32:22
+Game ID: 808926132 0.10/0.25 (PRR) Ekek (Short) - 2 (Hold'em)
+Seat 6 is the button
+Seat 2: dtnfk (50.62).
+Seat 3: IlxxxlI (5).
+Seat 4: Parcker (14.63).
+Seat 5: Flushdogg (17.74).
+Seat 6: ISULDURR (3.92).
+Player dtnfk has small blind (0.10)
+Player IlxxxlI has big blind (0.25)
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player IlxxxlI received card: [6h]
+Player IlxxxlI received card: [8h]
+Player Parcker received a card.
+Player Parcker received a card.
+Player Flushdogg received a card.
+Player Flushdogg received a card.
+Player ISULDURR received a card.
+Player ISULDURR received a card.
+Player Parcker folds
+Player Flushdogg raises (0.50)
+Player ISULDURR calls (0.50)
+Player dtnfk folds
+Player IlxxxlI calls (0.25)
+*** FLOP ***: [Jd 3c 8c]
+Player IlxxxlI checks
+Player Flushdogg checks
+Player ISULDURR bets (1.25)
+Player IlxxxlI folds
+Player Flushdogg folds
+Uncalled bet (1.25) returned to ISULDURR
+Player ISULDURR mucks cards
+------ Summary ------
+Pot: 1.52. Rake 0.06. JP fee 0.02
+Board: [Jd 3c 8c]
+Player dtnfk does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player IlxxxlI does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player Parcker does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Flushdogg does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+*Player ISULDURR mucks (does not show cards). Bets: 0.50. Collects: 1.52. Wins: 1.02.
+Game ended at: 2016/12/30 12:33:4
+
+Game started at: 2016/12/30 12:32:21
+Game ID: 808926118 0.50/1 (PRR) Kraken (short) - 3 (Hold'em)
+Seat 1 is the button
+Seat 1: gust (42).
+Seat 2: AironVega (50.50).
+Seat 3: Portly23 (46.68).
+Seat 5: Pimpika (40).
+Seat 6: IlxxxlI (22).
+Player AironVega has small blind (0.50)
+Player Portly23 has big blind (1)
+Player AironVega received a card.
+Player AironVega received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI received card: [Kc]
+Player IlxxxlI received card: [9s]
+Player gust received a card.
+Player gust received a card.
+Player Pimpika folds
+Player IlxxxlI folds
+Player gust folds
+Player AironVega raises (1.50)
+Player Portly23 folds
+Uncalled bet (1) returned to AironVega
+Player AironVega mucks cards
+------ Summary ------
+Pot: 2. Rake 0
+Player gust does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player AironVega mucks (does not show cards). Bets: 1. Collects: 2. Wins: 1.
+Player Portly23 does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:32:46
+
+Game started at: 2016/12/30 12:32:3
+Game ID: 808925926 0.50/1 (PRR) Karkadann (Short) (Hold'em)
+Seat 3 is the button
+Seat 1: scootie (65.99).
+Seat 3: Pimpika (106.60).
+Seat 4: twoakers (52.70).
+Seat 5: _robbyJ (47).
+Seat 6: IlxxxlI (38.89).
+Seat 7: Ice Bank Mice Elf (74.99).
+Seat 8: gust (43.06).
+Seat 9: AironVega (53.86).
+Player twoakers has small blind (0.50)
+Player _robbyJ has big blind (1)
+Player twoakers received a card.
+Player twoakers received a card.
+Player _robbyJ received a card.
+Player _robbyJ received a card.
+Player IlxxxlI received card: [Ah]
+Player IlxxxlI received card: [Qs]
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player gust received a card.
+Player gust received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player scootie received a card.
+Player scootie received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI raises (3)
+Player Ice Bank Mice Elf calls (3)
+Player gust folds
+Player AironVega folds
+Player scootie calls (3)
+Player Pimpika folds
+Player twoakers folds
+Player _robbyJ calls (2)
+*** FLOP ***: [2d 7s Qc]
+Player _robbyJ checks
+Player IlxxxlI bets (5.94)
+Player Ice Bank Mice Elf folds
+Player scootie folds
+Player _robbyJ folds
+Uncalled bet (5.94) returned to IlxxxlI
+Player IlxxxlI mucks cards
+------ Summary ------
+Pot: 11.88. Rake 0.42. JP fee 0.20
+Board: [2d 7s Qc]
+Player scootie does not show cards.Bets: 3. Collects: 0. Loses: 3.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player twoakers does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player _robbyJ does not show cards.Bets: 3. Collects: 0. Loses: 3.
+*Player IlxxxlI mucks (does not show cards). Bets: 3. Collects: 11.88. Wins: 8.88.
+Player Ice Bank Mice Elf does not show cards.Bets: 3. Collects: 0. Loses: 3.
+Player gust does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player AironVega does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:33:0
+
+Game started at: 2016/12/30 12:31:58
+Game ID: 808925869 0.50/1 (PRR) Kajsa (short) - 2 (Hold'em)
+Seat 2 is the button
+Seat 1: IlxxxlI (23.59).
+Seat 2: gust (51.26).
+Seat 3: Portly23 (14.26).
+Seat 4: Pimpika (40).
+Player Portly23 has small blind (0.50)
+Player Pimpika has big blind (1)
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI received card: [As]
+Player IlxxxlI received card: [10h]
+Player gust received a card.
+Player gust received a card.
+Player IlxxxlI raises (2.50)
+Player gust folds
+Player Portly23 folds
+Player Pimpika allin (39)
+Player IlxxxlI folds
+Uncalled bet (37.50) returned to Pimpika
+Player Pimpika mucks cards
+------ Summary ------
+Pot: 5.50. Rake 0
+Player IlxxxlI does not show cards.Bets: 2.50. Collects: 0. Loses: 2.50.
+Player gust does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Portly23 does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+*Player Pimpika mucks (does not show cards). Bets: 2.50. Collects: 5.50. Wins: 3.
+Game ended at: 2016/12/30 12:32:31
+
+Game started at: 2016/12/30 12:31:57
+Game ID: 808925843 0.10/0.25 (PRR) Ettin (Cap) (Hold'em)
+Seat 1 is the button
+Seat 1: Parcker (25).
+Seat 2: IlxxxlI (10.10).
+Seat 3: DarkKnight247 (23.65).
+Seat 4: BadOutfit (11.87).
+Seat 5: swill300857 (23.90).
+Seat 6: solasso (24.47).
+Seat 7: xx10jqkaxx (7.39).
+Seat 8: Ice Bank Mice Elf (27.48).
+Seat 9: joeyzzz (45.93).
+Player IlxxxlI has small blind (0.10)
+Player DarkKnight247 has big blind (0.25)
+Player IlxxxlI received card: [8c]
+Player IlxxxlI received card: [Jh]
+Player DarkKnight247 received a card.
+Player DarkKnight247 received a card.
+Player BadOutfit received a card.
+Player BadOutfit received a card.
+Player swill300857 received a card.
+Player swill300857 received a card.
+Player solasso received a card.
+Player solasso received a card.
+Player xx10jqkaxx received a card.
+Player xx10jqkaxx received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player joeyzzz received a card.
+Player joeyzzz received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player BadOutfit folds
+Player swill300857 folds
+Player solasso folds
+Player xx10jqkaxx folds
+Player Ice Bank Mice Elf folds
+Player joeyzzz folds
+Player Parcker raises (0.60)
+Player IlxxxlI folds
+Player DarkKnight247 folds
+Uncalled bet (0.35) returned to Parcker
+Player Parcker mucks cards
+------ Summary ------
+Pot: 0.60. Rake 0
+*Player Parcker mucks (does not show cards). Bets: 0.25. Collects: 0.60. Wins: 0.35.
+Player IlxxxlI does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player DarkKnight247 does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player BadOutfit does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player swill300857 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player solasso does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player xx10jqkaxx does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player joeyzzz does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:32:40
+
+Game started at: 2016/12/30 12:31:50
+Game ID: 808925740 0.50/1 (PRR) Kraken (short) - 4 (Hold'em)
+Seat 4 is the button
+Seat 1: Portly23 (48.58).
+Seat 2: winnipuh (70.26).
+Seat 3: Ice Bank Mice Elf (72.35).
+Seat 4: IlxxxlI (40.11).
+Seat 5: l3ae (44.22).
+Seat 6: Gargantuatua (51.50).
+Player l3ae has small blind (0.50)
+Player Gargantuatua sitting out
+Player Portly23 has big blind (1)
+Player l3ae received a card.
+Player l3ae received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player winnipuh received a card.
+Player winnipuh received a card.
+Player Ice Bank Mice Elf received a card.
+Player Ice Bank Mice Elf received a card.
+Player IlxxxlI received card: [9s]
+Player IlxxxlI received card: [Jd]
+Player winnipuh folds
+Player Ice Bank Mice Elf folds
+Player IlxxxlI folds
+Player l3ae calls (0.50)
+Player Portly23 checks
+*** FLOP ***: [3d 10h 8d]
+Player l3ae checks
+Player Portly23 bets (1.26)
+Player l3ae folds
+Uncalled bet (1.26) returned to Portly23
+Player Portly23 mucks cards
+------ Summary ------
+Pot: 1.90. Rake 0.08. JP fee 0.02
+Board: [3d 10h 8d]
+*Player Portly23 mucks (does not show cards). Bets: 1. Collects: 1.90. Wins: 0.90.
+Player winnipuh does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Ice Bank Mice Elf does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player l3ae does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player Gargantuatua does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:32:42
+
+Game started at: 2016/12/30 12:31:45
+Game ID: 808925693 0.50/1 (PRR) Kraken (short) - 3 (Hold'em)
+Seat 6 is the button
+Seat 1: gust (42.50).
+Seat 2: AironVega (51.50).
+Seat 3: Portly23 (46.68).
+Seat 5: Pimpika (40).
+Seat 6: IlxxxlI (20.50).
+Player gust has small blind (0.50)
+Player AironVega has big blind (1)
+Player gust received a card.
+Player gust received a card.
+Player AironVega received a card.
+Player AironVega received a card.
+Player Portly23 received a card.
+Player Portly23 received a card.
+Player Pimpika received a card.
+Player Pimpika received a card.
+Player IlxxxlI received card: [3d]
+Player IlxxxlI received card: [3s]
+Player Portly23 folds
+Player Pimpika folds
+Player IlxxxlI raises (2.30)
+Player gust folds
+Player AironVega folds
+Uncalled bet (1.30) returned to IlxxxlI
+Player IlxxxlI mucks cards
+------ Summary ------
+Pot: 2.50. Rake 0
+Player gust does not show cards.Bets: 0.50. Collects: 0. Loses: 0.50.
+Player AironVega does not show cards.Bets: 1. Collects: 0. Loses: 1.
+Player Portly23 does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player Pimpika does not show cards.Bets: 0. Collects: 0. Wins: 0.
+*Player IlxxxlI mucks (does not show cards). Bets: 1. Collects: 2.50. Wins: 1.50.
+Game ended at: 2016/12/30 12:32:18
+
+Game started at: 2016/12/30 12:31:40
+Game ID: 808925636 0.10/0.25 (PRR) Ekek (Short) - 6 (Hold'em)
+Seat 3 is the button
+Seat 1: Parcker (14.89).
+Seat 2: IlxxxlI (6.29).
+Seat 3: CodyCap (27.62).
+Seat 4: Zzzzzzz10 (12.50).
+Seat 5: FirstClan (21.42).
+Seat 6: dtnfk (18.61).
+Player Zzzzzzz10 has small blind (0.10)
+Player FirstClan has big blind (0.25)
+Player Zzzzzzz10 received a card.
+Player Zzzzzzz10 received a card.
+Player FirstClan received a card.
+Player FirstClan received a card.
+Player dtnfk received a card.
+Player dtnfk received a card.
+Player Parcker received a card.
+Player Parcker received a card.
+Player IlxxxlI received card: [Js]
+Player IlxxxlI received card: [2c]
+Player CodyCap received a card.
+Player CodyCap received a card.
+Player dtnfk folds
+Player Parcker raises (0.75)
+Player IlxxxlI folds
+Player CodyCap calls (0.75)
+Player Zzzzzzz10 folds
+Player FirstClan folds
+*** FLOP ***: [2s 3c Qh]
+Player Parcker bets (1.23)
+Player CodyCap folds
+Uncalled bet (1.23) returned to Parcker
+Player Parcker mucks cards
+------ Summary ------
+Pot: 1.76. Rake 0.07. JP fee 0.02
+Board: [2s 3c Qh]
+*Player Parcker mucks (does not show cards). Bets: 0.75. Collects: 1.76. Wins: 1.01.
+Player IlxxxlI does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Player CodyCap does not show cards.Bets: 0.75. Collects: 0. Loses: 0.75.
+Player Zzzzzzz10 does not show cards.Bets: 0.10. Collects: 0. Loses: 0.10.
+Player FirstClan does not show cards.Bets: 0.25. Collects: 0. Loses: 0.25.
+Player dtnfk does not show cards.Bets: 0. Collects: 0. Wins: 0.
+Game ended at: 2016/12/30 12:32:27
