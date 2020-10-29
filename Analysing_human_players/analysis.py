@@ -1,4 +1,5 @@
-
+BIG_BLIND = 1.0
+SMALL_BLIND = 0.50
 
 
 
@@ -46,7 +47,7 @@ def finished_game_fun(data):
         if river and ("shows" in line): # if the line contains word "shows", it means that players showed cards in the end --> *Player Portly23 shows: One pair of 9s [10c 9c]....
             return True
 
-def pot_sum_fun(data, pot_sum):
+def raise_sum_fun(data, pot_sum):
 
     game_stage = 0 # 0:preflop, 1:flop, 2:turn, 3:river
     total_preflop_pot = 0
@@ -61,7 +62,7 @@ def pot_sum_fun(data, pot_sum):
         # The reason we add pot_sum when the stage (flop, river,...) ends is that we get better and more accurate data
         if split_line[1] == "FLOP":
             pot_sum[0][0] += 1
-            pot_sum[0][1] += total_preflop_pot + 1.5    # +1.5 because of Big and Small Blind
+            pot_sum[0][1] += total_preflop_pot + (BIG_BLIND + SMALL_BLIND)    # +1.5 because of Big and Small Blind
             game_stage += 1
 
         elif split_line[1] == "TURN":
@@ -93,10 +94,49 @@ def pot_sum_fun(data, pot_sum):
 
     return pot_sum
 
+def raise_increase_percentage_fun(data, raise_increase_percentage):
+
+    current_pot = BIG_BLIND + SMALL_BLIND
+    for line in data:
+        line_split = line.split()
+
+        if line[-1] == ')': # If anybody raises or calls
+            bet_amount = line_split[-1]
+            bet_amount_float = float(bet_amount[1:-1])
+
+            if line_split[-2] == "raises" or line_split[-2] == "bets":  # If anybody raises
+                raise_increase_percentage[0] += 1
+                raise_increase_percentage[1] += (bet_amount_float/current_pot) * 100     # How many % did we raise relative to the pot
+
+            current_pot += bet_amount_float
+
+    return raise_increase_percentage
+
+def reraise_percentage_fun(data, reraise_percentage):
+
+    first_raise = True  # We set this to FALSE, when we have bet for the first time in one stage (flop, turn,...). Second time it is a reraise. At the beginning of each stage we reset to TRUE
+    for line in data:
+        line_split = line.split()
+
+        if line_split[1] == "FLOP" or line_split[1] == "TURN" or line_split[1] == "RIVER":
+            first_raise = True
+        else:
+            if line_split[-2] == "raises" or line_split[-2] == "bets":  # If anybody raises
+                if not first_raise:
+                    reraise_percentage[1] += 1
+                else:
+                    first_raise = False
+
+                reraise_percentage[0] += 1
+
+    return reraise_percentage
+
+
+
 
 
 if __name__ == "__main__":
-    file_name = "datasets/dataset_demo.txt"
+    file_name = "datasets/dataset.txt"
     f = open(file_name, "r")
     line = f.readline()
 
@@ -105,26 +145,47 @@ if __name__ == "__main__":
     all_in_games = 0               # Games where all in happened
     total_games_num = 0             # Number of all games
     finished_games = 0              # Games where players in the end showed cards
+    player_stack_size = [0, 0]      # [ num_of_all_players, sum_of_stack_sizes ]
 
     #Average pot size on preflop, flop, turn, river
-    pot_sum = [[0, 0], [0, 0], [0, 0], [0, 0]]     # [[number_of_games, pot_sum], [],....]  :::: [[preflop], [flop],[turn],[river]]
+    raise_sum = [[0, 0], [0, 0], [0, 0], [0, 0]]     # [[number_of_games, pot_sum], [],....]  :::: [[preflop], [flop],[turn],[river]]
+
+    #Average raise sum
+    raise_increase_percentage = [0, 0]                  # [number of raises, raise_percenage_sum ]
+
+    #How many of the raises are reraises
+    reraise_percentage = [0, 0]                         # [ number of raises, number of reraises ]
+
+    # DEBUGING
+    #counter = 0
 
     # We read the file until we come to an end
     while (line):
 
-        # Players --> TODO
-        # players = {}
+        """
+        #DEBUGING
+        counter += 1
+        if counter%1000 == 0:
+            print(counter/1000)
+        """
 
         # We are at the beginning of a hand
         if ("Game ID:" in line) and (line.split()[3] == "0.50/1"):
             num_of_players = 0
+            stack_size_sum = 0
 
             # First we skip data we dont need
             f.readline()  # Game ID: 808941103 0.50/1 (PRR) Karkadann (Short) (Hold'em)
             f.readline()  # Seat 9 is the button
 
-            while f.readline().split()[0] == "Seat":     # Seat 1: Maria_Pia (40).
+            line = f.readline().split()
+            while line[0] == "Seat":     # Seat 1: Maria_Pia (40).
+                bet_amount = line[-1]
+                bet_amount_float = float(bet_amount[1:-2])
+
                 num_of_players += 1
+                stack_size_sum += bet_amount_float
+                line = f.readline().split()
 
             f.readline() # Player RunnerLucker has big blind (1)
 
@@ -141,6 +202,10 @@ if __name__ == "__main__":
             # ANALYSIS
             total_games_num += 1
 
+            # For average player stack
+            player_stack_size[0] += num_of_players
+            player_stack_size[1] += stack_size_sum
+
             #Number of played hands
             num_of_played_hands = num_of_played_hands_fun(data, num_of_played_hands, num_of_players)
 
@@ -153,7 +218,18 @@ if __name__ == "__main__":
                 finished_games += 1
 
             #Average pot size on preflop, flop, turn, river
-            pot_sum = pot_sum_fun(data, pot_sum)
+            raise_sum = raise_sum_fun(data, raise_sum)
+
+            # What % of raises are reraises
+            reraise_percentage = reraise_percentage_fun(data, reraise_percentage)
+
+            #Average bet/raise increase in % (by how much do players raise)
+            raise_increase_percentage = raise_increase_percentage_fun(data, raise_increase_percentage)
+
+            #TODO
+            #Defending blinds?
+
+
 
 
         else:
@@ -164,14 +240,37 @@ if __name__ == "__main__":
     #Here we print our findings
     played_hands = num_of_played_hands[1]
     total_hands = num_of_played_hands[0] + num_of_played_hands[1]
-    print("Big blind: 1.0              Small blind: 0.50")
-    print("Players played around: ", (played_hands / total_hands)*100, "% of games.")
-    print("Games with allin: ", (all_in_games / total_games_num)*100, "% of games.")
-    print("Finished games where players showed cards after river: ", (all_in_games / total_games_num)*100, "% of games.")
+    print("Big blind: ", BIG_BLIND,"              Small blind: ", SMALL_BLIND)
 
-    print("\nAverage pot on preflop: ", pot_sum[0][1]/pot_sum[0][0])
-    print("Average pot on flop: ", pot_sum[1][1]/pot_sum[1][0])
-    print("Average pot on turn: ", pot_sum[2][1]/pot_sum[2][0])
-    print("Average pot on river: ", pot_sum[3][1]/pot_sum[3][0])
+    print("\nTotal number of games: ", total_games_num)
+    print("Average player stack/balance: ", player_stack_size[1]/player_stack_size[0], "which is equal to ", (player_stack_size[1]/player_stack_size[0])/BIG_BLIND, " big blinds")
+    print("Players played: ", (played_hands / total_hands)*100, "% of games.")
 
-    print("\n")
+    print("\nGames with allin: ", (all_in_games / total_games_num)*100, "% of games.")
+    print("Finished games where players showed cards after river: ", (finished_games / total_games_num)*100, "% of games.")
+
+    print("\nAverage betting sum on preflop: ", raise_sum[0][1]/raise_sum[0][0])    # Betting sum means total money put on the tabel (calls + raises)
+    print("Average betting sum on flop: ", raise_sum[1][1]/raise_sum[1][0])
+    print("Average betting sum on turn: ", raise_sum[2][1]/raise_sum[2][0])
+    print("Average betting sum on river: ", raise_sum[3][1]/raise_sum[3][0])
+
+    print("\nWhat % of raises are reraises: ", (reraise_percentage[1]/reraise_percentage[0])*100, " %" )
+    print("Average raise increase in percentages: ",  raise_increase_percentage[1]/raise_increase_percentage[0], "%")
+
+
+
+
+
+"""
+INFO:
+    -0.10/0.25 --> 12796 iger
+    -0.25/0.50 --> 16395 iger    
+    -0.50/1    --> 9977 iger
+
+
+
+
+TODO:
+- Add big blind? da ves kolk % handov igra bot?....p0 ima BB, p1 vedno potem ima potezo
+
+"""
