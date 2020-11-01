@@ -7206,3 +7206,6 @@ Program po brisanju porabi porabi:85.95703125 MB rama                           
 0==>    p0_cards:6,7        p1_cards:6,13                                     Lahko Ustavis
 0==>    p0_cards:12,13        p1_cards:5,12                                     Lahko Ustavis
 0==>    p0_cards:2,10        p1_cards:4,5                                     Lahko Ustavis
+0==>    p0_cards:2,11        p1_cards:8,9                                     Lahko Ustavis
+0==>    p0_cards:5,9        p1_cards:8,8                                     Lahko Ustavis
+0==>    p0_cards:5,6        p1_cards:7,9                                     Lahko Ustavis

@@ -229,9 +229,10 @@ class Poker_Learner:
 
 
     def new_stage_incoming(self, curr_node, node_player0, node_player1, cards):
-        # prilagodimo node, ker je protokol ob novem stagu malo drugačen ker mora začeti p0 (tudi če je ravno igral)
-        if curr_node.infoSet[-1] != '|':        #--> TODO Mislm da je napačn curr node
+        # ob novem stagu mora začeti p0 (tudi če je ravno igral)
+        if node_player0.infoSet[-1] != '|':
             node_player0.infoSet += "|"
+        if node_player1.infoSet[-1] != '|':
             node_player1.infoSet += "|"
 
         # zdj preeidemo v nov node, ki je vezan na to kakšne karte padejo
