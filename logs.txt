@@ -7068,3 +7068,141 @@ writing p1_info
 Program po brisanju porabi porabi:268.85546875 MB rama                                    Ne Ustavit
 
 
+0==>    p0_cards:5,11        p1_cards:6,13                                     Lahko Ustavis
+0==>    p0_cards:5,7        p1_cards:2,10                                     Lahko Ustavis
+0==>    p0_cards:5,8        p1_cards:2,7                                     Lahko Ustavis
+0==>    p0_cards:5,10        p1_cards:3,6                                     Lahko Ustavis
+0==>    p0_cards:3,4        p1_cards:3,10                                     Lahko Ustavis
+0==>    p0_cards:5,12        p1_cards:4,5                                     Lahko Ustavis
+0==>    p0_cards:10,14        p1_cards:8,14                                     Lahko Ustavis
+0==>    p0_cards:4,10        p1_cards:7,8                                     Lahko Ustavis
+Program ob koncu simulacije porabi:32.9609375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:34.33203125 MB rama                                    Ne Ustavit
+
+
+1==>    p0_cards:3,7        p1_cards:4,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:33.703125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:35.3828125 MB rama                                    Ne Ustavit
+
+
+2==>    p0_cards:8,10        p1_cards:6,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:33.640625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:36.58203125 MB rama                                    Ne Ustavit
+
+
+3==>    p0_cards:4,5        p1_cards:2,8                                     Lahko Ustavis
+Program ob koncu simulacije porabi:33.73828125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:36.34375 MB rama                                    Ne Ustavit
+
+
+4==>    p0_cards:11,14        p1_cards:2,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:33.67578125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:36.390625 MB rama                                    Ne Ustavit
+
+
+5==>    p0_cards:4,13        p1_cards:4,5                                     Lahko Ustavis
+Program ob koncu simulacije porabi:33.765625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:36.1328125 MB rama                                    Ne Ustavit
+
+
+6==>    p0_cards:3,13        p1_cards:7,8                                     Lahko Ustavis
+Program ob koncu simulacije porabi:38.7265625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:41.91015625 MB rama                                    Ne Ustavit
+
+
+7==>    p0_cards:2,7        p1_cards:2,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:34.15234375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:36.6328125 MB rama                                    Ne Ustavit
+
+
+8==>    p0_cards:7,11        p1_cards:8,14                                     Lahko Ustavis
+Program ob koncu simulacije porabi:34.06640625 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:36.63671875 MB rama                                    Ne Ustavit
+
+
+9==>    p0_cards:12,14        p1_cards:8,11                                     Lahko Ustavis
+Program ob koncu simulacije porabi:33.83203125 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:37.265625 MB rama                                    Ne Ustavit
+
+
+10==>    p0_cards:4,9        p1_cards:4,9                                     Lahko Ustavis
+Program ob koncu simulacije porabi:38.8671875 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:42.515625 MB rama                                    Ne Ustavit
+
+
+11==>    p0_cards:9,11        p1_cards:7,14                                     Lahko Ustavis
+0==>    p0_cards:2,14        p1_cards:5,12                                     Lahko Ustavis
+Program ob koncu simulacije porabi:47.109375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:50.5390625 MB rama                                    Ne Ustavit
+
+
+1==>    p0_cards:2,6        p1_cards:2,13                                     Lahko Ustavis
+0==>    p0_cards:4,10        p1_cards:6,6                                     Lahko Ustavis
+0==>    p0_cards:9,10        p1_cards:2,11                                     Lahko Ustavis
+0==>    p0_cards:4,5        p1_cards:2,12                                     Lahko Ustavis
+0==>    p0_cards:11,12        p1_cards:5,13                                     Lahko Ustavis
+0==>    p0_cards:8,9        p1_cards:3,7                                     Lahko Ustavis
+0==>    p0_cards:10,11        p1_cards:14,14                                     Lahko Ustavis
+0==>    p0_cards:5,8        p1_cards:3,13                                     Lahko Ustavis
+0==>    p0_cards:4,6        p1_cards:4,12                                     Lahko Ustavis
+0==>    p0_cards:7,13        p1_cards:13,14                                     Lahko Ustavis
+0==>    p0_cards:3,13        p1_cards:7,10                                     Lahko Ustavis
+Program ob koncu simulacije porabi:62.74609375 MB rama                                    Ne Ustavit
+writing p0_info
+writing p1_info 
+Program po brisanju porabi porabi:85.95703125 MB rama                                    Ne Ustavit
+
+
+1==>    p0_cards:10,12        p1_cards:8,11                                     Lahko Ustavis
+0==>    p0_cards:2,11        p1_cards:13,14                                     Lahko Ustavis
+0==>    p0_cards:3,7        p1_cards:2,2                                     Lahko Ustavis
+0==>    p0_cards:4,14        p1_cards:6,7                                     Lahko Ustavis
+0==>    p0_cards:2,14        p1_cards:3,7                                     Lahko Ustavis
+0==>    p0_cards:3,13        p1_cards:9,11                                     Lahko Ustavis
+0==>    p0_cards:3,12        p1_cards:6,7                                     Lahko Ustavis
+0==>    p0_cards:5,11        p1_cards:11,13                                     Lahko Ustavis
+0==>    p0_cards:7,11        p1_cards:5,12                                     Lahko Ustavis
+0==>    p0_cards:2,9        p1_cards:3,7                                     Lahko Ustavis
+0==>    p0_cards:3,6        p1_cards:8,10                                     Lahko Ustavis
+0==>    p0_cards:2,14        p1_cards:2,4                                     Lahko Ustavis
+0==>    p0_cards:6,11        p1_cards:4,6                                     Lahko Ustavis
+0==>    p0_cards:5,7        p1_cards:9,11                                     Lahko Ustavis
+0==>    p0_cards:5,10        p1_cards:6,10                                     Lahko Ustavis
+0==>    p0_cards:2,9        p1_cards:3,7                                     Lahko Ustavis
+0==>    p0_cards:9,13        p1_cards:3,10                                     Lahko Ustavis
+0==>    p0_cards:7,12        p1_cards:10,11                                     Lahko Ustavis
+0==>    p0_cards:10,13        p1_cards:9,14                                     Lahko Ustavis
+0==>    p0_cards:6,13        p1_cards:7,8                                     Lahko Ustavis
+0==>    p0_cards:8,14        p1_cards:10,12                                     Lahko Ustavis
+0==>    p0_cards:6,7        p1_cards:7,12                                     Lahko Ustavis
+0==>    p0_cards:7,8        p1_cards:2,4                                     Lahko Ustavis
+0==>    p0_cards:8,12        p1_cards:10,13                                     Lahko Ustavis
+0==>    p0_cards:3,4        p1_cards:5,9                                     Lahko Ustavis
+0==>    p0_cards:3,7        p1_cards:9,14                                     Lahko Ustavis
+0==>    p0_cards:6,7        p1_cards:6,13                                     Lahko Ustavis
+0==>    p0_cards:12,13        p1_cards:5,12                                     Lahko Ustavis
+0==>    p0_cards:2,10        p1_cards:4,5                                     Lahko Ustavis

@@ -12,6 +12,10 @@ from os import listdir
 from os.path import isfile, join
 import pickle
 
+#Constants
+BIG_BLIND = 1.0
+SMALL_BLIND = 0.50
+PLAYER_NOT_PLAY_HAND_ACTION = 2
 
 ##POKER_LEARNER_CFR
 
@@ -165,10 +169,8 @@ class Poker_Learner:
             current_stage = infoSet.split("|")[(infoSet.count("|") + 1) - 1]
             player = (current_stage.count("b")) % 2
 
-            ante = 50  # vsota ki jo vsak player da na mizo se preden dobi karte --> kasneje lahko zamenjas za small pa big blind --> je vključena ze na začetku ko nastavimo zacetni "old_pot" in "new_pot"
-
             # če kdo prej folda kot obicajno, pol nasprotnik dobi 1/2 pota minus zadnjo stavo(-1), ki je player ni callou
-            winnings = old_pot / 2 + ante
+            winnings = old_pot / 2
             if terminal_node == "p0_win":
                 return winnings if player == 0 else -winnings
             elif terminal_node == "p1_win":
@@ -177,7 +179,7 @@ class Poker_Learner:
             if terminal_node == "call_betterCards":
                 # Vsak dobi sam pol pota ker tut v resnici staviš pol ti pol opponent in dejansko si na +/- sam za polovico pota
                 # Gre ravno cez pol ker sta
-                winnings = old_pot/2 + ante
+                winnings = old_pot/2
 
                 global better_cards_p0
                 a = better_cards_p0
@@ -205,8 +207,9 @@ class Poker_Learner:
         for i in range(num_actions):
             oznaka_stave = "b" + str(i)
             new_infoset = curr_node.infoSet + oznaka_stave
-            if p0_nextTurn == False:        # TODO a to pa nasledno vrstico sploh rabm?
-                p0_nextTurn = nodes.isNewStage(new_infoset)
+
+            new_p0_nextTurn = p0_nextTurn
+            if new_p0_nextTurn == False: new_p0_nextTurn = nodes.isNewStage(new_infoset)
 
             if isTerminalState(new_infoset):    #terminal state --> naredimo payoff node
                 if oznaka_stave not in node_player0.betting_map:
@@ -220,17 +223,16 @@ class Poker_Learner:
                     node_player1.betting_map[oznaka_stave] = nodes.node_new_cards(new_infoset)
             else:   #sicer naredimo navaden betting node
                 if oznaka_stave not in node_player0.betting_map:
-                    node_player0.betting_map[oznaka_stave] = nodes.node(new_infoset) if p0_nextTurn else nodes.node_betting_map(new_infoset)
+                    node_player0.betting_map[oznaka_stave] = nodes.node(new_infoset) if new_p0_nextTurn else nodes.node_betting_map(new_infoset)
                 if oznaka_stave not in node_player1.betting_map:
-                    node_player1.betting_map[oznaka_stave] = nodes.node(new_infoset) if not p0_nextTurn else nodes.node_betting_map(new_infoset)
+                    node_player1.betting_map[oznaka_stave] = nodes.node(new_infoset) if not new_p0_nextTurn else nodes.node_betting_map(new_infoset)
 
-
-        return p0_nextTurn
 
     def new_stage_incoming(self, curr_node, node_player0, node_player1, cards):
         # prilagodimo node, ker je protokol ob novem stagu malo drugačen ker mora začeti p0 (tudi če je ravno igral)
-        if curr_node.infoSet[-1] != '|':
-            curr_node.infoSet += "|"
+        if curr_node.infoSet[-1] != '|':        #--> TODO Mislm da je napačn curr node
+            node_player0.infoSet += "|"
+            node_player1.infoSet += "|"
 
         # zdj preeidemo v nov node, ki je vezan na to kakšne karte padejo
         curr_game_stage = curr_node.infoSet.count("|")
@@ -261,27 +263,27 @@ class Poker_Learner:
             return self.payoff(node_player1.betting_map[oznaka_stave].infoSet, old_pot)
 
 
-    def round_on_5(self, number):
-        ostanek = number % 5
-        if ostanek <= 2:
-            number -= ostanek
-        else:
-            number += (number-ostanek)
-
-        return number
-
-    def new_bet_amount(self, new_pot, old_pot, i, last_round, round_num):
-        big_blind = 100
+    def new_bet_amount(self, new_pot, old_pot, i, last_round, round_num, first_bet=False):
         stava = 0
-        if round_num == 1:
-            if i == 0: return 0
-            if i == 1: stava = self.round_on_5(new_pot/2)
-            #if i == 2: stava = self.round_on_5(new_pot)
 
-            if stava >= big_blind:
+        if round_num == 1:  # --> betting round
+
+            # Če smo pri prvi stavi, ko se player odloča ali bo igral ali ne
+            if first_bet:
+                if i == 0: return BIG_BLIND  # --> call
+                elif i == 1: stava = BIG_BLIND + round(new_pot/2, 2)   # --> Višamo
+                elif i == 2: return 0 # --> foldamo
+
+            # Če nismo pri prvi stavi
+            else:
+                if i == 0: return 0
+                if i == 1: stava = round(new_pot/2, 2)
+                #if i == 2: stava = self.round_on_5(new_pot)
+
+            if stava >= BIG_BLIND:
                 return stava
             else:
-                return big_blind
+                return BIG_BLIND
 
         elif round_num == 2:
             if int(last_round[round_num-2]) == 0:   #če je bila akcija pred to sedajšno stavo check , potem samo normalno bettamo
@@ -306,7 +308,11 @@ class Poker_Learner:
         last_round.append(str(i))
 
         if len(last_round) == 1:
-            return old_pot, old_pot + self.new_bet_amount(new_pot, old_pot, i, last_round, len(last_round))
+            first_bet = True if infoSet == "" else False
+            new_pot = old_pot + self.new_bet_amount(new_pot, old_pot, i, last_round, len(last_round), first_bet)
+            old_pot = old_pot + BIG_BLIND if i != PLAYER_NOT_PLAY_HAND_ACTION else old_pot  # --> če player1 ni igral igre, potem ne povečamo pota
+            return old_pot, new_pot
+
         elif len(last_round) == 2:
             #p0 check
             if int(last_round[0]) == 0 and int(last_round[1]) == 0: #check check
@@ -336,7 +342,7 @@ class Poker_Learner:
     # player_infoset in opp_infoset se skupi cez prenasa in se oba hkrati posodabla
     # old_pot je pot, v katerem sta vsak player dala enako
     # new_pot je pot, v katerega je nek player dodatno stavil, drug player pa se ni izenacil
-    def cfr(self, cards, p0, p1, node_player0, node_player1, p0_turn, old_pot, new_pot, debug):
+    def cfr(self, cards, p0, p1, node_player0, node_player1, p0_turn, old_pot, new_pot):
 
         player = 0 if p0_turn else 1
         p0_nextTurn = False if player == 0 else True
@@ -353,10 +359,10 @@ class Poker_Learner:
                 # strat[correct_action) je vedno 1.0, ker smo izračunal da je to najbolša opcija
                 if (player == 0):
                     return - self.cfr(cards, p0 * strat[correct_action], p1, node_player0.betting_map[oznaka_stave],
-                                         node_player1.betting_map[oznaka_stave], p0_nextTurn, old_pot, new_pot, False)
+                                         node_player1.betting_map[oznaka_stave], p0_nextTurn, old_pot, new_pot)
                 else:
                     return - self.cfr(cards, p0, p1 * strat[correct_action], node_player0.betting_map[oznaka_stave],
-                                         node_player1.betting_map[oznaka_stave], p0_nextTurn, old_pot, new_pot, False)
+                                         node_player1.betting_map[oznaka_stave], p0_nextTurn, old_pot, new_pot)
         except:
             # "Če node ni tipa 'node' potem nima variabla compute_node in vrne exception"
             pass
@@ -372,8 +378,9 @@ class Poker_Learner:
             # update nodes
             node_player0 = node_player0.new_cards[new_cards_]
             node_player1 = node_player1.new_cards[new_cards_]
-            curr_node = node_player0 if player == 0 else node_player1
+            curr_node = node_player0    #if player == 0 else node_player1               --> na začetku staga (flop, turn, river) vedno začne player0
             #p0 začne na začetku vsake runde(flop, trun, river) --> tuki je false ker js v vsaki rundi gledam za eno rundo nazaj
+            player = 0
             p0_nextTurn = False
 
 
@@ -385,7 +392,7 @@ class Poker_Learner:
         nodeUtil = 0
 
         # Kreacija sinov v drevesu --> posebi node ce je player sedaj passou al pa ce je bettou
-        p0_nextTurn = self.kreiraj_sinove(curr_node, node_player0, node_player1, p0_nextTurn)
+        self.kreiraj_sinove(curr_node, node_player0, node_player1, p0_nextTurn)
 
         # prvo prevermo če je v kkšnih nodih že payoff sicer gremo v rekurzijo
         alredy_played_bets = []     # sem notr spravm kere stave sem že presimuliral da ne grem 5x stavit 0
@@ -409,9 +416,9 @@ class Poker_Learner:
                     if betting_round: alredy_played_bets.append(nova_stava)
 
                     if (player == 0):
-                        util[i] = - self.cfr(cards, p0 * strategy[i], p1, node_player0.betting_map[oznaka_stave], node_player1.betting_map[oznaka_stave], p0_nextTurn, old_pot, new_pot, False)
+                        util[i] = - self.cfr(cards, p0 * strategy[i], p1, node_player0.betting_map[oznaka_stave], node_player1.betting_map[oznaka_stave], p0_nextTurn, old_pot, new_pot)
                     else:
-                        util[i] = - self.cfr(cards, p0, p1 * strategy[i], node_player0.betting_map[oznaka_stave], node_player1.betting_map[oznaka_stave], p0_nextTurn, old_pot, new_pot, False)
+                        util[i] = - self.cfr(cards, p0, p1 * strategy[i], node_player0.betting_map[oznaka_stave], node_player1.betting_map[oznaka_stave], p0_nextTurn, old_pot, new_pot)
 
             nodeUtil += strategy[i] * util[i]
 
@@ -440,28 +447,16 @@ class Poker_Learner:
                 with open(file_name, 'rb') as input:
                     newNode = pickle.load(input)
             else:
-                newNode = nodes.node("")   # --> ko se node kreira se ze skopirajo ostale vrednosti iz drugih nodov...ne gre iz nule
-            """
-            if infoSet in self.nodeMap_p0:
-                newNode = self.nodeMap_p0[infoSet]
-            else:
-                newNode = nodes.node("")
-                self.nodeMap_p0[infoSet] = newNode
-            """
+                newNode = nodes.node_betting_map("")    # --> tuki ne rabmo node, ker p0 avtomatsko na začetku da big blind in dejansko ne začne
+
         elif player == 1:
             file_name = "p1_" + infoSet + ".pkl"
             if file_name in files_curr_dir:
                 with open(file_name, 'rb') as input:
                     newNode = pickle.load(input)
             else:
-                newNode = nodes.node_betting_map("")   # --> tuki ne rabmbo noda ker p1 na prvi potezi ne igra --> sprejmemo samo akcijo ob p0 in nato sele igra
-            """
-            if infoSet in self.nodeMap_p1:
-                newNode = self.nodeMap_p1[infoSet]
-            else:
-                newNode = nodes.node_betting_map("")
-                self.nodeMap_p1[infoSet] = newNode
-            """
+                newNode = nodes.node("")   # --> tuki rabmo node, ker p1 prvi igra v novi igri, saj ima p0 začetno stavo aka BIG BLIND +  # --> b11 = znak za big blind
+
         else:
             return "error2"
 
@@ -526,8 +521,8 @@ class Poker_Learner:
                 gc.collect()    # --> force garbage collector
 
                 for j in range(stIgerNaIteracijo):
-                    #if j % (stIgerNaIteracijo / 100) == 0:
-                    #    print(j / (stIgerNaIteracijo / 100), " %")
+                    if j % (stIgerNaIteracijo / 100) == 0:
+                        print(j / (stIgerNaIteracijo / 100), " %")
 
                     cards = self.partly_shuffle(cards.copy())
                     global better_cards_p0
@@ -535,7 +530,8 @@ class Poker_Learner:
                     a = better_cards_p0
                     global better_cards_p1
                     better_cards_p1 = self.betterCards(cards, 1)
-                    util += self.cfr(cards, 1, 1, node_player0, node_player1, True, 50, 50, True) # na poker starsu je BB 100, SM 50 pri heads up za 10k....50 obema odbijem v payoffu kot ante, p0 pa tukaj da se 50 na kup
+                    util += self.cfr(cards, 1, 1, node_player0, node_player1, False, BIG_BLIND, BIG_BLIND) # na poker starsu je BB 100, SM 50 pri heads up za 10k....50 obema odbijem v payoffu kot ante, p0 pa tukaj da se 50 na kup
+
 
                 #logs
                 process = psutil.Process(os.getpid())
@@ -581,8 +577,11 @@ def isTerminalState(infoSet):
     del current_stage[0]
     stg_len = len(current_stage)
 
+    # če p1 ne igra --> folda brez da izenači big blind
+    if infoSet == "b" + str(PLAYER_NOT_PLAY_HAND_ACTION):
+        return "p0_win"
     # ce igrata do konca da odpreta karte
-    if (gameStage == 4 and stg_len > 0) and nodes.isNewStage(infoSet):    #smo v zadnjem stagu in current_stage ni prazen (ker pol ga isNewStage prepozna kot nov stage) + zaklucl smo zadn stage
+    elif (gameStage == 4 and stg_len > 0) and nodes.isNewStage(infoSet):    #smo v zadnjem stagu in current_stage ni prazen (ker pol ga isNewStage prepozna kot nov stage) + zaklucl smo zadn stage
         return "call_betterCards"   #--> sta igrala do konca kazeta karte
     # ce nekdo nekje folda
     else:
@@ -610,6 +609,7 @@ def tris_to_pair(trisi, pari):
 
     return trisi, pari
 
+#check if a player has a straight
 def get_that_straight(cards):
     cards.sort(reverse=True)
     curr_high = -1

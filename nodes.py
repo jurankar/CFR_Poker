@@ -1,6 +1,10 @@
 import numpy as np
 
 
+#CONSTANTS
+COMPUTED_NODE_REGRET_REQUIREMENT = 400        # to je meja regreta (max value v arrayu node.regretSum), ki sem jo določil da je node izracunan --> kasneje, ko ga boš zares učil to povečaj
+
+
 ###NODES
 
 #uporabljamo ko je node v terminal stanju (igra se zaključi ker je nekdo foldou ali pa sta pokazala karte)
@@ -51,9 +55,7 @@ class node:
         max_regret = np.max(self.regretSum)
         min_regret = np.min(self.regretSum)
 
-        # 100000 je meja regreta, ki sem jo določil da je node izracunan
-        minmax_regret = 100000
-        if max_regret > minmax_regret or min_regret < -minmax_regret:
+        if max_regret > COMPUTED_NODE_REGRET_REQUIREMENT or min_regret < -COMPUTED_NODE_REGRET_REQUIREMENT:
             self.computed_node = True
             max_index = np.argmax(self.regretSum)
             for i in range(len(self.strategySum)):
@@ -170,7 +172,7 @@ def is_betting_round(infoSet):
 # ko smo v betting stagu imamo NUM_ACTIONS moznih potez, ko pa nismo v betting stagu pa imamo samo fold/call
 def num_actions(infoSet, NUM_ACTIONS):
     if is_betting_round(infoSet):
-        return NUM_ACTIONS
+        return NUM_ACTIONS if infoSet != "" else NUM_ACTIONS + 1    # --> če imamo prvi krog, pol imamo eno opcijo več pri bettanju, ker imamo hkrati fold, call in raise
     else:
         return 2
 
