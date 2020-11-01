@@ -491,9 +491,9 @@ class Poker_Learner:
         trash_hands = []  # #--> to do
 
         for i in range(stIteracij):
-            print(i)
-            #if i % (stIteracij/100) == 0:
-            #    print(i / (stIteracij/100), " %")
+            #print(i)
+            if i % (stIteracij/100) == 0:
+                print(i / (stIteracij/100), " %")
 
             random.shuffle(cards)
             player0_info = self.poVrsti([cards[0], cards[1]])
@@ -522,8 +522,8 @@ class Poker_Learner:
                 gc.collect()    # --> force garbage collector
 
                 for j in range(stIgerNaIteracijo):
-                    if j % (stIgerNaIteracijo / 100) == 0:
-                        print(j / (stIgerNaIteracijo / 100), " %")
+                    #if j % (stIgerNaIteracijo / 100) == 0:
+                    #    print(j / (stIgerNaIteracijo / 100), " %")
 
                     cards = self.partly_shuffle(cards.copy())
                     global better_cards_p0
