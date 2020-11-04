@@ -5,6 +5,7 @@ import numpy as np
 import psutil
 import os
 import gc
+import time
 
 #Save files to disk
 import os
@@ -483,17 +484,21 @@ class Poker_Learner:
         new_deck += cards
         return new_deck
 
-    def train(self, stIteracij, stIgerNaIteracijo):
+    def train(self, stIgerNaIteracijo):
+        # Kolk minut naj se max izvaja
+        print("Koliko minut naj se program izvaja?")
+        max_program_time_minutes = int(input())
+        start_time = time.time()
+
         # prvi dve sta od playerja, drugi dve sta od opponenta, naslednjih 5 je na mizi
         cards = [2,2,2,2, 3,3,3,3, 4,4,4,4, 5,5,5,5, 6,6,6,6, 7,7,7,7, 8,8,8,8, 9,9,9,9, 10,10,10,10, 11,11,11,11, 12,12,12,12, 13,13,13,13, 14,14,14,14]
         util = 0
 
-        trash_hands = []  # #--> to do
-
-        for i in range(stIteracij):
-            print(i)
-            #if i % (stIteracij/100) == 0:
-            #    print(i / (stIteracij/100), " %")
+        continue_loop = True
+        game_num = 0
+        while continue_loop:
+            print(game_num)
+            game_num += 1
 
             random.shuffle(cards)
             player0_info = self.poVrsti([cards[0], cards[1]])
@@ -501,70 +506,69 @@ class Poker_Learner:
 
             #logs
             f = open("logs.txt", "a")
-            write_str = str(i) + "==>    p0_cards:" + player0_info + "        p1_cards:" + player1_info + "                                     Lahko Ustavis\n"
+            write_str = str(game_num) + "==>    p0_cards:" + player0_info + "        p1_cards:" + player1_info + "                                     Lahko Ustavis\n"
             f.write(write_str)
             f.close()
 
-            # vecina projev na zacetku ze raisa, ce nima nekega trash handa
-            if player0_info not in trash_hands:
-                #  v temu nodu ni vazn kaj je, ker itak bomo sli ali v bet ali pass node v temu nodeu
-                # lahko damo dejansko samo slovar
 
-                # ker ne moremo naloziti vseh nodov v ram, na enkrat nalozimo samo dva, enega za playerja in enega za opponenta
-                # ker nalaganje porabi ogromno časa, bomo za vaskič ko nalozimo dva noda, s temi kartami opravili "stIgerNaIteracijo" iger, ampak z drugačnim kupckom (npr. 1000 iger)
+            # ker ne moremo naloziti vseh nodov v ram, na enkrat nalozimo samo dva, enega za playerja in enega za opponenta
+            # ker nalaganje porabi ogromno časa, bomo za vaskič ko nalozimo dva noda, s temi kartami opravili "stIgerNaIteracijo" iger, ampak z drugačnim kupckom (npr. 1000 iger)
 
+            #print("p0:" + player0_info + "                      p1:" + player1_info)
+            #print("Porabljenih je:", process.memory_info()[0] / (1024 * 1024), " MB rama")
+            node_player0 = self.nodeInformation(str(player0_info), 0)
+            node_player1 = self.nodeInformation(str(player1_info), 1)
 
-                #print("p0:" + player0_info + "                      p1:" + player1_info)
-                #print("Porabljenih je:", process.memory_info()[0] / (1024 * 1024), " MB rama")
-                node_player0 = self.nodeInformation(str(player0_info), 0)
-                node_player1 = self.nodeInformation(str(player1_info), 1)
+            gc.collect()    # --> force garbage collector
 
-                gc.collect()    # --> force garbage collector
+            for j in range(stIgerNaIteracijo):
+                #if j % (stIgerNaIteracijo / 100) == 0:
+                #    print(j / (stIgerNaIteracijo / 100), " %")
+                #Če smo presegl čas, pol breakamo
+                if ((time.time() - start_time) / 60) > max_program_time_minutes:
+                    continue_loop = False
+                    break
 
-                for j in range(stIgerNaIteracijo):
-                    if j % (stIgerNaIteracijo / 100) == 0:
-                        print(j / (stIgerNaIteracijo / 100), " %")
-
-                    cards = self.partly_shuffle(cards.copy())
-                    global better_cards_p0
-                    better_cards_p0 = self.betterCards(cards, 0)  # TODO BODI POZOREN NA TO FUNKCIJO
-                    a = better_cards_p0
-                    global better_cards_p1
-                    better_cards_p1 = self.betterCards(cards, 1)
-                    util += self.cfr(cards, 1, 1, node_player0, node_player1, False, BIG_BLIND, BIG_BLIND) # na poker starsu je BB 100, SM 50 pri heads up za 10k....50 obema odbijem v payoffu kot ante, p0 pa tukaj da se 50 na kup
-
-
-                #logs
-                process = psutil.Process(os.getpid())
-                f = open("logs.txt", "a")
-                write_str = "Program ob koncu simulacije porabi:" + str(process.memory_info()[0] / (1024 * 1024)) + " MB rama                                    Ne Ustavit\n"
-                f.write(write_str)
-                f.close()
-
-                # zdj zapišemo v fajle posodoblene node --> če noda še ni naredi nov fajl
-                f = open("logs.txt", "a")
-                f.write("writing p0_info\n")
-                f.close()
-
-                with open("p0_" + player0_info + ".pkl", 'wb') as output:
-                    pickle.dump(node_player0, output, pickle.HIGHEST_PROTOCOL)
-
-                f = open("logs.txt", "a")
-                f.write("writing p1_info \n")
-                f.close()
-
-                with open("p1_" + player1_info + ".pkl", 'wb') as output:
-                    pickle.dump(node_player1, output, pickle.HIGHEST_PROTOCOL)
-
-                del node_player0
-                del node_player1
-                f = open("logs.txt", "a")
-                write_str = "Program po brisanju porabi porabi:" + str(process.memory_info()[0] / (1024 * 1024)) + " MB rama                                    Ne Ustavit\n\n\n"
-                f.write(write_str)
-                f.close()
+                cards = self.partly_shuffle(cards.copy())
+                global better_cards_p0
+                better_cards_p0 = self.betterCards(cards, 0)  # TODO BODI POZOREN NA TO FUNKCIJO
+                a = better_cards_p0
+                global better_cards_p1
+                better_cards_p1 = self.betterCards(cards, 1)
+                util += self.cfr(cards, 1, 1, node_player0, node_player1, False, BIG_BLIND, BIG_BLIND) # na poker starsu je BB 100, SM 50 pri heads up za 10k....50 obema odbijem v payoffu kot ante, p0 pa tukaj da se 50 na kup
 
 
-        print("Average game return: ", util / (stIteracij * stIgerNaIteracijo))
+            #logs
+            process = psutil.Process(os.getpid())
+            f = open("logs.txt", "a")
+            write_str = "Program ob koncu simulacije porabi:" + str(process.memory_info()[0] / (1024 * 1024)) + " MB rama                                    Ne Ustavit\n"
+            f.write(write_str)
+            f.close()
+
+            # zdj zapišemo v fajle posodoblene node --> če noda še ni naredi nov fajl
+            f = open("logs.txt", "a")
+            f.write("writing p0_info\n")
+            f.close()
+
+            with open("p0_" + player0_info + ".pkl", 'wb') as output:
+                pickle.dump(node_player0, output, pickle.HIGHEST_PROTOCOL)
+
+            f = open("logs.txt", "a")
+            f.write("writing p1_info \n")
+            f.close()
+
+            with open("p1_" + player1_info + ".pkl", 'wb') as output:
+                pickle.dump(node_player1, output, pickle.HIGHEST_PROTOCOL)
+
+            del node_player0
+            del node_player1
+            f = open("logs.txt", "a")
+            write_str = "Program po brisanju porabi porabi:" + str(process.memory_info()[0] / (1024 * 1024)) + " MB rama                                    Ne Ustavit\n\n\n"
+            f.write(write_str)
+            f.close()
+
+
+        print("Average game return: ", util / (game_num * stIgerNaIteracijo))
 # --------------------------------------------------------------------------------------------------
 
 
