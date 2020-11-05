@@ -136,7 +136,7 @@ def reraise_percentage_fun(data, reraise_percentage):
 
 
 if __name__ == "__main__":
-    file_name = "datasets/dataset.txt"
+    file_name = "Humans/datasets/dataset.txt"
     f = open(file_name, "r")
     line = f.readline()
 

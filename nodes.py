@@ -1,8 +1,8 @@
 import numpy as np
-
+import sys
 
 #CONSTANTS
-COMPUTED_NODE_REGRET_REQUIREMENT = 200        # to je meja regreta (max value v arrayu node.regretSum), ki sem jo določil da je node izracunan --> kasneje, ko ga boš zares učil to povečaj
+COMPUTED_NODE_REGRET_REQUIREMENT = 400       # to je meja regreta (max value v arrayu node.regretSum), ki sem jo določil da je node izracunan --> kasneje, ko ga boš zares učil to povečaj
 
 
 ###NODES
@@ -29,8 +29,7 @@ class node_betting_map:
         self.infoSet = infoSet
         self.betting_map = {}
 
-#TODO nastimi da gre lohka regret sum pa strategy sum max do Max_Integer da ne dobis integer overflow
-# Implement __slots__
+
 #uporabljamo ko smo na potezi in racunamo verjetnosi in se odločamo kakšno potezo bomo naredili
 class node:
     NUM_ACTIONS = 2
@@ -63,7 +62,8 @@ class node:
                 if i != max_index:
                     self.strategySum[i] = 0.0
                     bet_type = "b" + str(i)
-                    del self.betting_map[bet_type]
+                    del self.betting_map[bet_type]  # --> brisemo iz curr_noda
+                    #del non_curr_node.betting_map[bet_type]     # --> brisemo iz non_curr_noda
 
             #zdj nastavimo "izracunano" najbolso opcijo na 1
             self.strategySum[max_index] = 1.0
