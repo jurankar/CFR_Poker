@@ -23,176 +23,6 @@ PLAYER_NOT_PLAY_HAND_ACTION = 2
 class Poker_Learner:
     NUM_ACTIONS = 2
 
-    def betterCards(self, cards,player):  # --> return TRUE ce ma players bolse karte in FALSE ce ma slabse
-        #najprej določmo karte
-        cards_on_table = [cards[4], cards[5], cards[6], cards[7], cards[8]]
-        if player == 0:
-            playerCards = [cards[0], cards[1]] + cards_on_table
-            opponentCards = [cards[2], cards[3]] + cards_on_table
-        else:
-            playerCards = [cards[2], cards[3]] + cards_on_table
-            opponentCards = [cards[0], cards[1]] + cards_on_table
-
-
-        # tuki bomo gledal sam poker, full house, tris, dva para, par, pa High Card
-        pari_pl = []
-        trisi_pl = []
-        poker_pl = []
-        # lestvica_pl = []     --> TO DO ko bojo karte 2-A
-
-        pari_op = []
-        trisi_op = []
-        poker_op = []
-        # lestvica_op = []     --> TO DO ko bojo karte 2-A
-
-        #pogledamo pokre, trise in pare
-        for i in range(14, 0, -1):
-
-            if playerCards.count(i) == 4:
-                poker_pl.append(int(i))
-            if opponentCards.count(i) == 4:
-                poker_op.append(int(i))
-
-            if playerCards.count(i) == 3:
-                trisi_pl.append((int(i)))
-            if opponentCards.count(i) == 3:
-                trisi_op.append((int(i)))
-
-            if playerCards.count(i) == 2:
-                pari_pl.append(int(i))
-            if opponentCards.count(i) == 2:
-                pari_op.append(int(i))
-        trisi_op.sort(reverse=True)
-        trisi_pl.sort(reverse=True)
-
-        #če imamo več kot en tris, potem ostale trise dodamo k parom (ker več kot 1 tris ne upostevamo v igri)
-        trisi_pl, pari_pl = tris_to_pair(trisi_pl, pari_pl)
-        trisi_op, pari_op = tris_to_pair(trisi_op, pari_op)
-        pari_op.sort(reverse=True)
-        pari_pl.sort(reverse=True)
-
-
-
-        # če ma nekdo poker pol vemo iz prve da je zmagu ker je to najbolsa kombinacija
-        if len(poker_pl) == 1 and len(poker_op) == 1:
-            return True if poker_pl[0] > poker_op[0] else False
-        elif len(poker_pl) == 1 and len(poker_op) == 0:
-            return True
-        elif len(poker_pl) == 0 and len(poker_op) == 1:
-            return False
-
-        #tuki zdj primerjamo hande med sabo
-
-        #full house
-        if len(trisi_pl) > 0 and len(pari_pl) > 0 and len(trisi_op) > 0 and len(pari_op) > 0:   #oba mata full house
-            if trisi_pl[0] > trisi_op[0]:
-                return True
-            elif trisi_pl[0] < trisi_op[0]:
-                return False
-            else:   #trisa sta enaka
-                if pari_pl[0] > pari_op[0]:
-                    return True
-                elif pari_pl[0] < pari_op[0]:
-                    return False
-                else:   #para sta enaka
-                    return isHighCard(playerCards, opponentCards)
-
-        elif len(trisi_pl) > 0 and len(pari_pl) > 0 and (len(trisi_op) == 0 or len(pari_op) == 0):  #player ma full opp ne
-            return True
-        elif len(trisi_op) > 0 and len(pari_op) > 0 and (len(trisi_pl) == 0 or len(pari_pl) == 0):  # opp ma full player ne
-            return False
-
-        #lestvica
-        player_straight = get_that_straight(playerCards)
-        bot_straight = get_that_straight(opponentCards)
-
-        if player_straight > bot_straight:
-            return True
-        elif player_straight < bot_straight:
-            return False
-        elif player_straight != -1 and bot_straight != -1 and player_straight == bot_straight:  # --> oba isti straight
-            return "split"
-
-        #tris
-        if len(trisi_pl) > 0 and len(trisi_op) > 0: #oba tris
-            if trisi_pl[0] > trisi_op[0]:
-                return True
-            elif trisi_pl[0] < trisi_op[0]:
-                return False
-            else:   #isti tris
-                return isHighCard(playerCards, opponentCards)
-        elif len(trisi_pl) > 0 and len(trisi_op) == 0:
-            return True
-        elif len(trisi_pl) == 0 and len(trisi_op) > 0:
-            return False
-
-        #dva para
-        if len(pari_pl) > 1 and len(pari_op) > 1:   #oba mata 2 para
-            if pari_pl[0] > pari_op[0]: return True
-            elif pari_pl[0] < pari_op[0]: return False
-            else:   #isti top pair
-                if pari_pl[1] > pari_op[1]: return True
-                elif pari_pl[1] < pari_op[1]: return False
-                else:   # isti second pair
-                    return isHighCard(playerCards, opponentCards)
-        elif len(pari_pl) > 1 and len(pari_op) <= 1:
-            return True
-        elif len(pari_pl) <= 1 and len(pari_op) > 1:
-            return False
-
-        #en par
-        if len(pari_pl) == 1 and len(pari_op) == 1:
-            if pari_pl[0] > pari_op[0]: return  True
-            elif pari_pl[0] < pari_op[0]: return False
-            else:
-                return isHighCard(playerCards, opponentCards)
-        elif len(pari_pl) == 1 and len(pari_op) == 0:
-            return True
-        elif len(pari_pl) == 0 and len(pari_op) == 1:
-            return False
-
-        return isHighCard(playerCards, opponentCards)
-
-
-
-    def payoff(self, infoSet, old_pot):
-        terminal_node = isTerminalState(infoSet)
-        if terminal_node != False:
-            current_stage = infoSet.split("|")[(infoSet.count("|") + 1) - 1]
-            player = (current_stage.count("b")) % 2
-
-            # če kdo prej folda kot obicajno, pol nasprotnik dobi 1/2 pota minus zadnjo stavo(-1), ki je player ni callou
-            winnings = old_pot / 2
-            if terminal_node == "p0_win":
-                return winnings if player == 0 else -winnings
-            elif terminal_node == "p1_win":
-                return winnings if player == 1 else -winnings
-
-            if terminal_node == "call_betterCards":
-                # Vsak dobi sam pol pota ker tut v resnici staviš pol ti pol opponent in dejansko si na +/- sam za polovico pota
-                # Gre ravno cez pol ker sta
-                winnings = old_pot/2
-
-                global better_cards_p0
-                a = better_cards_p0
-                global better_cards_p1
-                b = better_cards_p1
-                if better_cards_p0 == "split":
-                    return 0
-
-                if player == 0:
-                    return winnings if better_cards_p0 else -winnings # winnings = pot/2 + ante
-                elif player == 1:
-                    return winnings if better_cards_p1 else -winnings # winnings = pot/2 + ante
-                else:
-                    return "error"
-
-            return "error1"
-
-        else:
-            return "continue"
-
-
     def kreiraj_sinove(self, curr_node, node_player0, node_player1, p0_nextTurn, player):
 
         # Če so nodi computerani, potem ne kreiramo na novo dreves
@@ -241,122 +71,18 @@ class Poker_Learner:
                         node_player1.betting_map[oznaka_stave] = nodes.node(new_infoset) if not new_p0_nextTurn else nodes.node_betting_map(new_infoset)
 
 
-
-
-    def new_stage_incoming(self, curr_node, node_player0, node_player1, cards):
-        # ob novem stagu mora začeti p0 (tudi če je ravno igral)
-        if node_player0.infoSet[-1] != '|':
-            node_player0.infoSet += "|"
-        if node_player1.infoSet[-1] != '|':
-            node_player1.infoSet += "|"
-
-        # zdj preeidemo v nov node, ki je vezan na to kakšne karte padejo
-        curr_game_stage = curr_node.infoSet.count("|")
-
-        #preflop je stage 0
-        if curr_game_stage == 1:
-            new_cards_ = "f" + self.poVrsti([cards[4], cards[5], cards[6]])  # flop
-        elif curr_game_stage == 2:
-            new_cards_ = "t" + str(cards[7])  # turn
-        elif curr_game_stage == 3:
-            new_cards_ = "r" + str(cards[8])  # river
-        else:
-            return "error3"
-
-        # create nodes if necessary --> vedno kreiramo node v p0 in node_betting_map v p1 ker na začetku staga vedno začne p0
-        if new_cards_ not in node_player0.new_cards:
-            node_player0.new_cards[new_cards_] = nodes.node(node_player0.infoSet)
-        if new_cards_ not in node_player1.new_cards:
-            node_player1.new_cards[new_cards_] = nodes.node_betting_map(node_player1.infoSet)
-
-        return new_cards_
-
     def payoff_decide_between_nodes(self, node_player0, node_player1, i, p0_nextTurn, old_pot, curr_node_debug):
         oznaka_stave = "b" + str(i)
 
         # Če p1 takoj folda
         if oznaka_stave == ("b" + str(PLAYER_NOT_PLAY_HAND_ACTION)):
-            return self.payoff(node_player1.betting_map[oznaka_stave].infoSet, 0)   # old_pot == 0, ker je p1 foldal preden je karkoli dal na mizo
+            return payoff(node_player1.betting_map[oznaka_stave].infoSet, 0)   # old_pot == 0, ker je p1 foldal preden je karkoli dal na mizo
 
         # Sicer gledamo to
         if p0_nextTurn: #p0 next turn in trenutna poteza je bila pass
-            return self.payoff(node_player0.betting_map[oznaka_stave].infoSet, old_pot)
+            return payoff(node_player0.betting_map[oznaka_stave].infoSet, old_pot)
         else:   #p1 next turn in trenutna poteza je bila pass
-            return self.payoff(node_player1.betting_map[oznaka_stave].infoSet, old_pot)
-
-
-    def new_bet_amount(self, new_pot, old_pot, i, last_round, round_num, first_bet=False):
-        stava = 0
-
-        if round_num == 1:  # --> betting round
-
-            # Če smo pri prvi stavi, ko se player odloča ali bo igral ali ne
-            if first_bet:
-                if i == 0: return BIG_BLIND  # --> call
-                elif i == 1: stava = BIG_BLIND + round(new_pot/2, 2)   # --> Višamo
-                elif i == 2: return 0 # --> foldamo
-
-            # Če nismo pri prvi stavi
-            else:
-                if i == 0: return 0
-                if i == 1: stava = round(new_pot/2, 2)
-                #if i == 2: stava = self.round_on_5(new_pot)
-
-            if stava >= BIG_BLIND:
-                return stava
-            else:
-                return BIG_BLIND
-
-        elif round_num == 2:
-            if int(last_round[round_num-2]) == 0:   #če je bila akcija pred to sedajšno stavo check , potem samo normalno bettamo
-                return self.new_bet_amount(new_pot, old_pot, i, last_round, 1)
-            else:   # sicer pa lahko callamo ali foldamo
-                if i == 0: return 0  # fold
-                elif i == 1:
-                    return new_pot - old_pot    # call --> probably sploh ne pride nikol do tuki? TODO
-                else: return "error"
-        else:
-            return "error"
-
-
-    # določi kolk gre v pot zdj k je nova stava
-    # zdj ne morm več iz infoseta dobit podatka o tem kolk je v potu zato morm to nost s sabo
-    def new_pot_amount(self, infoSet, old_pot, new_pot, i):
-        split_history = infoSet.split("|")
-        last_round = split_history[len(split_history)-1].split("b")
-        del last_round[0]
-        last_round.append(str(i))
-
-        if len(last_round) == 1:
-            first_bet = True if infoSet == "" else False
-            new_pot = old_pot + self.new_bet_amount(new_pot, old_pot, i, last_round, len(last_round), first_bet)
-            old_pot = old_pot + BIG_BLIND if i != PLAYER_NOT_PLAY_HAND_ACTION else old_pot  # --> če player1 ni igral igre, potem ne povečamo pota
-            return old_pot, new_pot
-
-        elif len(last_round) == 2:
-            #p0 check
-            if int(last_round[0]) == 0 and int(last_round[1]) == 0: #check check
-                return old_pot, new_pot
-            elif int(last_round[0]) == 0 and int(last_round[1]) > 0:  #check bet
-                new_bet = self.new_bet_amount(new_pot, old_pot, i, last_round, len(last_round))
-                return old_pot, old_pot + new_bet
-            #p0 bet
-            elif int(last_round[1]) == 0:   # bet fold
-                return old_pot, new_pot
-            elif int(last_round[1]) == 1:   # bet call
-                return new_pot, new_pot
-            else: # bet re_raise --> tega ne igramo
-                return "error", "error"
-
-        elif len(last_round) == 3:  #check bet +
-            if i == 0:  # check bet fold
-                return old_pot, new_pot
-            elif i == 1:    #check bet call
-                return new_pot, new_pot
-            else:   #v zadnjem handu lahko samo foldaš ali callaš
-                return "error", "error"
-        else:   #nekak mamo prazen infoset al pa je vecji od 3, kar ni pravilno
-            return "error", "error"
+            return payoff(node_player1.betting_map[oznaka_stave].infoSet, old_pot)
 
 
     # player_infoset in opp_infoset se skupi cez prenasa in se oba hkrati posodabla
@@ -370,11 +96,17 @@ class Poker_Learner:
         curr_node = node_player0 if player == 0 else node_player1
         infoSet = curr_node.infoSet
 
+        # Debug
+        try:
+            if not (node_player0.betting_map) or not (node_player1.betting_map):
+                debug = True
+        except:
+            pass
 
         # 2. posodobimo in po potrebi ustvarimo nove sinove če še niso ustvarjeni
         new_stage_bool = nodes.isNewStage(infoSet)
         if new_stage_bool:
-            new_cards_ = self.new_stage_incoming(curr_node, node_player0, node_player1, cards)
+            new_cards_ = new_stage_incoming(curr_node, node_player0, node_player1, cards)
             infoSet = curr_node.infoSet
             # update nodes
             node_player0 = node_player0.new_cards[new_cards_]
@@ -407,7 +139,7 @@ class Poker_Learner:
             #payoff
             og_old_pot = old_pot
             og_new_pot = new_pot
-            old_pot,new_pot = self.new_pot_amount(infoSet, og_old_pot, og_new_pot, correct_action)   #pogledamo kaksen je pot po trenutni stavi
+            old_pot,new_pot = new_pot_amount(infoSet, og_old_pot, og_new_pot, correct_action)   #pogledamo kaksen je pot po trenutni stavi
             payoff = self.payoff_decide_between_nodes(node_player0, node_player1, correct_action, p0_nextTurn, old_pot, curr_node)
 
             if payoff != "continue":
@@ -430,7 +162,7 @@ class Poker_Learner:
         # 6. Če node ni "computed" potem naredimo rekurzijo
         betting_round = nodes.is_betting_round(infoSet)
         for i in range(num_actions):
-            old_pot,new_pot = self.new_pot_amount(infoSet, og_old_pot, og_new_pot, i)   #pogledamo kaksen je pot po trenutni stavi
+            old_pot,new_pot = new_pot_amount(infoSet, og_old_pot, og_new_pot, i)   #pogledamo kaksen je pot po trenutni stavi
             payoff = self.payoff_decide_between_nodes(node_player0, node_player1, i, p0_nextTurn, old_pot, curr_node)
 
             if payoff != "continue":
@@ -465,41 +197,6 @@ class Poker_Learner:
 
 # ----------------------------------------------------------------------------------
 
-    # dobimo node aka. stanje v katerem smo
-    def nodeInformation(self, infoSet, player):
-        # v nodemapu je drevo za vsak mozni zacetni hand
-        files_curr_dir = [f for f in listdir("./") if isfile(join("./", f))]    # --> treba pogledat vsakič sprot ker sproti nastajajo novi fajli...mogoce po nekaj casa lahko zbrisem to vrstico
-
-        if player == 0:
-            file_name = "p0_" + infoSet + ".pkl"
-            if file_name in files_curr_dir:
-                with open(file_name, 'rb') as input:
-                    newNode = pickle.load(input)
-            else:
-                newNode = nodes.node_betting_map("")    # --> tuki ne rabmo node, ker p0 avtomatsko na začetku da big blind in dejansko ne začne
-
-        elif player == 1:
-            file_name = "p1_" + infoSet + ".pkl"
-            if file_name in files_curr_dir:
-                with open(file_name, 'rb') as input:
-                    newNode = pickle.load(input)
-            else:
-                newNode = nodes.node("")   # --> tuki rabmo node, ker p1 prvi igra v novi igri, saj ima p0 začetno stavo aka BIG BLIND +  # --> b11 = znak za big blind
-
-        else:
-            return "error2"
-
-        return newNode
-
-    def poVrsti(self, cards):
-        cards.sort()
-        cards_string = ""
-        for i in range (len(cards)):
-            cards_string += str(cards[i])
-            if i != len(cards)-1: cards_string += ","
-
-        return cards_string
-
     def partly_shuffle(self, cards):
         # shranimo hande od playerjev
         new_deck = [cards[0], cards[1], cards[2], cards[3]]
@@ -528,8 +225,11 @@ class Poker_Learner:
             game_num += 1
 
             random.shuffle(cards)
-            player0_info = self.poVrsti([cards[0], cards[1]])
-            player1_info = self.poVrsti([cards[2], cards[3]])
+            player0_info = poVrsti([cards[0], cards[1]])
+            player1_info = poVrsti([cards[2], cards[3]])
+
+            if player0_info == "5,12":
+                debug = True
 
             #logs
             f = open("logs.txt", "a")
@@ -540,8 +240,8 @@ class Poker_Learner:
 
             # ker ne moremo naloziti vseh nodov v ram, na enkrat nalozimo samo dva, enega za playerja in enega za opponenta
             # ker nalaganje porabi ogromno časa, bomo za vaskič ko nalozimo dva noda, s temi kartami opravili "stIgerNaIteracijo" iger, ampak z drugačnim kupckom (npr. 1000 iger)
-            node_player0 = self.nodeInformation(str(player0_info), 0)
-            node_player1 = self.nodeInformation(str(player1_info), 1)
+            node_player0 = nodeInformation(str(player0_info), 0)
+            node_player1 = nodeInformation(str(player1_info), 1)
 
             gc.collect()    # --> force garbage collector
 
@@ -552,10 +252,10 @@ class Poker_Learner:
 
                 cards = self.partly_shuffle(cards.copy())
                 global better_cards_p0
-                better_cards_p0 = self.betterCards(cards, 0)  # TODO BODI POZOREN NA TO FUNKCIJO
+                better_cards_p0 = betterCards(cards, 0)  # TODO BODI POZOREN NA TO FUNKCIJO
                 a = better_cards_p0
                 global better_cards_p1
-                better_cards_p1 = self.betterCards(cards, 1)
+                better_cards_p1 = betterCards(cards, 1)
                 util += self.cfr(cards, 1, 1, node_player0, node_player1, False, BIG_BLIND, BIG_BLIND) # na poker starsu je BB 100, SM 50 pri heads up za 10k....50 obema odbijem v payoffu kot ante, p0 pa tukaj da se 50 na kup
 
 
@@ -593,6 +293,41 @@ class Poker_Learner:
 # --------------------------------------------------------------------------------------------------
 
 
+# dobimo node aka. stanje v katerem smo
+def nodeInformation(infoSet, player):
+    # v nodemapu je drevo za vsak mozni zacetni hand
+    files_curr_dir = [f for f in listdir("./") if isfile(join("./", f))]    # --> treba pogledat vsakič sprot ker sproti nastajajo novi fajli...mogoce po nekaj casa lahko zbrisem to vrstico
+
+    if player == 0:
+        file_name = "p0_" + infoSet + ".pkl"
+        if file_name in files_curr_dir:
+            with open(file_name, 'rb') as input:
+                newNode = pickle.load(input)
+        else:
+            newNode = nodes.node_betting_map("")    # --> tuki ne rabmo node, ker p0 avtomatsko na začetku da big blind in dejansko ne začne
+
+    elif player == 1:
+        file_name = "p1_" + infoSet + ".pkl"
+        if file_name in files_curr_dir:
+            with open(file_name, 'rb') as input:
+                newNode = pickle.load(input)
+        else:
+            newNode = nodes.node("")   # --> tuki rabmo node, ker p1 prvi igra v novi igri, saj ima p0 začetno stavo aka BIG BLIND +  # --> b11 = znak za big blind
+
+    else:
+        return "error2"
+
+    return newNode
+
+# Po vrsti
+def poVrsti(cards):
+    cards.sort()
+    cards_string = ""
+    for i in range (len(cards)):
+        cards_string += str(cards[i])
+        if i != len(cards)-1: cards_string += ","
+
+    return cards_string
 
 #nam pove a smo zaklučl igro/rundo al ne
 def isTerminalState(infoSet):
@@ -603,9 +338,12 @@ def isTerminalState(infoSet):
     del current_stage[0]
     stg_len = len(current_stage)
 
+
     # če p1 ne igra --> folda brez da izenači big blind
     if infoSet == "b" + str(PLAYER_NOT_PLAY_HAND_ACTION):
         return "p0_win"
+
+
     # ce igrata do konca da odpreta karte
     elif (gameStage == 4 and stg_len > 0) and nodes.isNewStage(infoSet):    #smo v zadnjem stagu in current_stage ni prazen (ker pol ga isNewStage prepozna kot nov stage) + zaklucl smo zadn stage
         return "call_betterCards"   #--> sta igrala do konca kazeta karte
@@ -613,16 +351,156 @@ def isTerminalState(infoSet):
     else:
         if len(current_stage) == 2:
             if int(current_stage[0]) > 0 and int(current_stage[1]) == 0:    # bet fold
-                return "p0_win"
+                return "p0_win" if gameStage != 0 else "p1_win"     # --> on preflop roles (who plays first) are reversed, that is why p1 wins in gamestage 0
             else:
                 return False    # pass bet
         elif len(current_stage) == 3:
             if int(current_stage[0]) == 0 and int(current_stage[1]) > 0 and int(current_stage[2]) == 0:   # check bet fold
-                return "p1_win"
+                return "p1_win" if gameStage != 0 else "p0_win"     # --> on preflop roles are reversed, that is why p1 wins in gamestage 0
             else:
                 return False
         else:
             return False
+
+
+def payoff(infoSet, old_pot):
+    terminal_node = isTerminalState(infoSet)
+    if terminal_node != False:
+        current_stage = infoSet.split("|")[(infoSet.count("|") + 1) - 1]
+        player = (current_stage.count("b")) % 2
+
+        # če kdo prej folda kot obicajno, pol nasprotnik dobi 1/2 pota minus zadnjo stavo(-1), ki je player ni callou
+        winnings = old_pot / 2
+        if terminal_node == "p0_win":
+            return winnings if player == 0 else -winnings
+        elif terminal_node == "p1_win":
+            return winnings if player == 1 else -winnings
+
+        if terminal_node == "call_betterCards":
+            # Vsak dobi sam pol pota ker tut v resnici staviš pol ti pol opponent in dejansko si na +/- sam za polovico pota
+            # Gre ravno cez pol ker sta
+            winnings = old_pot/2
+
+            global better_cards_p0
+            a = better_cards_p0
+            global better_cards_p1
+            b = better_cards_p1
+            if better_cards_p0 == "split":
+                return 0
+
+            if player == 0:
+                return winnings if better_cards_p0 else -winnings # winnings = pot/2 + ante
+            elif player == 1:
+                return winnings if better_cards_p1 else -winnings # winnings = pot/2 + ante
+            else:
+                return "error"
+
+        return "error1"
+
+    else:
+        return "continue"
+
+def new_bet_amount(new_pot, old_pot, action, last_round, round_num, first_bet=False):
+    stava = 0
+
+    if round_num == 1:  # --> betting round
+
+        # Če smo pri prvi stavi, ko se player odloča ali bo igral ali ne
+        if first_bet:
+            if action == 0: return BIG_BLIND  # --> call
+            elif action == 1: stava = BIG_BLIND + round(new_pot/2, 2)   # --> Višamo
+            elif action == 2: return 0 # --> foldamo
+
+        # Če nismo pri prvi stavi
+        else:
+            if action == 0: return 0
+            if action == 1: stava = round(new_pot/2, 2)
+            #if i == 2: stava = self.round_on_5(new_pot)
+
+        if stava >= BIG_BLIND:
+            return stava
+        else:
+            return BIG_BLIND
+
+    elif round_num == 2:
+        if int(last_round[round_num-2]) == 0:   #če je bila akcija pred to sedajšno stavo check , potem samo normalno bettamo
+            return new_bet_amount(new_pot, old_pot, action, last_round, 1)
+        else:   # sicer pa lahko callamo ali foldamo
+            if action == 0: return 0  # fold
+            elif action == 1:
+                return new_pot - old_pot    # call --> probably sploh ne pride nikol do tuki? TODO
+            else: return "error"
+    else:
+        return "error"
+
+
+# določi kolk gre v pot zdj k je nova stava
+# zdj ne morm več iz infoseta dobit podatka o tem kolk je v potu zato morm to nost s sabo
+def new_pot_amount(infoSet, old_pot, new_pot, action):
+    split_history = infoSet.split("|")
+    last_round = split_history[len(split_history)-1].split("b")
+    del last_round[0]
+    last_round.append(str(action))
+
+    if len(last_round) == 1:
+        first_bet = True if infoSet == "" else False
+        new_pot = old_pot + new_bet_amount(new_pot, old_pot, action, last_round, len(last_round), first_bet)
+        old_pot = old_pot + BIG_BLIND if action != PLAYER_NOT_PLAY_HAND_ACTION else old_pot  # --> če player1 ni igral igre, potem ne povečamo pota
+        return old_pot, new_pot
+
+    elif len(last_round) == 2:
+        #p0 check
+        if int(last_round[0]) == 0 and int(last_round[1]) == 0: #check check
+            return old_pot, new_pot
+        elif int(last_round[0]) == 0 and int(last_round[1]) > 0:  #check bet
+            new_bet = new_bet_amount(new_pot, old_pot, action, last_round, len(last_round))
+            return old_pot, old_pot + new_bet
+        #p0 bet
+        elif int(last_round[1]) == 0:   # bet fold
+            return old_pot, new_pot
+        elif int(last_round[1]) == 1:   # bet call
+            return new_pot, new_pot
+        else: # bet re_raise --> tega ne igramo
+            return "error", "error"
+
+    elif len(last_round) == 3:  #check bet +
+        if action == 0:  # check bet fold
+            return old_pot, new_pot
+        elif action == 1:    #check bet call
+            return new_pot, new_pot
+        else:   #v zadnjem handu lahko samo foldaš ali callaš
+            return "error", "error"
+    else:   #nekak mamo prazen infoset al pa je vecji od 3, kar ni pravilno
+        return "error", "error"
+
+
+def new_stage_incoming(curr_node, node_player0, node_player1, cards):
+    # ob novem stagu mora začeti p0 (tudi če je ravno igral)
+    if node_player0.infoSet[-1] != '|':
+        node_player0.infoSet += "|"
+    if node_player1.infoSet[-1] != '|':
+        node_player1.infoSet += "|"
+
+    # zdj preeidemo v nov node, ki je vezan na to kakšne karte padejo
+    curr_game_stage = curr_node.infoSet.count("|")
+
+    #preflop je stage 0
+    if curr_game_stage == 1:
+        new_cards_ = "f" + poVrsti([cards[4], cards[5], cards[6]])  # flop
+    elif curr_game_stage == 2:
+        new_cards_ = "t" + str(cards[7])  # turn
+    elif curr_game_stage == 3:
+        new_cards_ = "r" + str(cards[8])  # river
+    else:
+        return "error3"
+
+    # create nodes if necessary --> vedno kreiramo node v p0 in node_betting_map v p1 ker na začetku staga vedno začne p0
+    if new_cards_ not in node_player0.new_cards:
+        node_player0.new_cards[new_cards_] = nodes.node(node_player0.infoSet)
+    if new_cards_ not in node_player1.new_cards:
+        node_player1.new_cards[new_cards_] = nodes.node_betting_map(node_player1.infoSet)
+
+    return new_cards_
 
 
 def tris_to_pair(trisi, pari):
@@ -670,3 +548,135 @@ def isHighCard(playerCards, opponentCards):
         elif playerCards[i] < opponentCards[i]:
             return False
     return "split"
+
+
+
+def betterCards(cards,player):  # --> return TRUE ce ma players bolse karte in FALSE ce ma slabse
+    #najprej določmo karte
+    cards_on_table = [cards[4], cards[5], cards[6], cards[7], cards[8]]
+    if player == 0:
+        playerCards = [cards[0], cards[1]] + cards_on_table
+        opponentCards = [cards[2], cards[3]] + cards_on_table
+    else:
+        playerCards = [cards[2], cards[3]] + cards_on_table
+        opponentCards = [cards[0], cards[1]] + cards_on_table
+
+
+    # tuki bomo gledal sam poker, full house, tris, dva para, par, pa High Card
+    pari_pl = []
+    trisi_pl = []
+    poker_pl = []
+    # lestvica_pl = []     --> TO DO ko bojo karte 2-A
+
+    pari_op = []
+    trisi_op = []
+    poker_op = []
+    # lestvica_op = []     --> TO DO ko bojo karte 2-A
+
+    #pogledamo pokre, trise in pare
+    for i in range(14, 0, -1):
+
+        if playerCards.count(i) == 4:
+            poker_pl.append(int(i))
+        if opponentCards.count(i) == 4:
+            poker_op.append(int(i))
+
+        if playerCards.count(i) == 3:
+            trisi_pl.append((int(i)))
+        if opponentCards.count(i) == 3:
+            trisi_op.append((int(i)))
+
+        if playerCards.count(i) == 2:
+            pari_pl.append(int(i))
+        if opponentCards.count(i) == 2:
+            pari_op.append(int(i))
+    trisi_op.sort(reverse=True)
+    trisi_pl.sort(reverse=True)
+
+    #če imamo več kot en tris, potem ostale trise dodamo k parom (ker več kot 1 tris ne upostevamo v igri)
+    trisi_pl, pari_pl = tris_to_pair(trisi_pl, pari_pl)
+    trisi_op, pari_op = tris_to_pair(trisi_op, pari_op)
+    pari_op.sort(reverse=True)
+    pari_pl.sort(reverse=True)
+
+
+
+    # če ma nekdo poker pol vemo iz prve da je zmagu ker je to najbolsa kombinacija
+    if len(poker_pl) == 1 and len(poker_op) == 1:
+        return True if poker_pl[0] > poker_op[0] else False
+    elif len(poker_pl) == 1 and len(poker_op) == 0:
+        return True
+    elif len(poker_pl) == 0 and len(poker_op) == 1:
+        return False
+
+    #tuki zdj primerjamo hande med sabo
+
+    #full house
+    if len(trisi_pl) > 0 and len(pari_pl) > 0 and len(trisi_op) > 0 and len(pari_op) > 0:   #oba mata full house
+        if trisi_pl[0] > trisi_op[0]:
+            return True
+        elif trisi_pl[0] < trisi_op[0]:
+            return False
+        else:   #trisa sta enaka
+            if pari_pl[0] > pari_op[0]:
+                return True
+            elif pari_pl[0] < pari_op[0]:
+                return False
+            else:   #para sta enaka
+                return isHighCard(playerCards, opponentCards)
+
+    elif len(trisi_pl) > 0 and len(pari_pl) > 0 and (len(trisi_op) == 0 or len(pari_op) == 0):  #player ma full opp ne
+        return True
+    elif len(trisi_op) > 0 and len(pari_op) > 0 and (len(trisi_pl) == 0 or len(pari_pl) == 0):  # opp ma full player ne
+        return False
+
+    #lestvica
+    player_straight = get_that_straight(playerCards)
+    bot_straight = get_that_straight(opponentCards)
+
+    if player_straight > bot_straight:
+        return True
+    elif player_straight < bot_straight:
+        return False
+    elif player_straight != -1 and bot_straight != -1 and player_straight == bot_straight:  # --> oba isti straight
+        return "split"
+
+    #tris
+    if len(trisi_pl) > 0 and len(trisi_op) > 0: #oba tris
+        if trisi_pl[0] > trisi_op[0]:
+            return True
+        elif trisi_pl[0] < trisi_op[0]:
+            return False
+        else:   #isti tris
+            return isHighCard(playerCards, opponentCards)
+    elif len(trisi_pl) > 0 and len(trisi_op) == 0:
+        return True
+    elif len(trisi_pl) == 0 and len(trisi_op) > 0:
+        return False
+
+    #dva para
+    if len(pari_pl) > 1 and len(pari_op) > 1:   #oba mata 2 para
+        if pari_pl[0] > pari_op[0]: return True
+        elif pari_pl[0] < pari_op[0]: return False
+        else:   #isti top pair
+            if pari_pl[1] > pari_op[1]: return True
+            elif pari_pl[1] < pari_op[1]: return False
+            else:   # isti second pair
+                return isHighCard(playerCards, opponentCards)
+    elif len(pari_pl) > 1 and len(pari_op) <= 1:
+        return True
+    elif len(pari_pl) <= 1 and len(pari_op) > 1:
+        return False
+
+    #en par
+    if len(pari_pl) == 1 and len(pari_op) == 1:
+        if pari_pl[0] > pari_op[0]: return  True
+        elif pari_pl[0] < pari_op[0]: return False
+        else:
+            return isHighCard(playerCards, opponentCards)
+    elif len(pari_pl) == 1 and len(pari_op) == 0:
+        return True
+    elif len(pari_pl) == 0 and len(pari_op) == 1:
+        return False
+
+    return isHighCard(playerCards, opponentCards)
