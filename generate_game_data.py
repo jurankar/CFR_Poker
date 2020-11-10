@@ -182,6 +182,7 @@ if __name__ == "__main__":
         better_cards_p1 = cfr_poker.betterCards(cards, 1)
 
 
+
         #smo v tem loopu, dokler player spet ni konec igre
         while(not game_ended):
             debug = game_infoset
@@ -199,13 +200,16 @@ if __name__ == "__main__":
                 game_infoset += "|"
                 # Pokazemo nove karte
                 curr_node = bot_0_node if bot_in_action == 0 else bot_1_node
-                new_cards_ = cfr_poker.new_stage_incoming(curr_node, bot_0_node, bot_1_node, cards)
+                try:
+                    new_cards_ = cfr_poker.new_stage_incoming(curr_node, bot_0_node, bot_1_node, cards)
+                except: new_cards_ = "err"
                 try:
                     bot_0_node = bot_0_node.new_cards[new_cards_]
                 except: bot_0_node = node_random
                 try:
                     bot_1_node = bot_1_node.new_cards[new_cards_]
                 except: bot_1_node = node_random
+
 
                 # Ponastavimo variable
                 bot_in_action = 0
