@@ -2,7 +2,7 @@ import numpy as np
 import sys
 
 #CONSTANTS
-COMPUTED_NODE_REGRET_REQUIREMENT = 400       # to je meja regreta (max value v arrayu node.regretSum), ki sem jo določil da je node izracunan --> kasneje, ko ga boš zares učil to povečaj
+COMPUTED_NODE_REGRET_REQUIREMENT = 20       # to je meja regreta (max value v arrayu node.regretSum), ki sem jo določil da je node izracunan --> kasneje, ko ga boš zares učil to povečaj
 
 
 ###NODES
@@ -32,7 +32,7 @@ class node_betting_map:
 
 #uporabljamo ko smo na potezi in racunamo verjetnosi in se odločamo kakšno potezo bomo naredili
 class node:
-    NUM_ACTIONS = 2
+    NUM_ACTIONS = 4
     __slots__ = ["infoSet", "regretSum", "strategySum", "betting_map", "computed_node"]
     def __init__(self, infoSet):
         self.infoSet = infoSet

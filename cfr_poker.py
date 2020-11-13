@@ -16,12 +16,13 @@ import pickle
 #Constants
 BIG_BLIND = 1.0
 SMALL_BLIND = 0.50
-PLAYER_NOT_PLAY_HAND_ACTION = 2
+NUM_ACTIONS = 4
+PLAYER_NOT_PLAY_HAND_ACTION = NUM_ACTIONS   # zaden play
 
 ##POKER_LEARNER_CFR
 
 class Poker_Learner:
-    NUM_ACTIONS = 2
+    NUM_ACTIONS = NUM_ACTIONS
 
     def kreiraj_sinove(self, curr_node, node_player0, node_player1, p0_nextTurn, player):
 
@@ -404,23 +405,17 @@ def new_bet_amount(new_pot, old_pot, action, last_round, round_num, first_bet=Fa
     stava = 0
 
     if round_num == 1:  # --> betting round
-
         # Če smo pri prvi stavi, ko se player odloča ali bo igral ali ne
         if first_bet:
-            if action == 0: return BIG_BLIND  # --> call
-            elif action == 1: stava = BIG_BLIND + round(new_pot/2, 2)   # --> Višamo
-            elif action == 2: return 0 # --> foldamo
+            if action == PLAYER_NOT_PLAY_HAND_ACTION: return 0 # --> foldamo
+            else: stava += BIG_BLIND
 
-        # Če nismo pri prvi stavi
-        else:
-            if action == 0: return 0
-            if action == 1: stava = round(new_pot/2, 2)
-            #if i == 2: stava = self.round_on_5(new_pot)
+        if action == 0: stava += 0
+        elif action == 1: stava += 1
+        elif action == 2: stava += 3
+        elif action == 3: stava += 8
 
-        if stava >= BIG_BLIND:
-            return stava
-        else:
-            return BIG_BLIND
+        return stava
 
     elif round_num == 2:
         if int(last_round[round_num-2]) == 0:   #če je bila akcija pred to sedajšno stavo check , potem samo normalno bettamo
