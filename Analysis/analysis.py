@@ -132,11 +132,8 @@ def reraise_percentage_fun(data, reraise_percentage):
     return reraise_percentage
 
 
-
-
-
 if __name__ == "__main__":
-    file_name = "Humans/datasets/dataset.txt"
+    file_name = "Bot/datasets/dataset.txt"
     f = open(file_name, "r")
     line = f.readline()
 
@@ -170,13 +167,14 @@ if __name__ == "__main__":
         """
 
         # We are at the beginning of a hand
-        if ("Game ID:" in line) and (line.split()[3] == "0.50/1"):
+        if ("Game ID:" in line) and (line.split()[3] == "0.50/1" or line.split()[3] == "0.5/1.0"):
             num_of_players = 0
             stack_size_sum = 0
 
             # First we skip data we dont need
-            f.readline()  # Game ID: 808941103 0.50/1 (PRR) Karkadann (Short) (Hold'em)
-            f.readline()  # Seat 9 is the button
+            if (file_name == "Human/datasets/dataset.txt"):
+                f.readline()  # Game ID: 808941103 0.50/1 (PRR) Karkadann (Short) (Hold'em)
+                f.readline()  # Seat 9 is the button
 
             line = f.readline().split()
             while line[0] == "Seat":     # Seat 1: Maria_Pia (40).

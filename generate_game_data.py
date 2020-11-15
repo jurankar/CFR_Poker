@@ -72,6 +72,23 @@ def num_to_card(number):
 
 
 
+def bet_amount_fun(action):
+    stava = 0
+    global game_infoset
+    if game_infoset == "":
+        stava += BIG_BLIND  # začetek
+
+    if action == 0: stava += 0
+    elif action == 1: stava += 1
+    elif action == 2: stava += 3
+    elif action == 3: stava += 8
+    elif action == 4: stava += 20
+    elif action == 5: stava += 50
+    elif action == 6: return 0
+
+    return stava
+
+
 
 
 # Get bot action
@@ -85,22 +102,34 @@ def get_bot_action(node, pot_amount, opponent_bet):
         bet = True
 
     strategy = node.getAvgStrat()
+    action_num = "unset"
 
-    action_0 = randDec() < strategy[0]  #ali igramo z action 0 v nodu
+    rand_num = randDec()  #ali igramo z action 0 v nodu
+    sum_rand_num = 0
+    for index, strat_prob  in enumerate(strategy):
+        sum_rand_num += strat_prob
+        if sum_rand_num >= rand_num:
+            action_num = index
+            break;
+
+    action_info = "b" + str(action_num)
 
     if bet:
-        action = "fold" if action_0 else "call"   #p0 je bettou --> mi lahko foldamo ali callamo
+        action = "fold" if action_num == 0 else "call"   #p0 je bettou --> mi lahko foldamo ali callamo
     else:
-        action = "check" if action_0 else "raise" #p0 ni bettou --> mi lahko checkamo ali raisamo
+        action = "check" if action_num == 0 else "raise" #p0 ni bettou --> mi lahko checkamo ali raisamo
+        if action_num == 6:
+            action = "fold"     # ko p1 folda takoj na zacetku
 
     if action == "fold":
-        return action,"b0" , 0
+        return action,action_info, 0
     elif action == "call":
-        return action, "b1", opponent_bet
+        return action, action_info, opponent_bet
+
     elif action == "check":
-        return action, "b0", 0
+        return action, action_info, 0
     elif action == "raise":
-        return action, "b1", pot_amount * 0.5   #ko raisamo, raisamo za 1/2 pota, ni vazn kolk je stavu player : včasih se zna to zgodit na riverju
+        return action, action_info, bet_amount_fun(action_num)
     else:
         return "error"
 
@@ -118,7 +147,7 @@ def bot_action_fun(node, pot_amount, opponent_bet):
 
 
 
-if __name__ == "__main__":
+def generate(num_of_games=100000):
 
     file_path = "Analysis/Bot/datasets/dataset.txt"
 
@@ -130,8 +159,7 @@ if __name__ == "__main__":
     for i in range(len(node_random.strategySum)):
         node_random.strategySum[i] = 1 / len(node_random.strategySum)
 
-    print("How many games do we generate?")
-    num_of_games = input()
+    #print("How many games do we generate?")
     counter = 0
 
     start_time = time.time()
@@ -228,6 +256,8 @@ if __name__ == "__main__":
             bot_action, action_info, bot_bet = bot_action_fun(node, old_pot, opponent_bet)
             action_num = int(action_info[-1])
             old_pot, new_pot = cfr_poker.new_pot_amount(game_infoset, old_pot, new_pot, action_num)
+            if new_pot*2 >= 100:
+                bot_action = "allin"
 
             f.write("Player Bot" + str(bot_in_action) + " " + bot_action + "s")
             f.write(" (" + str(bot_bet) + ")\n") if (bot_action != "fold" and bot_action != "check") else f.write("\n")

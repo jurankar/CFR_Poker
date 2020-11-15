@@ -2,7 +2,7 @@ import numpy as np
 import sys
 
 #CONSTANTS
-COMPUTED_NODE_REGRET_REQUIREMENT = 20       # to je meja regreta (max value v arrayu node.regretSum), ki sem jo določil da je node izracunan --> kasneje, ko ga boš zares učil to povečaj
+COMPUTED_NODE_REGRET_REQUIREMENT = 7000      # to je meja regreta (max value v arrayu node.regretSum), ki sem jo določil da je node izracunan --> kasneje, ko ga boš zares učil to povečaj
 
 
 ###NODES
@@ -32,18 +32,18 @@ class node_betting_map:
 
 #uporabljamo ko smo na potezi in racunamo verjetnosi in se odločamo kakšno potezo bomo naredili
 class node:
-    NUM_ACTIONS = 4
+    NUM_ACTIONS = 6
     __slots__ = ["infoSet", "regretSum", "strategySum", "betting_map", "computed_node"]
     def __init__(self, infoSet):
         self.infoSet = infoSet
         num_of_actions = num_actions(infoSet, self.NUM_ACTIONS)
-        self.regretSum = np.zeros(num_of_actions)
+        self.regretSum = np.full(num_of_actions, 10.0) if num_of_actions != 2 else np.full(num_of_actions, 20.0)
         self.strategySum = np.zeros(num_of_actions) # verjetnost da zberemo PASS ali BET
         #self.avg_strategy = np.zeros(num_of_actions)  # --> to be deleted
         #self.strategy = np.zeros(num_of_actions)    # --> to be deleted
 
         # Ce je node ze "izracunan" aka. smo ga tolikokrat simulirali, da vemo kaj je najbolsa opcija in drugih opcij ne gledamo več
-        self.computed_node = False
+        self.computed_node = False      # --> samo betting node computamo
 
         # Nadaljne veje iz drevesa
         self.betting_map = {}  # pri vsaki iteraciji imaš 4 nova stanja pp, pb, bp, bb --> razen ko p0 prvic igra, takrat samo 2 stanja p in b
@@ -93,7 +93,8 @@ class node:
                 self.strategySum[i] += realizationWeight * strategy[i]
 
         # preverimo če mode sedaj "izračunan" aka "computed"
-        self.is_computed()
+        if len(self.regretSum) != 2:  # --> samo betting node computamo
+            self.is_computed()
 
         #debugging
         #self.strategy = strategy

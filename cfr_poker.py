@@ -16,7 +16,7 @@ import pickle
 #Constants
 BIG_BLIND = 1.0
 SMALL_BLIND = 0.50
-NUM_ACTIONS = 4
+NUM_ACTIONS = 6
 PLAYER_NOT_PLAY_HAND_ACTION = NUM_ACTIONS   # zaden play
 
 ##POKER_LEARNER_CFR
@@ -125,8 +125,8 @@ class Poker_Learner:
 
         # 4. Pridobimo podatke o strategiji
         num_actions = nodes.num_actions(infoSet, self.NUM_ACTIONS)
-        curr_node.getStrat(p0) if player == 0 else curr_node.getStrat(p1)
-        strategy = curr_node.getAvgStrat()
+        strategy = curr_node.getStrat(p0) if player == 0 else curr_node.getStrat(p1)
+        #strategy = curr_node.getAvgStrat()
         util = np.zeros(num_actions)   # kolk utila mamo za bet pa kolk za pass
         nodeUtil = 0
 
@@ -170,29 +170,32 @@ class Poker_Learner:
                 util[i] = - payoff  # - pred funkcijo ker se zamenja player ko gremo v funkcijo...enako kot 4 vrstice pod tem
             else:
                 oznaka_stave = "b" + str(i)
-                #da ne igramo veckrat iste stave --> to delamo samo v betting round
-                if betting_round:
-                    nova_stava = new_pot - old_pot
 
-                if (not betting_round) or (nova_stava not in alredy_played_bets):  #drugi del preverja da ze nismo igrali stave s to velikostjo (npr pot/2 in pot/4 gresta na stavo 10 ker je to minimalna stava) in da smo v stanju ko stavimo --> ce smo v stanju ko ne stavimo ne gledamo ce smo neko stavo ze igrali ker imamo samo call/fold
-                    if betting_round: alredy_played_bets.append(nova_stava)
-
-                    if (player == 0):
-                        util[i] = - self.cfr(cards, p0 * strategy[i], p1, node_player0.betting_map[oznaka_stave], node_player1.betting_map[oznaka_stave], p0_nextTurn, old_pot, new_pot)
-                    else:
-                        util[i] = - self.cfr(cards, p0, p1 * strategy[i], node_player0.betting_map[oznaka_stave], node_player1.betting_map[oznaka_stave], p0_nextTurn, old_pot, new_pot)
+                if (player == 0):
+                    util[i] = - self.cfr(cards, p0 * strategy[i], p1, node_player0.betting_map[oznaka_stave], node_player1.betting_map[oznaka_stave], p0_nextTurn, old_pot, new_pot)
+                else:
+                    util[i] = - self.cfr(cards, p0, p1 * strategy[i], node_player0.betting_map[oznaka_stave], node_player1.betting_map[oznaka_stave], p0_nextTurn, old_pot, new_pot)
 
             nodeUtil += strategy[i] * util[i]
 
 
         # 6. zdj pa seštejemo counter factual regret
+        # UPDATE: namesto da dodajamo negativne vrednosti, dodamo |negativna_vrednost|/num_actions vsem ostalim nodom
         num_actions = nodes.num_actions(infoSet, self.NUM_ACTIONS)
         for i in range(num_actions):
             regret = util[i] - nodeUtil
-            if (player == 0):
-                curr_node.regretSum[i] += p1 * regret   # ORIGINAL --> p1 * regret
+            # calling round
+            if(num_actions==2 and regret < 0 and player == 0):
+                curr_node.regretSum[1-i] += p1 * -regret
+            elif (num_actions==2 and regret < 0 and player == 1):
+                curr_node.regretSum[1-i] += p0 * -regret
+
             else:
-                curr_node.regretSum[i] += p0 * regret   # ORIGINAL --> p0 * regret
+                # betting round
+                if (player == 0):
+                    curr_node.regretSum[i] += p1 * regret   # ORIGINAL --> p1 * regret
+                else:
+                    curr_node.regretSum[i] += p0 * regret   # ORIGINAL --> p0 * regret
 
         return nodeUtil
 
@@ -209,10 +212,8 @@ class Poker_Learner:
         new_deck += cards
         return new_deck
 
-    def train(self, stIgerNaIteracijo):
-        # Kolk minut naj se max izvaja
-        print("Koliko minut naj se program izvaja?")
-        max_program_time_minutes = int(input())
+    def train(self, stIgerNaIteracijo, st_min_izvajanja):
+        max_program_time_minutes = st_min_izvajanja
         start_time = time.time()
 
         # prvi dve sta od playerja, drugi dve sta od opponenta, naslednjih 5 je na mizi
@@ -222,15 +223,11 @@ class Poker_Learner:
         continue_loop = True
         game_num = 0
         while continue_loop:
-            print(game_num)
             game_num += 1
 
             random.shuffle(cards)
             player0_info = poVrsti([cards[0], cards[1]])
             player1_info = poVrsti([cards[2], cards[3]])
-
-            if player0_info == "5,12":
-                debug = True
 
             #logs
             f = open("logs.txt", "a")
@@ -248,6 +245,7 @@ class Poker_Learner:
 
             for j in range(stIgerNaIteracijo):
                 if ((time.time() - start_time) / 60) > max_program_time_minutes:
+                    #print("num of games simulated:" , game_num)
                     continue_loop = False
                     break
 
@@ -414,8 +412,13 @@ def new_bet_amount(new_pot, old_pot, action, last_round, round_num, first_bet=Fa
         elif action == 1: stava += 1
         elif action == 2: stava += 3
         elif action == 3: stava += 8
+        elif action == 4: stava += 20
+        elif action == 5: stava += 50
 
-        return stava
+        if old_pot + stava/2 > 100:
+            return (100-old_pot) / 2    # --> allin
+        else:
+            return stava
 
     elif round_num == 2:
         if int(last_round[round_num-2]) == 0:   #če je bila akcija pred to sedajšno stavo check , potem samo normalno bettamo
@@ -432,6 +435,9 @@ def new_bet_amount(new_pot, old_pot, action, last_round, round_num, first_bet=Fa
 # določi kolk gre v pot zdj k je nova stava
 # zdj ne morm več iz infoseta dobit podatka o tem kolk je v potu zato morm to nost s sabo
 def new_pot_amount(infoSet, old_pot, new_pot, action):
+    if action == 6: # --> takojšen fold
+        return 0, 1
+
     split_history = infoSet.split("|")
     last_round = split_history[len(split_history)-1].split("b")
     del last_round[0]
@@ -454,6 +460,10 @@ def new_pot_amount(infoSet, old_pot, new_pot, action):
         elif int(last_round[1]) == 0:   # bet fold
             return old_pot, new_pot
         elif int(last_round[1]) == 1:   # bet call
+            opponent_bet = new_pot-old_pot
+            new_pot += opponent_bet # izenačimo stavo
+            if new_pot > 100:
+                new_pot = 100
             return new_pot, new_pot
         else: # bet re_raise --> tega ne igramo
             return "error", "error"
@@ -462,6 +472,10 @@ def new_pot_amount(infoSet, old_pot, new_pot, action):
         if action == 0:  # check bet fold
             return old_pot, new_pot
         elif action == 1:    #check bet call
+            opponent_bet = new_pot-old_pot
+            new_pot += opponent_bet # izenačimo stavo
+            if new_pot > 100:
+                new_pot = 100
             return new_pot, new_pot
         else:   #v zadnjem handu lahko samo foldaš ali callaš
             return "error", "error"
