@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import time
 import cfr_poker
 import generate_game_data
