@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 BIG_BLIND = 1.0
 SMALL_BLIND = 0.50
 

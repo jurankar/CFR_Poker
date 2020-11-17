@@ -1,9 +1,9 @@
+# -*- coding: utf-8 -*-
 import random
 
 import nodes
 import numpy as np
 import psutil
-import os
 import gc
 import time
 

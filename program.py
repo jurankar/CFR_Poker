@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 import time
 import cfr_poker
 import generate_game_data

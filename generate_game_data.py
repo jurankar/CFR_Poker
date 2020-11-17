@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import random
 from random import random as randDec
 import numpy as np
