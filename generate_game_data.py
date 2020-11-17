@@ -10,7 +10,7 @@ import nodes
 import cfr_poker
 
 global game_infoset
-ZAČETNO_STANJE = 50
+ZACETNO_STANJE = 50
 SMALL_BLIND = 0.50
 BIG_BLIND = SMALL_BLIND * 2
 
@@ -169,7 +169,7 @@ def generate(num_of_games=100000):
         print(counter)
 
         # ponastavimo infoset
-        max_pot = 2 * ZAČETNO_STANJE    # več od tega ne more biti, ker sta oba bota porabila svoj denar
+        max_pot = 2 * ZACETNO_STANJE    # več od tega ne more biti, ker sta oba bota porabila svoj denar
 
         #zmešamo in razdelimo karte
         random.shuffle(cards)

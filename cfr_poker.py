@@ -249,7 +249,7 @@ class Poker_Learner:
                     continue_loop = False
                     break
 
-                cards = self.partly_shuffle(cards.copy())
+                cards = self.partly_shuffle( list(cards) )
                 global better_cards_p0
                 better_cards_p0 = betterCards(cards, 0)  # TODO BODI POZOREN NA TO FUNKCIJO
                 a = better_cards_p0
