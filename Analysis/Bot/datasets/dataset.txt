@@ -227,3 +227,29 @@ Player Bot0 does not show cards
 Player Bot1 does not show cards
 Game ended at: 2020-12-02 19:57:38.117439
 
+Game started at: 2020-12-02 19:07:56.378010
+Game ID: 5 0.5/1.0   Hold'em
+Seat 1: Bot1 (50).
+Seat 2: Bot2 (50).
+Player Bot1 has big blind (1)
+Player Bot1 received a card 3.
+Player Bot1 received a card 7.
+Player Bot2 received a card K.
+Player Bot2 received a card 8.
+Player Bot1 allins (51.0)
+Player Bot0 allins (51.0)
+*** FLOP ***: [K 6 5]
+Player Bot0 allins (1)
+Player Bot1 allins (1)
+*** TURN ***: [4]
+Player Bot0 allins (0)
+Player Bot1 allins (0)
+*** RIVER ***: [Q]
+Player Bot0 allins (1)
+Player Bot1 allins (1)
+------ Summary ------
+Board: [K 6 5 4 Q]
+Player Bot0 shows cards: 3, 7
+Player Bot1 does not show cards
+Game ended at: 2020-12-02 20:57:59.890217
+
