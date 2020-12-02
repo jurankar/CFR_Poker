@@ -1,0 +1,229 @@
+
+Game started at: 2020-12-02 13:00:32.125021
+Game ID: 2 0.5/1.0   Hold'em
+Seat 1: Bot1 (50).
+Seat 2: Bot2 (50).
+Player Bot1 has big blind (1)
+Player Bot1 received a card 2.
+Player Bot1 received a card J.
+Player Bot2 received a card 2.
+Player Bot2 received a card 6.
+Player Bot1 raises (2.0)
+Player Bot0 folds
+------ Summary ------
+Board: [10 A 2 8 4]
+Player Bot1 does not show cards
+Player Bot0 does not show cards
+Game ended at: 2020-12-02 15:10:38.069862
+
+Game started at: 2020-12-02 15:10:38.071670
+Game ID: 3 0.5/1.0   Hold'em
+Seat 1: Bot1 (50).
+Seat 2: Bot2 (50).
+Player Bot1 has big blind (1)
+Player Bot1 received a card 5.
+Player Bot1 received a card Q.
+Player Bot2 received a card A.
+Player Bot2 received a card 6.
+Player Bot1 raises (2.0)
+Player Bot0 calls (2.0)
+*** FLOP ***: [7 A 2]
+Player Bot0 checks
+Player Bot1 raises (8)
+Player Bot0 folds
+------ Summary ------
+Board: [7 A 2 A 7]
+Player Bot1 does not show cards
+Player Bot0 does not show cards
+Game ended at: 2020-12-02 15:37:14.806754
+
+Game started at: 2020-12-02 15:37:14.808577
+Game ID: 4 0.5/1.0   Hold'em
+Seat 1: Bot1 (50).
+Seat 2: Bot2 (50).
+Player Bot1 has big blind (1)
+Player Bot1 received a card 9.
+Player Bot1 received a card 6.
+Player Bot2 received a card K.
+Player Bot2 received a card 7.
+Player Bot1 allins (51.0)
+Player Bot0 allins (0)
+------ Summary ------
+Board: [3 10 J 4 4]
+Player Bot1 does not show cards
+Player Bot0 does not show cards
+Game ended at: 2020-12-02 15:54:32.176825
+
+Game started at: 2020-12-02 15:07:30.022350
+Game ID: 1 0.5/1.0   Hold'em
+Seat 1: Bot1 (50).
+Seat 2: Bot2 (50).
+Player Bot1 has big blind (1)
+Player Bot1 received a card 7.
+Player Bot1 received a card 5.
+Player Bot2 received a card 4.
+Player Bot2 received a card J.
+Player Bot1 raises (2.0)
+Player Bot0 folds
+------ Summary ------
+Board: [9 4 10 9 9]
+Player Bot1 does not show cards
+Player Bot0 does not show cards
+Game ended at: 2020-12-02 16:11:20.688536
+
+Game started at: 2020-12-02 16:11:20.689908
+Game ID: 2 0.5/1.0   Hold'em
+Seat 1: Bot1 (50).
+Seat 2: Bot2 (50).
+Player Bot1 has big blind (1)
+Player Bot1 received a card 10.
+Player Bot1 received a card 4.
+Player Bot2 received a card 7.
+Player Bot2 received a card 5.
+Player Bot1 raises (2.0)
+Player Bot0 folds
+------ Summary ------
+Board: [3 3 2 8 5]
+Player Bot1 does not show cards
+Player Bot0 does not show cards
+Game ended at: 2020-12-02 16:25:55.140159
+
+Game started at: 2020-12-02 16:25:55.141531
+Game ID: 3 0.5/1.0   Hold'em
+Seat 1: Bot1 (50).
+Seat 2: Bot2 (50).
+Player Bot1 has big blind (1)
+Player Bot1 received a card Q.
+Player Bot1 received a card 6.
+Player Bot2 received a card 6.
+Player Bot2 received a card 7.
+Player Bot1 allins (51.0)
+Player Bot0 allins (0)
+------ Summary ------
+Board: [A 2 A 4 5]
+Player Bot1 does not show cards
+Player Bot0 does not show cards
+Game ended at: 2020-12-02 16:45:22.167267
+
+Game started at: 2020-12-02 15:54:32.196016
+Game ID: 5 0.5/1.0   Hold'em
+Seat 1: Bot1 (50).
+Seat 2: Bot2 (50).
+Player Bot1 has big blind (1)
+Player Bot1 received a card 7.
+Player Bot1 received a card Q.
+Player Bot2 received a card 8.
+Player Bot2 received a card 5.
+Player Bot1 allins (51.0)
+Player Bot0 allins (0)
+------ Summary ------
+Board: [8 10 6 6 7]
+Player Bot1 does not show cards
+Player Bot0 does not show cards
+Game ended at: 2020-12-02 17:37:02.128074
+
+Game started at: 2020-12-02 17:37:02.133294
+Game ID: 6 0.5/1.0   Hold'em
+Seat 1: Bot1 (50).
+Seat 2: Bot2 (50).
+Player Bot1 has big blind (1)
+Player Bot1 received a card 2.
+Player Bot1 received a card 6.
+Player Bot2 received a card J.
+Player Bot2 received a card 8.
+Player Bot1 raises (21.0)
+Player Bot0 folds
+------ Summary ------
+Board: [5 9 7 9 3]
+Player Bot1 does not show cards
+Player Bot0 does not show cards
+Game ended at: 2020-12-02 18:15:33.017369
+
+Game started at: 2020-12-02 18:15:33.034761
+Game ID: 7 0.5/1.0   Hold'em
+Seat 1: Bot1 (50).
+Seat 2: Bot2 (50).
+Player Bot1 has big blind (1)
+Player Bot1 received a card 8.
+Player Bot1 received a card 4.
+Player Bot2 received a card Q.
+Player Bot2 received a card 6.
+Player Bot1 allins (51.0)
+Player Bot0 allins (0)
+------ Summary ------
+Board: [8 10 Q 8 A]
+Player Bot1 does not show cards
+Player Bot0 does not show cards
+Game ended at: 2020-12-02 18:31:15.213559
+
+Game started at: 2020-12-02 18:31:15.218278
+Game ID: 8 0.5/1.0   Hold'em
+Seat 1: Bot1 (50).
+Seat 2: Bot2 (50).
+Player Bot1 has big blind (1)
+Player Bot1 received a card 8.
+Player Bot1 received a card 5.
+Player Bot2 received a card K.
+Player Bot2 received a card 6.
+Player Bot1 allins (51.0)
+Player Bot0 allins (0)
+------ Summary ------
+Board: [Q 6 4 A 2]
+Player Bot1 does not show cards
+Player Bot0 does not show cards
+Game ended at: 2020-12-02 19:05:21.866151
+
+Game started at: 2020-12-02 16:45:22.168636
+Game ID: 4 0.5/1.0   Hold'em
+Seat 1: Bot1 (50).
+Seat 2: Bot2 (50).
+Player Bot1 has big blind (1)
+Player Bot1 received a card A.
+Player Bot1 received a card 9.
+Player Bot2 received a card 8.
+Player Bot2 received a card 7.
+Player Bot1 raises (9.0)
+Player Bot0 folds
+------ Summary ------
+Board: [4 2 J 6 3]
+Player Bot1 does not show cards
+Player Bot0 does not show cards
+Game ended at: 2020-12-02 19:07:56.376646
+
+Game started at: 2020-12-02 19:05:21.868007
+Game ID: 9 0.5/1.0   Hold'em
+Seat 1: Bot1 (50).
+Seat 2: Bot2 (50).
+Player Bot1 has big blind (1)
+Player Bot1 received a card 10.
+Player Bot1 received a card Q.
+Player Bot2 received a card 5.
+Player Bot2 received a card 2.
+Player Bot1 raises (21.0)
+Player Bot0 folds
+------ Summary ------
+Board: [9 6 7 A A]
+Player Bot1 does not show cards
+Player Bot0 does not show cards
+Game ended at: 2020-12-02 19:28:36.472634
+
+Game started at: 2020-12-02 19:28:36.474495
+Game ID: 10 0.5/1.0   Hold'em
+Seat 1: Bot1 (50).
+Seat 2: Bot2 (50).
+Player Bot1 has big blind (1)
+Player Bot1 received a card Q.
+Player Bot1 received a card 2.
+Player Bot2 received a card A.
+Player Bot2 received a card 4.
+Player Bot1 raises (2.0)
+Player Bot0 calls (2.0)
+*** FLOP ***: [7 J 4]
+Player Bot0 raises (20)
+Player Bot1 folds
+------ Summary ------
+Board: [7 J 4 5 Q]
+Player Bot0 does not show cards
+Player Bot1 does not show cards
+Game ended at: 2020-12-02 19:57:38.117439
+
