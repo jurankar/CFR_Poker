@@ -3,7 +3,7 @@ import numpy as np
 import sys
 
 #CONSTANTS
-COMPUTED_NODE_REGRET_REQUIREMENT = 7000      # to je meja regreta (max value v arrayu node.regretSum), ki sem jo določil da je node izracunan --> kasneje, ko ga boš zares učil to povečaj
+COMPUTED_NODE_REGRET_REQUIREMENT = 3500      # to je meja regreta (max value v arrayu node.regretSum), ki sem jo določil da je node izracunan --> kasneje, ko ga boš zares učil to povečaj
 
 
 ###NODES
