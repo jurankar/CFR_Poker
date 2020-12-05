@@ -180,6 +180,7 @@ def generate(num_of_games=100000):
         f = open(file_path, "a")
         f.write("Game started at: " + str(datetime.datetime.now()) + "\n")
         f.write("Game ID: " + str(counter) + " " + str(SMALL_BLIND) + "/" + str(BIG_BLIND) + "   Hold'em\n")
+        f.write("Seat 1 is the button")
         f.write("Seat 1: Bot1 (50).\n")
         f.write("Seat 2: Bot2 (50).\n")
         f.write("Player Bot1 has big blind (1)\n")
@@ -187,6 +188,7 @@ def generate(num_of_games=100000):
         f.write("Player Bot1 received a card " + num_to_card(cards[1]) + ".\n")
         f.write("Player Bot2 received a card " + num_to_card(cards[2]) + ".\n")
         f.write("Player Bot2 received a card " + num_to_card(cards[3]) + ".\n")
+        f.close()
 
 
         #init the bots
@@ -246,11 +248,13 @@ def generate(num_of_games=100000):
                 bot_bet = 0
                 # Zapišemo v file
                 game_stage = game_infoset.count("|")
+                f = open(file_path, "a")
                 if game_stage == 1: f.write("*** FLOP ***: [" + num_to_card(cards[4]) + " " + num_to_card(cards[5]) + " " + num_to_card(cards[6]) + "]\n")
                 if game_stage == 2: f.write("*** TURN ***: [" + num_to_card(cards[7]) + "]\n")
                 if game_stage == 3:
                     f.write("*** RIVER ***: [" + num_to_card(cards[8]) + "]\n")
                     isRiver = True
+                f.close()
 
             # Tukaj sedaj zamenjamo node
             node = bot_0_node if bot_in_action == 0 else bot_1_node
@@ -260,8 +264,10 @@ def generate(num_of_games=100000):
             if new_pot*2 >= 100:
                 bot_action = "allin"
 
+            f = open(file_path, "a")
             f.write("Player Bot" + str(bot_in_action) + " " + bot_action + "s")
             f.write(" (" + str(bot_bet) + ")\n") if (bot_action != "fold" and bot_action != "check") else f.write("\n")
+            f.close()
             game_infoset += action_info
 
             # Posodobimo node
@@ -279,6 +285,7 @@ def generate(num_of_games=100000):
             bot_in_action = 1 - bot_in_action
 
         # Zaključena igra, sedaj napišemo summary
+        f = open(file_path, "a")
         f.write("------ Summary ------\n")
         f.write("Board: [" + num_to_card(cards[4]) + " " + num_to_card(cards[5]) + " " + num_to_card(cards[6]) + " " + num_to_card(cards[7]) + " " + num_to_card(cards[8]) + "]\n")
         if isRiver:
