@@ -13,17 +13,14 @@ if __name__ == "__main__":
 
     # 2dni po 10, 3dni po 100, 2dni po 1000, 1dan po 10000
     print("simulating 10")
-    #learner.train(10,2*mins_in_a_day)
+    learner.train(10,5*mins_in_a_day)
     print("simulating 100")
-    #learner.train(100,3*mins_in_a_day)
+    learner.train(100,15*mins_in_a_day)
     print("simulating 1000")
-    #learner.train(1000,2*mins_in_a_day)
-    print("simulating 10000")
-    #learner.train(10000,1*mins_in_a_day)
 
     #generating game data
     print("generating game data")
-    generate_game_data.generate(1000)
+    #generate_game_data.generate(1000)
 
     print("Čas izvajanja programa: ", (time.time() - start_time), " sekund. To je ", (time.time() - start_time)/60," minut.")
 
