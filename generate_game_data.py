@@ -160,6 +160,7 @@ def generate(num_of_games=100000):
     for i in range(len(node_random.strategySum)):
         node_random.strategySum[i] = 1 / len(node_random.strategySum)
 
+
     #print("How many games do we generate?")
     counter = 0
 
@@ -194,8 +195,16 @@ def generate(num_of_games=100000):
         #init the bots
         bot_0_cards = cfr_poker.poVrsti([cards[0], cards[1]])
         bot_1_cards = cfr_poker.poVrsti([cards[2], cards[3]])
-        bot_0_node = cfr_poker.nodeInformation(bot_0_cards, 0)
-        bot_1_node = cfr_poker.nodeInformation(bot_1_cards, 1)
+
+        try:
+            bot_0_node = cfr_poker.nodeInformation(bot_0_cards, 0)
+        except:
+            bot_0_node = node_random
+        try:
+            bot_1_node = cfr_poker.nodeInformation(bot_1_cards, 1)
+        except:
+            bot_1_node = node_random
+
         bot_in_action = 1   # ker ima p0 big blind
 
         # Init the variables
