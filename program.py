@@ -13,9 +13,9 @@ if __name__ == "__main__":
 
     # 2dni po 10, 3dni po 100, 2dni po 1000, 1dan po 10000
     print("simulating 10")
-    learner.train(10,5*mins_in_a_day)
+    learner.train(10,3*mins_in_a_day)
     print("simulating 100")
-    learner.train(100,15*mins_in_a_day)
+    learner.train(100,22*mins_in_a_day)
     print("simulating 1000")
 
     #generating game data
