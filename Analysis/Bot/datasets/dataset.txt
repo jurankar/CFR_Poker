@@ -8461,13 +8461,3 @@ Board: [6 3 8 Q 9]
 Player Bot1 does not show cards
 Player Bot0 does not show cards
 Game ended at: 2021-01-19 16:16:47.615957
-
-Game started at: 2021-01-19 16:16:47.617202
-Game ID: 483 0.5/1.0   Hold'em
-Seat 1 is the buttonSeat 1: Bot1 (50).
-Seat 2: Bot2 (50).
-Player Bot1 has big blind (1)
-Player Bot1 received a card Q.
-Player Bot1 received a card 10.
-Player Bot2 received a card 2.
-Player Bot2 received a card Q.

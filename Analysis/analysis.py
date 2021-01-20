@@ -249,7 +249,7 @@ if __name__ == "__main__":
     print("Average betting sum on turn: ", raise_sum[2][1]/raise_sum[2][0])
     print("Average betting sum on river: ", raise_sum[3][1]/raise_sum[3][0])
 
-    print("\nWhat % of raises are reraises: ", (reraise_percentage[1]/reraise_percentage[0])*100, " %" )
+    #print("\nWhat % of raises are reraises: ", (reraise_percentage[1]/reraise_percentage[0])*100, " %" )
     print("Average raise increase in percentages: ",  raise_increase_percentage[1]/raise_increase_percentage[0], "%")
 
 
