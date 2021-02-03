@@ -8460,6 +8460,7 @@ Player Bot0 folds
 Board: [6 3 8 Q 9]
 Player Bot1 does not show cards
 Player Bot0 does not show cards
+<<<<<<< HEAD
 Game ended at: 2021-01-19 16:16:47.615957
 
 Game started at: 2021-01-19 16:16:47.617202
@@ -15935,3 +15936,6 @@ Player Bot1 received a card Q.
 Player Bot1 received a card 7.
 Player Bot2 received a card 9.
 Player Bot2 received a card 10.
+=======
+Game ended at: 2021-01-19 16:16:47.615957
+>>>>>>> 597cf0e5315795ceca306bca022b16d54642a5f8
