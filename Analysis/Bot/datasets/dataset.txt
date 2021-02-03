@@ -8460,7 +8460,6 @@ Player Bot0 folds
 Board: [6 3 8 Q 9]
 Player Bot1 does not show cards
 Player Bot0 does not show cards
-<<<<<<< HEAD
 Game ended at: 2021-01-19 16:16:47.615957
 
 Game started at: 2021-01-19 16:16:47.617202
@@ -15892,50 +15891,3 @@ Board: [3 K 6 K 7]
 Player Bot0 shows cards: K, 5
 Player Bot1 does not show cards
 Game ended at: 2021-02-03 16:19:19.355276
-
-Game started at: 2021-02-03 16:19:19.356080
-Game ID: 901 0.5/1.0   Hold'em
-Seat 1 is the buttonSeat 1: Bot1 (50).
-Seat 2: Bot2 (50).
-Player Bot1 has big blind (1)
-Player Bot1 received a card 5.
-Player Bot1 received a card K.
-Player Bot2 received a card A.
-Player Bot2 received a card 9.
-Player Bot1 allins (51.0)
-Player Bot0 allins (0)
------- Summary ------
-Board: [2 A 2 10 J]
-Player Bot1 does not show cards
-Player Bot0 does not show cards
-Game ended at: 2021-02-03 16:38:30.058161
-
-Game started at: 2021-02-03 16:38:30.059477
-Game ID: 902 0.5/1.0   Hold'em
-Seat 1 is the buttonSeat 1: Bot1 (50).
-Seat 2: Bot2 (50).
-Player Bot1 has big blind (1)
-Player Bot1 received a card 7.
-Player Bot1 received a card 6.
-Player Bot2 received a card A.
-Player Bot2 received a card 10.
-Player Bot1 raises (9.0)
-Player Bot0 folds
------- Summary ------
-Board: [Q 8 6 2 J]
-Player Bot1 does not show cards
-Player Bot0 does not show cards
-Game ended at: 2021-02-03 17:17:24.049651
-
-Game started at: 2021-02-03 17:17:24.050901
-Game ID: 903 0.5/1.0   Hold'em
-Seat 1 is the buttonSeat 1: Bot1 (50).
-Seat 2: Bot2 (50).
-Player Bot1 has big blind (1)
-Player Bot1 received a card Q.
-Player Bot1 received a card 7.
-Player Bot2 received a card 9.
-Player Bot2 received a card 10.
-=======
-Game ended at: 2021-01-19 16:16:47.615957
->>>>>>> 597cf0e5315795ceca306bca022b16d54642a5f8
